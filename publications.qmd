@@ -1,0 +1,47 @@
+---
+title: "Publications"
+---
+
+<div style="max-width: 650px; margin: 40px auto;">
+
+### 2026
+
+**Torque Responsive Metamaterials Enable High Payload Soft Robot Arms**<br>
+Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I. <br>
+Under Review · IROS 2026</span><br> · [arXiv](https://arxiv.org/abs/2501.09819)
+
+
+**Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**  
+Good, I.\*, Balaji, S.\*, Lipton, J. I.  
+*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)* · *Co-first Authors<span style="color: gray;">
+Accepted</span>  
+IEEE Xplore (Will be available soon) · [arXiv](https://arxiv.org/abs/2412.07976)
+
+**A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**<br>
+VanAtter, C., Balaji, S., Davidson, J. R.<br>
+*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)* · <span style="color: gray;"><br>
+Accepted</span><br>
+IEEE Xplore (Will be available soon)
+
+### 2025
+
+**Flexible Barometric Tactile Sensors for Robotic Grasping Applications**  
+Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.  
+*2025 IEEE SENSORS* · Pages 1–4  
+[DOI (IEEE Xplore)](https://doi.org/10.1109/SENSORS59705.2025.11330401)
+
+### 2024
+
+**Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer**  
+Good, I., Balaji, S., Lipton, J. I.  
+*2024 IEEE 7th International Conference on Soft Robotics (RoboSoft)* · Pages 235–242  
+[DOI (IEEE Xplore)](https://doi.org/10.1109/RoboSoft60065.2024.10521982) · [arXiv](https://arxiv.org/abs/2311.02454)
+
+### 2022
+
+**Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology**<br>
+Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.<br>
+*Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium*<br>
+[PDF](https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content)
+
+</div>
