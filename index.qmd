@@ -6,10 +6,9 @@ title: ""
 
 ![](PXL_20220307_012912012.PORTRAIT~1.jpg){width=150px style="border-radius: 50%;"}
 
-**Srivatsan Balaji**
+<p style="font-size: 1.8rem; font-weight: bold;">Srivatsan Balaji</p>
 
-Research Engineer / Faculty Research Assistant
-
+Research Engineer / Faculty Research Assistant <br>
 Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University
 
 *Research interests: Materials and Soft Robotics*

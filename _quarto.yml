@@ -12,6 +12,8 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
+      - href: photography.qmd
+        text: Photography
       - href: contact.qmd
         text: Contact
 
