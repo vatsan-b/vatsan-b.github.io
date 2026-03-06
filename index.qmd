@@ -20,10 +20,10 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 
 ## About
 
-I am a Research Engineer and Faculty Research Assistant at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University, where I work on Materials and Soft Robotics. 
+I am a Research Engineer at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State currently developing hardware for underwater robots. 
 
-I completed my undergraduate studies in [Your Undergrad Degree] at [Your Undergrad University], where I first developed my interest in [brief interest]. I then pursued my graduate studies at [Your Grad University], focusing on [Your Grad Research Focus].
+I have a graduate degree in Mechanical Engineering graduate from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.
 
-Following my graduate studies, I joined CoRIS as a Faculty Research Assistant, working closely with [Advisor Name if applicable] on [brief description of FRA work]. My work broadly sits at the intersection of [your research themes].
+My work sits at the intersection of materials, mechanical design and robotics. Outside of work, I am a virtual pilot and a hobbyist photographer.
 
 </div>

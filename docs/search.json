@@ -9,15 +9,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Srivatsan's Portfolio",
+    "title": "Srivatsan Balaji - Portfolio",
     "section": "",
     "text": "Srivatsan Balaji\nResearch Engineer / Faculty Research Assistant\nCollaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nResearch interests: Materials and Soft Robotics"
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
-    "title": "Srivatsan's Portfolio",
+    "title": "Srivatsan Balaji - Portfolio",
     "section": "About",
-    "text": "About\nI am a Research Engineer and Faculty Research Assistant at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University, where I work on Materials and Soft Robotics.\nI completed my undergraduate studies in [Your Undergrad Degree] at [Your Undergrad University], where I first developed my interest in [brief interest]. I then pursued my graduate studies at [Your Grad University], focusing on [Your Grad Research Focus].\nFollowing my graduate studies, I joined CoRIS as a Faculty Research Assistant, working closely with [Advisor Name if applicable] on [brief description of FRA work]. My work broadly sits at the intersection of [your research themes]."
+    "text": "About\nI am a Research Engineer at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State currently developing hardware for underwater robots.\nI have a graduate degree in Mechanical Engineering graduate from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.\nMy work sits at the intersection of materials, mechanical design and robotics. Outside of work, I am a virtual pilot and a hobbyist photographer."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact and Links",
+    "section": "",
+    "text": "Let’s Connect.\n\n\n   sri.vatsan0307@gmail.com\n\n\n   linkedin.com/in/vatsan-balaji\n\n\n   Google Scholar\n\n\n   github.com/vatsan-b\n\n\n   Unsplash @Srivatsan"
   }
 ]

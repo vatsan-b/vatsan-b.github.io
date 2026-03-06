@@ -1,0 +1,26 @@
+---
+title: "Contact and Links"
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+---
+
+<div style="max-width: 650px; margin: 40px auto;">
+
+Let's Connect.
+
+<br>
+
+<p><i class="fa-solid fa-envelope" style="width:20px;"></i> &nbsp; [sri.vatsan0307@gmail.com](mailto:sri.vatsan0307@gmail.com)</p>
+
+<p><i class="fa-brands fa-linkedin" style="width:20px;"></i> &nbsp; [linkedin.com/in/vatsan-balaji](https://linkedin.com/in/vatsan-balaji)</p>
+
+<p><i class="fa-brands fa-google-scholar" style="width:20px;"></i> &nbsp; [Google Scholar](https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en)</p>
+
+<p><i class="fa-brands fa-github" style="width:20px;"></i> &nbsp; [github.com/vatsan-b](https://github.com/vatsan-b)</p>
+
+<p><i class="fa-brands fa-unsplash" style="width:20px;"></i> &nbsp; [Unsplash @Srivatsan](https://unsplash.com/@srivatsan)</p>
+
+</div>
