@@ -1,0 +1,13 @@
+---
+title: "Welcome!"
+---
+
+<div style="text-align: center; margin-top: 60px;">
+
+![](photo.jpg){width=200px style="border-radius: 50%;"}
+
+**Srivatsan** | Mechanical Engineer
+
+*Research interests: Materials and Soft Robotics*
+
+</div>
