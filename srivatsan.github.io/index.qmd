@@ -1,13 +1,29 @@
 ---
-title: "Welcome!"
+title: ""
 ---
 
 <div style="text-align: center; margin-top: 60px;">
 
-![](photo.jpg){width=200px style="border-radius: 50%;"}
+![](PXL_20220307_012912012.PORTRAIT~2.jpg){width=200px style="border-radius: 50%;"}
 
-**Srivatsan** | Mechanical Engineer
+**Srivatsan Balaji**
+
+Research Engineer / Faculty Research Assistant
+
+Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University
 
 *Research interests: Materials and Soft Robotics*
+
+</div>
+
+<div style="max-width: 650px; margin: 40px auto; text-align: justify;">
+
+## About
+
+I am a Research Engineer and Faculty Research Assistant at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University, where I work on Materials and Soft Robotics. 
+
+I completed my undergraduate studies in [Your Undergrad Degree] at [Your Undergrad University], where I first developed my interest in [brief interest]. I then pursued my graduate studies at [Your Grad University], focusing on [Your Grad Research Focus].
+
+Following my graduate studies, I joined CoRIS as a Faculty Research Assistant, working closely with [Advisor Name if applicable] on [brief description of FRA work]. My work broadly sits at the intersection of [your research themes].
 
 </div>
