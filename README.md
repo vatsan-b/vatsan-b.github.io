@@ -1,3 +1,3 @@
 # Srivatsan's Portfolio
 
-This is how I built my portfolio!
+This is how and where I build my portfolio!
