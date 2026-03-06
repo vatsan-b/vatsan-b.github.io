@@ -4,7 +4,7 @@ title: ""
 
 <div style="text-align: center; margin-top: 60px;">
 
-![](PXL_20220307_012912012.PORTRAIT~2.jpg){width=200px style="border-radius: 50%;"}
+![](PXL_20220307_012912012.PORTRAIT~1.jpg){width=200px style="border-radius: 50%;"}
 
 **Srivatsan Balaji**
 
@@ -18,9 +18,8 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 
 <div style="max-width: 650px; margin: 40px auto; text-align: justify;">
 
-## About
 
-I am a Research Engineer at the Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State currently developing hardware for underwater robots. 
+I am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots. 
 
 I have a graduate degree in Mechanical Engineering graduate from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.
 
