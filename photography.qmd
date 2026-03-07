@@ -3,16 +3,46 @@ title: "Photography"
 lightbox: true
 ---
 
-::: {style="columns: 3; column-gap: 10px; max-width: 900px; margin: auto;"}
+<div style="display: flex; flex-wrap: wrap; gap: 15px; max-width: 900px; margin: auto;">
 
-![](photos/PXL_20220323_021751755.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/PXL_20220323_025530649.NIGHT.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
-![](photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg){style="width:100%; margin-bottom:10px;"}
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/PXL_20220323_021751755.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Sunset panoramic view of downtown Seattle with Mt. Rainier in the background</figcaption>
+</figure>
 
-:::
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="flex-grow: 1; margin: 0;">
+![](photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+</div>
