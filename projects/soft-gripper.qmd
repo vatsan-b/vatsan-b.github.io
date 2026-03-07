@@ -5,7 +5,7 @@ In this work, I addressed this problem by designing and integrating a torsion-re
 This reduces out-of-plane bending while maintaining the gripper’s compliance and in-plane flexibility. 
 
 <div style="text-align: center; margin: 20px 0;">
-![](./hsa-gripper.png){width=25%}
+![](hsa-gripper.png){width=25%}
 
 *HSA gripper mounted to the UR5 robot arm*
 
