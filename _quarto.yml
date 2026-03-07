@@ -25,6 +25,9 @@ format:
     theme: [flatly, custom.scss]
     css: styles.css
     html-math-method: katex
+    include-in-header:
+      text: |
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     grid:
       body-width: 1200px
       sidebar-width: 0px
