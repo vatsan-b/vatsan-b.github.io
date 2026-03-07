@@ -1,1 +1,17 @@
-/* css styles */
+body {
+  max-width: 100% !important;
+}
+
+#quarto-content {
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+.page-columns {
+  max-width: 1400px !important;
+}
+
+.column-body {
+  max-width: 100% !important;
+}

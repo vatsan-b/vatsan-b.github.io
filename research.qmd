@@ -2,4 +2,22 @@
 title: "Research"
 ---
 
-Work in Progress.
+::: {.panel-tabset}
+
+## Soft Gripper
+
+<description and media here>
+
+## Soft Robot Arm
+
+<description and media here>
+
+## Blackberry Proxy
+
+<description and media here>
+
+## Underwater Manipulation
+
+<description and media here>
+
+:::

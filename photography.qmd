@@ -3,46 +3,110 @@ title: "Photography"
 lightbox: true
 ---
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; max-width: 900px; margin: auto;">
+**Collection of some of my photos**
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/PXL_20220323_021751755.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<div id="photo-gallery" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 900px; margin: auto;">
+
+<figure style="margin: 0;">
+![](photos/PXL_20220323_021751755.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Sunset panoramic view of downtown Seattle with Mt. Rainier in the background</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/IMG_1405.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Cook Creek, Washington</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/PXL_20211226_185354224.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">The Quad at the University of Washington</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/PXL_20220731_064619756.NIGHT~2.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/PXL_20221023_004339139.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/PXL_20240101_221804405.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/PXL_20240418_010033230~2.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/PXL_20250514_231324573.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
-<figure style="flex-grow: 1; margin: 0;">
-![](photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg){style="width:100%; height:300px; object-fit:cover;"}
+<figure style="margin: 0;">
+![](photos/PXL_20250514_231425261~2.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg){style="width:100%;"}
+<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+![](photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg){style="width:100%;"}
 <figcaption style="text-align:center; color:gray; font-size:0.9rem;">Caption here</figcaption>
 </figure>
 
 </div>
+
+<script>
+document.querySelectorAll('#photo-gallery figure img').forEach(img => {
+  const figure = img.closest('figure');
+  if (img.complete) {
+    if (img.naturalWidth > img.naturalHeight * 1.4) {
+      figure.style.gridColumn = 'span 2';
+    }
+  } else {
+    img.addEventListener('load', () => {
+      if (img.naturalWidth > img.naturalHeight * 1.4) {
+        figure.style.gridColumn = 'span 2';
+      }
+    });
+  }
+});
+</script>
