@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Srivatsan Balaji - Portfolio",
+    "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Srivatsan Balaji\n\nResearch Engineer / Faculty Research Assistant  Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nResearch interests: Materials and Soft Robotics\n\n\nI am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots.\nI have a graduate degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.\nMy work sits at the intersection of materials, mechanical design and robotics. Outside of work, I am a virtual pilot and a hobbyist photographer."
+    "text": "Srivatsan Balaji\n\nResearch Engineer / Faculty Research Assistant  Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Materials and Soft Robotics, Mechanical Design, 3D Printing\n\n\nI am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots.\nI have a graduate degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.\nThings I am good at: SolidWorks, Fusion 360,\nMy work sits at the intersection of materials, mechanical design and robotics. Outside of work, I am a virtual pilot and a hobbyist photographer."
   },
   {
     "objectID": "publications.html",
@@ -39,6 +39,34 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Soft GripperSoft Robot ArmBlackberry ProxyUnderwater Manipulation"
+    "text": "Soft HSA GripperSoft Robot ArmBlackberry ProxyUnderwater Manipulation\n\n\n\nTorsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nHSA Gripper Project Description and Media\n\n\n\n\nHanded-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media\n\n\n\n\nSensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\n\n\n\n\nFlexible Sensor-Integrated Bravo End Effector\nProject Description and Media"
+  },
+  {
+    "objectID": "projects/soft-gripper.html",
+    "href": "projects/soft-gripper.html",
+    "title": "Srivatsan Balaji - Portfolio",
+    "section": "",
+    "text": "Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nHSA Gripper Project Description and Media"
+  },
+  {
+    "objectID": "projects/soft-robot-arm.html",
+    "href": "projects/soft-robot-arm.html",
+    "title": "Srivatsan Balaji - Portfolio",
+    "section": "",
+    "text": "Handed-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media"
+  },
+  {
+    "objectID": "projects/underwater-manipulation.html",
+    "href": "projects/underwater-manipulation.html",
+    "title": "Srivatsan Balaji - Portfolio",
+    "section": "",
+    "text": "Flexible Sensor-Integrated Bravo End Effector\nProject Description and Media"
+  },
+  {
+    "objectID": "projects/blackberry-proxy.html",
+    "href": "projects/blackberry-proxy.html",
+    "title": "Srivatsan Balaji - Portfolio",
+    "section": "",
+    "text": "Sensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media"
   }
 ]

@@ -14,7 +14,7 @@ Under Review · IROS 2026</span><br>
 
 **Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**  
 Good, I.\*, Balaji, S.\*, Lipton, J. I.  
-*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)* · *Co-first Authors<span style="color: gray;">
+*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)* · *Co-first Authors<span style="color: gray;"><br>
 Accepted</span>  
 IEEE Xplore (Will be available soon) · [arXiv](https://arxiv.org/abs/2412.07976)
 

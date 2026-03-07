@@ -4,20 +4,20 @@ title: "Research"
 
 ::: {.panel-tabset}
 
-## Soft Gripper
+## Soft HSA Gripper
 
-<description and media here>
+{{< include projects/soft-gripper.qmd >}}
 
 ## Soft Robot Arm
 
-<description and media here>
+{{< include projects/soft-robot-arm.qmd >}}
 
 ## Blackberry Proxy
 
-<description and media here>
+{{< include projects/blackberry-proxy.qmd >}}
 
 ## Underwater Manipulation
 
-<description and media here>
+{{< include projects/underwater-manipulation.qmd >}}
 
 :::
