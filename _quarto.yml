@@ -4,10 +4,13 @@ project:
 
 website:
   title: "Srivatsan Balaji"
+  favicon: favicon.png
+  page-footer:
+    center: "Made with [Quarto](https://quarto.org) and [GitHub Pages](https://pages.github.com)"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: About
       - href: research.qmd
         text: Research
       - href: publications.qmd
@@ -15,7 +18,7 @@ website:
       - href: photography.qmd
         text: Photography
       - href: contact.qmd
-        text: Contact
+        text: Contact and Socials
 
 format:
   html:
@@ -23,6 +26,6 @@ format:
     css: styles.css
     html-math-method: katex
     grid:
-      body-width: 1400px
+      body-width: 1200px
       sidebar-width: 0px
       margin-width: 0px

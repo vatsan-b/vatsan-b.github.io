@@ -7,18 +7,39 @@
     "text": "About this site"
   },
   {
+    "objectID": "projects/blackberry-proxy.html",
+    "href": "projects/blackberry-proxy.html",
+    "title": "Srivatsan Balaji",
+    "section": "",
+    "text": "Sensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\nThis work was supported by the National Science Foundation (NSF)"
+  },
+  {
+    "objectID": "projects/soft-robot-arm.html",
+    "href": "projects/soft-robot-arm.html",
+    "title": "Srivatsan Balaji",
+    "section": "",
+    "text": "Handed-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media\nThis work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Srivatsan Balaji\n\nResearch Engineer / Faculty Research Assistant  Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Materials and Soft Robotics, Mechanical Design, 3D Printing\n\n\nI am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots.\nI have a graduate degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.\nThings I am good at: SolidWorks, Fusion 360,\nMy work sits at the intersection of materials, mechanical design and robotics. Outside of work, I am a virtual pilot and a hobbyist photographer."
+    "text": "Srivatsan Balaji\n\nResearch Engineer / Faculty Research Assistant  Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Materials and Soft Robotics"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Srivatsan Balaji",
+    "section": "Skills",
+    "text": "Skills\nDesign & Fabrication CAD Modeling, Rapid prototyping, 3D printing: Fused Deposition Modeling (FDM), Stereolithography (SLA), Material Jetting, CNC Software: SolidWorks, Autodesk Fusion 360, Autodesk Inventor (to some extent) Machines: Prusa FDM Printers, Carbon M1 SLA Printer, Stratasys J750, Bantam Desktop CNC\nTesting & Analysis Finite Element Analysis (FEA), Material Characterization Software: Ansys Mechanical, MATLAB, Ansys Fluent (CFD) - fundamental fluid flow analysis Testing: Instron Universal Testing System\nProgramming Python\nResearch Experiment Design, Scientific and Technical Writing, Presentation"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "2026\nTorque Responsive Metamaterials Enable High Payload Soft Robot Arms Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.  Under Review · IROS 2026 arXiv\nTorsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers\nGood, I.*, Balaji, S.*, Lipton, J. I.\n2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) · *Co-first Authors Accepted\nIEEE Xplore (Will be available soon) · arXiv\nA Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting VanAtter, C., Balaji, S., Davidson, J. R. 2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)  Accepted IEEE Xplore (Will be available soon)\n\n\n2025\nFlexible Barometric Tactile Sensors for Robotic Grasping Applications\nShaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.\n2025 IEEE SENSORS · Pages 1–4\nDOI (IEEE Xplore)\n\n\n2024\nEnhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer\nGood, I., Balaji, S., Lipton, J. I.\n2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) · Pages 235–242\nDOI (IEEE Xplore) · arXiv\n\n\n2022\nFabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I. Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium PDF"
+    "text": "Torque Responsive Metamaterials Enable High Payload Soft Robot Arms Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I. Under Review · IROS 2026 arXiv\nTorsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers Good, I.*, Balaji, S.*, Lipton, J. I. · *Co-first Authors 2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) · Accepted IEEE Xplore (Will be available soon) · arXiv\nA Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting VanAtter, C., Balaji, S., Davidson, J. R. 2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) · Accepted IEEE Xplore (Will be available soon)\nFlexible Barometric Tactile Sensors for Robotic Grasping Applications Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R. 2025 IEEE SENSORS · Pages 1–4 DOI (IEEE Xplore)\nEnhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer Good, I., Balaji, S., Lipton, J. I. 2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) · Pages 235–242 DOI (IEEE Xplore) · arXiv\nFabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I. Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium PDF"
   },
   {
     "objectID": "photography.html",
@@ -30,43 +51,29 @@
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "Contact and Links",
+    "title": "Contact and Socials",
     "section": "",
-    "text": "Let’s Connect.\n\n\n   sri.vatsan0307@gmail.com\n\n\n   linkedin.com/in/vatsan-balaji\n\n\n   Google Scholar\n\n\n   github.com/vatsan-b\n\n\n   Unsplash @Srivatsan"
+    "text": "Let’s connect.\n\n\n   sri.vatsan0307@gmail.com\n\n\n   linkedin.com/in/vatsan-balaji\n\n\n   Google Scholar\n\n\n   github.com/vatsan-b\n\n\n   Unsplash @Srivatsan"
+  },
+  {
+    "objectID": "projects/soft-gripper.html",
+    "href": "projects/soft-gripper.html",
+    "title": "Srivatsan Balaji",
+    "section": "",
+    "text": "Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nHSA Gripper Project Description and Media\nThis work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)"
+  },
+  {
+    "objectID": "projects/underwater-manipulation.html",
+    "href": "projects/underwater-manipulation.html",
+    "title": "Srivatsan Balaji",
+    "section": "",
+    "text": "Flexible Sensor-Integrated Bravo End Effector\nProject Description and Media\nThis work was supported by the Office of Naval Research (ONR)"
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Soft HSA GripperSoft Robot ArmBlackberry ProxyUnderwater Manipulation\n\n\n\nTorsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nHSA Gripper Project Description and Media\n\n\n\n\nHanded-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media\n\n\n\n\nSensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\n\n\n\n\nFlexible Sensor-Integrated Bravo End Effector\nProject Description and Media"
-  },
-  {
-    "objectID": "projects/soft-gripper.html",
-    "href": "projects/soft-gripper.html",
-    "title": "Srivatsan Balaji - Portfolio",
-    "section": "",
-    "text": "Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nHSA Gripper Project Description and Media"
-  },
-  {
-    "objectID": "projects/soft-robot-arm.html",
-    "href": "projects/soft-robot-arm.html",
-    "title": "Srivatsan Balaji - Portfolio",
-    "section": "",
-    "text": "Handed-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media"
-  },
-  {
-    "objectID": "projects/underwater-manipulation.html",
-    "href": "projects/underwater-manipulation.html",
-    "title": "Srivatsan Balaji - Portfolio",
-    "section": "",
-    "text": "Flexible Sensor-Integrated Bravo End Effector\nProject Description and Media"
-  },
-  {
-    "objectID": "projects/blackberry-proxy.html",
-    "href": "projects/blackberry-proxy.html",
-    "title": "Srivatsan Balaji - Portfolio",
-    "section": "",
-    "text": "Sensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media"
+    "text": "Soft HSA GripperSoft Robot ArmBlackberry ProxyUnderwater Manipulation\n\n\n\nTorsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nHSA Gripper Project Description and Media\nThis work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)\n\n\n\n\nHanded-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media\nThis work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)\n\n\n\n\nSensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\nThis work was supported by the National Science Foundation (NSF)\n\n\n\n\nFlexible Sensor-Integrated Bravo End Effector\nProject Description and Media\nThis work was supported by the Office of Naval Research (ONR)"
   }
 ]

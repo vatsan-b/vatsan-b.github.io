@@ -11,19 +11,39 @@ title: ""
 Research Engineer / Faculty Research Assistant <br>
 Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University
 
-*Interests: Materials and Soft Robotics, Mechanical Design, 3D Printing*
+*Interests: Materials and Soft Robotics*
 
 </div>
 
-<div style="max-width: 650px; margin: 40px auto; text-align: justify;">
+<div style="max-width: 1400px; margin: 40px auto; text-align: justify;">
 
 
 I am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots. 
 
 I have a graduate degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.
 
-Things I am good at: SolidWorks, Fusion 360, 
-
 My work sits at the intersection of materials, mechanical design and robotics. Outside of work, I am a virtual pilot and a hobbyist photographer.
+
+<div style="max-width: 1400px; margin: 40px auto;">
+
+## Skills
+
+**Design & Fabrication**<br>
+CAD Modeling, Rapid prototyping, 3D printing: Fused Deposition Modeling (FDM), Stereolithography (SLA), Material Jetting, CNC<br>
+*Software: SolidWorks, Autodesk Fusion 360, Autodesk Inventor (to some extent)*<br>
+*Machines: Prusa FDM Printers, Carbon M1 SLA Printer, Stratasys J750, Bantam Desktop CNC*
+
+**Testing & Analysis**<br>
+Finite Element Analysis (FEA), Material Characterization<br>
+*Software: Ansys Mechanical, MATLAB, Ansys Fluent (CFD) - fundamental fluid flow analysis*<br>
+*Testing: Instron Universal Testing System*
+
+**Programming**<br>
+Python
+
+**Research**<br>
+Experiment Design, Scientific and Technical Writing, Presentation
+
+</div>
 
 </div>

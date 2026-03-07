@@ -3,6 +3,8 @@ title: "Photography"
 lightbox: true
 ---
 
+<div style="max-width: 1200px; margin: 40px auto;">
+
 **Collection of some of my photos**
 
 <div id="photo-gallery" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 900px; margin: auto;">

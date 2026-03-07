@@ -1,11 +1,15 @@
+/*-- scss:uses --*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 /*-- scss:defaults --*/
 
-// Fonts
-$font-family-sans-serif: "Inter", sans-serif;
-$headings-font-family: "Inter", sans-serif;
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+$headings-font-family: "Source Sans Pro", sans-serif;
+
 
 // Colors
-$navbar-bg: #005735;        // navbar background
-$navbar-fg: #ffffff;        // navbar text
-$link-color: #2c3e50;       // link color
+$navbar-bg: #c0293deb;        // navbar background
+$navbar-fg: rgb(214, 214, 214);        // navbar text
+$navbar-active-color: #ffffff; // highlighted/active nav item
+$link-color: #df8d00;       // link color
 $body-color: #000000;       // body text
