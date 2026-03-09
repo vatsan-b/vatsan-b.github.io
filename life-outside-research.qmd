@@ -146,4 +146,5 @@ document.querySelectorAll('#photo-gallery figure img').forEach(img => {
 });
 </script>
 
+
 </div>
