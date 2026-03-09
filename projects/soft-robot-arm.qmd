@@ -1,5 +1,0 @@
-### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm
-
-HSA Arm Project Description and Media
-
-*This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)*

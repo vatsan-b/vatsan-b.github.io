@@ -1,5 +1,0 @@
-### Flexible Sensor-Integrated Bravo End Effector
-
-Project Description and Media
-
-*This work was supported by the Office of Naval Research (ONR)*

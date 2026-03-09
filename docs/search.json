@@ -11,7 +11,7 @@
     "href": "projects/blackberry-proxy.html",
     "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Sensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\nThis work was supported by the National Science Foundation (NSF)"
+    "text": "Sensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\nThis work was supported by the National Science Foundation (NSF)."
   },
   {
     "objectID": "projects/soft-robot-arm.html",
@@ -44,9 +44,9 @@
   {
     "objectID": "photography.html",
     "href": "photography.html",
-    "title": "Photography",
+    "title": "Life Outside Research",
     "section": "",
-    "text": "Collection of some of my photos\n\n\n  \n\nSunset panoramic view of downtown Seattle with Mt. Rainier in the background\n\n\n\n  \n\nCoal Creek, Washington\n\n\n\n  \n\nThe Quad at the University of Washington"
+    "text": "“Me as a person”\n\n\n  \n\nSunset panoramic view of downtown Seattle with Mt. Rainier in the background\n\n\n\n  \n\nCoal Creek, Washington\n\n\n\n  \n\nThe Quad at the University of Washington"
   },
   {
     "objectID": "contact.html",
@@ -60,7 +60,7 @@
     "href": "projects/soft-gripper.html",
     "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nSoft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We tackled this by designing a torsion-resistant strain limiting layer (TR-SLL) and integrating it into handed shearing auxetics to fabricate a soft gripper. The TR-SLL minimizes out-of-plane bending while preserving the gripper’s in-plane compliance and flexibility. The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload of over 1 kg, a lifting capacity of 5 kg when loaded through the TR-SLL element. We achieved a peak pinch grasp force of 5.8 N, and a peak planar caging force of 14.5 N, a significant payload for a soft gripper lifting objects perpendicular to gravity. Read more about this work here.\n\n\n\n\n\nHSA Gripper lifting objects from the YCB object dataset, to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.\n\n\nThis work was supported by the NSF, Murdock Charitable Trust, and the Office of Naval Research (ONR)."
+    "text": "Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nSoft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We tackled this by designing a torsion-resistant strain limiting layer (TR-SLL) and integrating it into handed shearing auxetics to fabricate a soft gripper. The TR-SLL minimizes out-of-plane bending while preserving the gripper’s in-plane compliance and flexibility. The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload of over 1 kg, a lifting capacity of 5 kg when loaded through the TR-SLL element. We achieved a peak pinch grasp force of 5.8 N, and a peak planar caging force of 14.5 N, a significant payload for a soft gripper lifting objects perpendicular to gravity. Read more here.\n\n\n\n\n\nHSA Gripper lifting objects from the YCB object dataset, to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.\n\n\nThis work was supported by the NSF, Murdock Charitable Trust, and the Office of Naval Research (ONR)."
   },
   {
     "objectID": "projects/underwater-manipulation.html",
@@ -74,6 +74,13 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nSoft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We tackled this by designing a torsion-resistant strain limiting layer (TR-SLL) and integrating it into handed shearing auxetics to fabricate a soft gripper. The TR-SLL minimizes out-of-plane bending while preserving the gripper’s in-plane compliance and flexibility. The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload of over 1 kg, a lifting capacity of 5 kg when loaded through the TR-SLL element. We achieved a peak pinch grasp force of 5.8 N, and a peak planar caging force of 14.5 N, a significant payload for a soft gripper lifting objects perpendicular to gravity. Read more about this work here.\n\n\n\n\n\nHSA Gripper lifting objects from the YCB object dataset, to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.\n\n\nThis work was supported by the NSF, Murdock Charitable Trust, and the Office of Naval Research (ONR).\n\n\nHanded-Shearing Auxetics (HSA)-based Soft Robot Arm\nHSA Arm Project Description and Media\nThis work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)\n\n\n\nSensorized Blackberry Proxy / Parallel-Jaw Gripper\nProject Description and Media\nThis work was supported by the National Science Foundation (NSF)\n\n\n\nFlexible Sensor-Integrated Bravo End Effector\nProject Description and Media\nThis work was supported by the Office of Naval Research (ONR)"
+    "text": "Flexible Sensor-Integrated Bravo End Effector for Underwater Manipulation\n\n\n\nLeft: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.modified \n\n\nUnderwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during underwater operations, and can also be used to train slip detection classifiers to assist ROV operators. I developed a modified bravo end effector that allows flexible barometric sensors to be mounted using mechanical fasteners, enabling data collection to control slip parameters and simulate subsea conditions. Article: IEEE Xplore\nThis work was supported by the Office of Naval Research (ONR)\n\n\n\nTorsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper\nSoft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant strain limiting layer (TR-SLL) and integrating it to handed shearing auxetics to fabricate a soft gripper. The TR-SLL minimizes out-of-plane bending while preserving the gripper’s in-plane compliance and flexibility. The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload of over 1 kg, a lifting capacity of 5 kg when loaded through the TR-SLL element. We achieved a peak pinch grasp force of 5.8 N, and a peak planar caging force of 14.5 N, a significant payload for a soft gripper lifting objects perpendicular to gravity. Article: arXiv\n\n\n\n\n\nHSA Gripper lifting objects from the YCB object dataset, to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.\n\n\nThis work was supported by the NSF, Murdock Charitable Trust, and the Office of Naval Research (ONR).\n\n\nParallel-Jaw Gripper\nProject Description and Media\nThis work was supported by the National Science Foundation (NSF).\n\n\n\nHanded-Shearing Auxetics (HSA)-based Soft Robot Arm\n\n\n\n\n\nLeft: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight\n\n\nExpanding on the previous work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending, and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform tasks like pipe inspection, and underwater docking due to its compliance. Article: arXiv\nThis work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR)."
+  },
+  {
+    "objectID": "life-outside-research.html",
+    "href": "life-outside-research.html",
+    "title": "Life Outside Work",
+    "section": "",
+    "text": "I am a hobbyist photographer, a virtual pilot, and an active air traffic controller on VATSIM.\n\n\n  \n\nSunset panoramic view of downtown Seattle with Mt. Rainier in the background\n\n\n\n  \n\nCoal Creek, Washington\n\n\n\n  \n\nThe Quad at the University of Washington\n\n\n\n  \n\n\n\n\n  \n\n\n\n\n  \n\nDrumheller Foundation at the UW"
   }
 ]

@@ -4,18 +4,73 @@ title: "Research"
 
 <div style="max-width: 1200px; margin: 40px auto;">
 
-{{< include projects/soft-gripper.qmd >}}
+### Flexible Sensor-Integrated Bravo End Effector for Underwater Manipulation
+
+<div style="text-align: center; margin: 20px 0;">
+![](projects/bravo-gripper.png){width=70%}
+<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
+<em>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right).
+Right: Assembly of the prototype.modified
+</em>
+</p>
+</div>
+
+Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
+insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during underwater
+operations, and can also be used to train slip detection classifiers to assist ROV operators. I developed a modified bravo end effector
+that allows flexible barometric sensors to be mounted using mechanical fasteners, enabling data collection to control slip parameters
+and simulate subsea conditions. Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
+
+*This work was supported by the Office of Naval Research (ONR)*
 
 <hr>
 
-{{< include projects/soft-robot-arm.qmd >}}
+### Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper
+
+Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant strain limiting layer (TR-SLL) and integrating it to handed shearing auxetics to fabricate a soft gripper. The TR-SLL minimizes out-of-plane bending while 
+preserving the gripper's in-plane compliance and flexibility.
+The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload of over 1 kg, a lifting capacity of 5 kg when loaded through the TR-SLL element. We achieved a peak pinch grasp force of 5.8 N, and a peak planar caging force of 14.5 N, a significant payload for a soft gripper lifting objects perpendicular to gravity. Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
+
+<div style="text-align: center; margin: 20px 0;">
+<video width="70%" autoplay loop muted playsinline>
+  <source src="projects/HSA-Gripper-Lifting.mp4" type="video/mp4">
+</video>
+<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
+<em>HSA Gripper lifting objects from the YCB object dataset, to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</em>
+</p>
+</div>
+
+*This work was supported by the NSF, Murdock Charitable Trust, and the Office of Naval Research (ONR).*
 
 <hr>
 
-{{< include projects/blackberry-proxy.qmd >}}
+### Parallel-Jaw Gripper 
+
+Project Description and Media
+
+
+*This work was supported by the National Science Foundation (NSF).*
 
 <hr>
 
-{{< include projects/underwater-manipulation.qmd >}}
+### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm
+
+<div style="text-align: center; margin: 20px 0;">
+<video width="70%" autoplay loop muted playsinline>
+  <source src="projects/HSA-Arm-Lifting.mp4" type="video/mp4">
+</video>
+<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
+<em>Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight</em>
+</p>
+</div>
+
+Expanding on the previous work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
+and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
+payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform
+tasks like pipe inspection, and underwater docking due to its compliance. Article: [arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
+
+*This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).*
+
+<hr>
 
 </div>
