@@ -4,7 +4,7 @@ title: "Life Outside Work"
 
 <div style="max-width: 1200px; margin: 40px auto;">
 
-I am a hobbyist photographer, a virtual pilot, and an active air traffic controller on [VATSIM](https://www.vatsim.net){target="_blank"}.
+I am a hobbyist photographer, a virtual pilot, and an air traffic controller on [VATSIM](https://www.vatsim.net){target="_blank"}.
 
 <div id="photo-gallery" style="columns: 2; column-gap: 15px; max-width: 900px; margin: auto;">
 

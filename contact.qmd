@@ -9,8 +9,6 @@ format:
 
 <div style="max-width: 600px; margin: 40px auto;">
 
-Let's connect.
-
 <br>
 
 <p><i class="fa-solid fa-envelope" style="width:20px;"></i> &nbsp; [sri.vatsan0307@gmail.com](mailto:sri.vatsan0307@gmail.com){target="_blank"}</p>

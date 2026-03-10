@@ -21,28 +21,36 @@ Underwater manipulation is challenging due to low visibility and turbulent condi
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during underwater
 operations, and can also be used to train slip detection classifiers to assist ROV operators. I developed a modified bravo end effector
 that allows flexible barometric sensors to be mounted using mechanical fasteners, enabling data collection to control slip parameters
-and simulate subsea conditions. Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
+and simulate subsea conditions. In addition to this, we developed a data collection procedure to perform 
+slip characterization that simulated conditions that occur during underwater grasping.
+
+Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
 *This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense*
 
 <hr>
 
-### Torsion-Resistant Handed-Shearing Auxetics (HSA)-based Soft Gripper
+### Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper
 
-Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant strain limiting layer (TR-SLL) and integrating it to handed shearing auxetics to fabricate a soft gripper. The TR-SLL minimizes out-of-plane bending while 
-preserving the gripper's in-plane compliance and flexibility.
-The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload of over 1 kg, a lifting capacity of 5 kg when loaded through the TR-SLL element. We achieved a peak pinch grasp force of 5.8 N, and a peak planar caging force of 14.5 N, a significant payload for a soft gripper lifting objects perpendicular to gravity. Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
+Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant
+strain limiting layer (TR-SLL) and integrated it to handed shearing auxetics to fabricate a soft gripper.
+I utilized FEA simulations to conduct a parametric design study and determine the optimal TR-SLL configuration.
+The TR-SLL minimizes out-of-plane bending while preserving the gripper's in-plane compliance and flexibility.
+The resulting TR-SLL-integrated HSA gripper lifted a payload of over 1 kg (pinch grasp), and 5 kg when loaded through the TR-SLL element.
+We achieved a peak pinch force of 5.8 N, and a peak planar caging force of 14.5 N, a significant capacity for a soft gripper lifting objects perpendicular to gravity.
+
+Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
 
 <div style="text-align: center; margin: 20px 0;">
 <video width="70%" autoplay loop muted playsinline>
   <source src="projects/HSA-Gripper-Lifting.mp4" type="video/mp4">
 </video>
 <p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
-<em>HSA Gripper lifting objects from the YCB object dataset, to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</em>
+<em>HSA Gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</em>
 </p>
 </div>
 
-*This work was supported by the NSF, Murdock Charitable Trust, and the Office of Naval Research (ONR).*
+*This work was supported by the NSF, the Murdock Charitable Trust, and the Office of Naval Research (ONR).*
 
 <hr>
 
@@ -51,7 +59,7 @@ The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload o
 <div style="text-align: center; margin: 20px 0;">
 ![](projects/parallel-jaw-lowres.png){width=80%}
 <p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
-<em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell Mechanism used for gripper actuation.
+<em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell mechanism used for gripper actuation.
 </em>
 </p>
 </div>
@@ -62,7 +70,7 @@ a blackberry proxy that simulates real fruit properties. This mechanically-opera
 collection, replicating soft fruit grasping conditions to train robots on detecting berry maturity and applying the correct
 grasp pressure. Unlike conventional parallel-jaw grippers that rely on two independent motors and linear rails, this
 design uses a mirrored Scott-Russell linkage driven by a single linear actuator, reducing mechanical complexity and cost.
-Hence, the mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
+The mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
 an open direction for future work.
 
 *This work was supported by the National Science Foundation (NSF).*
@@ -82,7 +90,9 @@ an open direction for future work.
 Expanding on the previous work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
 and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
 payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform
-tasks like pipe inspection, and underwater docking due to its compliance. Article: [arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
+tasks such as pipe inspection and underwater docking due to its compliance.
+
+Article: [arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
 
 *This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).*
 
