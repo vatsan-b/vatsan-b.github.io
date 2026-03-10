@@ -10,10 +10,12 @@ title: "Research"
 ![](projects/bravo-gripper.png){width=70%}
 <p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
 <em>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right).
-Right: Assembly of the prototype.modified
+Right: Assembly of the prototype.
 </em>
 </p>
 </div>
+
+<div style="text-align: justify;">
 
 Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during underwater
@@ -21,7 +23,7 @@ operations, and can also be used to train slip detection classifiers to assist R
 that allows flexible barometric sensors to be mounted using mechanical fasteners, enabling data collection to control slip parameters
 and simulate subsea conditions. Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
-*This work was supported by the Office of Naval Research (ONR)*
+*This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense*
 
 <hr>
 
@@ -44,17 +46,30 @@ The resulting TR-SLL-integrated HSA gripper demonstrated a pinch grasp payload o
 
 <hr>
 
-### Parallel-Jaw Gripper 
+### Parallel-Jaw Gripper for Learning Soft Fruit Picking
 
-Project Description and Media
+<div style="text-align: center; margin: 20px 0;">
+![](projects/parallel-jaw-lowres.png){width=80%}
+<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
+<em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell Mechanism used for gripper actuation.
+</em>
+</p>
+</div>
 
+Harvesting soft fruits like blackberries requires precise grasp control — too much force damages the fruit, too little causes
+it to slip. To study this, I built a sensorized parallel-jaw gripper integrated with tactile sensors, designed to work with
+a blackberry proxy that simulates real fruit properties. This mechanically-operated gripper allows human-controlled data
+collection, replicating soft fruit grasping conditions to train robots on detecting berry maturity and applying the correct
+grasp pressure. Unlike conventional parallel-jaw grippers that rely on two independent motors and linear rails, this
+design uses a mirrored Scott-Russell linkage driven by a single linear actuator, reducing mechanical complexity and cost.
+Hence, the mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
+an open direction for future work.
 
 *This work was supported by the National Science Foundation (NSF).*
 
 <hr>
 
 ### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm
-
 <div style="text-align: center; margin: 20px 0;">
 <video width="70%" autoplay loop muted playsinline>
   <source src="projects/HSA-Arm-Lifting.mp4" type="video/mp4">
