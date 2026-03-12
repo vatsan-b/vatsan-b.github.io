@@ -4,7 +4,7 @@ title: "Research"
 
 <div style="max-width: 1200px; margin: 40px auto;">
 
-### Flexible Sensor-Integrated Bravo End Effector for Underwater Manipulation
+### Flexible Sensor-Integrated End Effector for Underwater Manipulation
 
 <div style="text-align: center; margin: 20px 0;">
 ![](projects/bravo-gripper.png){width=70%}
@@ -26,7 +26,7 @@ slip characterization that simulated conditions that occur during underwater gra
 
 Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
-*This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense*
+<p class="funding">This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense</p>
 
 <hr>
 
@@ -50,7 +50,7 @@ Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
 </p>
 </div>
 
-*This work was supported by the NSF, the Murdock Charitable Trust, and the Office of Naval Research (ONR).*
+<p class="funding">This work was supported by the NSF, the Murdock Charitable Trust, and the Office of Naval Research (ONR).<p>
 
 <hr>
 
@@ -73,7 +73,7 @@ design uses a mirrored Scott-Russell linkage driven by a single linear actuator,
 The mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
 an open direction for future work.
 
-*This work was supported by the National Science Foundation (NSF).*
+<p class="funding">This work was supported by the National Science Foundation (NSF).<p>
 
 <hr>
 
@@ -94,7 +94,7 @@ tasks such as pipe inspection and underwater docking due to its compliance.
 
 Article: [arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
 
-*This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).*
+<p class="funding">This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).<p>
 
 <hr>
 

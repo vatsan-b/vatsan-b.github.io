@@ -30,7 +30,7 @@ Outside of work, I am a virtual pilot and a hobbyist photographer.
 ## Skills
 
 **Design & Fabrication**<br>
-CAD Modeling; Rapid prototyping; 3D printing: Fused Deposition Modeling (FDM), Stereolithography (SLA), Material Jetting; CNC<br>
+CAD Modeling; Rapid prototyping; 3D printing: Fused Deposition Modeling (FDM), Stereolithography (SLA), Material Jetting; Silicone Casting; CNC<br>
 *Software: SolidWorks, Autodesk Fusion 360, Autodesk Inventor (to some extent)*<br>
 *Machines: Prusa FDM Printers, Carbon M1 SLA Printer, Stratasys J750, Bantam Desktop CNC*
 
