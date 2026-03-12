@@ -15,6 +15,8 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
+      - href: mentoring.qmd
+        text: Mentoring
       - href: life-outside-research.qmd
         text: Life Outside Work
       - href: contact.qmd
@@ -22,7 +24,9 @@ website:
 
 format:
   html:
-    theme: [flatly, custom.scss]
+    theme:
+      light: [flatly, custom-light.scss]
+      dark: [darkly, custom-dark.scss]
     css: styles.css
     html-math-method: katex
     include-in-header:

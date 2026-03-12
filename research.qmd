@@ -22,7 +22,9 @@ insufficient to assess grasp stability. Tactile sensors address this by providin
 operations, and can also be used to train slip detection classifiers to assist ROV operators. I developed a modified bravo end effector
 that allows flexible barometric sensors to be mounted using mechanical fasteners, enabling data collection to control slip parameters
 and simulate subsea conditions. In addition to this, we developed a data collection procedure to perform 
-slip characterization that simulated conditions that occur during underwater grasping.
+slip characterization that simulated conditions that occur during underwater grasping. I also developed a
+[PyVista](https://pyvista.org/){target="_blank"}-based 3D visualizer that provides real-time state of the gripper, utilizing
+a time-of-flight sensor to measure finger position.
 
 Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
@@ -50,7 +52,7 @@ Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
 </p>
 </div>
 
-<p class="funding">This work was supported by the NSF, the Murdock Charitable Trust, and the Office of Naval Research (ONR).<p>
+<p class="funding">This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).<p>
 
 <hr>
 

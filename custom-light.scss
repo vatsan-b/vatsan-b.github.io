@@ -1,0 +1,24 @@
+/*-- scss:uses --*/
+@import url('https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css');
+
+/*-- scss:uses --*/
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+
+
+
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Computer Modern Serif", serif;
+$headings-font-family: "Computer Modern Serif", serif;
+
+// $font-family-sans-serif: "Computer Modern", sans-serif;
+// $headings-font-family: "Computer Modern", sans-serif;
+
+// Colors
+$navbar-bg: #fffffff0;        // navbar background
+// $navbar-bg: #C6DAE7;     // navbar background
+$navbar-fg: rgb(0, 0, 0);        // navbar text
+$navbar-active-color: #ffffff; // highlighted/active nav item
+$link-color: #D3832B;       // link color
+$body-color: #2b2b2b;       // body text

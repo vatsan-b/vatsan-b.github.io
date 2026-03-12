@@ -21,7 +21,7 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 I am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots. 
 My work sits at the intersection of materials, mechanical design and robotics.
 
-I have a graduate degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my undergrad at SRM Institute of Science and Technology in Chennai, India.
+I have a Master of Science ([MS]{.slanted}) degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my Bachelor of Technology ([B. Tech.]{.slanted}) in Chemical Engineering at SRM Institute of Science and Technology, Chennai, India.
 
 Outside of work, I am a virtual pilot and a hobbyist photographer.
 
@@ -31,13 +31,13 @@ Outside of work, I am a virtual pilot and a hobbyist photographer.
 
 **Design & Fabrication**<br>
 CAD Modeling; Rapid prototyping; 3D printing: Fused Deposition Modeling (FDM), Stereolithography (SLA), Material Jetting; Silicone Casting; CNC<br>
-*Software: SolidWorks, Autodesk Fusion 360, Autodesk Inventor (to some extent)*<br>
-*Machines: Prusa FDM Printers, Carbon M1 SLA Printer, Stratasys J750, Bantam Desktop CNC*
+[Software: SolidWorks, Autodesk Fusion 360, Autodesk Inventor (to some extent)]{.slanted}<br>
+[Machines: Prusa FDM Printers, Carbon M1 SLA Printer, Stratasys J750, Bantam Desktop CNC]{.slanted}
 
 **Testing & Analysis**<br>
 Finite Element Analysis (FEA); Material Characterization<br>
-*Software: Ansys Mechanical, MATLAB, Ansys Fluent (CFD) - fundamental fluid flow analysis*<br>
-*Testing: Instron Universal Testing System*
+[Software: Ansys Mechanical, MATLAB, Ansys Fluent (CFD) - fundamental fluid flow analysis]{.slanted}<br>
+[Testing: Instron Universal Testing System]{.slanted}
 
 **Programming**<br>
 Python
@@ -45,6 +45,19 @@ Python
 **Research**<br>
 Experiment Design, Scientific and Technical Writing, Presentation
 
+<div style="display: flex; align-items: center; justify-content: center; gap: 100px; margin: 60px auto; max-width: 1200px; flex-wrap: wrap;">
+
+<a href="https://www.washington.edu" target="_blank">
+<img src="./logos/uw.png" style="height: 60px; opacity: 1.0;">
+</a>
+
+<a href="https://oregonstate.edu" target="_blank">
+<img src="./logos/osu.png" style="height: 60px; opacity: 1.0;">
+</a>
+
 </div>
 
 </div>
+
+</div>
+
