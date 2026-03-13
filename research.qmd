@@ -2,26 +2,15 @@
 title: "Research"
 ---
 
-<div style="max-width: 1200px; margin: 40px auto;">
+<div style="max-width: 1200px; margin: 40px auto; text-align: justify;">
 
 ### Flexible Sensor-Integrated End Effector for Underwater Manipulation
-
-<div style="text-align: center; margin: 20px 0;">
-![](projects/bravo-gripper.png){width=70%}
-<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
-<em>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right).
-Right: Assembly of the prototype.
-</em>
-</p>
-</div>
-
-<div style="text-align: justify;">
 
 Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during underwater
 operations, and can also be used to train slip detection classifiers to assist ROV operators. I developed a modified bravo end effector
 that allows flexible barometric sensors to be mounted using mechanical fasteners, enabling data collection to control slip parameters
-and simulate subsea conditions. In addition to this, we developed a data collection procedure to perform 
+and simulate subsea conditions. In addition to this, we developed a data collection procedure to perform
 slip characterization that simulated conditions that occur during underwater grasping. I also developed a
 [PyVista](https://pyvista.org/){target="_blank"}-based 3D visualizer that provides real-time state of the gripper, utilizing
 a time-of-flight sensor to measure finger position.
@@ -29,6 +18,11 @@ a time-of-flight sensor to measure finger position.
 Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
 <p class="funding">This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense</p>
+
+<div style="text-align: center; margin: 20px 0;">
+![](projects/bravo-gripper.png){width=70%}
+<p class="img-caption"><em>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.</em></p>
+</div>
 
 <hr>
 
@@ -43,28 +37,18 @@ We achieved a peak pinch force of 5.8 N, and a peak planar caging force of 14.5 
 
 Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
 
+<p class="funding">This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).</p>
+
 <div style="text-align: center; margin: 20px 0;">
 <video width="70%" autoplay loop muted playsinline>
   <source src="projects/HSA-Gripper-Lifting.mp4" type="video/mp4">
 </video>
-<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
-<em>HSA Gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</em>
-</p>
+<p class="img-caption"><em>HSA Gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</em></p>
 </div>
-
-<p class="funding">This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).<p>
 
 <hr>
 
 ### Parallel-Jaw Gripper for Learning Soft Fruit Picking
-
-<div style="text-align: center; margin: 20px 0;">
-![](projects/parallel-jaw-lowres.png){width=80%}
-<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
-<em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell mechanism used for gripper actuation.
-</em>
-</p>
-</div>
 
 Harvesting soft fruits like blackberries requires precise grasp control — too much force damages the fruit, too little causes
 it to slip. To study this, I built a sensorized parallel-jaw gripper integrated with tactile sensors, designed to work with
@@ -75,19 +59,16 @@ design uses a mirrored Scott-Russell linkage driven by a single linear actuator,
 The mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
 an open direction for future work.
 
-<p class="funding">This work was supported by the National Science Foundation (NSF).<p>
+<p class="funding">This work was supported by the National Science Foundation (NSF).</p>
+
+<div style="text-align: center; margin: 20px 0;">
+![](projects/parallel-jaw-lowres.png){width=80%}
+<p class="img-caption"><em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell mechanism used for gripper actuation.</em></p>
+</div>
 
 <hr>
 
 ### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm
-<div style="text-align: center; margin: 20px 0;">
-<video width="70%" autoplay loop muted playsinline>
-  <source src="projects/HSA-Arm-Lifting.mp4" type="video/mp4">
-</video>
-<p style="font-size: 0.75rem; color: gray; margin-top: 8px;">
-<em>Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight</em>
-</p>
-</div>
 
 Expanding on the previous work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
 and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
@@ -96,7 +77,14 @@ tasks such as pipe inspection and underwater docking due to its compliance.
 
 Article: [arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
 
-<p class="funding">This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).<p>
+<p class="funding">This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).</p>
+
+<div style="text-align: center; margin: 20px 0;">
+<video width="70%" autoplay loop muted playsinline>
+  <source src="projects/HSA-Arm-Lifting.mp4" type="video/mp4">
+</video>
+<p class="img-caption"><em>Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight</em></p>
+</div>
 
 <hr>
 

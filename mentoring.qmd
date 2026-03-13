@@ -2,12 +2,16 @@
 title: "Mentoring"
 ---
 
-I have had the opportunity to mentor high school interns and undergraduate students on research projects in mechanical design, CAD,
+<div style="max-width: 1200px; margin: 40px auto;">
+
+I have had the opportunity to mentor high school interns and undergraduate students in mechanical design, CAD,
 3D printing / digital fabrication, and robotics. This included hands-on training on the Prusa, Carbon M1, and Stratasys J750 3D printers,
 Instron material testing system, as well as design for additive manufacturing and Python programming.
 
-**Yusef (Joe) Torky** - High School Intern, Transformative Robotics Lab, University of Washington -- Summer 2022<br>
+**Yusef (Joe) Torky** - High School Intern, Transformative Robotics Lab, University of Washington — Summer 2022
 
-**Nathan Zhang** - High School Intern, Transformative Robotics Lab, University of Washington -- Summer 2022<br>
+**Nathan Zhang** - High School Intern, Transformative Robotics Lab, University of Washington — Summer 2022
 
-**Natalie Paskett** - Bachelor of Applied Science, Engineering, Oregon State University -- Winter 2025<br>
+**Natalie Paskett** - Bachelor of Applied Science, Engineering, Oregon State University — Winter 2025
+
+</div>

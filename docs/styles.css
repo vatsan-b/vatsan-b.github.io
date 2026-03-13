@@ -1,22 +1,31 @@
-/*-- scss:uses --*/
+/* ── Fonts ─────────────────────────────────────────────── */
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap'); */
-@import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/serif.min.css');
+/* @import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/serif.min.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* --main-font: "Source Sans Pro", sans-serif; */
+  /* --main-font: "Computer Modern Serif", serif; */
+  --main-font: "Source Serif Pro", serif;
+  /* --main-font: "EB Garamond", serif; */
+}
 
 body, p, h1, h2, h3, h4, h5, h6 {
-  font-family: "Computer Modern Serif", serif !important;
+  font-family: var(--main-font) !important;
 }
 
 h1, h2, h3 {
   font-variant-ligatures: none;
 }
 
+/* ── Layout ─────────────────────────────────────────────── */
 #quarto-content {
   max-width: 1400px !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
 }
 
-.page-columns {
+.page-columns, .quarto-container, .container {
   max-width: 1400px !important;
 }
 
@@ -24,35 +33,34 @@ h1, h2, h3 {
   max-width: 100% !important;
 }
 
-.quarto-container {
-  max-width: 1400px !important;
-}
-
-.container {
-  max-width: 1400px !important;
-}
-
-.panel-tabset .tab-content {
-  border: none !important;
-  border-top: none !important;
-}
-
-.panel-tabset > .nav-tabs {
-  border-bottom: none !important;
-}
-
+/* ── Tabset ─────────────────────────────────────────────── */
+.panel-tabset .tab-content,
+.panel-tabset > .nav-tabs,
 .tab-content {
   border: none !important;
   border-top: none !important;
   box-shadow: none !important;
 }
 
+/* ── Components ─────────────────────────────────────────── */
 .funding {
-  font-family: "Computer Modern Serif", serif;
-  font-size: 0.95rem;
+  font-family: var(--main-font);
+  font-size: 0.85rem;
   font-style: normal;
+  transform: skewX(-8deg);
+  display: inline-block;
 }
 
+p em, figcaption em {
+  transform: none;
+  display: inline;
+}
+
+.slanted {
+  font-style: normal;
+  display: inline-block;
+  transform: skewX(-8deg);
+}
 
 .quarto-color-scheme-toggle {
   text-decoration: none !important;
@@ -61,11 +69,26 @@ h1, h2, h3 {
 .quarto-color-scheme-toggle::after {
   content: " Dark Theme";
   font-size: 1.0rem;
-  font-family: "Computer Modern Serif", serif;
+  font-family: var(--main-font);
 }
 
-.slanted {
-  font-style: normal;
-  display: inline-block;
-  transform: skewX(-8deg);
+/* ── Captions ───────────────────────────────────────────── */
+.img-caption {
+  font-size: 0.80rem;
+  margin-top: 8px;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.quarto-dark .img-caption {
+  color: #e8e8e8 !important;
+}
+
+figcaption, .caption {
+  color: #2b2b2b;
+}
+
+.quarto-dark figcaption,
+.quarto-dark .caption {
+  color: #e8e8e8 !important;
 }

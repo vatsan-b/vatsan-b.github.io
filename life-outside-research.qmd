@@ -4,7 +4,7 @@ title: "Life Outside Work"
 
 <div style="max-width: 1200px; margin: 40px auto;">
 
-I am a hobbyist photographer, a virtual pilot, and an air traffic controller on [VATSIM](https://www.vatsim.net){target="_blank"}.
+I am a hobbyist photographer, a virtual pilot, and an air traffic controller on [VATSIM](https://www.vatsim.net){target="_blank"}
 
 <div id="photo-gallery" style="columns: 2; column-gap: 15px; max-width: 900px; margin: auto;">
 
@@ -12,119 +12,121 @@ I am a hobbyist photographer, a virtual pilot, and an air traffic controller on 
 <a href="photos/PXL_20220323_021751755.jpg" target="_blank">
 <img src="photos/PXL_20220323_021751755.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Sunset panoramic view of downtown Seattle with Mt. Rainier in the background</figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Sunset panoramic view of downtown Seattle with Mt. Rainier in the background</figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0; column-span: all;">
 <a href="photos/PXL_20211226_185354224.jpg" target="_blank">
 <img src="photos/PXL_20211226_185354224.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">The Quad at the University of Washington</figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">The Quad at the University of Washington</figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
 <a href="photos/IMG_1405.jpg" target="_blank">
 <img src="photos/IMG_1405.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Coal Creek, Washington</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20220731_064619756.NIGHT~2.jpg" target="_blank">
-<img src="photos/PXL_20220731_064619756.NIGHT~2.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20221023_004339139.jpg" target="_blank">
-<img src="photos/PXL_20221023_004339139.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">The Space Needle, Seattle</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20240101_221804405.jpg" target="_blank">
-<img src="photos/PXL_20240101_221804405.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Drumheller Foundation at the UW</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20240418_010033230~2.jpg" target="_blank">
-<img src="photos/PXL_20240418_010033230~2.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg" target="_blank">
-<img src="photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Snoqualmie Falls, Washington</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20250514_231324573.jpg" target="_blank">
-<img src="photos/PXL_20250514_231324573.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20250514_231425261~2.jpg" target="_blank">
-<img src="photos/PXL_20250514_231425261~2.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Hudson Bay</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Coal Creek, Washington</figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
 <a href="photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg" target="_blank">
 <img src="photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;">Golden Gardens Park, Washington</figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Golden Gardens Park, Washington</figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg" style="width:100%;" loading="lazy">
+<a href="photos/PXL_20221023_004339139.jpg" target="_blank">
+<img src="photos/PXL_20221023_004339139.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">The Space Needle, Seattle</figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg" style="width:100%;" loading="lazy">
+<a href="photos/PXL_20220731_064619756.NIGHT~2.jpg" target="_blank">
+<img src="photos/PXL_20220731_064619756.NIGHT~2.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg" style="width:100%;" loading="lazy">
+<a href="photos/PXL_20240418_010033230~2.jpg" target="_blank">
+<img src="photos/PXL_20240418_010033230~2.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg" style="width:100%;" loading="lazy">
+<a href="photos/PXL_20250514_231324573.jpg" target="_blank">
+<img src="photos/PXL_20250514_231324573.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
 </figure>
 
 <figure style="break-inside: avoid; margin: 0 0 15px 0;">
 <a href="photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg" target="_blank">
 <img src="photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg" style="width:100%;" loading="lazy">
 </a>
-<figcaption style="text-align:center; color:gray; font-size:0.9rem;"></figcaption>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
 </figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg" target="_blank">
+<img src="photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Snoqualmie Falls, Washington</figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/PXL_20250514_231425261~2.jpg" target="_blank">
+<img src="photos/PXL_20250514_231425261~2.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Hudson Bay</figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/PXL_20240101_221804405.jpg" target="_blank">
+<img src="photos/PXL_20240101_221804405.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Drumheller Foundation at the UW</figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg" target="_blank">
+<img src="photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg" target="_blank">
+<img src="photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg" target="_blank">
+<img src="photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg" target="_blank">
+<img src="photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
+</figure>
+
+<figure style="break-inside: avoid; margin: 0 0 15px 0;">
+<a href="photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg" target="_blank">
+<img src="photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg" style="width:100%;" loading="lazy">
+</a>
+<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
+</figure>
+
+</div>
 
 </div>

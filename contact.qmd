@@ -7,18 +7,16 @@ format:
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 ---
 
-<div style="max-width: 600px; margin: 40px auto;">
+<div style="max-width: 600px; margin: 60px auto; text-align: left;">
 
-<br>
+<p style="margin: 16px 0;"><i class="fa-solid fa-envelope" style="width:24px;"></i> &nbsp; [sri.vatsan0307@gmail.com](mailto:sri.vatsan0307@gmail.com){target="_blank"}</p>
 
-<p><i class="fa-solid fa-envelope" style="width:20px;"></i> &nbsp; [sri.vatsan0307@gmail.com](mailto:sri.vatsan0307@gmail.com){target="_blank"}</p>
+<p style="margin: 16px 0;"><i class="fa-brands fa-linkedin" style="width:24px;"></i> &nbsp; [LinkedIn](https://linkedin.com/in/vatsan-balaji){target="_blank"}</p>
 
-<p><i class="fa-brands fa-linkedin" style="width:20px;"></i> &nbsp; [linkedin.com/in/vatsan-balaji](https://linkedin.com/in/vatsan-balaji){target="_blank"}</p>
+<p style="margin: 16px 0;"><i class="fa-brands fa-google-scholar" style="width:24px;"></i> &nbsp; [Google Scholar](https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en){target="_blank"}</p>
 
-<p><i class="fa-brands fa-google-scholar" style="width:20px;"></i> &nbsp; [Google Scholar](https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en){target="_blank"}</p>
+<p style="margin: 16px 0;"><i class="fa-brands fa-github" style="width:24px;"></i> &nbsp; [GitHub](https://github.com/vatsan-b){target="_blank"}</p>
 
-<p><i class="fa-brands fa-github" style="width:20px;"></i> &nbsp; [github.com/vatsan-b](https://github.com/vatsan-b){target="_blank"}</p>
-
-<p><i class="fa-brands fa-unsplash" style="width:20px;"></i> &nbsp; [Unsplash @Srivatsan](https://unsplash.com/@srivatsan){target="_blank"}</p>
+<p style="margin: 16px 0;"><i class="fa-brands fa-unsplash" style="width:24px;"></i> &nbsp; [Unsplash](https://unsplash.com/@srivatsan){target="_blank"}</p>
 
 </div>

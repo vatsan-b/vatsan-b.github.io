@@ -1,13 +1,29 @@
+// /*-- scss:uses --*/
+// @import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/serif.min.css');
+
 /*-- scss:uses --*/
-@import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/serif.min.css');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+/*-- scss:uses --*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+
+
+// /*-- scss:defaults --*/
+// $font-family-sans-serif: "Computer Modern Serif", serif;
+// $headings-font-family: "Computer Modern Serif", serif;
 
 /*-- scss:defaults --*/
-$font-family-sans-serif: "Computer Modern Serif", serif;
-$headings-font-family: "Computer Modern Serif", serif;
+// $font-family-sans-serif: "Source Sans Pro", sans-serif;
+// $headings-font-family: "Source Sans Pro", sans-serif;
 
-$navbar-bg: #121212f3;
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Source Serif Pro", serif;
+$headings-font-family: "Source Serif Pro", serif;
+
+$navbar-bg: #121212F2;
 $navbar-fg: #ffffff;
-$navbar-active-color: #D3832B;
-$link-color: #FFB500  ;
-$body-color: #e0e0e0;
+$navbar-active-color: #FDD26E;
+$link-color: #FDD26E  ;
+$body-color: #e8e8e8;
 $body-bg: #121212;

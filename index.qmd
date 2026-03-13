@@ -15,7 +15,7 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 
 </div>
 
-<div style="max-width: 1400px; margin: 40px auto; text-align: justify;">
+<div style="max-width: 1100px; margin: 50px auto; text-align: justify;">
 
 
 I am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots. 
@@ -45,14 +45,14 @@ Python
 **Research**<br>
 Experiment Design, Scientific and Technical Writing, Presentation
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 100px; margin: 60px auto; max-width: 1200px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 120px; margin: 60px auto; max-width: 1200px; flex-wrap: wrap;">
 
 <a href="https://www.washington.edu" target="_blank">
-<img src="./logos/uw.png" style="height: 60px; opacity: 1.0;">
+<img src="./logos/uw.png" style="height: 90px; opacity: 1.0;">
 </a>
 
 <a href="https://oregonstate.edu" target="_blank">
-<img src="./logos/osu.png" style="height: 60px; opacity: 1.0;">
+<img src="./logos/osu.png" style="height: 90px; opacity: 1.0;">
 </a>
 
 </div>
