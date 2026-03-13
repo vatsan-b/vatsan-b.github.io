@@ -20,7 +20,7 @@ Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_b
 <p class="funding">This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense</p>
 
 <div style="text-align: center; margin: 20px 0;">
-![](projects/bravo-gripper.png){width=70%}
+<img src="projects/bravo-gripper.png" style="width:70%;">
 <p class="img-caption"><em>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.</em></p>
 </div>
 
@@ -29,8 +29,8 @@ Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_b
 ### Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper
 
 Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant
-strain limiting layer (TR-SLL) and integrated it to handed shearing auxetics to fabricate a soft gripper.
-I utilized FEA simulations to conduct a parametric design study and determine the optimal TR-SLL configuration.
+strain limiting layer (TR-SLL) and integrated it to [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"}
+to fabricate a soft gripper. I utilized FEA simulations to conduct a parametric design study and determine the optimal TR-SLL configuration.
 The TR-SLL minimizes out-of-plane bending while preserving the gripper's in-plane compliance and flexibility.
 The resulting TR-SLL-integrated HSA gripper lifted a payload of over 1 kg (pinch grasp), and 5 kg when loaded through the TR-SLL element.
 We achieved a peak pinch force of 5.8 N, and a peak planar caging force of 14.5 N, a significant capacity for a soft gripper lifting objects perpendicular to gravity.
@@ -55,15 +55,15 @@ it to slip. To study this, I built a sensorized parallel-jaw gripper integrated 
 a blackberry proxy that simulates real fruit properties. This mechanically-operated gripper allows human-controlled data
 collection, replicating soft fruit grasping conditions to train robots on detecting berry maturity and applying the correct
 grasp pressure. Unlike conventional parallel-jaw grippers that rely on two independent motors and linear rails, this
-design uses a mirrored Scott-Russell linkage driven by a single linear actuator, reducing mechanical complexity and cost.
+design uses a mirrored [Scott-Russell linkage](https://en.wikipedia.org/wiki/Scott_Russell_linkage){target="_blank"} driven by a single linear actuator, reducing mechanical complexity and cost.
 The mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
 an open direction for future work.
 
 <p class="funding">This work was supported by the National Science Foundation (NSF).</p>
 
 <div style="text-align: center; margin: 20px 0;">
-![](projects/parallel-jaw-lowres.png){width=80%}
-<p class="img-caption"><em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell mechanism used for gripper actuation.</em></p>
+<img src="projects/parallel-jaw-lowres.png" style="width:80%;">
+<p class="img-caption"><em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.</em></p>
 </div>
 
 <hr>
