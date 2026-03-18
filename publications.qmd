@@ -6,14 +6,14 @@ title: "Publications"
 
 1. **Torque Responsive Metamaterials Enable High Payload Soft Robot Arms**<br>
 Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.<br>
-<span style="color: gray;">Under Review · IROS 2026</span><br>
-[arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
+<span style="color: gray;">Under Review • IROS 2026</span><br>
+[arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
 
 2. **Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**<br>
-Good, I.\*, Balaji, S.\*, Lipton, J. I. · [*Co-first Authors]{.slanted}<br>
+Good, I.\*, Balaji, S.\*, Lipton, J. I. • [*Co-first Authors]{.slanted}<br>
 [2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)]{.slanted}<span style="color: gray;"><br>
 Accepted</span><br>
-IEEE Xplore (Will be available soon) · [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
+IEEE Xplore (Will be available soon) • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}
 
 3. **A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**<br>
 VanAtter, C., Balaji, S., Davidson, J. R.<br>
@@ -23,13 +23,13 @@ IEEE Xplore (Will be available soon)
 
 4. **Flexible Barometric Tactile Sensors for Robotic Grasping Applications**<br>
 Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.<br>
-[2025 IEEE SENSORS · Pages 1–4]{.slanted}<br>
+[2025 IEEE SENSORS • Pages 1–4]{.slanted}<br>
 [DOI (IEEE Xplore)](https://doi.org/10.1109/SENSORS59705.2025.11330401){target="_blank"}
 
 5. **Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer**<br>
 Good, I., Balaji, S., Lipton, J. I.<br>
-[2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) · Pages 235–242]{.slanted}<br>
-[DOI (IEEE Xplore)](https://doi.org/10.1109/RoboSoft60065.2024.10521982){target="_blank"} · [arXiv](https://arxiv.org/abs/2311.02454){target="_blank"}
+[2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) • Pages 235–242]{.slanted}<br>
+[DOI (IEEE Xplore)](https://doi.org/10.1109/RoboSoft60065.2024.10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}
 
 6. **Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology**<br>
 Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.<br>

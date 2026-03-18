@@ -24,7 +24,7 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 <div style="max-width: 1100px; margin: 50px auto; text-align: justify;">
 
 
-I am a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I am currently developing hardware for underwater robots. 
+I was a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for underwater robots. 
 My work sits at the intersection of materials, mechanical design and robotics.
 
 I have a Master of Science ([MS]{.slanted}) degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my Bachelor of Technology ([B. Tech.]{.slanted}) in Chemical Engineering at SRM Institute of Science and Technology, Chennai, India.

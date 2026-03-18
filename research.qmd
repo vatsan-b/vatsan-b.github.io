@@ -15,7 +15,7 @@ slip characterization that simulated conditions that occur during underwater gra
 [PyVista](https://pyvista.org/){target="_blank"}-based 3D visualizer that provides real-time state of the gripper, utilizing
 a time-of-flight sensor to measure finger position.
 
-Article: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
+Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
 <p class="funding">This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense</p>
 
@@ -35,7 +35,7 @@ The TR-SLL minimizes out-of-plane bending while preserving the gripper's in-plan
 The resulting TR-SLL-integrated HSA gripper lifted a payload of over 1 kg (pinch grasp), and 5 kg when loaded through the TR-SLL element.
 We achieved a peak pinch force of 5.8 N, and a peak planar caging force of 14.5 N, a significant capacity for a soft gripper lifting objects perpendicular to gravity.
 
-Article: [arXiv](https://arxiv.org/abs/2412.07976){target="_blank"}
+Read: [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"} • IEEE Xplore (Will be available soon)
 
 <p class="funding">This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).</p>
 
@@ -59,6 +59,12 @@ design uses a mirrored [Scott-Russell linkage](https://en.wikipedia.org/wiki/Sco
 The mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
 an open direction for future work.
 
+Read: IEEE Xplore (Will be available soon)
+
+---
+# Read: [IEEE Xplore](){target="_blank"}
+---
+
 <p class="funding">This work was supported by the National Science Foundation (NSF).</p>
 
 <div style="text-align: center; margin: 20px 0;">
@@ -75,7 +81,7 @@ and torsionally-rigid shafts (a different kind of metamaterial). This arm does n
 payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform
 tasks such as pipe inspection and underwater docking due to its compliance.
 
-Article: [arXiv](https://arxiv.org/abs/2501.09819){target="_blank"}
+Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"} • IEEE Xplore (Will be available soon)
 
 <p class="funding">This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).</p>
 
