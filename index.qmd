@@ -55,7 +55,7 @@ Experiment Design, Scientific and Technical Writing, Presentation
 
 <a href="https://www.washington.edu" target="_blank">
 <img src="./logos/uw-purple.png" class="light-mode-img" style="height: 90px;">
-<img src="./logos/uw-gold.png" class="dark-mode-img" style="height: 90px;">
+<img src="./logos/uw-white.png" class="dark-mode-img" style="height: 90px;">
 </a>
 
 <a href="https://oregonstate.edu" target="_blank">
