@@ -92,3 +92,11 @@ figcaption, .caption {
 .quarto-dark .caption {
   color: #e8e8e8 !important;
 }
+
+.quarto-dark .light-mode-img {
+  display: none;
+}
+
+.quarto-light .dark-mode-img {
+  display: none;
+}
