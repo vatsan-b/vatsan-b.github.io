@@ -5,6 +5,7 @@ project:
 website:
   title: "Srivatsan Balaji"
   favicon: gripper.png
+  google-analytics: "G-ZZG5RG98PM"
   navbar:
     left:
       - href: index.qmd
