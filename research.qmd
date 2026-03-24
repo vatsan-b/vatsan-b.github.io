@@ -94,4 +94,21 @@ Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"} • IE
 
 <hr>
 
+### Enhancing Pneumatic Network Actuators (Pneu-Net) using Additively-Manufactured Torsion-Resistant Strain Limiting Layers
+
+This work introduced 3D-printed torsion-resistant strain limiting layers, which were later integrated into HSA grippers
+(read above). Pneu-Nets are the primary form of soft robotic grippers, but a key limitation to their wider adoption is
+their inability to grasp significant payloads due to objects slipping out of grasps. They're primarily made up of silicone elastomers
+and lack a rigid skeleton to counteract twisting forces. We did overcome this limitation by introducing a torsionally-rigid strain limiting layer (TR-SLL). TR-SLL reduced out-of-plane deformations 
+by up to 97% compared to a benchmark Pneu-Net actuator from the [Soft Robotics Toolkit](https://softroboticstoolkit.com/actuators){target="_blank"}.
+
+Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}
+
+<p class="funding">This work was supported by the NSF, the Murdock Charitable Trust and the Office of Naval Research (ONR).</p>
+
+<div style="text-align: center; margin: 20px 0;">
+<img src="projects/TR-SLL_Lift_Hero.png" style="width:50%;">
+<p class="img-caption"><em>TR-SLL allow Pneu-Net actuators to lift payloads as large as 5 kg through skeletal loading. Tetrahedral elements provide minimal out-of-plane twists, while maintaining the actuator's in-plane performance.</em></p>
+</div>
+
 </div>
