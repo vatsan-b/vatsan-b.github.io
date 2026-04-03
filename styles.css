@@ -100,3 +100,46 @@ figcaption, .caption {
 .quarto-light .dark-mode-img {
   display: none;
 }
+
+a:has(.connect-card) {
+  display: flex;
+  align-items: stretch;
+  color: inherit !important;
+  margin: 12px 0;
+  text-decoration: none !important;
+}
+
+.connect-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px 24px;
+  margin: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: inherit !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  gap: 12px;
+}
+
+.connect-card:hover {
+  border-color: #D3832B;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.quarto-dark .connect-card {
+  border-color: #444444;
+}
+
+.quarto-dark .connect-card:hover {
+  border-color: #D3832B;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.08);
+}
+
+.connect-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

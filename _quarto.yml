@@ -19,7 +19,7 @@ website:
       - href: life-outside-research.qmd
         text: Life Outside Work
       - href: contact.qmd
-        text: Contact and Socials
+        text: Connect
 
 resources:
   - cv/

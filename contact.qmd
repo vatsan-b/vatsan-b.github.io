@@ -1,22 +1,39 @@
 ---
-title: "Contact and Socials"
-format:
-  html:
-    include-in-header:
-      text: |
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+title: "Connect"
 ---
 
-<div style="max-width: 600px; margin: 60px auto; text-align: left;">
+<div class="connect-page">
+<div style="max-width: 600px; width: 100%; margin: 60px auto;">
 
-<p style="margin: 16px 0;"><i class="fa-solid fa-envelope" style="width:24px;"></i> &nbsp; [sri.vatsan0307@gmail.com](mailto:sri.vatsan0307@gmail.com){target="_blank"}</p>
+<a href="mailto:sri.vatsan0307@gmail.com" target="_blank">
+<div class="connect-card">
+<i class="fa-solid fa-envelope"></i> &nbsp; sri.vatsan0307@gmail.com
+</div>
+</a>
 
-<p style="margin: 16px 0;"><i class="fa-brands fa-linkedin" style="width:24px;"></i> &nbsp; [LinkedIn](https://linkedin.com/in/vatsan-balaji){target="_blank"}</p>
+<a href="https://linkedin.com/in/vatsan-balaji" target="_blank">
+<div class="connect-card">
+<i class="fa-brands fa-linkedin"></i> &nbsp; LinkedIn
+</div>
+</a>
 
-<p style="margin: 16px 0;"><i class="fa-brands fa-google-scholar" style="width:24px;"></i> &nbsp; [Google Scholar](https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en){target="_blank"}</p>
+<a href="https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en" target="_blank">
+<div class="connect-card">
+<i class="fa-solid fa-graduation-cap"></i> &nbsp; Google Scholar
+</div>
+</a>
 
-<p style="margin: 16px 0;"><i class="fa-brands fa-github" style="width:24px;"></i> &nbsp; [GitHub](https://github.com/vatsan-b){target="_blank"}</p>
+<a href="https://github.com/vatsan-b" target="_blank">
+<div class="connect-card">
+<i class="fa-brands fa-github"></i> &nbsp; GitHub
+</div>
+</a>
 
-<p style="margin: 16px 0;"><i class="fa-brands fa-unsplash" style="width:24px;"></i> &nbsp; [Unsplash](https://unsplash.com/@srivatsan){target="_blank"}</p>
+<a href="https://unsplash.com/@srivatsan" target="_blank">
+<div class="connect-card">
+<i class="fa-brands fa-unsplash"></i> &nbsp; Unsplash
+</div>
+</a>
 
+</div>
 </div>

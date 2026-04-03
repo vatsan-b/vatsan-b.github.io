@@ -11,7 +11,7 @@ title: ""
 Research Engineer / Faculty Research Assistant <br>
 Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University
 
-*Interests: Materials and Soft Robotics*
+*Interests: Soft and Materials Robotics*
 
 <p>
 <a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;">
@@ -24,10 +24,11 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 <div style="max-width: 1100px; margin: 50px auto; text-align: justify;">
 
 
-I was a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for underwater robots. 
-My work sits at the intersection of materials, mechanical design and robotics.
+I was a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. 
+My work sits at the intersection of mechanical design, robotics, and materials.
 
-I have a Master of Science ([MS]{.slanted}) degree in Mechanical Engineering from the University of Washington, Seattle. Prior to that, I completed my Bachelor of Technology ([B. Tech.]{.slanted}) in Chemical Engineering at SRM Institute of Science and Technology, Chennai, India.
+I hold a Master of Science (MS) in Mechanical Engineering from the University of Washington, Seattle, where my work focused on materials robotics.
+I completed my bachelor's degree (B.Tech.) in Chemical Engineering at SRM Institute of Science and Technology, Chennai, India.
 
 Outside of work, I am a virtual pilot and a hobbyist photographer.
 
@@ -35,21 +36,32 @@ Outside of work, I am a virtual pilot and a hobbyist photographer.
 
 ## Skills
 
-**Design & Fabrication**<br>
-CAD Modeling; Rapid prototyping; 3D printing: Fused Deposition Modeling (FDM), Stereolithography (SLA), Material Jetting; Silicone Casting; CNC<br>
-[Software: SolidWorks, Autodesk Fusion 360, Autodesk Inventor (to some extent)]{.slanted}<br>
-[Machines: Prusa FDM Printers, Carbon M1 SLA Printer, Stratasys J750, Bantam Desktop CNC]{.slanted}
+**Design & Fabrication**
 
-**Testing & Analysis**<br>
-Finite Element Analysis (FEA); Material Characterization<br>
-[Software: Ansys Mechanical, MATLAB, Ansys Fluent (CFD) - fundamental fluid flow analysis]{.slanted}<br>
+CAD Modeling · Rapid Prototyping · 3D Printing: FDM, SLA, Material Jetting · Silicone Casting
+
+[Software: SolidWorks · Autodesk Fusion 360 · Autodesk Inventor]{.slanted}
+
+[Machines: Prusa FDM · Carbon M1 · Stratasys J750]{.slanted}
+
+**Testing & Analysis**
+
+Finite Element Analysis (FEA) · Material Characterization
+
+[Software: Ansys Mechanical · MATLAB · Ansys Fluent (CFD)]{.slanted}
+
 [Testing: Instron Universal Testing System]{.slanted}
 
-**Programming**<br>
+**Programming**
+
 Python
 
-**Research**<br>
-Experiment Design, Scientific and Technical Writing, Presentation
+**Research**
+
+Experiment Design · Scientific and Technical Writing · Presentation
+
+
+<!--  Logo Section
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 120px; margin: 60px auto; max-width: 1200px; flex-wrap: wrap;">
 
@@ -64,6 +76,7 @@ Experiment Design, Scientific and Technical Writing, Presentation
 </a>
 
 </div>
+-->
 
 </div>
 
