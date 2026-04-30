@@ -107,7 +107,7 @@ Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/10521982){target="_blan
 
 <div style="text-align: center; margin: 20px 0;">
 <img src="projects/TR-SLL_Lift_Hero.png" style="width:50%;">
-<p class="img-caption"><em>TR-SLL allow Pneu-Net actuators to lift payloads as large as 5 kg through skeletal loading. Tetrahedral elements provide minimal out-of-plane twists, while maintaining the actuator's in-plane performance.</em></p>
+<p class="img-caption"><em>TR-SLL allows Pneu-Net actuators to lift payloads as large as 5 kg through skeletal loading. They resist out-of-plane twists, while maintaining the actuator's in-plane performance.</em></p>
 </div>
 
 </div>

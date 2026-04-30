@@ -30,35 +30,37 @@ My work sits at the intersection of mechanical design, robotics, and materials.
 I hold a Master of Science (MS) in Mechanical Engineering from the University of Washington, Seattle, where my work focused on materials robotics.
 I completed my bachelor's degree (B.Tech.) in Chemical Engineering at SRM Institute of Science and Technology, Chennai, India.
 
-Outside of work, I am a virtual pilot and a hobbyist photographer.
+Outside of work, I am a virtual pilot and hobbyist photographer.
 
 <div style="max-width: 1400px; margin: 40px auto;">
 
 ## Skills
 
-**Design & Fabrication**
+**Mechanical Design & CAD**
 
-CAD Modeling · Rapid Prototyping · 3D Printing: FDM, SLA, Material Jetting · Silicone Casting
+CAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.
 
-[Software: SolidWorks · Autodesk Fusion 360 · Autodesk Inventor]{.slanted}
+**Additive Manufacturing**
 
-[Machines: Prusa FDM · Carbon M1 · Stratasys J750]{.slanted}
+FDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components. <br>
+Stereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail. <br>
+Material Jetting: Stratasys J750 for multi-material 3D printing. <br>
+Silicone Casting: Creating molds and elastomer components to fabricate soft robots.
 
-**Testing & Analysis**
+**Simulation & Analysis**
 
-Finite Element Analysis (FEA) · Material Characterization
-
-[Software: Ansys Mechanical · MATLAB · Ansys Fluent (CFD)]{.slanted}
-
-[Testing: Instron Universal Testing System]{.slanted}
+FEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies. <br>
+CFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels. <br>
+Material Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM's standard testing procedure.
 
 **Programming**
 
-Python
+MATLAB: Data processing and visualization, <br>
+Python: Building visualization tools for robotics feedback.
 
-**Research**
+**Research Communication**
 
-Experiment Design · Scientific and Technical Writing · Presentation
+Experiment Design · Scientific and Technical writing · Presentation
 
 
 <!--  Logo Section
