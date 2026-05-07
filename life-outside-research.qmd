@@ -4,7 +4,7 @@ title: "Life Outside Work"
 
 <div style="max-width: 1200px; margin: 40px auto;">
 
-I am a hobbyist photographer, virtual pilot, and S1 trainee air traffic controller on
+I am a hobbyist photographer, virtual pilot, and an S1 trainee air traffic controller on
 [VATSIM](https://www.vatsim.net){target="_blank"} - United States Division ([VATUSA](https://www.vatusa.net/){target="_blank"}).
 
 <hr>
