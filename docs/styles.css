@@ -97,11 +97,25 @@ figcaption, .caption {
   display: none;
 }
 
-/* ── Connect Cards ──────────────────────────────────────── */
+/* ── Connect Page ───────────────────────────────────────── */
 .connect-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.connect-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  scale: 1.1;
+  z-index: -1;
 }
 
 a:has(.connect-card) {
@@ -112,30 +126,30 @@ a:has(.connect-card) {
   text-decoration: none !important;
 }
 
-.connect-card {
+.connect-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
-  padding: 20px 24px;
-  border: 1px solid #e0e0e0;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #d0d0d0;
   border-radius: 8px;
-  font-size: 1.2rem;
-  color: inherit !important;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  gap: 12px;
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s;
 }
 
-.connect-card:hover {
-  border-color: #D3832B;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.connect-box:hover {
+  border-color: #888;
+  color: #333;
 }
 
-.quarto-dark .connect-card {
+.quarto-dark .connect-box {
   border-color: #444444;
 }
 
-.quarto-dark .connect-card:hover {
+.quarto-dark .connect-box:hover {
   border-color: #D3832B;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.08);
 }
