@@ -2,128 +2,45 @@
 title: "Life Outside Work"
 ---
 
-::: {style="max-width: 1200px; margin: 40px auto;"}
+```{ojs}
+//| echo: false
 
-I am a hobbyist photographer, virtual pilot, and S1-trainee air traffic controller on
-[VATSIM](https://www.vatsim.net){target="_blank"} - United States Division ([VATUSA](https://www.vatusa.net/){target="_blank"}).
+photos = [
+  { file: "photos/PXL_20220323_021751755.jpg",                      caption: "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background", span: true },
+  { file: "photos/PXL_20211226_185354224.jpg",                      caption: "The Quad at the University of Washington", span: true },
+  { file: "photos/IMG_1405.jpg",                                     caption: "Coal Creek, Washington" },
+  { file: "photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",       caption: "Golden Gardens Park, Washington" },
+  { file: "photos/PXL_20220731_064619756.NIGHT~2.jpg",              caption: "" },
+  { file: "photos/PXL_20240418_010033230~2.jpg",                    caption: "" },
+  { file: "photos/PXL_20250514_231324573.jpg",                      caption: "" },
+  { file: "photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg",       caption: "" },
+  { file: "photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", caption: "Snoqualmie Falls, Washington" },
+  { file: "photos/PXL_20250514_231425261~2.jpg",                    caption: "Hudson Bay" },
+  { file: "photos/PXL_20240101_221804405.jpg",                      caption: "Drumheller Fountain at the UW" },
+  { file: "photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",       caption: "" },
+  { file: "photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",       caption: "" },
+  { file: "photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg",       caption: "" },
+  { file: "photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",       caption: "" },
+  { file: "photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",       caption: "" },
+]
 
-<hr>
-
-A collection of my photos
-
-::: {#photo-gallery style="columns: 2; column-gap: 15px; max-width: 900px; margin: auto;"}
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0; column-span: all;">
-<a href="photos/PXL_20220323_021751755.jpg" target="_blank">
-<img src="photos/PXL_20220323_021751755.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Sunset panoramic view of downtown Seattle with Mt. Rainier in the background</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0; column-span: all;">
-<a href="photos/PXL_20211226_185354224.jpg" target="_blank">
-<img src="photos/PXL_20211226_185354224.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">The Quad at the University of Washington</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/IMG_1405.jpg" target="_blank">
-<img src="photos/IMG_1405.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Coal Creek, Washington</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Golden Gardens Park, Washington</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20220731_064619756.NIGHT~2.jpg" target="_blank">
-<img src="photos/PXL_20220731_064619756.NIGHT~2.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20240418_010033230~2.jpg" target="_blank">
-<img src="photos/PXL_20240418_010033230~2.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20250514_231324573.jpg" target="_blank">
-<img src="photos/PXL_20250514_231324573.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg" target="_blank">
-<img src="photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Snoqualmie Falls, Washington</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20250514_231425261~2.jpg" target="_blank">
-<img src="photos/PXL_20250514_231425261~2.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Hudson Bay</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/PXL_20240101_221804405.jpg" target="_blank">
-<img src="photos/PXL_20240101_221804405.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;">Drumheller Fountain at the UW</figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-<figure style="break-inside: avoid; margin: 0 0 15px 0;">
-<a href="photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg" target="_blank">
-<img src="photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg" style="width:100%;" loading="lazy">
-</a>
-<figcaption style="text-align:center; color:gray; font-size:0.90rem;"></figcaption>
-</figure>
-
-:::
-:::
+html`
+<div style="max-width: 1200px; margin: 40px auto;">
+  <p>
+    I am a hobbyist photographer, virtual pilot, and S1-trainee air traffic controller with VATUSA,
+    <a href="https://www.vatsim.net" target="_blank">VATSIM</a>'s United States Division.
+  </p>
+  <hr>
+  <p>A collection of my photos</p>
+  <div id="photo-gallery" style="columns: 2; column-gap: 15px; max-width: 900px; margin: auto;">
+    ${photos.map(p => html`
+      <figure style="break-inside: avoid; margin: 0 0 15px 0; ${p.span ? "column-span: all;" : ""}">
+        <a href="${p.file}" target="_blank">
+          <img src="${p.file}" style="width:100%;" loading="lazy">
+        </a>
+        <figcaption style="text-align:center; color:gray; font-size:0.90rem;">${p.caption}</figcaption>
+      </figure>
+    `)}
+  </div>
+</div>`
+```

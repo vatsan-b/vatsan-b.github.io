@@ -5,6 +5,9 @@ project:
     - cv/
   preview:
     browser: false  # Requires manual browser activation
+  render:
+    - "*.qmd"
+    - "*.md"
 
 execute:
   freeze: auto
