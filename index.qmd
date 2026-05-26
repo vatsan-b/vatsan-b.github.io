@@ -4,7 +4,7 @@ title: ""
 
 <div style="text-align: center; margin-top: 60px;">
 
-![](PXL_20220307_012912012.PORTRAIT~1.jpg){width=150px style="border-radius: 50%;"}
+![](srivatsanb-photo.jpg){width=150px style="border-radius: 50%;"}
 
 <p style="font-size: 1.8rem; font-weight: bold;">Srivatsan Balaji</p>
 

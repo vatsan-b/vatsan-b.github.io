@@ -18,14 +18,12 @@ Michael A. Pfeiffer, Freya Whittaker, Karina Puente, Srivatsan Balaji, Joseph R.
 3. **Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**<br>
 Good, I.\*, Balaji, S.\*, Lipton, J. I. • [*Co-first Authors]{.slanted}<br>
 [2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)]{.slanted}<span style="color: gray;"><br>
-Accepted</span><br>
-IEEE Xplore (Will be available soon) • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522819){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}
 
 4. **A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**<br>
 VanAtter, C., Balaji, S., Davidson, J. R.<br>
 [2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)]{.slanted}<span style="color: gray;"><br>
-Accepted</span><br>
-IEEE Xplore (Will be available soon)
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}
 
 5. **Flexible Barometric Tactile Sensors for Robotic Grasping Applications**<br>
 Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.<br>

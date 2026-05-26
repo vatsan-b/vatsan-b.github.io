@@ -1,11 +1,18 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - cv/
+  preview:
+    browser: false  # Requires manual browser activation
+
+execute:
+  freeze: auto
 
 website:
   title: "Srivatsan Balaji"
   favicon: gripper.png
-  google-analytics: "G-ZZG5RG98PM"  
+  google-analytics: "G-ZZG5RG98PM"
   navbar:
     left:
       - href: index.qmd
@@ -20,9 +27,6 @@ website:
         text: Life Outside Work
       - href: contact.qmd
         text: Connect
-
-resources:
-  - cv/
 
 format:
   html:

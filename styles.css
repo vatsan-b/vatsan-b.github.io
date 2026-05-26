@@ -110,7 +110,7 @@ figcaption, .caption {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url('');
+/* background-image: url(''); */
   background-size: cover;
   background-position: center;
   filter: blur(12px);
