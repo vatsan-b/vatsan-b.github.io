@@ -2,3 +2,7 @@
 **/*.quarto_ipynb
 quarto-linux-amd64.deb
 srivatsanb-photo.jpg
+projects/
+photos/
+logos/
+cv/

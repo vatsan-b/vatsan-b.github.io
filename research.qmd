@@ -16,11 +16,12 @@ time-of-flight sensor.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
-<p class="funding">This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense</p>
+::: funding
+This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense.
+:::
 
-::: {style="text-align: center; margin: 20px 0;"}
-![](projects/bravo-gripper.png){style="width:70%;"}
-<p class="img-caption"><em>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.</em></p>
+::: {style="text-align: center; margin: 25px auto;"}
+![*Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.*](projects/bravo-gripper.png){width=70%}
 :::
 
 ---
@@ -36,11 +37,13 @@ We achieved a peak pinch force of 5.8 N, and a peak planar caging force of 14.5 
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522819){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}
 
-<p class="funding">This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).</p>
+::: funding
+This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).
+:::
 
-::: {style="text-align: center; margin: 20px 0;"}
-{{< video projects/HSA-Gripper-Lifting.mp4 width="70%" >}}
-<p class="img-caption"><em>HSA Gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</em></p>
+::: {style="margin: 30px auto; text-align: center;"}
+<video src="projects/HSA-Gripper-Lifting.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
+<p class="figure-caption" style="margin-top: 10px;">*HSA Gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.*</p>
 :::
 
 ---
@@ -58,11 +61,12 @@ an open direction for future work.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}
 
-<p class="funding">This work was supported by the National Science Foundation (NSF).</p>
+::: funding
+This work was supported by the National Science Foundation (NSF).
+:::
 
-::: {style="text-align: center; margin: 20px 0;"}
-![](projects/parallel-jaw-lowres.png){style="width:80%;"}
-<p class="img-caption"><em>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.</em></p>
+::: {style="text-align: center; margin: 25px auto;"}
+![*Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.*](projects/parallel-jaw-lowres.png){width=80%}
 :::
 
 ---
@@ -76,11 +80,13 @@ tasks such as pipe inspection and underwater docking due to its compliance.
 
 Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
 
-<p class="funding">This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).</p>
+::: funding
+This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).
+:::
 
-::: {style="text-align: center; margin: 20px 0;"}
-{{< video projects/HSA-Arm-Lifting.mp4 width="70%" >}}
-<p class="img-caption"><em>Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight</em></p>
+::: {style="margin: 30px auto; text-align: center;"}
+<video src="projects/HSA-Arm-Lifting.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
+<p class="figure-caption" style="margin-top: 10px;">*Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight*</p>
 :::
 
 ---
@@ -95,11 +101,10 @@ by up to 97% compared to a benchmark Pneu-Net actuator from the [Soft Robotics T
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}
 
-<p class="funding">This work was supported by the NSF, the Murdock Charitable Trust and the Office of Naval Research (ONR).</p>
-
-::: {style="text-align: center; margin: 20px 0;"}
-![](projects/TR-SLL_Lift_Hero.png){style="width:50%;"}
-<p class="img-caption"><em>TR-SLL allows Pneu-Net actuators to lift payloads as large as 5 kg through skeletal loading. They resist out-of-plane twists, while maintaining the actuator's in-plane performance.</em></p>
+::: funding
+This work was supported by the NSF, the Murdock Charitable Trust and the Office of Naval Research (ONR).
 :::
+
+![*TR-SLL allows Pneu-Net actuators to lift payloads as large as 5 kg through skeletal loading. They resist out-of-plane twists, while maintaining the actuator's in-plane performance.*](projects/TR-SLL_Lift_Hero.png){fig-align="center" width=50%}
 
 :::
