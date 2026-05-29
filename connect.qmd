@@ -2,30 +2,26 @@
 title: "Connect"
 ---
 
-<div class="connect-page">
-
-<div style="display: flex; justify-content: center; gap: 16px; margin: 80px auto; flex-wrap: wrap;">
+::: {style="display: flex; justify-content: center; gap: 16px; margin: 80px auto 60px; flex-wrap: wrap;"}
 
 <a href="mailto:sri.vatsan0307@gmail.com" target="_blank" class="connect-box" title="Email">
-  <i class="fa-solid fa-envelope"></i>
+<i class="fa-solid fa-envelope"></i>
 </a>
 
 <a href="https://linkedin.com/in/vatsan-balaji" target="_blank" class="connect-box" title="LinkedIn">
-  <i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-linkedin"></i>
 </a>
 
 <a href="https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en" target="_blank" class="connect-box" title="Google Scholar">
-  <i class="fa-solid fa-graduation-cap"></i>
+<i class="fa-solid fa-graduation-cap"></i>
 </a>
 
 <a href="https://github.com/vatsan-b" target="_blank" class="connect-box" title="GitHub">
-  <i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-github"></i>
 </a>
 
 <a href="https://unsplash.com/@srivatsan" target="_blank" class="connect-box" title="Unsplash">
-  <i class="fa-brands fa-unsplash"></i>
+<i class="fa-brands fa-unsplash"></i>
 </a>
 
-</div>
-
-</div>
+:::

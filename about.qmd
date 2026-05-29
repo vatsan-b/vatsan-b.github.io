@@ -1,0 +1,58 @@
+---
+title: ""
+---
+
+::: {.text-center style="margin-top: 60px;"}
+
+![](srivatsanb-photo.jpg){width=150px .profile-photo}
+
+[**Srivatsan Balaji**]{.hero-name}
+
+Research Engineer / Faculty Research Assistant\
+Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University
+
+*Interests: Soft and Materials Robotics*
+
+<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;"><i class="fa-solid fa-file-lines" style="color: #85754d;"></i>&nbsp; View CV</a>
+
+:::
+
+::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
+
+I was a Research Engineer in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
+
+Outside of work, I am a virtual pilot and hobbyist photographer.
+
+## Skills
+
+**Mechanical Design & CAD**
+
+CAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.
+
+**Additive Manufacturing**
+
+FDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components.\
+Stereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail.\
+Material Jetting: Stratasys J750 for multi-material 3D printing.\
+Silicone Casting: Creating molds and elastomer components to fabricate soft robots.
+
+**Simulation & Analysis**
+
+FEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies.\
+CFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels.\
+Material Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM's standard testing procedure.
+
+**Programming**
+
+MATLAB: Data processing and visualization\
+Python: Building visualization tools for robotics feedback.
+
+**Research Communication**
+
+Experiment Design · Scientific and Technical writing · Presentation
+
+<!-- Logo Section
+...
+-->
+
+:::

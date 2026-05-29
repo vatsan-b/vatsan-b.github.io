@@ -14,18 +14,18 @@
     "text": "I love to teach! I have had the opportunity to mentor high school interns and undergraduate students in mechanical design, CAD, 3D printing / digital fabrication, and soft robotics. This included hands-on training on the Prusa, Carbon M1, and Stratasys J750 3D printers, Instron material testing system, as well as design for additive manufacturing and Python programming.\n\nMentees\n\nYusef (Joe) Torky\n\nHigh School Intern, Transformative Robotics Lab, University of Washington • Summer 2022\n\nNathan Zhang\n\nHigh School Intern, Transformative Robotics Lab, University of Washington • Summer 2022\n\nNatalie Paskett\n\nBachelor of Applied Science, Engineering, Oregon State University • Winter 2025"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Srivatsan Balaji\n\nResearch Engineer / Faculty Research Assistant  Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Soft and Materials Robotics\n\n    View CV"
+    "text": "Srivatsan Balaji\nResearch Engineer / Faculty Research Assistant\nCollaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Soft and Materials Robotics\n  View CV"
   },
   {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
     "title": "Srivatsan Balaji",
     "section": "Skills",
-    "text": "Skills\nMechanical Design & CAD\nCAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.\nAdditive Manufacturing\nFDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components.  Stereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail.  Material Jetting: Stratasys J750 for multi-material 3D printing.  Silicone Casting: Creating molds and elastomer components to fabricate soft robots.\nSimulation & Analysis\nFEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies.  CFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels.  Material Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM’s standard testing procedure.\nProgramming\nMATLAB: Data processing and visualization,  Python: Building visualization tools for robotics feedback.\nResearch Communication\nExperiment Design · Scientific and Technical writing · Presentation"
+    "text": "Skills\nMechanical Design & CAD\nCAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.\nAdditive Manufacturing\nFDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components.\nStereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail.\nMaterial Jetting: Stratasys J750 for multi-material 3D printing.\nSilicone Casting: Creating molds and elastomer components to fabricate soft robots.\nSimulation & Analysis\nFEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies.\nCFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels.\nMaterial Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM’s standard testing procedure.\nProgramming\nMATLAB: Data processing and visualization\nPython: Building visualization tools for robotics feedback.\nResearch Communication\nExperiment Design · Scientific and Technical writing · Presentation"
   },
   {
     "objectID": "life-outside-research.html",

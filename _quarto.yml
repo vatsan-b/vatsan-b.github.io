@@ -20,7 +20,7 @@ website:
   google-analytics: "G-ZZG5RG98PM"
   navbar:
     left:
-      - href: index.qmd
+      - href: about.qmd
         text: About
       - href: research.qmd
         text: Research
@@ -30,7 +30,7 @@ website:
         text: Mentoring
       - href: life-outside-research.qmd
         text: Life Outside Work
-      - href: contact.qmd
+      - href: connect.qmd
         text: Connect
 
 format:

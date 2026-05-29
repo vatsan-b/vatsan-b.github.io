@@ -5,6 +5,16 @@
   --main-font: "Source Serif Pro", serif;
 }
 
+/* ── Hero ───────────────────────────────────────────────── */
+.profile-photo {
+  border-radius: 50%;
+}
+
+.hero-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 body, p, h1, h2, h3, h4, h5, h6 {
   font-family: var(--main-font) !important;
 }
