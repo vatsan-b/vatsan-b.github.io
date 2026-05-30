@@ -13,7 +13,7 @@ Collaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State U
 
 *Interests: Soft and Materials Robotics*
 
-<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;"><i class="fa-solid fa-file-lines" style="color: #85754d;"></i>&nbsp; View CV</a>
+<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;"><i class="fa-solid fa-file-lines" style="color: #b7a57a ;"></i>&nbsp; View CV</a>
 
 :::
 
