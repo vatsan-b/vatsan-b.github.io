@@ -7,16 +7,17 @@
   /* Single definition — rgb() for solid, rgba() for transparent */
   --grad-c1:    12, 29, 43;
   --grad-c2:    12, 18, 28;
-  --grad-angle: 100deg;
+  --grad-angle: 185deg;
 
   /* Navbar */
-  --nav-alpha: 0.5;
+  --nav-alpha: 0.85;
   --nav-blur:  8px;
 
   /* Palette */
   --accent:        #FDD26E;
   --search-accent: #b7a57a;
   --text-dark:     #e8e8e8;
+  --text-caption:  #bbbbbb;
   --text-light:    #2b2b2b;
 }
 
@@ -41,7 +42,7 @@ h1, h2, h3 {
 
 /* ── Navbar ─────────────────────────────────────────────── */
 .navbar {
-  background: linear-gradient(var(--grad-angle), rgb(var(--grad-c1)) 0%, rgb(var(--grad-c2)) 100%);
+  background: rgba(var(--grad-c1), var(--nav-alpha)) !important;
   backdrop-filter: blur(var(--nav-blur));
   -webkit-backdrop-filter: blur(var(--nav-blur));
   box-shadow: none !important;
@@ -96,33 +97,9 @@ p em, figcaption em {
 }
 
 /* ── Captions ───────────────────────────────────────────── */
-.img-caption {
-  font-size: 0.80rem;
-  margin-top: 8px;
-  text-align: center;
-  color: var(--text-light);
-}
-
-.quarto-dark .img-caption {
-  color: var(--text-dark) !important;
-}
-
-figcaption, .caption {
-  color: var(--text-light);
-}
-
-.quarto-dark figcaption,
-.quarto-dark .caption {
-  color: var(--text-dark) !important;
-}
-
-/* ── Theme-aware Images ─────────────────────────────────── */
-.quarto-dark .light-mode-img {
-  display: none;
-}
-
-.quarto-light .dark-mode-img {
-  display: none;
+figcaption, .caption, .figure-caption, .img-caption {
+  color: var(--text-caption) !important;
+  font-size: 0.85rem;
 }
 
 /* ── Connect Page ───────────────────────────────────────── */
@@ -132,7 +109,7 @@ figcaption, .caption {
   justify-content: center;
   width: 100px;
   height: 100px;
-  border: 1.5px solid #d0d0d0;
+  border: 1.5px solid #444444;
   border-radius: 10px;
   font-size: 2.0rem;
   color: inherit;
@@ -141,15 +118,6 @@ figcaption, .caption {
 }
 
 .connect-box:hover {
-  border-color: #888;
-  color: #333;
-}
-
-.quarto-dark .connect-box {
-  border-color: #444444;
-}
-
-.quarto-dark .connect-box:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
@@ -202,3 +170,6 @@ figcaption, .caption {
   background: transparent !important;
   border-color: #333333 !important;
 }
+
+
+

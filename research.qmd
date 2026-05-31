@@ -11,8 +11,7 @@ insufficient to assess grasp stability. Tactile sensors address this by providin
 manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a
 prototype with a modified Bravo end effector and integrated flexible sensor, that can be mounted to existing gripper profiles.
 We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally,
-I developed a [PyVista](https://pyvista.org/){target="_blank"}-based 3D visualizer that provides real-time finger position feedback, utilizing a
-time-of-flight sensor.
+I developed a [PyVista](https://pyvista.org/){target="_blank"}-based 3D visualizer that provides real-time finger position feedback, utilizing a time-of-flight sensor.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
@@ -43,7 +42,7 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 
 ::: {style="margin: 30px auto; text-align: center;"}
 <video src="projects/HSA-Gripper-Lifting.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
-<p class="figure-caption" style="margin-top: 10px;">*HSA Gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.*</p>
+<p class="figure-caption" style="margin-top: 10px;">*HSA gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.*</p>
 :::
 
 ---

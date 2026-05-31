@@ -20,7 +20,7 @@ website:
   google-analytics: "G-ZZG5RG98PM"
   navbar:
     left:
-      - href: about.qmd
+      - href: index.qmd
         text: About
       - href: research.qmd
         text: Research
