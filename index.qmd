@@ -4,7 +4,7 @@ title: ""
 
 ::: {.text-center style="margin-top: 60px;"}
 
-![](srivatsanb-photo.jpg){width=200px .profile-photo}
+![](srivatsanb-photo.jpg){width=180px .profile-photo}
 
 [**Srivatsan Balaji**]{.hero-name}
 

@@ -47,6 +47,26 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 
 ---
 
+### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm
+
+Expanding the work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
+and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
+payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform
+tasks such as pipe inspection and underwater docking due to its compliance.
+
+Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
+
+::: funding
+This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).
+:::
+
+::: {style="margin: 30px auto; text-align: center;"}
+<video src="projects/HSA-Arm-Lifting.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
+<p class="figure-caption" style="margin-top: 10px;">*Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight*</p>
+:::
+
+---
+
 ### Parallel-Jaw Gripper for Learning Soft Fruit Picking
 
 Harvesting soft fruits like blackberries requires precise grasp control — too much force damages the fruit, too little causes
@@ -66,26 +86,6 @@ This work was supported by the National Science Foundation (NSF).
 
 ::: {style="text-align: center; margin: 25px auto;"}
 ![*Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.*](projects/parallel-jaw-lowres.png){width=80%}
-:::
-
----
-
-### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm
-
-Expanding on the previous work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
-and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
-payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform
-tasks such as pipe inspection and underwater docking due to its compliance.
-
-Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
-
-::: funding
-This work was supported by the Murdock Charitable Trust and the Office of Naval Research (ONR).
-:::
-
-::: {style="margin: 30px auto; text-align: center;"}
-<video src="projects/HSA-Arm-Lifting.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
-<p class="figure-caption" style="margin-top: 10px;">*Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight*</p>
 :::
 
 ---
