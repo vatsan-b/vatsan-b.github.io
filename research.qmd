@@ -41,7 +41,7 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 :::
 
 ::: {style="margin: 30px auto; text-align: center;"}
-<video src="projects/HSA-Gripper-Lifting.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
+<video src="assets/videos/hsa-gripper-ycb.mp4" width="85%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
 <p class="figure-caption" style="margin-top: 10px;">*HSA gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.*</p>
 :::
 
