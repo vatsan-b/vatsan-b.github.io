@@ -3,8 +3,7 @@ project:
   output-dir: docs
   resources:
     - cv/
-    - projects/
-    - photos/
+    - assets/
   preview:
     browser: false  # Requires manual browser activation
   render:
@@ -16,7 +15,7 @@ execute:
 
 website:
   title: "Srivatsan Balaji"
-  favicon: gripper.png
+  favicon: ./assets/images/gripper.png
   google-analytics: "G-ZZG5RG98PM"
   navbar:
     left:

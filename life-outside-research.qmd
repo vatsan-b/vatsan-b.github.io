@@ -1,20 +1,27 @@
 ---
 title: "Life Outside Work"
+toc: true
+toc-location: right
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 250px
 ---
 
-::: {style="max-width: 1100px; margin: 40px auto; text-align: justify;"}
+Outside the lab, most of my free time goes to two things: photography and aviation.
 
-Outside of work, most of my free time goes to two things: photography and aviation.
+## Aviation
 
-I shoot mostly landscapes and cityscapes. A selection is below; more lives on my [Unsplash](https://unsplash.com/@srivatsan){target="_blank"} profile.
+I am a virtual pilot and an S1-trainee air traffic controller with VATUSA, the United States Division of [VATSIM](https://www.vatsim.net){target="_blank"}.
 
-I am also a virtual pilot and an S1-trainee air traffic controller with VATUSA, the United States Division of [VATSIM](https://www.vatsim.net){target="_blank"}.
+<!-- Aviation images: when ready, replace the bracketed text inside each .av-frame with <img src="assets/images/your-file.png" alt="..."> -->
+<div class="av-grid"><div class="av-frame">[ CRC radar scope ]</div><div class="av-frame">[ vStrips ]</div></div>
 
-:::
+## Photography
 
-<hr style="max-width: 1100px; margin: 30px auto 0;">
-
-<p style="text-align: center; color: var(--text-caption, #bbbbbb); margin: 18px auto 0;">A collection of my hand-picked photos.</p>
+I shoot mostly landscapes and cityscapes. A selection is below; more lives on my [Unsplash](https://unsplash.com/@srivatsan){target="_blank"} profile. Click any image to view it full-size.
 
 <div id="photo-gallery" class="fj-gallery"></div>
 
@@ -27,64 +34,63 @@ I am also a virtual pilot and an S1-trainee air traffic controller with VATUSA, 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
 
 <style>
-#photo-gallery {
-  max-width: 1100px;
-  margin: 25px auto 40px;
-  opacity: 0;
-  transition: opacity 0.6s ease;
+/* hide the native TOC "On this page" label */
+#toc-title { display: none; }
+
+/* ── Aviation: static 1x2 grid, subtle border, no hover, no lightbox ── */
+.av-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0 8px; max-width: 760px; }
+.av-frame {
+  border: 1px solid var(--border, #444);
+  border-radius: 6px; overflow: hidden; aspect-ratio: 16 / 10;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-caption, #bbbbbb); font-size: 0.85rem; letter-spacing: 0.05em;
+  background: rgba(255, 255, 255, 0.02);
 }
+.av-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ── Photography: justified gallery + lightbox ── */
+#photo-gallery { margin: 18px 0 40px; opacity: 0; transition: opacity 0.6s ease; }
 #photo-gallery.is-ready { opacity: 1; }
-#photo-gallery .gallery-item {
-  overflow: hidden;
-  border-radius: 4px;
-  cursor: zoom-in;
-}
+#photo-gallery .gallery-item { overflow: hidden; border-radius: 4px; cursor: zoom-in; }
 #photo-gallery .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%; height: 100%; object-fit: cover; display: block;
   transition: transform 0.6s ease, filter 0.6s ease;
 }
-#photo-gallery .gallery-item:hover img {
-  transform: scale(1.05);
-  filter: brightness(0.7);
-}
+#photo-gallery .gallery-item:hover img { transform: scale(1.05); filter: brightness(0.7); }
 #photo-gallery .lg-hover {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent, #FDD26E);
-  font-size: 1.4rem;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  color: #ffffff;                 /* white zoom icon on hover */
+  font-size: 1.4rem; opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
 }
 #photo-gallery .gallery-item:hover .lg-hover { opacity: 1; }
+
+/* lightbox caption uses the page font */
+.lg-sub-html, .lg-sub-html * { font-family: "Source Serif Pro", serif !important; }
+
+@media (max-width: 700px) { .av-grid { grid-template-columns: 1fr; } }
 </style>
 
 <script>
 (function () {
   // Edit this list to add or remove photos.
   var photos = [
-    { file: "photos/PXL_20220323_021751755.jpg",                       caption: "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
-    { file: "photos/PXL_20211226_185354224.jpg",                       caption: "The Quad at the University of Washington" },
-    { file: "photos/IMG_1405.jpg",                                     caption: "Coal Creek, Washington" },
-    { file: "photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",        caption: "Golden Gardens Park, Washington" },
-    { file: "photos/PXL_20220731_064619756.NIGHT~2.jpg",               caption: "" },
-    { file: "photos/PXL_20240418_010033230~2.jpg",                     caption: "" },
-    { file: "photos/PXL_20250514_231324573.jpg",                       caption: "" },
-    { file: "photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg",        caption: "" },
-    { file: "photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", caption: "Snoqualmie Falls, Washington" },
-    { file: "photos/PXL_20250514_231425261~2.jpg",                     caption: "Hudson Bay" },
-    { file: "photos/PXL_20240101_221804405.jpg",                       caption: "Drumheller Fountain at the UW" },
-    { file: "photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",        caption: "" },
-    { file: "photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",        caption: "" },
-    { file: "photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg",        caption: "" },
-    { file: "photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",        caption: "" },
-    { file: "photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",        caption: "" }
+    { file: "assets/unsplash-photos/PXL_20220323_021751755.jpg",                       caption: "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
+    { file: "assets/unsplash-photos/PXL_20211226_185354224.jpg",                       caption: "The Quad at the University of Washington" },
+    { file: "assets/unsplash-photos/IMG_1405.jpg",                                     caption: "Coal Creek, Washington" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",        caption: "Golden Gardens Park, Washington" },
+    { file: "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg",          caption: "" },
+    { file: "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg",               caption: "" },
+    { file: "assets/unsplash-photos/PXL_20240418_010033230~2.jpg",                     caption: "" },
+    { file: "assets/unsplash-photos/PXL_20250514_231324573.jpg",                       caption: "" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg",        caption: "" },
+    { file: "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", caption: "Snoqualmie Falls, Washington" },
+    { file: "assets/unsplash-photos/PXL_20250514_231425261~2.jpg",                     caption: "Hudson Bay" },
+    { file: "assets/unsplash-photos/PXL_20240101_221804405.jpg",                       caption: "Drumheller Fountain at the UW" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",        caption: "" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",        caption: "" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg",        caption: "" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",        caption: "" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",        caption: "" }
   ];
 
   var gallery = document.getElementById("photo-gallery");
@@ -146,4 +152,3 @@ I am also a virtual pilot and an S1-trainee air traffic controller with VATUSA, 
   init();
 })();
 </script>
-

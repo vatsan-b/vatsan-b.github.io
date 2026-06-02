@@ -5,13 +5,13 @@
   --main-font: "Source Serif Pro", serif;
 
   /* Single definition — rgb() for solid, rgba() for transparent */
-  --grad-c1: 22, 22, 24;
+  --grad-c1: 13, 13, 15;
   --grad-c2: 13, 13, 15;
   --grad-angle: 180deg;
 
   /* Navbar */
-  --nav-alpha: 1;
-  --nav-blur:  5px;
+  --nav-alpha: 0.85;
+  --nav-blur:  8px;
 
   /* Palette */
   --accent:        #FDD26E;
@@ -183,6 +183,31 @@ figcaption, .caption, .figure-caption, .img-caption {
   color: var(--accent) !important;
   background: transparent !important;
   border-color: #333333 !important;
+}
+
+/* ── Motion ─────────────────────────────────────────────── */
+@keyframes pageFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#quarto-content {
+  animation: pageFade 0.3s ease-out both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Keep anchored headings clear of the fixed navbar */
+h1, h2, h3 {
+  scroll-margin-top: 70px;
+}
+
+/* Honour users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+  #quarto-content { animation: none; }
+  html { scroll-behavior: auto; }
 }
 
 

@@ -1,8 +1,9 @@
 /.quarto/
 **/*.quarto_ipynb
 quarto-linux-amd64.deb
-/projects/
-/photos/
-/logos/
-/srivatsanb-photo.jpg
+/assets/images/
+/assets/videos/
+/assets/unsplash-photos/
+/assets/logos/
 maintenance.html
+
