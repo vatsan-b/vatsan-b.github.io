@@ -21,17 +21,17 @@ title: "Publications"
 4. **A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**\
    VanAtter, C., Balaji, S., Davidson, J. R.\
    *2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)*\
-   [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}]{style="color: gray;"}
+   [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}
 
 5. **Flexible Barometric Tactile Sensors for Robotic Grasping Applications**\
    Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.\
    *2025 IEEE SENSORS • Pages 1–4*\
-   [DOI (IEEE Xplore)](https://doi.org/10.1109/SENSORS59705.2025.11330401){target="_blank"}
+   [IEEE Xplore](https://doi.org/10.1109/SENSORS59705.2025.11330401){target="_blank"}
 
 6. **Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer**\
    Good, I., Balaji, S., Lipton, J. I.\
    *2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) • Pages 235–242*\
-   [[DOI (IEEE Xplore)](https://doi.org/10.1109/RoboSoft60065.2024.10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}]{style="color: gray;"}
+   [[IEEE Xplore](https://doi.org/10.1109/RoboSoft60065.2024.10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}]{style="color: gray;"}
 
 7. **Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology**\
    Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\
