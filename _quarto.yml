@@ -29,8 +29,22 @@ website:
         text: Mentoring
       - href: life-outside-research.qmd
         text: Life Outside Work
-      - href: connect.qmd
-        text: Connect
+    right:
+      - href: mailto:sri.vatsan0307@gmail.com
+        text: "<i class='fa-solid fa-envelope'></i>"
+      - href: https://linkedin.com/in/vatsan-balaji
+        text: "<i class='fa-brands fa-linkedin'></i>"
+        target: _blank
+      - href: https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en
+        text: "<i class='fa-brands fa-google-scholar'></i>"
+        target: _blank
+      - href: https://github.com/vatsan-b
+        text: "<i class='fa-brands fa-github'></i>"
+        target: _blank
+      - href: https://unsplash.com/@srivatsan
+        text: "<i class='fa-brands fa-unsplash'></i>"
+        target: _blank
+
 
 format:
   html:
@@ -41,6 +55,7 @@ format:
       text: |
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://instant.page/5.2.0/instantpage.js" type="module"></script>
     grid:
       body-width: 1200px
       sidebar-width: 0px

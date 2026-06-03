@@ -1,17 +1,25 @@
 /* ── Fonts ─────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url("https://use.typekit.net/btj4xog.css");
+@import url("https://use.typekit.net/btj4xog.css");
+@import url("https://use.typekit.net/btj4xog.css"); /* Loretta */
+
 
 :root {
-  --main-font: "Source Serif Pro", serif;
+  --main-font:     "Source Sans 3", sans-serif;
+  --font-headings: "Source Serif 4", serif;
 
-  /* Single definition — rgb() for solid, rgba() for transparent */
-  --grad-c1: 13, 13, 15;
-  --grad-c2: 13, 13, 15;
+  /* Background gradient */
+  --grad-c1:    22, 20, 18;
+  --grad-c2:    12, 10, 9;
   --grad-angle: 180deg;
 
   /* Navbar */
-  --nav-alpha: 0.85;
-  --nav-blur:  8px;
+  --nav-alpha: 1;
+  --nav-blur:  0px;
 
   /* Palette */
   --accent:        #FDD26E;
@@ -21,23 +29,10 @@
   --text-light:    #2b2b2b;
 }
 
-/* ── Navbar ─────────────────────────────────────────────── */
-.navbar {
-  background: linear-gradient(
-    var(--grad-angle),
-    rgba(var(--grad-c1), var(--nav-alpha)) 0%,
-    rgba(var(--grad-c2), var(--nav-alpha)) 100%
-  ) !important;
-  /* background-attachment: fixed !important; */
-  backdrop-filter: blur(var(--nav-blur));
-  -webkit-backdrop-filter: blur(var(--nav-blur));
-  box-shadow: none !important;
-  border-bottom: none !important;
-}
-
 /* ── Base ───────────────────────────────────────────────── */
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,12 +41,28 @@ body {
   font-family: var(--main-font) !important;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, li, td, figcaption {
   font-family: var(--main-font) !important;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings) !important;
   font-variant-ligatures: none;
+  scroll-margin-top: 100px;
+}
+
+.italic-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "freight-text-pro", serif !important;
+}
+
+.affiliation {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Source Serif 4", serif !important;
 }
 
 /* ── Navbar ─────────────────────────────────────────────── */
@@ -63,6 +74,20 @@ h1, h2, h3 {
   border-bottom: none !important;
 }
 
+.navbar-nav .nav-link {
+  font-size: 1.10rem; /* adjust to taste */
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+}
+
+.navbar-brand {
+  font-family: "freight-text-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.55rem;
+}
+
 /* ── Hero ───────────────────────────────────────────────── */
 .profile-photo {
   border-radius: 50%;
@@ -70,7 +95,9 @@ h1, h2, h3 {
 
 .hero-name {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "freight-text-pro", serif !important;
 }
 
 /* ── Layout ─────────────────────────────────────────────── */
@@ -78,6 +105,7 @@ h1, h2, h3 {
   max-width: 1400px !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
+  animation: pageFade 0.3s ease-out both;
 }
 
 .page-columns, .quarto-container, .container {
@@ -93,13 +121,11 @@ h1, h2, h3 {
 .panel-tabset > .nav-tabs,
 .tab-content {
   border: none !important;
-  border-top: none !important;
   box-shadow: none !important;
 }
 
 /* ── Components ─────────────────────────────────────────── */
 .funding {
-  font-family: var(--main-font);
   font-size: 0.85rem;
   transform: skewX(-8deg);
   display: inline-block;
@@ -191,24 +217,51 @@ figcaption, .caption, .figure-caption, .img-caption {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-#quarto-content {
-  animation: pageFade 0.3s ease-out both;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Keep anchored headings clear of the fixed navbar */
-h1, h2, h3 {
-  scroll-margin-top: 70px;
-}
-
-/* Honour users who prefer no motion */
 @media (prefers-reduced-motion: reduce) {
   #quarto-content { animation: none; }
   html { scroll-behavior: auto; }
 }
 
+/* ── Aviation Gallery ───────────────────────────────────── */
+.av-grid {
+  display: flex;
+  gap: 16px;
+  margin: 25px 0;
+}
 
+.av-frame {
+  position: relative;
+  flex: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
 
+.av-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+.av-frame:hover img {
+  filter: brightness(0.5);
+}
+
+.av-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.av-frame:hover .av-caption {
+  opacity: 1;
+}

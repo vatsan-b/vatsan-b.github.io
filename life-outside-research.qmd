@@ -5,23 +5,58 @@ toc-location: right
 format:
   html:
     grid:
-      sidebar-width: 0px
-      body-width: 1000px
-      margin-width: 250px
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 200px
 ---
 
-Outside the lab, most of my free time goes to two things: photography and aviation.
+Outside the lab, most of my free time goes to two things: virtual aviation and photography.
 
-## Aviation
+## Flight Simulation
 
-I am a virtual pilot and an S1-trainee air traffic controller with VATUSA, the United States Division of [VATSIM](https://www.vatsim.net){target="_blank"}.
+Photos of my virtual flight deck, and ATC scope. I am a virtual pilot, and an S1-trainee air traffic controller with VATUSA, the United States division of [VATSIM](https://www.vatsim.net){target="_blank"}.
 
-<!-- Aviation images: when ready, replace the bracketed text inside each .av-frame with <img src="assets/images/your-file.png" alt="..."> -->
-<div class="av-grid"><div class="av-frame">[ CRC radar scope ]</div><div class="av-frame">[ vStrips ]</div></div>
+### Flying
+
+I usually like to fly the narrow body Boeing 737 Max 8, or the Airbus A320/321neo.
+
+```{=html}
+<div class="av-grid">
+  <div class="av-frame">
+    <img src="assets/flight-sim/Screenshot 2025-12-06 171830.png" alt="">
+    <span class="av-caption">Boeing 737 Max 8 Cockpit</span>
+  </div>
+  <div class="av-frame">
+    <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
+    <span class="av-caption">Wing View</span>
+  </div>
+  <div class="av-frame">
+    <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
+    <span class="av-caption">Wing View</span>
+  </div>
+</div>
+```
+
+### Air Traffic Control
+
+ATC text here.
+
+```{=html}
+<div class="av-grid">
+  <div class="av-frame">
+    <img src="assets/flight-sim/Screenshot 2025-12-06 171830.png" alt="">
+    <span class="av-caption">Boeing 737 Max 8 Cockpit</span>
+  </div>
+  <div class="av-frame">
+    <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
+    <span class="av-caption">Wing View</span>
+  </div>
+</div>
+```
 
 ## Photography
 
-I shoot mostly landscapes and cityscapes. A selection is below; more lives on my [Unsplash](https://unsplash.com/@srivatsan){target="_blank"} profile. Click any image to view it full-size.
+I mostly shoot landscapes and cityscapes. A selection is below; more lives on my [Unsplash](https://unsplash.com/@srivatsan){target="_blank"} profile.
 
 <div id="photo-gallery" class="fj-gallery"></div>
 
@@ -59,7 +94,7 @@ I shoot mostly landscapes and cityscapes. A selection is below; more lives on my
 #photo-gallery .gallery-item:hover img { transform: scale(1.05); filter: brightness(0.7); }
 #photo-gallery .lg-hover {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  color: #ffffff;                 /* white zoom icon on hover */
+  color: #ffffff60;                 /* white zoom icon on hover */
   font-size: 1.4rem; opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
 }
 #photo-gallery .gallery-item:hover .lg-hover { opacity: 1; }
@@ -75,22 +110,23 @@ I shoot mostly landscapes and cityscapes. A selection is below; more lives on my
   // Edit this list to add or remove photos.
   var photos = [
     { file: "assets/unsplash-photos/PXL_20220323_021751755.jpg",                       caption: "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
-    { file: "assets/unsplash-photos/PXL_20211226_185354224.jpg",                       caption: "The Quad at the University of Washington" },
-    { file: "assets/unsplash-photos/IMG_1405.jpg",                                     caption: "Coal Creek, Washington" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",        caption: "Golden Gardens Park, Washington" },
     { file: "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg",          caption: "" },
+    { file: "assets/unsplash-photos/IMG_1405.jpg",                                     caption: "Coal Creek, Washington" },
+    { file: "assets/unsplash-photos/PXL_20211226_185354224.jpg",                       caption: "The Quad at the University of Washington" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",        caption: "Golden Gardens Park, Washington" },
+    { file: "assets/unsplash-photos/PXL_20221023_004339139.jpg",                       caption: "The Space Needle in Seattle" },
+    { file: "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", caption: "Snoqualmie Falls, Washington" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",        caption: "Coal Creek, Washington" },
+    { file: "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",        caption: "Coal Creek, Washington" },
     { file: "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg",               caption: "" },
     { file: "assets/unsplash-photos/PXL_20240418_010033230~2.jpg",                     caption: "" },
     { file: "assets/unsplash-photos/PXL_20250514_231324573.jpg",                       caption: "" },
     { file: "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", caption: "Snoqualmie Falls, Washington" },
     { file: "assets/unsplash-photos/PXL_20250514_231425261~2.jpg",                     caption: "Hudson Bay" },
     { file: "assets/unsplash-photos/PXL_20240101_221804405.jpg",                       caption: "Drumheller Fountain at the UW" },
     { file: "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",        caption: "" },
     { file: "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",        caption: "" }
+    { file: "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",        caption: "" }
   ];
 
   var gallery = document.getElementById("photo-gallery");
@@ -152,3 +188,7 @@ I shoot mostly landscapes and cityscapes. A selection is below; more lives on my
   init();
 })();
 </script>
+
+
+
+
