@@ -53,8 +53,24 @@ init();
 draw();
 </script>
 
-::: {.text-center style="margin-top: 60px;"}
-# [Hi, I'm Srivatsan!]{.message}
+---
+title: ""
+---
 
-### [A portfolio of my research, interests, and life outside of research.]{.message}
+::: {.message style="max-width: 1000px; margin: 60px auto 0; line-height: 1.6;"}
+
+::: {.text-center}
+### Hi, I'm Srivatsan!
+
+### This is the place where I share stuff about my research, interests, and life in general.
+:::
+
+::: {style="text-align: justify; margin-top: 30px;"}
+My goal is to enhance the capabilities of robots by building hardware that overcomes existing limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors, I built physical systems that can naturally handle the chaos of the real world. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
+
+To achieve this, I use principles of mechanical design, materials, and digital fabrication techniques to overcome the limitations of traditional manufacturing.
+
+I am actively looking for PhD positions in the areas of soft robotics, manipulation, and hardware design.
+:::
+
 :::

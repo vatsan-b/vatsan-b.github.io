@@ -13,12 +13,12 @@
   --font-headings: "Source Serif 4", serif;
 
   /* Background gradient */
-  --grad-c1:    22, 20, 18;
-  --grad-c2:    12, 10, 9;
-  --grad-angle: 180deg;
+  --grad-c1:    29, 31, 34;
+  --grad-c2:    15, 16, 18;
+  --grad-angle: 160deg;
 
   /* Navbar */
-  --nav-alpha: 1;
+  --nav-alpha: 1.0;
   --nav-blur:  0px;
 
   /* Palette */
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background: linear-gradient(var(--grad-angle), rgb(var(--grad-c1)) 0%, rgb(var(--grad-c2)) 100%);
+  background: linear-gradient(var(--grad-angle), rgb(var(--grad-c1)) 50%, rgb(var(--grad-c2)) 90%);
   background-attachment: fixed;
   font-family: var(--main-font) !important;
 }
@@ -73,6 +73,9 @@ h1, h2, h3, h4, h5, h6 {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+/* give the last section room to reach the top consistently */
+/* main { padding-bottom: 20vh; } */
 
 /* Links with no underline */
 a {

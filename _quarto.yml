@@ -14,7 +14,7 @@ execute:
   freeze: auto
 
 website:
-  title: "Srivatsan's Website"
+  title: "Srivatsan Balaji"
   favicon: assets/images/robot.png
   google-analytics: "G-ZZG5RG98PM"
   navbar:
@@ -26,7 +26,7 @@ website:
       - href: publications.qmd
         text: Publications
       - href: mentoring.qmd
-        text: Mentoring
+        text: Mentorship
       - href: life-outside-research.qmd
         text: Life Outside Work
       - href: mailto:sri.vatsan0307@gmail.com

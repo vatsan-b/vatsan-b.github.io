@@ -9,35 +9,35 @@
   {
     "objectID": "publications-parsed.html",
     "href": "publications-parsed.html",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "",
     "text": "Torque Responsive Metamaterials Enable High Payload Soft Robot Arms\nGood, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.\nUnder Review • IROS 2026\narXiv preprint\nComparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp\nPfeiffer, M. A., Whittaker, F., Puente, K., Balaji, S., Davidson, J. R., Wilson, C. G.\nUnder Review • IEEE SMC 2026\nTorsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers\nGood, I.*, Balaji, S.*, Lipton, J. I. • *Co-first Authors\n2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)\nIEEE Xplore • arXiv preprint\nA Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting\nVanAtter, C., Balaji, S., Davidson, J. R.\n2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 932–937\nIEEE Xplore"
   },
   {
     "objectID": "publications-parsed.html#section",
     "href": "publications-parsed.html#section",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "",
     "text": "Torque Responsive Metamaterials Enable High Payload Soft Robot Arms\nGood, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.\nUnder Review • IROS 2026\narXiv preprint\nComparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp\nPfeiffer, M. A., Whittaker, F., Puente, K., Balaji, S., Davidson, J. R., Wilson, C. G.\nUnder Review • IEEE SMC 2026\nTorsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers\nGood, I.*, Balaji, S.*, Lipton, J. I. • *Co-first Authors\n2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)\nIEEE Xplore • arXiv preprint\nA Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting\nVanAtter, C., Balaji, S., Davidson, J. R.\n2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 932–937\nIEEE Xplore"
   },
   {
     "objectID": "publications-parsed.html#section-1",
     "href": "publications-parsed.html#section-1",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "2025",
     "text": "2025\nFlexible Barometric Tactile Sensors for Robotic Grasping Applications\nShaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.\n2025 IEEE SENSORS • Pages 1–4\nIEEE Xplore"
   },
   {
     "objectID": "publications-parsed.html#section-2",
     "href": "publications-parsed.html#section-2",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "2024",
     "text": "2024\nEnhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer\nGood, I., Balaji, S., Lipton, J. I.\n2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) • Pages 235–242\nIEEE Xplore • arXiv preprint"
   },
   {
     "objectID": "publications-parsed.html#section-3",
     "href": "publications-parsed.html#section-3",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "2022",
     "text": "2022\nFabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology\nBrown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\nSolid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium\nPDF"
   },
@@ -65,28 +65,28 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "",
     "text": "Srivatsan Balaji\nResearch Engineer / Faculty Research Assistant\nCollaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Soft and Materials Robotics\n  View CV"
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
-    "title": "Srivatsan's Website",
+    "title": "Srivatsan Balaji",
     "section": "Skills",
     "text": "Skills\nMechanical Design & CAD\nCAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.\nAdditive Manufacturing\nFDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components.\nStereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail.\nMaterial Jetting: Stratasys J750 for multi-material 3D printing.\nSilicone Casting: Creating molds and elastomer components to fabricate soft robots.\nSimulation & Analysis\nFEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies.\nCFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels.\nMaterial Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM’s standard testing procedure.\nProgramming\nMATLAB: Data processing and visualization\nPython: Building visualization tools for robotics feedback.\nResearch Communication\nExperiment Design · Scientific and Technical writing · Presentation"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Hi, I’m Srivatsan!",
+    "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Hi, I’m Srivatsan!\n\nA portfolio of my research, interests, and life outside of research."
+    "text": "Hi, I’m Srivatsan!\n\n\nThis is the place where I share stuff about my research, interests, and life in general.\n\n\n\nMy goal is to enhance the capabilities of robots by building hardware that overcomes existing limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors, I built physical systems that can naturally handle the chaos of the real world. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.\nTo achieve this, I use principles of mechanical design, materials, and digital fabrication techniques to overcome the limitations of traditional manufacturing.\nI am actively looking for PhD positions in the areas of soft robotics, manipulation, and hardware design."
   },
   {
     "objectID": "mentoring.html",
     "href": "mentoring.html",
-    "title": "Mentoring",
+    "title": "Mentorship",
     "section": "",
     "text": "I love to teach! I have had the opportunity to mentor high school interns and undergraduate students in mechanical design, CAD, 3D printing / digital fabrication, and soft robotics. This included hands-on training on the Prusa, Carbon M1, and Stratasys J750 3D printers, Instron material testing system, as well as design for additive manufacturing and Python programming.\n\nMentees\n\nYusef (Joe) Torky\n\nHigh School Intern, Transformative Robotics Lab, University of Washington • Summer 2022\n\nNathan Zhang\n\nHigh School Intern, Transformative Robotics Lab, University of Washington • Summer 2022\n\nNatalie Paskett\n\nBachelor of Applied Science, Engineering, Oregon State University • Winter 2025"
   },

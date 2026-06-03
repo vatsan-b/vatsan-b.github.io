@@ -2,6 +2,7 @@
 title: "Life Outside Work"
 toc: true
 toc-location: right
+toc-title: "On this page"
 format:
   html:
     grid:
