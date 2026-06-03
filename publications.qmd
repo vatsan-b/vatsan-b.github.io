@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Publications"
 ---
 
@@ -38,4 +38,23 @@ title: "Publications"
    *Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium*\
    [PDF](https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content){target="_blank"}
 
-:::
+::: -->
+
+---
+title: "Publications"
+toc: true
+toc-location: right
+toc-title: "Year"
+format:
+  html:
+    grid:
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 200px
+---
+
+{{< include publications-parsed.qmd >}}
+
+<style>
+main p { text-align: justify; }
+</style>
