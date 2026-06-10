@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ebdeb37e074c88986e88b853e4af18a3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2209e6bdac22d1f1fb7b9d88a3e61092.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -181,13 +181,13 @@ let W, H, particles;
 function init() {
   W = canvas.width  = window.innerWidth;
   H = canvas.height = window.innerHeight;
-  particles = Array.from({ length: 100 }, () => ({
+  particles = Array.from({ length: 50 }, () => ({
     x: Math.random() * W,
     y: Math.random() * H,
-    r: Math.random() * 3 + 0.5,
-    dx: (Math.random() - 0.5) * 0.4,
-    dy: (Math.random() - 0.5) * 0.4,
-    alpha: Math.random() * 0.5 + 0.2,
+    r: Math.random() * 3 + 1,
+    dx: (Math.random() - 0.5) * 1,
+    dy: (Math.random() - 0.5) * 1,
+    alpha: Math.random() * 0.3 + 0.2,
   }));
 }
 

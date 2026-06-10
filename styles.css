@@ -13,16 +13,16 @@
   --font-headings: "Source Serif 4", serif;
 
   /* Background gradient */
-  --grad-c1:    29, 31, 34;
-  --grad-c2:    15, 16, 18;
+  --grad-c1:    15, 12, 30;
+  --grad-c2:    15, 14, 10;
   --grad-angle: 160deg;
 
   /* Navbar */
-  --nav-alpha: 1.0;
-  --nav-blur:  0px;
+  --nav-alpha: 0.85;
+  --nav-blur:  10px;
 
   /* Palette */
-  --accent:        #FDD26E;
+  --accent:        #bfac7e;
   --search-accent: #FDD26E;
   --text-dark:     #e8e8e8;
   --text-caption:  #bbbbbb;

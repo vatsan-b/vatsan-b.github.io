@@ -11,7 +11,7 @@ format:
       margin-width: 200px
 ---
 
-Outside the lab, most of my free time goes to two things: virtual aviation and photography.
+Most of my free time goes to two things: virtual aviation and photography.
 
 ## Flight Simulation
 
