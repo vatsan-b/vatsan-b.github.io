@@ -10,7 +10,7 @@
 $font-family-sans-serif: var(--main-font);
 $font-size-base: 17px;
 
-$headings-font-family: var(--main-font);
+$headings-font-family: var(--font-headings) !important;
 
 $navbar-bg: transparent;
 $navbar-fg: #ffffff;

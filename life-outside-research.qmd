@@ -15,38 +15,42 @@ Most of my free time goes to two things: virtual aviation and photography.
 
 ## Flight Simulation
 
-Photos of my virtual flight deck, and ATC scope. I am a virtual pilot, and an S1-trainee air traffic controller with VATUSA, the United States division of [VATSIM](https://www.vatsim.net){target="_blank"}.
+Photos of my virtual flight deck, and ATC scope. I am a virtual pilot, and an S1-rated air traffic controller with VATUSA ([VATSIM](https://www.vatsim.net){target="_blank"} United States division).
 
 ### Flying
 
-I usually like to fly the narrow body Boeing 737 Max 8, or the Airbus A320/321neo.
+Screenshots from my virtual flight deck
 
 ```{=html}
 <div class="av-grid">
   <div class="av-frame">
-    <img src="assets/flight-sim/Screenshot 2025-12-06 171830.png" alt="">
+    <img src="assets/flight-sim/737max8.png" alt="">
     <span class="av-caption">Boeing 737 Max 8 Cockpit</span>
   </div>
   <div class="av-frame">
-    <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
-    <span class="av-caption">Wing View</span>
+    <img src="assets/flight-sim/a350-night.png" alt="">
+    <span class="av-caption">Airbus A350 Cockpit</span>
   </div>
   <div class="av-frame">
     <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
-    <span class="av-caption">Wing View</span>
+    <span class="av-caption">Mt. Rainier seen during a flight from Seattle to Los Angeles</span>
+  </div>
+  <div class="av-frame">
+    <img src="assets/flight-sim/swa-737max.png" alt="">
+    <span class="av-caption">Southwest Airlines 737 Max 8</span>
   </div>
 </div>
 ```
 
 ### Air Traffic Control
 
-ATC text here.
+I control ground movements at Portland International Airport (PDX), and sometimes like to staff other satellite airports in the Pacific Northwest.
 
 ```{=html}
 <div class="av-grid">
   <div class="av-frame">
     <img src="assets/flight-sim/Screenshot 2025-12-06 171830.png" alt="">
-    <span class="av-caption">Boeing 737 Max 8 Cockpit</span>
+    <span class="av-caption">Screenshot of ASDE-X, a ground radar system.</span>
   </div>
   <div class="av-frame">
     <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
@@ -101,7 +105,7 @@ I mostly shoot landscapes and cityscapes. A selection is below; more lives on my
 #photo-gallery .gallery-item:hover .lg-hover { opacity: 1; }
 
 /* lightbox caption uses the page font */
-.lg-sub-html, .lg-sub-html * { font-family: "Source Serif Pro", serif !important; }
+.lg-sub-html, .lg-sub-html * { font-family: var(--main-font) !important; }
 
 @media (max-width: 700px) { .av-grid { grid-template-columns: 1fr; } }
 </style>
