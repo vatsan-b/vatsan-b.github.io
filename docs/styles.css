@@ -15,8 +15,8 @@
   --font-display:  "Source Serif 4", serif;
 
   /* Background gradient */
-  --grad-c1:    38, 41, 44;
-  --grad-c2:    15, 14, 10;
+  --grad-c1:    22, 25, 32;
+  --grad-c2:    12, 13, 15;
   --grad-angle: 160deg;
 
   /* Navbar */
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .message {
-  animation: fadeIn 2.0s ease forwards;
+  animation: fadeIn 1.5s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -232,7 +232,7 @@ figcaption, .caption, .figure-caption, .img-caption {
 
 /* ── Motion ─────────────────────────────────────────────── */
 @keyframes pageFade {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 

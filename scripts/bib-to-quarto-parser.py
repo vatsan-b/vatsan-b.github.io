@@ -7,7 +7,7 @@ No third-party dependencies — uses only the Python standard library.
 import re
 
 BIB_PATH = "publications.bib"
-OUT_PATH = "_publications_list.qmd"
+OUT_PATH = "publications-parsed.qmd"
 
 # Typed links, in display order. Label shown for each url_* field that is present.
 LINKS = [

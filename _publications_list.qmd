@@ -10,8 +10,8 @@ Pfeiffer, M. A., Whittaker, F., Puente, K., Balaji, S., Davidson, J. R., Wilson,
 [Accepted • IEEE SMC 2026]{style="color: gray;"}
 
 **Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**\
-Good, I., Balaji, S., Miske, J. N., Lipton, J. I.\
-*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 686–693*\
+Good, I.\*, Balaji, S.\*, Lipton, J. I. • \**Co-first Authors*\
+*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)*\
 [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522819){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}]{style="color: gray;"}
 
 **A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**\
