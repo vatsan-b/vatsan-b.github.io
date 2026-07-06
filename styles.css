@@ -91,6 +91,7 @@ a {
   -webkit-backdrop-filter: blur(var(--nav-blur));
   box-shadow: none !important;
   border-bottom: none !important;
+  view-transition-name: site-navbar;
 }
 
 .navbar-nav .nav-link {
@@ -231,12 +232,18 @@ figcaption, .caption, .figure-caption, .img-caption {
 }
 
 /* ── Motion ─────────────────────────────────────────────── */
+
+@view-transition {
+  navigation: auto;
+}
+
 @keyframes pageFade {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0.5; transform: translateY(5px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
   #quarto-content { animation: none; }
   html { scroll-behavior: auto; }
 }
