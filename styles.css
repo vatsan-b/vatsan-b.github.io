@@ -15,8 +15,8 @@
   --font-display:  "Source Serif 4", serif;
 
   /* Background gradient */
-  --grad-c1:    22, 25, 32;
-  --grad-c2:    12, 13, 15;
+  --grad-c1:    15, 30, 34;
+  --grad-c2:    40, 48, 63;
   --grad-angle: 160deg;
 
   /* Navbar */

@@ -56,11 +56,18 @@
     "text": "Srivatsan Balaji\nResearch Engineer / Faculty Research Assistant\nCollaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Soft and Materials Robotics\n  View CV"
   },
   {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
+    "objectID": "about.html#how-i-work",
+    "href": "about.html#how-i-work",
     "title": "Srivatsan Balaji",
-    "section": "Skills",
-    "text": "Skills\nMechanical Design & CAD\nCAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.\nAdditive Manufacturing\nFDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components.\nStereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail.\nMaterial Jetting: Stratasys J750 for multi-material 3D printing.\nSilicone Casting: Creating molds and elastomer components to fabricate soft robots.\nSimulation & Analysis\nFEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies.\nCFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels.\nMaterial Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM’s standard testing procedure.\nProgramming\nMATLAB: Data processing and visualization\nPython: Building visualization tools for robotics feedback.\nResearch Communication\nExperiment Design · Scientific and Technical writing · Presentation"
+    "section": "How I Work",
+    "text": "How I Work\n\n\n  \n    \n    \n      \n      Design\n      SolidWorks, Fusion 360, Inventor — soft robotic systems & end effectors\n    \n  \n\n  \n\n  \n    \n      \n      \n        \n        Fabrication\n        FDM, SLA, material jetting, silicone casting\n      \n    \n    \n      \n      \n        \n        Materials\n        Auxetic metamaterials, mechanical characterization\n      \n    \n    \n      \n      \n        \n        Computation\n        Python, MATLAB — feedback and control\n      \n    \n  \n\n  \n\n  \n    \n    \n      \n      Advanced Hardware\n      Integrated hardware for underwater robotic systems"
+  },
+  {
+    "objectID": "about.html#focus-areas",
+    "href": "about.html#focus-areas",
+    "title": "Srivatsan Balaji",
+    "section": "Focus Areas",
+    "text": "Focus Areas\n\n  \n    \n    High-Payload Soft Robots\n  \n  \n    \n    Underwater Robotics\n  \n  \n    \n    Agricultural Robotics\n  \n  \n    \n    Medical Robotics"
   },
   {
     "objectID": "for-fun.html",

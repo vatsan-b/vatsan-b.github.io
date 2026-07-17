@@ -69,7 +69,7 @@ Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air
 
 I am a virtual Seattle ARTCC controller on VATSIM, and I enjoy being a part of such a wonderful community! Controlling virtual air traffic is a fun and challenging hobby which keeps me on my toes. I also fly (virtually).
 
-<div id="av-gallery" class="fj-gallery" style="max-width: 1200px;"></div>
+<div id="av-gallery" class="fj-gallery" style="max-width: 1200px  ;"></div>
 
 <script>
 (function () {
