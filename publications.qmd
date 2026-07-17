@@ -42,8 +42,8 @@ title: "Publications"
 
 ---
 title: "Publications"
-toc: true
-toc-location: right
+<!-- toc: true
+toc-location: right -->
 toc-title: "Year"
 format:
   html:

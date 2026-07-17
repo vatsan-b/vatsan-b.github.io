@@ -121,8 +121,8 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 <span class="menu-text">Mentorship</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./life-outside-research.html" aria-current="page"> 
-<span class="menu-text">Life Outside Work</span></a>
+    <a class="nav-link active" href="./for-fun.html" aria-current="page"> 
+<span class="menu-text">For Fun</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="mailto:sri.vatsan0307@gmail.com"> 
@@ -160,11 +160,7 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#flight-simulation" id="toc-flight-simulation" class="nav-link active" data-scroll-target="#flight-simulation">Flight Simulation</a>
-  <ul class="collapse">
-  <li><a href="#virtual-flying" id="toc-virtual-flying" class="nav-link" data-scroll-target="#virtual-flying">Virtual Flying</a></li>
-  <li><a href="#virtual-air-traffic-controlling" id="toc-virtual-air-traffic-controlling" class="nav-link" data-scroll-target="#virtual-air-traffic-controlling">Virtual Air Traffic Controlling</a></li>
-  </ul></li>
+  <li><a href="#flight-simulation" id="toc-flight-simulation" class="nav-link active" data-scroll-target="#flight-simulation">Flight Simulation</a></li>
   <li><a href="#photography" id="toc-photography" class="nav-link" data-scroll-target="#photography">Photography</a></li>
   </ul>
 </nav>
@@ -191,53 +187,8 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 </header>
 
 
-<p>Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA (<a href="https://www.vatsim.net" target="_blank">VATSIM</a> United States division). I enjoy being a part of such a wonderful community.</p>
-<section id="flight-simulation" class="level2">
-<h2 data-anchor-id="flight-simulation">Flight Simulation</h2>
-<section id="virtual-flying" class="level3">
-<h3 data-anchor-id="virtual-flying">Virtual Flying</h3>
-<p>Screenshots from my virtual flight deck</p>
-<div class="av-grid">
-  <div class="av-frame">
-    <img src="assets/flight-sim/737max8.png" alt="">
-    <span class="av-caption">Boeing 737 Max 8</span>
-  </div>
-  <div class="av-frame">
-    <img src="assets/flight-sim/a350-night.png" alt="">
-    <span class="av-caption">Airbus A350-900</span>
-  </div>
-  <div class="av-frame">
-    <img src="assets/flight-sim/Screenshot 2026-01-17 161641.png" alt="">
-    <span class="av-caption">Mt. Rainier - seen during a flight from Seattle to Los Angeles</span>
-  </div>
-  <div class="av-frame">
-    <img src="assets/flight-sim/swa-737max.png" alt="">
-    <span class="av-caption">Boeing 737 Max 8</span>
-  </div>
-</div>
-</section>
-<section id="virtual-air-traffic-controlling" class="level3">
-<h3 data-anchor-id="virtual-air-traffic-controlling">Virtual Air Traffic Controlling</h3>
-<p>Controlling virtual air traffic is a fun and challenging hobby — just like flying, but with more responsibility. Always keeps me on my toes!</p>
-<div class="av-grid">
-  <div class="av-frame">
-    <img src="assets/flight-sim/asde-x-kpdx.png" alt="">
-    <span class="av-caption">ASDE-X, an advanced airport surface surveillance system.</span>
-  </div>
-  <div class="av-frame">
-    <img src="assets/flight-sim/kpdx-tower-cab.png" alt="">
-    <span class="av-caption">Tower Control Cabin</span>
-  </div>
-</div>
-</section>
-</section>
-<section id="photography" class="level2">
-<h2 data-anchor-id="photography">Photography</h2>
-<p>I mostly shoot landscapes and cityscapes. A selection is below; more lives on my <a href="https://unsplash.com/@srivatsan" target="_blank">Unsplash</a> profile.</p>
-<div id="photo-gallery" class="fj-gallery">
-
-</div>
-<!-- ── Justified mosaic (fjGallery) + lightbox (lightGallery) ── -->
+<p>Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA - <a href="https://www.vatsim.net" target="_blank">VATSIM</a>’s United States division.</p>
+<!-- ── Dependencies for both galleries ── -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.umd.min.js"></script>
@@ -247,41 +198,127 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 /* hide the native TOC "On this page" label */
 #toc-title { display: none; }
 
-/* ── Aviation: static 1x2 grid, subtle border, no hover, no lightbox ── */
-.av-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0 8px; max-width: 760px; }
-.av-frame {
-  border: 1px solid var(--border, #444);
-  border-radius: 6px; overflow: hidden; aspect-ratio: 16 / 10;
-  display: flex; align-items: center; justify-content: center;
-  color: var(--text-caption, #bbbbbb); font-size: 0.85rem; letter-spacing: 0.05em;
-  background: rgba(255, 255, 255, 0.02);
-}
-.av-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* ── Unified Gallery Styles ── */
+.fj-gallery { margin: 18px 0 32px; opacity: 0; transition: opacity 0.6s ease; max-width: 100%; }
+.fj-gallery.is-ready { opacity: 1; }
 
-/* ── Photography: justified gallery + lightbox ── */
-#photo-gallery { margin: 18px 0 40px; opacity: 0; transition: opacity 0.6s ease; }
-#photo-gallery.is-ready { opacity: 1; }
-#photo-gallery .gallery-item { overflow: hidden; border-radius: 4px; cursor: zoom-in; }
-#photo-gallery .gallery-item img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+.fj-gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Smooth rounded corners */
+  display: block;
+  transform: translateZ(0); /* Prevents zoom from breaking the border-radius mask in WebKit */
+  cursor: zoom-in;
+}
+
+.fj-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   transition: transform 0.6s ease, filter 0.6s ease;
+  will-change: transform;
 }
-#photo-gallery .gallery-item:hover img { transform: scale(1.05); filter: brightness(0.7); }
-#photo-gallery .lg-hover {
+
+/* Hover Zoom & Darken */
+.fj-gallery .gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+/* Magnifying Glass Icon Overlay */
+.fj-gallery .lg-hover {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  color: #ffffff60;                 /* white zoom icon on hover */
-  font-size: 1.4rem; opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem; opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
 }
-#photo-gallery .gallery-item:hover .lg-hover { opacity: 1; }
+.fj-gallery .gallery-item:hover .lg-hover { opacity: 1; }
 
-/* lightbox caption uses the page font */
-.lg-sub-html, .lg-sub-html * { font-family: var(--main-font) !important; }
-
-@media (max-width: 700px) { .av-grid { grid-template-columns: 1fr; } }
+/* Lightbox caption uses the page font */
+.lg-sub-html, .lg-sub-html * { font-family: var(--main-font, inherit) !important; }
 </style>
+<section id="flight-simulation" class="level2">
+<h2 data-anchor-id="flight-simulation">Flight Simulation</h2>
+<p>I am a virtual Seattle ARTCC controller on VATSIM, and I enjoy being a part of such a wonderful community! Controlling virtual air traffic is a fun and challenging hobby which keeps me on my toes. I also fly (virtually).</p>
+<div id="av-gallery" class="fj-gallery" style="max-width: 1200px;">
+
+</div>
 <script>
 (function () {
-  // Edit this list to add or remove photos.
+  var shots = [
+    { file: "assets/flight-sim/Screenshot 2026-07-13 043136.png", caption: "From the scope: ASDE-X, an advanced airport surface surveillance system." },
+    { file: "assets/flight-sim/kpdx-tower-cab.png",               caption: "Tower Control Cabin" },
+    { file: "assets/flight-sim/Screenshot 2026-01-17 161641.png", caption: "Mt. Rainier seen during a flight from Seattle to Los Angeles" },
+    { file: "assets/flight-sim/737max8.png",                      caption: "United Airlines Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)" },
+    { file: "assets/flight-sim/a350-night.png",                   caption: "Delta Airlines Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)" },
+    { file: "assets/flight-sim/swa-737max.png",                   caption: "Southwest Airlines Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)" }
+  ];
+
+  var gallery = document.getElementById("av-gallery");
+  if (!gallery) return;
+
+  gallery.innerHTML = shots.map(function (s) {
+    var cap = s.caption ? s.caption.replace(/"/g, "&quot;") : "";
+    var capAttr = cap ? ' data-sub-html="' + cap + '"' : '';
+    return '<a class="fj-gallery-item gallery-item" href="' + s.file + '"' + capAttr + '>'
+         +   '<img src="' + s.file + '" alt="' + cap + '">'
+         +   '<span class="lg-hover"><i class="fa-solid fa-magnifying-glass-plus"></i></span>'
+         + '</a>';
+  }).join("");
+
+  function rowH() {
+    var w = window.innerWidth;
+    return w < 600 ? 120 : (w < 1000 ? 150 : 170);
+  }
+
+  var tries = 0;
+  function init() {
+    if (typeof fjGallery === "undefined" || typeof lightGallery === "undefined") {
+      if (++tries > 60) { gallery.classList.add("is-ready"); return; }
+      setTimeout(init, 50);
+      return;
+    }
+
+    fjGallery(gallery, {
+      itemSelector: ".fj-gallery-item",
+      rowHeight: rowH(),
+      gutter: 10,
+      lastRow: "left",
+      rowHeightTolerance: 0.25,
+      onJustify: function () { gallery.classList.add("is-ready"); }
+    });
+
+    lightGallery(gallery, {
+      selector: ".gallery-item",
+      plugins: [lgZoom, lgThumbnail],
+      speed: 400,
+      download: false,
+      zoomFromOrigin: false,
+      licenseKey: "0000-0000-000-0000"
+    });
+
+    var lastRH = rowH(), rt;
+    window.addEventListener("resize", function () {
+      clearTimeout(rt);
+      rt = setTimeout(function () {
+        var nh = rowH();
+        if (nh !== lastRH) { lastRH = nh; fjGallery(gallery, "updateOptions", { rowHeight: nh }); }
+      }, 200);
+    });
+  }
+
+  init();
+})();
+</script>
+</section>
+<section id="photography" class="level2">
+<h2 data-anchor-id="photography">Photography</h2>
+<p>I mostly shoot landscapes and cityscapes. A selection is below; more lives on my <a href="https://unsplash.com/@srivatsan" target="_blank">Unsplash</a> profile.</p>
+<div id="photo-gallery" class="fj-gallery">
+
+</div>
+<script>
+(function () {
   var photos = [
     { file: "assets/unsplash-photos/PXL_20220323_021751755.jpg",                       caption: "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
     { file: "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg",          caption: "" },
@@ -324,14 +361,12 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
   var tries = 0;
   function init() {
     if (typeof fjGallery === "undefined" || typeof lightGallery === "undefined") {
-      if (++tries > 60) { gallery.classList.add("is-ready"); return; }  // reveal anyway if CDN fails
+      if (++tries > 60) { gallery.classList.add("is-ready"); return; } 
       setTimeout(init, 50);
       return;
     }
 
-    var els = document.querySelectorAll("#photo-gallery");
-
-    fjGallery(els, {
+    fjGallery(gallery, {
       itemSelector: ".fj-gallery-item",
       rowHeight: rowH(),
       gutter: 10,
@@ -346,7 +381,7 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
       speed: 400,
       download: false,
       zoomFromOrigin: false,
-      licenseKey: "0000-0000-000-0000"  // silences console notice; GPLv3 use for this open-source site
+      licenseKey: "0000-0000-000-0000"
     });
 
     var lastRH = rowH(), rt;
@@ -354,7 +389,7 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
       clearTimeout(rt);
       rt = setTimeout(function () {
         var nh = rowH();
-        if (nh !== lastRH) { lastRH = nh; fjGallery(els, "updateOptions", { rowHeight: nh }); }
+        if (nh !== lastRH) { lastRH = nh; fjGallery(gallery, "updateOptions", { rowHeight: nh }); }
       }, 200);
     });
   }

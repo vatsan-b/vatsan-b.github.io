@@ -42,25 +42,11 @@
     "text": "2022\nFabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology\nBrown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\nSolid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium\nPDF"
   },
   {
-    "objectID": "life-outside-research.html",
-    "href": "life-outside-research.html",
-    "title": "Life Outside Work",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA (VATSIM United States division). I enjoy being a part of such a wonderful community."
-  },
-  {
-    "objectID": "life-outside-research.html#flight-simulation",
-    "href": "life-outside-research.html#flight-simulation",
-    "title": "Life Outside Work",
-    "section": "Flight Simulation",
-    "text": "Flight Simulation\n\nVirtual Flying\nScreenshots from my virtual flight deck\n\n  \n    \n    Boeing 737 Max 8\n  \n  \n    \n    Airbus A350-900\n  \n  \n    \n    Mt. Rainier - seen during a flight from Seattle to Los Angeles\n  \n  \n    \n    Boeing 737 Max 8\n  \n\n\n\nVirtual Air Traffic Controlling\nControlling virtual air traffic is a fun and challenging hobby — just like flying, but with more responsibility. Always keeps me on my toes!\n\n  \n    \n    ASDE-X, an advanced airport surface surveillance system.\n  \n  \n    \n    Tower Control Cabin"
-  },
-  {
-    "objectID": "life-outside-research.html#photography",
-    "href": "life-outside-research.html#photography",
-    "title": "Life Outside Work",
-    "section": "Photography",
-    "text": "Photography\nI mostly shoot landscapes and cityscapes. A selection is below; more lives on my Unsplash profile."
+    "text": "Hi, I’m Srivatsan!\n\n\nThis is the place where I share stuff about my research, interests, and life in general.\n\n\n\nMy goal is to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors, I built physical systems that can naturally handle the chaos of the real world. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.\nTo achieve this, I use principles of mechanical design, materials, and digital fabrication to overcome the limitations of traditional manufacturing."
   },
   {
     "objectID": "about.html",
@@ -77,11 +63,25 @@
     "text": "Skills\nMechanical Design & CAD\nCAD Modeling: SolidWorks and Autodesk Fusion 360 for designing soft robotic systems, end effectors, and mechanical metamaterials. I have some experience with Autodesk Inventor.\nAdditive Manufacturing\nFDM Printing: Prusa printers for rapid prototyping of gripper fingers and structural components.\nStereolithography: Printing auxetic materials using the Carbon M1 3D printer for high-resolution parts requiring fine detail.\nMaterial Jetting: Stratasys J750 for multi-material 3D printing.\nSilicone Casting: Creating molds and elastomer components to fabricate soft robots.\nSimulation & Analysis\nFEA: Ansys Mechanical for structural analysis for soft actuators, including parametric design studies.\nCFD: Ansys Fluent for fundamental fluid flow and heat transfer analysis in packed bed columns and microchannels.\nMaterial Testing: Instron Universal Testing System for characterizing auxetic metamaterials, and estimating mechanical properties using ASTM’s standard testing procedure.\nProgramming\nMATLAB: Data processing and visualization\nPython: Building visualization tools for robotics feedback.\nResearch Communication\nExperiment Design · Scientific and Technical writing · Presentation"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Srivatsan Balaji",
+    "objectID": "for-fun.html",
+    "href": "for-fun.html",
+    "title": "Life Outside Work",
     "section": "",
-    "text": "Hi, I’m Srivatsan!\n\n\nThis is the place where I share stuff about my research, interests, and life in general.\n\n\n\nMy goal is to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors, I built physical systems that can naturally handle the chaos of the real world. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.\nTo achieve this, I use principles of mechanical design, materials, and digital fabrication to overcome the limitations of traditional manufacturing."
+    "text": "Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA - VATSIM’s United States division."
+  },
+  {
+    "objectID": "for-fun.html#flight-simulation",
+    "href": "for-fun.html#flight-simulation",
+    "title": "Life Outside Work",
+    "section": "Flight Simulation",
+    "text": "Flight Simulation\nI am a virtual Seattle ARTCC controller on VATSIM, and I enjoy being a part of such a wonderful community! Controlling virtual air traffic is a fun and challenging hobby which keeps me on my toes. I also fly (virtually)."
+  },
+  {
+    "objectID": "for-fun.html#photography",
+    "href": "for-fun.html#photography",
+    "title": "Life Outside Work",
+    "section": "Photography",
+    "text": "Photography\nI mostly shoot landscapes and cityscapes. A selection is below; more lives on my Unsplash profile."
   },
   {
     "objectID": "mentoring.html",
