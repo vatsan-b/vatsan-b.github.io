@@ -162,53 +162,283 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 
 
 
-<canvas id="particle-bg">
+<canvas id="cube-bg">
 </canvas>
+<div id="cube-veil">
+
+</div>
 <style>
-#particle-bg {
+/* base colour lives on <html> so nothing else needs to paint a background */
+html { background: #05070e; }
+
+/* let the animation show through every Quarto wrapper, navbar included */
+body,
+header#quarto-header,
+#quarto-header .navbar,
+#quarto-content,
+#quarto-document-content,
+.quarto-container,
+.page-columns,
+main.content,
+.navbar-container,
+.quarto-title-block {
+  background: transparent !important;
+}
+
+#cube-bg {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  inset: 0;
+  width: 100vw; height: 100vh;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.8;          /* dial down so body copy stays readable */
+}
+
+/* scrim between the animation and the text — raise the alpha if body copy
+   still competes with the brighter parts of the wave */
+#cube-veil {
+  position: fixed;
+  inset: 0;
+  width: 100vw; height: 100vh;
   z-index: -1;
   pointer-events: none;
+  background: radial-gradient(ellipse at 50% 40%,
+              rgba(5,7,14,0.55) 0%, rgba(5,7,14,0.80) 100%);
+}
+
+/* keep the nav readable now that it sits on moving cubes */
+#quarto-header .navbar {
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.06);
 }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
-const canvas = document.getElementById('particle-bg');
-const ctx = canvas.getContext('2d');
-let W, H, particles;
+(function () {
+  const canvas = document.getElementById('cube-bg');
+  const veil   = document.getElementById('cube-veil');
+  if (!canvas || typeof THREE === 'undefined') return;
 
-function init() {
-  W = canvas.width  = window.innerWidth;
-  H = canvas.height = window.innerHeight;
-  particles = Array.from({ length: 50 }, () => ({
-    x: Math.random() * W,
-    y: Math.random() * H,
-    r: Math.random() * 3 + 1,
-    dx: (Math.random() - 0.5) * 1,
-    dy: (Math.random() - 0.5) * 1,
-    alpha: Math.random() * 0.3 + 0.2,
-  }));
-}
+  /* Quarto renders this markup inside its content column, and any ancestor with
+     a transform/filter would become the containing block for a fixed element —
+     which is what boxes the canvas into the column. Reparenting to <body>
+     guarantees it is positioned against the viewport instead. */
+  document.body.appendChild(canvas);
+  if (veil) document.body.appendChild(veil);
 
-function draw() {
-  ctx.clearRect(0, 0, W, H);
-  for (const p of particles) {
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(200, 200, 200, ${p.alpha})`;
-    ctx.fill();
-    p.x += p.dx;
-    p.y += p.dy;
-    if (p.x < 0 || p.x > W) p.dx *= -1;
-    if (p.y < 0 || p.y > H) p.dy *= -1;
+  const CFG = {
+    density  : 100,       // cubes per side
+    amplitude: 0.70,     // wave height, in spacings
+    speed    : 0.40,
+    glow     : 1.00,
+    tilt     : 60,       // camera elevation, degrees
+    colorA   : '#8fd3ff',
+    colorB   : '#4a6fa5',
+    fog      : 0x0a1420,
+
+    /* --- unit-cell deformation --------------------------------------------
+       shear tips each cell to follow the local surface slope.
+       strain scales axial deformation with local curvature (tension at
+       crests, compression in troughs); poisson is the transverse response,
+       negative being auxetic. Both are inert while strain is 0.            */
+    strain   : 0.00,     // 0 = cells stay rigid, only tipping
+    poisson  : -0.40,
+    shear    : 2.00
+  };
+
+  const CAM_DIST  = 20;    // camera distance; screen coverage comes from spacing
+  const FILL      = 0.95;  // cube size as a fraction of spacing
+  const TOP_REACH = 4.0;   // ground distance at top of frame, in camera heights
+
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setClearColor(0x000000, 0);
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(CFG.fog, 0.02);
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 400);
+
+  const uniforms = {
+    uGlow  : { value: CFG.glow },
+    uColorA: { value: new THREE.Color(CFG.colorA) },
+    uColorB: { value: new THREE.Color(CFG.colorB) },
+    uMaxH  : { value: 1.0 }
+  };
+
+  // neon lives on the cube edges: distance to the nearest face border in UV space
+  const material = new THREE.ShaderMaterial({
+    uniforms,
+    vertexShader: `
+      varying vec2 vUv;
+      varying float vFace;
+      varying float vH;
+      void main(){
+        vUv   = uv;
+        vFace = abs(normal.y);
+        vec4 ip = instanceMatrix * vec4(position, 1.0);
+        vH = ip.y;
+        gl_Position = projectionMatrix * modelViewMatrix * ip;
+      }
+    `,
+    fragmentShader: `
+      uniform float uGlow;
+      uniform vec3  uColorA;
+      uniform vec3  uColorB;
+      uniform float uMaxH;
+      varying vec2  vUv;
+      varying float vFace;
+      varying float vH;
+
+      void main(){
+        vec2 d = min(vUv, 1.0 - vUv);
+        float edge = min(d.x, d.y);
+
+        float core = 1.0 - smoothstep(0.0, 0.030, edge);   // crisp filament
+        float halo = 1.0 - smoothstep(0.0, 0.170, edge);   // soft bleed
+        float line = core + halo * 0.42;
+
+        float t = clamp(vH / (uMaxH * 2.0) + 0.5, 0.0, 1.0);
+        vec3 neon = mix(uColorB, uColorA, t);
+
+        vec3 faceCol = vec3(0.030, 0.042, 0.075) * (0.55 + vFace * 0.55);
+        float lift = 0.55 + t * 0.9;                       // peaks glow brighter
+
+        gl_FragColor = vec4(faceCol + neon * line * uGlow * lift, 1.0);
+      }
+    `
+  });
+
+  const N = CFG.density;
+  const dummy = new THREE.Object3D();
+  let SPACING = 1.0;
+
+  const mesh = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), material, N * N);
+  mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  mesh.frustumCulled = false;
+  scene.add(mesh);
+
+  // The camera sits at CFG.tilt but aims lower, so the top of the frame lands on
+  // ground TOP_REACH camera-heights out. The horizon is never in shot, so there
+  // is no empty background above the field.
+  function fitField() {
+    const fovY  = THREE.MathUtils.degToRad(camera.fov);
+    const fovX  = 2 * Math.atan(Math.tan(fovY / 2) * camera.aspect);
+    const pitch = THREE.MathUtils.degToRad(CFG.tilt);
+
+    const height = Math.sin(pitch) * CAM_DIST;
+    const horiz  = Math.cos(pitch) * CAM_DIST;
+
+    const topAngle  = Math.atan(1 / TOP_REACH);
+    const viewPitch = topAngle + fovY / 2;
+    const farDist   = height * TOP_REACH;
+    const aimZ      = horiz - height / Math.tan(viewPitch);
+
+    // stretch the grid until it reaches every corner of the frustum
+    const R = Math.max(horiz + farDist, farDist * Math.tan(fovX / 2)) * 1.15 + 4;
+    SPACING = (2 * R) / N;
+    scene.fog.density = 0.90 / R;
+
+    camera.position.set(0, height, horiz);
+    camera.lookAt(0, 0, aimZ);
   }
-  requestAnimationFrame(draw);
-}
 
-window.addEventListener('resize', init);
-init();
-draw();
+  // height field, filled once per frame and then differenced for strain
+  const HS = new Float32Array(N * N);
+
+  function waveAt(gx, gz) {
+    const gr = Math.sqrt(gx * gx + gz * gz);
+    return Math.sin(gx * 0.32 + TIME * 1.1)  * 0.55 +
+           Math.cos(gz * 0.28 - TIME * 0.85) * 0.55 +
+           Math.sin(gr * 0.42 - TIME * 1.4)  * 0.45;
+  }
+
+  let TIME = 0;
+
+  function updateGrid(t) {
+    TIME = t;
+    const half = (N - 1) / 2;
+    const s    = SPACING * FILL;
+    const amp  = CFG.amplitude * SPACING;
+
+    // pass 1 — sample the height field
+    for (let x = 0; x < N; x++) {
+      for (let z = 0; z < N; z++) {
+        HS[x * N + z] = waveAt(x - half, z - half);
+      }
+    }
+
+    // pass 2 — differentiate it, then place and deform each cell
+    const at = (x, z) => HS[Math.min(N-1, Math.max(0, x)) * N +
+                            Math.min(N-1, Math.max(0, z))];
+
+    // slope in world terms: amp per grid step, so SPACING cancels out
+    const slopeGain = CFG.amplitude * CFG.shear;
+    let i = 0;
+
+    for (let x = 0; x < N; x++) {
+      for (let z = 0; z < N; z++) {
+        const h  = HS[x * N + z];
+
+        // central differences: slope drives shear, curvature drives strain
+        const dx  = (at(x+1, z) - at(x-1, z)) * 0.5;
+        const dz  = (at(x, z+1) - at(x, z-1)) * 0.5;
+        const lap = at(x+1, z) + at(x-1, z) + at(x, z+1) + at(x, z-1) - 4 * h;
+
+        // negative curvature (a crest) puts the cell in tension
+        let eps = -lap * CFG.strain;
+        eps = Math.max(-0.55, Math.min(0.55, eps));
+
+        const sy  = s * (1 + eps);
+        const sxz = s * (1 - CFG.poisson * eps);   // transverse response
+
+        dummy.position.set((x - half) * SPACING, h * amp, (z - half) * SPACING);
+        dummy.scale.set(sxz, sy, sxz);
+        dummy.rotation.set(-dz * slopeGain, 0, dx * slopeGain);
+        dummy.updateMatrix();
+        mesh.setMatrixAt(i++, dummy.matrix);
+      }
+    }
+    mesh.instanceMatrix.needsUpdate = true;
+    uniforms.uMaxH.value = amp;
+  }
+
+  function resize() {
+    const w = window.innerWidth, h = window.innerHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    fitField();
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  const clock = new THREE.Clock();
+  let time = 0, running = false;
+
+  function frame() {
+    if (document.hidden) { running = false; return; }   // pause in background tabs
+    running = true;
+    requestAnimationFrame(frame);
+    time += clock.getDelta() * CFG.speed;
+    updateGrid(time);
+    renderer.render(scene, camera);
+  }
+
+  function start() {
+    if (running) return;
+    clock.getDelta();                                    // drop time spent paused
+    frame();
+  }
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    updateGrid(0);                                       // single static frame
+    renderer.render(scene, camera);
+  } else {
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) start(); });
+    start();
+  }
+})();
 </script>
 <div class="message" style="max-width: 1000px; margin: 60px auto 0; line-height: 1.6;">
 <div class="text-center">
