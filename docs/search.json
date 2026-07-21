@@ -53,7 +53,7 @@
     "href": "about.html",
     "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Srivatsan Balaji\nResearch Engineer / Faculty Research Assistant\nCollaborative Robotics and Intelligent Systems (CoRIS) Institute, Oregon State University\nInterests: Soft and Materials Robotics\n  View CV"
+    "text": "Srivatsan Balaji\nResearch Contributor\nNimble Surgical\nInterests: Soft and Materials Robotics\n  View CV"
   },
   {
     "objectID": "about.html#how-i-work",
@@ -131,5 +131,12 @@
     "title": "Publications",
     "section": "2022",
     "text": "2022\nFabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology\nBrown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\nSolid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium\nPDF"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "Srivatsan Balaji",
+    "section": "Skills",
+    "text": "Skills\n\n \n  \n    Design\n    SolidWorks, Fusion 360 — soft robotic systems & end effectors\n  \n \n  \n \n  \n    \n      Fabrication\n      FDM, SLA, material jetting, silicone casting\n    \n    \n      Experimental Analysis\n      Mechanical characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n \n  \n \n  \n    Advanced Hardware\n    Hardware for soft robotic systems\n  \n \n\n\n  High-Payload Soft Robots\n  Underwater Robotics\n  Agricultural Robotics\n  Medical Robotics"
   }
 ]
