@@ -20,7 +20,7 @@ Nimble Surgical]{.affiliation}
 
 ::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
 
-I am currently a Research Contributor at Nimble Surgical, working on the development of computational methods for simulating auxetic metamaterials. Prior to this, I was a Research Engineer / Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
+I am currently a Research Contributor / Volunteer at Nimble Surgical, working on the development of computational methods for simulating auxetic metamaterials. Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
 
 Outside of work, I am a virtual pilot and hobbyist photographer.
 
@@ -28,36 +28,36 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
 
 ```{=html}
 <div class="flow-track">
- 
+
   <div class="flow-node flow-node--split">
     <div class="flow-node__label">Design</div>
-    <div class="flow-node__sub">SolidWorks, Fusion 360 &mdash; soft robotic systems &amp; end effectors</div>
+    <div class="flow-node__sub">SolidWorks, Autodesk Fusion 360 &mdash; Design and development of soft robotic systems &amp; end effectors</div>
   </div>
- 
+
   <svg class="flow-conn" data-dir="out" aria-hidden="true"></svg>
- 
+
   <div class="flow-branch">
     <div class="flow-node">
       <div class="flow-node__label">Fabrication</div>
-      <div class="flow-node__sub">FDM, SLA, material jetting, silicone casting</div>
+      <div class="flow-node__sub">Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting</div>
     </div>
     <div class="flow-node">
-      <div class="flow-node__label">Experimental Analysis</div>
-      <div class="flow-node__sub">Mechanical characterization</div>
+      <div class="flow-node__label">Materials</div>
+      <div class="flow-node__sub">Mechanical analysis &amp; characterization</div>
     </div>
     <div class="flow-node">
       <div class="flow-node__label">Computation</div>
       <div class="flow-node__sub">Python, MATLAB &mdash; Data processing, analysis, and feedback</div>
     </div>
   </div>
- 
+
   <svg class="flow-conn" data-dir="in" aria-hidden="true"></svg>
- 
+
   <div class="flow-node flow-node--merge">
     <div class="flow-node__label">Advanced Hardware</div>
-    <div class="flow-node__sub">Hardware for soft robotic systems</div>
+    <div class="flow-node__sub">Integrated hardware for underwater robotic systems</div>
   </div>
- 
+
 </div>
 ```
 
@@ -96,14 +96,20 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
 .flow-node__label { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; }
 .flow-node__sub   { font-size: 0.85rem; opacity: 0.78; text-align: left; }
 
-.flow-branch { display: flex; flex-direction: column; gap: 1.2rem; }
+/* equal-height rows: this is what makes the middle connector truly horizontal,
+   since the centre node's midpoint then coincides with the column's centre */
+.flow-branch {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 1.2rem;
+}
 
 .flow-conn {
   width: 100%;
   height: 100%;
   display: block;
   opacity: 0;                    /* revealed once the paths are measured */
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 .flow-conn.is-ready { opacity: 1; }
 .flow-conn path {
@@ -112,6 +118,11 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
   stroke-width: 1.4;
   opacity: 0.55;
   vector-effect: non-scaling-stroke;
+}
+/* the draw-on animation is applied per path in JS, since each one needs its
+   own length and stagger delay */
+.flow-conn path.is-drawing {
+  transition: stroke-dashoffset 0.9s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 /* ── Focus Areas ── */
@@ -174,6 +185,9 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
   const conns = document.querySelectorAll(".flow-conn");
   if (!conns.length) return;
 
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let played = reduced;            // once true, paths render fully drawn
+
   function drawOne(svg) {
     const out    = svg.dataset.dir === "out";      // out: one → many, in: many → one
     const branch = out ? svg.nextElementSibling : svg.previousElementSibling;
@@ -195,14 +209,42 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
       const y1 = r.top + r.height / 2 - box.top;
       const [a, b] = out ? [y0, y1] : [y1, y0];    // start and end heights
 
+      // within a pixel of level, draw a true straight line — a Bézier between
+      // near-equal endpoints still renders a visible sag
+      const d = Math.abs(a - b) < 1
+        ? `M0,${a} L${box.width},${a}`
+        : `M0,${a} C${midX},${a} ${midX},${b} ${box.width},${b}`;
+
       const path = document.createElementNS(SVGNS, "path");
-      path.setAttribute("d",
-        `M0,${a} C${midX},${a} ${midX},${b} ${box.width},${b}`);
+      path.setAttribute("d", d);
       frag.appendChild(path);
     });
 
     svg.replaceChildren(frag);
     svg.classList.add("is-ready");
+
+    // Hide each path along its own length so it can be "drawn" left to right.
+    // getTotalLength needs the path in the document, hence the second pass.
+    if (!played) {
+      svg.querySelectorAll("path").forEach(p => {
+        const len = p.getTotalLength();
+        p.style.strokeDasharray  = len;
+        p.style.strokeDashoffset = len;
+      });
+    }
+  }
+
+  // Reveal: paths run from x=0 to x=width, so easing the dash offset to zero
+  // draws them in the direction of flow. Staggered per connector and per track.
+  function play() {
+    conns.forEach((svg, ci) => {
+      svg.querySelectorAll("path").forEach((p, pi) => {
+        p.classList.add("is-drawing");
+        p.style.transitionDelay = `${ci * 0.35 + pi * 0.12}s`;
+        p.style.strokeDashoffset = 0;
+      });
+    });
+    played = true;
   }
 
   let queued = false;
@@ -220,11 +262,25 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
 
   // ResizeObserver catches column reflow, zoom and font swaps that a resize
   // listener alone would miss.
-  if ("ResizeObserver" in window) {
-    const ro = new ResizeObserver(draw);
-    document.querySelectorAll(".flow-track").forEach(track => ro.observe(track));
+  const track = document.querySelector(".flow-track");
+  if ("ResizeObserver" in window && track) {
+    new ResizeObserver(draw).observe(track);
   } else {
     window.addEventListener("resize", draw);
+  }
+
+  // Draw the lines when the chart first scrolls into view — once per page load.
+  if (!played && track) {
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries, obs) => {
+        if (!entries[0].isIntersecting) return;
+        obs.disconnect();                          // never runs a second time
+        requestAnimationFrame(play);               // let the dash offsets commit first
+      }, {threshold: 0.25});
+      io.observe(track);
+    } else {
+      play();                                      // no observer support: just show them
+    }
   }
 })();
 </script>

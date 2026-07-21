@@ -191,7 +191,7 @@ main.content,
   width: 100vw; height: 100vh;
   z-index: -2;
   pointer-events: none;
-  opacity: 0.8;          /* dial down so body copy stays readable */
+  opacity: 0.30;          /* dial down so body copy stays readable */
 }
 
 /* scrim between the animation and the text — raise the alpha if body copy
@@ -228,13 +228,13 @@ main.content,
   if (veil) document.body.appendChild(veil);
 
   const CFG = {
-    density  : 100,       // cubes per side
-    amplitude: 0.70,     // wave height, in spacings
-    speed    : 0.40,
-    glow     : 1.00,
-    tilt     : 60,       // camera elevation, degrees
-    colorA   : '#8fd3ff',
-    colorB   : '#4a6fa5',
+    density  : 160,       // cubes per side
+    amplitude: 0.80,     // wave height, in spacings
+    speed    : 0.50,
+    glow     : 3.00,
+    tilt     : 90,       // camera elevation, degrees
+    colorA   : '#cd2c77',
+    colorB   : '#2ca2cd',
     fog      : 0x0a1420,
 
     /* --- unit-cell deformation --------------------------------------------

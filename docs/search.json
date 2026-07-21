@@ -56,18 +56,11 @@
     "text": "Srivatsan Balaji\nResearch Contributor\nNimble Surgical\nInterests: Soft and Materials Robotics\n  View CV"
   },
   {
-    "objectID": "about.html#how-i-work",
-    "href": "about.html#how-i-work",
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
     "title": "Srivatsan Balaji",
-    "section": "How I Work",
-    "text": "How I Work\n\n\n  \n    \n    \n      \n      Design\n      SolidWorks, Fusion 360, Inventor — soft robotic systems & end effectors\n    \n  \n\n  \n\n  \n    \n      \n      \n        \n        Fabrication\n        FDM, SLA, material jetting, silicone casting\n      \n    \n    \n      \n      \n        \n        Materials\n        Auxetic metamaterials, mechanical characterization\n      \n    \n    \n      \n      \n        \n        Computation\n        Python, MATLAB — feedback and control\n      \n    \n  \n\n  \n\n  \n    \n    \n      \n      Advanced Hardware\n      Integrated hardware for underwater robotic systems"
-  },
-  {
-    "objectID": "about.html#focus-areas",
-    "href": "about.html#focus-areas",
-    "title": "Srivatsan Balaji",
-    "section": "Focus Areas",
-    "text": "Focus Areas\n\n  \n    \n    High-Payload Soft Robots\n  \n  \n    \n    Underwater Robotics\n  \n  \n    \n    Agricultural Robotics\n  \n  \n    \n    Medical Robotics"
+    "section": "Skills",
+    "text": "Skills\n\n\n  \n    Design\n    SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems & end effectors\n  \n\n  \n\n  \n    \n      Fabrication\n      Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting\n    \n    \n      Materials\n      Mechanical analysis & characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n\n  \n\n  \n    Advanced Hardware\n    Integrated hardware for underwater robotic systems\n  \n\n\n\n  High-Payload Soft Robots\n  Underwater Robotics\n  Agricultural Robotics\n  Medical Robotics"
   },
   {
     "objectID": "for-fun.html",
@@ -131,12 +124,5 @@
     "title": "Publications",
     "section": "2022",
     "text": "2022\nFabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology\nBrown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\nSolid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium\nPDF"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "Srivatsan Balaji",
-    "section": "Skills",
-    "text": "Skills\n\n \n  \n    Design\n    SolidWorks, Fusion 360 — soft robotic systems & end effectors\n  \n \n  \n \n  \n    \n      Fabrication\n      FDM, SLA, material jetting, silicone casting\n    \n    \n      Experimental Analysis\n      Mechanical characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n \n  \n \n  \n    Advanced Hardware\n    Hardware for soft robotic systems\n  \n \n\n\n  High-Payload Soft Robots\n  Underwater Robotics\n  Agricultural Robotics\n  Medical Robotics"
   }
 ]
