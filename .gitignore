@@ -5,5 +5,8 @@ quarto-linux-amd64.deb
 /assets/videos/
 /assets/unsplash-photos/
 /assets/logos/
-maintenance.html
+
+# Backup copies of the render output — never commit these
+*.bak/
+docs.bak/
 
