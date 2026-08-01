@@ -20,7 +20,7 @@ Nimble Surgical]{.affiliation}
 
 ::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
 
-I am currently a Research Contributor / Volunteer at Nimble Surgical, working on the development of computational methods for simulating auxetic metamaterials. Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
+I am currently a Research Contributor at Nimble Surgical, working on the development of computational methods for simulating auxetic metamaterials. Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
 
 Outside of work, I am a virtual pilot and hobbyist photographer.
 

@@ -56,12 +56,14 @@ the rendered `docs/assets/` in git is the only committed copy of those images.
 
 ## Open items
 
-- Bio does not mention the Nimble Surgical role.
 - `maintenance.html` sits at the repo root, purpose unconfirmed. It was previously in
   `.gitignore`; that entry was removed and the file is now tracked deliberately.
-- `docs/connect.html` exists in the build output but has **no** `connect.qmd` source in
-  `sandbox` — it is v1 leftover and will vanish on a clean render.
-- Quarto is **not installed** on the VM, so the site cannot be rebuilt here yet.
+- `connect.qmd` exists as a source file but is deliberately excluded from
+  `_quarto.yml`'s render list (only the six navbar pages render). Its stale
+  `docs/connect.html` output was removed and will not return on a clean render.
+- Quarto 1.9.37 is installed locally at `~/.local/opt/quarto-1.9.37` (symlinked as
+  `quarto` on `PATH` via `~/.local/bin`), matching the version recorded in the
+  committed HTML.
 
 ## Git
 

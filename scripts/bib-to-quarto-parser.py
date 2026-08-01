@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate _publications_list.qmd from publications.bib, grouped by year (newest first).
+"""Generate publications-parsed.qmd from publications.bib, grouped by year (newest first).
 
 No third-party dependencies — uses only the Python standard library.
 """
