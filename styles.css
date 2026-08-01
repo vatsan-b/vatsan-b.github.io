@@ -3,10 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200..900;1,200..900&display=swap');
 
-@import url("https://use.typekit.net/btj4xog.css");
-@import url("https://use.typekit.net/btj4xog.css");
-@import url("https://use.typekit.net/btj4xog.css"); /* Loretta */
-@import url("https://use.typekit.net/btj4xog.css"); /* Adobe Caslon */
+@import url("https://use.typekit.net/btj4xog.css"); /* Loretta, Adobe Caslon */
 
 
 :root {
@@ -246,48 +243,4 @@ figcaption, .caption, .figure-caption, .img-caption {
   @view-transition { navigation: none; }
   #quarto-content { animation: none; }
   html { scroll-behavior: auto; }
-}
-
-/* ── Aviation Gallery ───────────────────────────────────── */
-.av-grid {
-  display: flex;
-  gap: 16px;
-  margin: 25px 0;
-}
-
-.av-frame {
-  position: relative;
-  flex: 1;
-  border-radius: 4px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.av-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: filter 0.4s ease;
-}
-
-.av-frame:hover img {
-  filter: brightness(0.5);
-}
-
-.av-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  color: #ffffff;
-  font-size: 0.85rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.av-frame:hover .av-caption {
-  opacity: 1;
 }
