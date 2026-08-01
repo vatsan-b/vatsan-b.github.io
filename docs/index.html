@@ -171,6 +171,15 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 /* base colour lives on <html> so nothing else needs to paint a background */
 html { background: #05070e; }
 
+/* static stand-in for the wave-grid when WebGL isn't available — echoes the
+   neon palette (colorA/colorB in the script below) without any animation */
+html.no-webgl {
+  background:
+    radial-gradient(ellipse 120% 70% at 50% 10%, rgba(205,44,119,0.24), transparent 60%),
+    radial-gradient(ellipse 120% 70% at 50% 95%, rgba(44,162,205,0.20), transparent 60%),
+    #05070e;
+}
+
 /* let the animation show through every Quarto wrapper, navbar included */
 body,
 header#quarto-header,
@@ -213,22 +222,48 @@ main.content,
   box-shadow: 0 1px 0 rgba(255,255,255,0.06);
 }
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function () {
   const canvas = document.getElementById('cube-bg');
   const veil   = document.getElementById('cube-veil');
-  if (!canvas || typeof THREE === 'undefined') return;
+  if (!canvas) return;
 
   /* Quarto renders this markup inside its content column, and any ancestor with
      a transform/filter would become the containing block for a fixed element —
      which is what boxes the canvas into the column. Reparenting to <body>
-     guarantees it is positioned against the viewport instead. */
+     guarantees it is positioned against the viewport instead. This is plain DOM
+     work, independent of WebGL/Three.js, so it happens even on the fallback path. */
   document.body.appendChild(canvas);
   if (veil) document.body.appendChild(veil);
 
+  function supportsWebGL() {
+    try {
+      const test = document.createElement('canvas');
+      return !!(window.WebGLRenderingContext &&
+        (test.getContext('webgl') || test.getContext('experimental-webgl')));
+    } catch (e) {
+      return false;
+    }
+  }
+
+  if (!supportsWebGL()) {
+    document.documentElement.classList.add('no-webgl');   // static gradient (see <style>) carries the page
+    return;
+  }
+
+  import('https://cdnjs.cloudflare.com/ajax/libs/three.js/0.185.1/three.module.min.js')
+    .then((THREE) => run(THREE))
+    .catch(() => document.documentElement.classList.add('no-webgl'));
+
+  function run(THREE) {
+  THREE.ColorManagement.enabled = false;   // r128 parity: use hex colours as raw values, no sRGB reinterpretation
+
+  // fewer cells and a lower pixel-ratio cap on small/handheld viewports — the
+  // per-frame grid update is O(density^2), so this is where the cost lives
+  const smallViewport = Math.min(window.innerWidth, window.innerHeight) <= 760;
+
   const CFG = {
-    density  : 160,       // cubes per side
+    density  : smallViewport ? 96 : 160,       // cubes per side
     amplitude: 0.80,     // wave height, in spacings
     speed    : 0.50,
     glow     : 3.00,
@@ -252,7 +287,7 @@ main.content,
   const TOP_REACH = 4.0;   // ground distance at top of frame, in camera heights
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, smallViewport ? 1.5 : 2));
   renderer.setClearColor(0x000000, 0);
 
   const scene = new THREE.Scene();
@@ -437,6 +472,7 @@ main.content,
   } else {
     document.addEventListener('visibilitychange', () => { if (!document.hidden) start(); });
     start();
+  }
   }
 })();
 </script>
