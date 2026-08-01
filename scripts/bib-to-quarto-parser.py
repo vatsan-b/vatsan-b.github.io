@@ -5,6 +5,8 @@ No third-party dependencies — uses only the Python standard library.
 """
 
 import re
+import sys
+from urllib.parse import unquote
 
 BIB_PATH = "publications.bib"
 OUT_PATH = "publications-parsed.qmd"
@@ -16,6 +18,55 @@ LINKS = [
     ("url_arxiv", "arXiv preprint"),
     ("url_pdf",   "PDF"),
 ]
+
+# Strict allow-list for a `https://` URL: ASCII host (dotted labels), optional
+# port, optional path/query/fragment drawn from a conservative RFC 3986-ish
+# character set. Notably excludes "(", ")" and whitespace/control characters
+# so a URL can never prematurely close a markdown `[label](url)` destination
+# or smuggle raw HTML/markup into the rendered page.
+_URL_RE = re.compile(
+    r"^https://"
+    r"(?P<host>[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?"
+    r"(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+)"
+    r"(?::[0-9]{1,5})?"
+    r"(?P<path>/[A-Za-z0-9._~:/?#!$&'*+,;=%-]*)?$"
+)
+_PCT_BAD_RE = re.compile(r"%(?![0-9A-Fa-f]{2})")
+
+
+def escape_markdown(text):
+    """Neutralize characters that could turn untrusted BibTeX field text into
+    raw HTML or Quarto/Pandoc markup (tags, entities, links, spans, emphasis,
+    code spans) once it lands in the generated .qmd file.
+    """
+    text = text.replace("\\", "\\\\")
+    text = text.replace("&", "&amp;")
+    text = text.replace("<", "&lt;")
+    text = text.replace(">", "&gt;")
+    for ch in "[]*_`":
+        text = text.replace(ch, "\\" + ch)
+    return text
+
+
+def sanitize_url(raw, field, title):
+    """Validate a url_* field value. Returns the URL unchanged if it is a
+    well-formed https:// URL safe to embed in a markdown link destination;
+    raises ValueError with a clear reason otherwise.
+    """
+    url = raw.strip()
+    if not url:
+        raise ValueError(f'{field} in "{title}": URL is empty')
+    if url != raw:
+        raise ValueError(f'{field} in "{title}": URL has leading/trailing whitespace')
+    if any(ord(c) < 0x20 or c == "\x7f" for c in url):
+        raise ValueError(f'{field} in "{title}": URL contains control characters')
+    if _PCT_BAD_RE.search(url):
+        raise ValueError(f'{field} in "{title}": URL has malformed percent-encoding')
+    if any(ord(c) < 0x20 or c == "\x7f" for c in unquote(url)):
+        raise ValueError(f'{field} in "{title}": URL percent-encodes a control character')
+    if not _URL_RE.match(url):
+        raise ValueError(f'{field} in "{title}": not a well-formed https:// URL: {url!r}')
+    return url
 
 
 def parse_bib(text):
@@ -121,6 +172,7 @@ def author_line(entry):
     for raw in raw_authors:
         formatted = fmt_author(raw)
         last = formatted.split(",")[0].strip().lower()
+        formatted = escape_markdown(formatted)
         if last in cofirst:
             formatted += r"\*"  # literal asterisk after the name
         names.append(formatted)
@@ -134,25 +186,31 @@ def author_line(entry):
 def venue_line(entry):
     """Italic venue (+ pages), or the gray status line if `status` is set."""
     if "status" in entry:
-        return f'[{entry["status"]}]{{style="color: gray;"}}'
+        return f'[{escape_markdown(entry["status"])}]{{style="color: gray;"}}'
 
     venue = entry.get("booktitle") or entry.get("journal") or ""
     if "pages" in entry:
         pages = entry["pages"].replace("--", "–").replace("-", "–")
         venue += f" • Pages {pages}"
+    venue = escape_markdown(venue)
     return f"*{venue}*" if venue else ""
 
 
 def links_line(entry):
-    parts = [f'[{label}]({entry[key]})' + '{target="_blank"}'
-             for key, label in LINKS if key in entry]
+    title = entry.get("title", "<untitled>")
+    parts = []
+    for key, label in LINKS:
+        if key not in entry:
+            continue
+        url = sanitize_url(entry[key], key, title)
+        parts.append(f'[{label}]({url})' + '{target="_blank"}')
     if not parts:
         return ""
     return f'[{" • ".join(parts)}]{{style="color: gray;"}}'
 
 
 def render_entry(entry):
-    lines = [f'**{entry["title"]}**', author_line(entry)]
+    lines = [f'**{escape_markdown(entry["title"])}**', author_line(entry)]
     v = venue_line(entry)
     if v:
         lines.append(v)
@@ -176,7 +234,10 @@ def main():
         if e["year"] != current_year:
             current_year = e["year"]
             out.append(f"\n## {current_year}\n")
-        out.append(render_entry(e) + "\n")
+        try:
+            out.append(render_entry(e) + "\n")
+        except ValueError as exc:
+            sys.exit(f"error: rejected entry: {exc}")
 
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(out).lstrip() + "\n")
