@@ -1,0 +1,74 @@
+/* Shared justified-grid + PhotoSwipe lightbox styles for for-fun.qmd.
+   Pairs with assets/gallery/gallery.js and the vendored fjGallery / PhotoSwipe
+   CSS, which for-fun.qmd links before this file. */
+
+.js-gallery {
+  margin: 18px 0 32px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  max-width: 100%;
+}
+
+.js-gallery.is-ready {
+  opacity: 1;
+}
+
+.js-gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  display: block;
+  transform: translateZ(0); /* keeps the border-radius mask intact under WebKit zoom */
+  cursor: zoom-in;
+  background: #1a1a1a;
+}
+
+.js-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease, filter 0.6s ease;
+  will-change: transform;
+}
+
+.js-gallery .gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.js-gallery .gallery-item .gallery-hover-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.js-gallery .gallery-item:hover .gallery-hover-icon {
+  opacity: 1;
+}
+
+/* ── PhotoSwipe caption bar ──────────────────────────────── */
+.pswp__custom-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+  font-family: var(--main-font, inherit);
+  font-size: 0.95rem;
+  color: #e8e8e8;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  text-align: center;
+  pointer-events: none;
+}
+
+.pswp__custom-caption:empty {
+  display: none;
+}
