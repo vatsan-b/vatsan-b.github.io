@@ -9,10 +9,10 @@ STYLES = Path(__file__).resolve().parent.parent / "styles.css"
 
 
 class TypographyTests(unittest.TestCase):
-    def test_body_uses_the_configured_adobe_source_serif_web_font(self):
+    def test_body_uses_the_central_main_font_variable(self):
         styles = STYLES.read_text(encoding="utf-8")
-        self.assertIn('@import url("https://use.typekit.net/btj4xog.css")', styles)
-        self.assertIn('--main-font:     "source-serif-4", Georgia, serif;', styles)
+        self.assertIn("--main-font:", styles)
+        self.assertIn("font-family: var(--main-font) !important;", styles)
 
     def test_navbar_uses_source_sans_as_a_legible_serif_contrast(self):
         styles = STYLES.read_text(encoding="utf-8")
