@@ -400,6 +400,10 @@ Nimble Surgical</span></p>
   }
 
   draw();
+  // Start after two frames: the first commits the dash-hidden paths and the
+  // second gives the stroke-dashoffset transition a reliable starting point.
+  // This keeps connector visibility independent of scroll restoration timing.
+  if (!played) requestAnimationFrame(() => requestAnimationFrame(play));
   window.addEventListener("load", draw);           // re-measure once webfonts land
 
   // ResizeObserver catches column reflow, zoom and font swaps that a resize
@@ -411,19 +415,6 @@ Nimble Surgical</span></p>
     window.addEventListener("resize", draw);
   }
 
-  // Draw the lines when the chart first scrolls into view — once per page load.
-  if (!played && track) {
-    if ("IntersectionObserver" in window) {
-      const io = new IntersectionObserver((entries, obs) => {
-        if (!entries[0].isIntersecting) return;
-        obs.disconnect();                          // never runs a second time
-        requestAnimationFrame(play);               // let the dash offsets commit first
-      }, {threshold: 0.25});
-      io.observe(track);
-    } else {
-      play();                                      // no observer support: just show them
-    }
-  }
 })();
 </script>
 </section>
