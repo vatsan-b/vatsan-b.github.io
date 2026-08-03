@@ -14,6 +14,12 @@ class TypographyTests(unittest.TestCase):
         self.assertIn('@import url("https://use.typekit.net/btj4xog.css")', styles)
         self.assertIn('--main-font:     "source-serif-4", Georgia, serif;', styles)
 
+    def test_navbar_uses_source_sans_as_a_legible_serif_contrast(self):
+        styles = STYLES.read_text(encoding="utf-8")
+        self.assertIn("family=Source+Sans+3", styles)
+        self.assertIn('--font-nav:      "Source Sans 3", sans-serif;', styles)
+        self.assertIn("font-family: var(--font-nav);", styles)
+
 
 if __name__ == "__main__":
     unittest.main()
