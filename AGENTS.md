@@ -36,10 +36,10 @@ directly to the parsed `.qmd` are overwritten on the next run.
 
 ## Assets
 
-Source assets in `assets/images/`, `assets/videos/`, `assets/unsplash-photos/`, and
-`assets/logos/` are **gitignored and untracked** (untracked in `accbefb`; the files
-remain on disk locally). Consequence: a fresh clone cannot fully `quarto render` —
-the rendered `docs/assets/` in git is the only committed copy of those images.
+Source assets in `assets/images/`, `assets/videos/`, `assets/unsplash-photos/`,
+`assets/logos/`, and `assets/gallery-derivatives/` are versioned so a fresh clone
+can fully `quarto render`. The rendered `docs/assets/` copies remain versioned
+because GitHub Pages serves `docs/`.
 
 `assets/flight-sim/` **is** tracked. `assets/compress-photo.py` is source code, also tracked.
 

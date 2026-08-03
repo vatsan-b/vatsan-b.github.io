@@ -1,11 +1,6 @@
 /.quarto/
 **/*.quarto_ipynb
 quarto-linux-amd64.deb
-/assets/images/
-/assets/videos/
-/assets/unsplash-photos/
-/assets/gallery-derivatives/
-/assets/logos/
 
 # Backup copies of the render output — never commit these
 *.bak/
