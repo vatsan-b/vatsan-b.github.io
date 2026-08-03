@@ -207,11 +207,23 @@ Nimble Surgical</span></p>
   </div>
 
 </div>
-<div class="focus-grid">
-  <a class="focus-card" href="./research.html#high-payload-soft-robots">High-Payload Soft Robots</a>
-  <a class="focus-card" href="./research.html#underwater-robotics">Underwater Robotics</a>
-  <a class="focus-card" href="./research.html#agricultural-robotics">Agricultural Robotics</a>
-  <a class="focus-card" href="./research.html#medical-robotics">Medical Robotics</a>
+<div class="focus-grid" aria-label="Research focus areas">
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-high-payload">
+    <span class="focus-card__title">High-Payload Soft Robots</span>
+    <span class="focus-card__detail" id="focus-high-payload">Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load; I use torsion-resistant structures to preserve flexibility while carrying useful payloads.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
+    <span class="focus-card__title">Underwater Robotics</span>
+    <span class="focus-card__detail" id="focus-underwater">Underwater manipulation loses reliable visual feedback in turbulent, low-visibility conditions; I integrate flexible tactile sensing to help assess grasp stability.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-agricultural">
+    <span class="focus-card__title">Agricultural Robotics</span>
+    <span class="focus-card__detail" id="focus-agricultural">Soft fruit picking is a narrow force-control problem—too much bruises fruit and too little lets it slip; I build sensorized grippers that generate useful grasp data.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
+    <span class="focus-card__title">Medical Robotics</span>
+    <span class="focus-card__detail" id="focus-medical">For contact-sensitive manipulation, compliant hardware must stay safe without becoming mechanically vague; I design soft robotic structures that retain controlled motion and useful force.</span>
+  </button>
 </div>
 <style>
 /* ── How I Work: diverge (Design) → three tracks → converge (Advanced Hardware) ── */
@@ -276,6 +288,7 @@ Nimble Surgical</span></p>
   margin: 18px 0 8px;
 }
 .focus-card {
+  position: relative;
   display: flex;
   align-items: flex-end;
   min-height: 110px;
@@ -283,17 +296,46 @@ Nimble Surgical</span></p>
   border: 1px solid var(--border, #444);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.02);
+  color: inherit;
+  font: inherit;
   font-size: 0.95rem;
   font-weight: 600;
-  text-decoration: none;
-  color: inherit;
+  text-align: left;
+  cursor: pointer;
   transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
+.focus-card__detail {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  padding: 0.8rem;
+  border: 1px solid rgba(253, 210, 110, 0.55);
+  border-radius: 8px;
+  background: #1c1c1c;
+  color: inherit;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
 .focus-card:hover,
-.focus-card:focus-visible {
+.focus-card:focus-visible,
+.focus-card.is-expanded {
+  z-index: 3;
   transform: translateY(-3px);
   border-color: #FDD26E;
   background: rgba(253, 210, 110, 0.06);
+}
+.focus-card:hover .focus-card__detail,
+.focus-card:focus-visible .focus-card__detail,
+.focus-card.is-expanded .focus-card__detail {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── Responsive: stack the flow, halve the grid ── */
@@ -314,7 +356,8 @@ Nimble Surgical</span></p>
 
 @media (prefers-reduced-motion: reduce) {
   .flow-conn  { transition: none; }
-  .focus-card { transition: none; }
+  .focus-card,
+  .focus-card__detail { transition: none; }
   .focus-card:hover { transform: none; }
 }
 </style>
@@ -415,6 +458,34 @@ Nimble Surgical</span></p>
     window.addEventListener("resize", draw);
   }
 
+})();
+</script>
+<script>
+(function () {
+  const cards = Array.from(document.querySelectorAll(".focus-card"));
+  if (!cards.length) return;
+
+  function closeAll(except) {
+    cards.forEach(card => {
+      if (card === except) return;
+      card.classList.remove("is-expanded");
+      card.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  cards.forEach(card => card.addEventListener("click", () => {
+    const expand = !card.classList.contains("is-expanded");
+    closeAll(card);
+    card.classList.toggle("is-expanded", expand);
+    card.setAttribute("aria-expanded", String(expand));
+  }));
+
+  document.addEventListener("pointerdown", event => {
+    if (!event.target.closest(".focus-card")) closeAll();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeAll();
+  });
 })();
 </script>
 </section>
