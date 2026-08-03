@@ -188,215 +188,29 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 
 
 <p>Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA - <a href="https://www.vatsim.net" target="_blank">VATSIM</a>’s United States division.</p>
-<!-- ── Dependencies for both galleries ── -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+<!-- ── Self-hosted gallery dependencies (MIT, exact pinned versions) ── -->
+<p><link rel="stylesheet" href="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.css"> <link rel="stylesheet" href="assets/vendor/photoswipe/5.4.4/photoswipe.css"> <link rel="stylesheet" href="assets/gallery/gallery.css"></p>
 <style>
 /* hide the native TOC "On this page" label */
 #toc-title { display: none; }
-
-/* ── Unified Gallery Styles ── */
-.fj-gallery { margin: 18px 0 32px; opacity: 0; transition: opacity 0.6s ease; max-width: 100%; }
-.fj-gallery.is-ready { opacity: 1; }
-
-.fj-gallery .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px; /* Smooth rounded corners */
-  display: block;
-  transform: translateZ(0); /* Prevents zoom from breaking the border-radius mask in WebKit */
-  cursor: zoom-in;
-}
-
-.fj-gallery .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s ease, filter 0.6s ease;
-  will-change: transform;
-}
-
-/* Hover Zoom & Darken */
-.fj-gallery .gallery-item:hover img {
-  transform: scale(1.05);
-  filter: brightness(0.7);
-}
-
-/* Magnifying Glass Icon Overlay */
-.fj-gallery .lg-hover {
-  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.5rem; opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
-}
-.fj-gallery .gallery-item:hover .lg-hover { opacity: 1; }
-
-/* Lightbox caption uses the page font */
-.lg-sub-html, .lg-sub-html * { font-family: var(--main-font, inherit) !important; }
 </style>
 <section id="flight-simulation" class="level2">
 <h2 data-anchor-id="flight-simulation">Flight Simulation</h2>
 <p>I am a virtual Seattle ARTCC controller on VATSIM, and I enjoy being a part of such a wonderful community! Controlling virtual air traffic is a fun and challenging hobby which keeps me on my toes. I also fly (virtually).</p>
-<div id="av-gallery" class="fj-gallery" style="max-width: 1200px  ;">
+<div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-row-height="170" data-row-height-md="150" data-row-height-sm="120" style="max-width: 1200px;">
 
 </div>
-<script>
-(function () {
-  var shots = [
-    { file: "assets/flight-sim/Screenshot 2026-07-13 043136.png", caption: "From the scope: ASDE-X, an advanced airport surface surveillance system." },
-    { file: "assets/flight-sim/kpdx-tower-cab.png",               caption: "Tower Control Cabin" },
-    { file: "assets/flight-sim/Screenshot 2026-01-17 161641.png", caption: "Mt. Rainier seen during a flight from Seattle to Los Angeles" },
-    { file: "assets/flight-sim/737max8.png",                      caption: "United Airlines Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)" },
-    { file: "assets/flight-sim/a350-night.png",                   caption: "Delta Airlines Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)" },
-    { file: "assets/flight-sim/swa-737max.png",                   caption: "Southwest Airlines Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)" }
-  ];
-
-  var gallery = document.getElementById("av-gallery");
-  if (!gallery) return;
-
-  gallery.innerHTML = shots.map(function (s) {
-    var cap = s.caption ? s.caption.replace(/"/g, "&quot;") : "";
-    var capAttr = cap ? ' data-sub-html="' + cap + '"' : '';
-    return '<a class="fj-gallery-item gallery-item" href="' + s.file + '"' + capAttr + '>'
-         +   '<img src="' + s.file + '" alt="' + cap + '">'
-         +   '<span class="lg-hover"><i class="fa-solid fa-magnifying-glass-plus"></i></span>'
-         + '</a>';
-  }).join("");
-
-  function rowH() {
-    var w = window.innerWidth;
-    return w < 600 ? 120 : (w < 1000 ? 150 : 170);
-  }
-
-  var tries = 0;
-  function init() {
-    if (typeof fjGallery === "undefined" || typeof lightGallery === "undefined") {
-      if (++tries > 60) { gallery.classList.add("is-ready"); return; }
-      setTimeout(init, 50);
-      return;
-    }
-
-    fjGallery(gallery, {
-      itemSelector: ".fj-gallery-item",
-      rowHeight: rowH(),
-      gutter: 10,
-      lastRow: "left",
-      rowHeightTolerance: 0.25,
-      onJustify: function () { gallery.classList.add("is-ready"); }
-    });
-
-    lightGallery(gallery, {
-      selector: ".gallery-item",
-      plugins: [lgZoom, lgThumbnail],
-      speed: 400,
-      download: false,
-      zoomFromOrigin: false,
-      licenseKey: "0000-0000-000-0000"
-    });
-
-    var lastRH = rowH(), rt;
-    window.addEventListener("resize", function () {
-      clearTimeout(rt);
-      rt = setTimeout(function () {
-        var nh = rowH();
-        if (nh !== lastRH) { lastRH = nh; fjGallery(gallery, "updateOptions", { rowHeight: nh }); }
-      }, 200);
-    });
-  }
-
-  init();
-})();
-</script>
 </section>
 <section id="photography" class="level2">
 <h2 data-anchor-id="photography">Photography</h2>
 <p>I mostly shoot landscapes and cityscapes. A selection is below; more lives on my <a href="https://unsplash.com/@srivatsan" target="_blank">Unsplash</a> profile.</p>
-<div id="photo-gallery" class="fj-gallery">
+<div id="photo-gallery" class="js-gallery" data-gallery="photography" data-row-height="240" data-row-height-md="200" data-row-height-sm="150">
 
 </div>
-<script>
-(function () {
-  var photos = [
-    { file: "assets/unsplash-photos/PXL_20220323_021751755.jpg",                       caption: "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
-    { file: "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg",          caption: "" },
-    { file: "assets/unsplash-photos/IMG_1405.jpg",                                     caption: "Coal Creek, Washington" },
-    { file: "assets/unsplash-photos/PXL_20211226_185354224.jpg",                       caption: "The Quad at the University of Washington" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",        caption: "Golden Gardens Park, Washington" },
-    { file: "assets/unsplash-photos/PXL_20221023_004339139.jpg",                       caption: "The Space Needle in Seattle" },
-    { file: "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", caption: "Snoqualmie Falls, Washington" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",        caption: "Coal Creek, Washington" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",        caption: "Coal Creek, Washington" },
-    { file: "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg",               caption: "" },
-    { file: "assets/unsplash-photos/PXL_20240418_010033230~2.jpg",                     caption: "" },
-    { file: "assets/unsplash-photos/PXL_20250514_231324573.jpg",                       caption: "" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/PXL_20250514_231425261~2.jpg",                     caption: "Hudson Bay" },
-    { file: "assets/unsplash-photos/PXL_20240101_221804405.jpg",                       caption: "Drumheller Fountain at the UW" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg",        caption: "" },
-    { file: "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",        caption: "" }
-  ];
-
-  var gallery = document.getElementById("photo-gallery");
-  if (!gallery) return;
-
-  gallery.innerHTML = photos.map(function (p) {
-    var cap = p.caption ? p.caption.replace(/"/g, "&quot;") : "";
-    var capAttr = cap ? ' data-sub-html="' + cap + '"' : '';
-    var alt = cap || "Photograph by Srivatsan Balaji";
-    return '<a class="fj-gallery-item gallery-item" href="' + p.file + '"' + capAttr + '>'
-         +   '<img src="' + p.file + '" alt="' + alt + '">'
-         +   '<span class="lg-hover"><i class="fa-solid fa-magnifying-glass-plus"></i></span>'
-         + '</a>';
-  }).join("");
-
-  function rowH() {
-    var w = window.innerWidth;
-    return w < 600 ? 150 : (w < 1000 ? 200 : 240);
-  }
-
-  var tries = 0;
-  function init() {
-    if (typeof fjGallery === "undefined" || typeof lightGallery === "undefined") {
-      if (++tries > 60) { gallery.classList.add("is-ready"); return; } 
-      setTimeout(init, 50);
-      return;
-    }
-
-    fjGallery(gallery, {
-      itemSelector: ".fj-gallery-item",
-      rowHeight: rowH(),
-      gutter: 10,
-      lastRow: "left",
-      rowHeightTolerance: 0.25,
-      onJustify: function () { gallery.classList.add("is-ready"); }
-    });
-
-    lightGallery(gallery, {
-      selector: ".gallery-item",
-      plugins: [lgZoom, lgThumbnail],
-      speed: 400,
-      download: false,
-      zoomFromOrigin: false,
-      licenseKey: "0000-0000-000-0000"
-    });
-
-    var lastRH = rowH(), rt;
-    window.addEventListener("resize", function () {
-      clearTimeout(rt);
-      rt = setTimeout(function () {
-        var nh = rowH();
-        if (nh !== lastRH) { lastRH = nh; fjGallery(gallery, "updateOptions", { rowHeight: nh }); }
-      }, 200);
-    });
-  }
-
-  init();
-})();
-</script>
+<script src="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.min.js"></script>
+<script src="assets/vendor/photoswipe/5.4.4/photoswipe.umd.min.js"></script>
+<script src="assets/vendor/photoswipe/5.4.4/photoswipe-lightbox.umd.min.js"></script>
+<script src="assets/gallery/gallery.js"></script>
 
 
 </section>

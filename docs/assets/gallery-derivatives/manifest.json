@@ -1,0 +1,392 @@
+{
+  "galleries": {
+    "flight-sim": [
+      {
+        "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png",
+        "caption": "From the scope: ASDE-X, an advanced airport surface surveillance system.",
+        "width": 876,
+        "height": 488,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-400.avif 400w, assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-800.avif 800w, assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-876.avif 876w",
+          "webpSrcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-400.webp 400w, assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-800.webp 800w, assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-876.webp 876w",
+          "fallbackSrcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-400.jpg 400w, assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-800.jpg 800w, assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-876.jpg 876w",
+          "fallbackSrc": "assets/gallery-derivatives/flight-sim/screenshot-2026-07-13-043136/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/flight-sim/Screenshot 2026-07-13 043136.png 876w",
+          "src": "assets/flight-sim/Screenshot 2026-07-13 043136.png"
+        }
+      },
+      {
+        "file": "assets/flight-sim/kpdx-tower-cab.png",
+        "caption": "Tower Control Cabin",
+        "width": 1018,
+        "height": 913,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-400.avif 400w, assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-800.avif 800w, assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-1018.avif 1018w",
+          "webpSrcset": "assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-400.webp 400w, assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-800.webp 800w, assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-1018.webp 1018w",
+          "fallbackSrcset": "assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-400.jpg 400w, assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-800.jpg 800w, assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-1018.jpg 1018w",
+          "fallbackSrc": "assets/gallery-derivatives/flight-sim/kpdx-tower-cab/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/flight-sim/kpdx-tower-cab.png 1018w",
+          "src": "assets/flight-sim/kpdx-tower-cab.png"
+        }
+      },
+      {
+        "file": "assets/flight-sim/Screenshot 2026-01-17 161641.png",
+        "caption": "Mt. Rainier seen during a flight from Seattle to Los Angeles",
+        "width": 1920,
+        "height": 1080,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-400.avif 400w, assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-800.avif 800w, assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-400.webp 400w, assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-800.webp 800w, assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-400.jpg 400w, assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-800.jpg 800w, assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/flight-sim/screenshot-2026-01-17-161641/medium-1200.webp 1200w, assets/flight-sim/Screenshot 2026-01-17 161641.png 1920w",
+          "src": "assets/flight-sim/Screenshot 2026-01-17 161641.png"
+        }
+      },
+      {
+        "file": "assets/flight-sim/737max8.png",
+        "caption": "United Airlines Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)",
+        "width": 1843,
+        "height": 1080,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/flight-sim/737max8/thumb-400.avif 400w, assets/gallery-derivatives/flight-sim/737max8/thumb-800.avif 800w, assets/gallery-derivatives/flight-sim/737max8/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/flight-sim/737max8/thumb-400.webp 400w, assets/gallery-derivatives/flight-sim/737max8/thumb-800.webp 800w, assets/gallery-derivatives/flight-sim/737max8/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/flight-sim/737max8/thumb-400.jpg 400w, assets/gallery-derivatives/flight-sim/737max8/thumb-800.jpg 800w, assets/gallery-derivatives/flight-sim/737max8/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/flight-sim/737max8/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/flight-sim/737max8/medium-1200.webp 1200w, assets/flight-sim/737max8.png 1843w",
+          "src": "assets/flight-sim/737max8.png"
+        }
+      },
+      {
+        "file": "assets/flight-sim/a350-night.png",
+        "caption": "Delta Airlines Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)",
+        "width": 1920,
+        "height": 1080,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/flight-sim/a350-night/thumb-400.avif 400w, assets/gallery-derivatives/flight-sim/a350-night/thumb-800.avif 800w, assets/gallery-derivatives/flight-sim/a350-night/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/flight-sim/a350-night/thumb-400.webp 400w, assets/gallery-derivatives/flight-sim/a350-night/thumb-800.webp 800w, assets/gallery-derivatives/flight-sim/a350-night/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/flight-sim/a350-night/thumb-400.jpg 400w, assets/gallery-derivatives/flight-sim/a350-night/thumb-800.jpg 800w, assets/gallery-derivatives/flight-sim/a350-night/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/flight-sim/a350-night/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/flight-sim/a350-night/medium-1200.webp 1200w, assets/flight-sim/a350-night.png 1920w",
+          "src": "assets/flight-sim/a350-night.png"
+        }
+      },
+      {
+        "file": "assets/flight-sim/swa-737max.png",
+        "caption": "Southwest Airlines Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)",
+        "width": 1920,
+        "height": 1080,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/flight-sim/swa-737max/thumb-400.avif 400w, assets/gallery-derivatives/flight-sim/swa-737max/thumb-800.avif 800w, assets/gallery-derivatives/flight-sim/swa-737max/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/flight-sim/swa-737max/thumb-400.webp 400w, assets/gallery-derivatives/flight-sim/swa-737max/thumb-800.webp 800w, assets/gallery-derivatives/flight-sim/swa-737max/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/flight-sim/swa-737max/thumb-400.jpg 400w, assets/gallery-derivatives/flight-sim/swa-737max/thumb-800.jpg 800w, assets/gallery-derivatives/flight-sim/swa-737max/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/flight-sim/swa-737max/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/flight-sim/swa-737max/medium-1200.webp 1200w, assets/flight-sim/swa-737max.png 1920w",
+          "src": "assets/flight-sim/swa-737max.png"
+        }
+      }
+    ],
+    "photography": [
+      {
+        "file": "assets/unsplash-photos/PXL_20220323_021751755.jpg",
+        "caption": "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background",
+        "width": 2935,
+        "height": 905,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20220323-021751755/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20220323-021751755/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20220323-021751755/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20220323_021751755.jpg 2935w",
+          "src": "assets/unsplash-photos/PXL_20220323_021751755.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg",
+        "caption": "",
+        "width": 4080,
+        "height": 3072,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20260206-010853931-raw-01-cover/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg 4080w",
+          "src": "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/IMG_1405.jpg",
+        "caption": "Coal Creek, Washington",
+        "width": 4898,
+        "height": 3265,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/img-1405/thumb-400.avif 400w, assets/gallery-derivatives/photography/img-1405/thumb-800.avif 800w, assets/gallery-derivatives/photography/img-1405/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/img-1405/thumb-400.webp 400w, assets/gallery-derivatives/photography/img-1405/thumb-800.webp 800w, assets/gallery-derivatives/photography/img-1405/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/img-1405/thumb-400.jpg 400w, assets/gallery-derivatives/photography/img-1405/thumb-800.jpg 800w, assets/gallery-derivatives/photography/img-1405/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/img-1405/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/img-1405/medium-1200.webp 1200w, assets/gallery-derivatives/photography/img-1405/medium-1920.webp 1920w, assets/unsplash-photos/IMG_1405.jpg 4898w",
+          "src": "assets/unsplash-photos/IMG_1405.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20211226_185354224.jpg",
+        "caption": "The Quad at the University of Washington",
+        "width": 3390,
+        "height": 1847,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20211226-185354224/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20211226-185354224/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20211226-185354224/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20211226_185354224.jpg 3390w",
+          "src": "assets/unsplash-photos/PXL_20211226_185354224.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg",
+        "caption": "Golden Gardens Park, Washington",
+        "width": 3012,
+        "height": 4000,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-hv76ddfqkh4-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg 3012w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20221023_004339139.jpg",
+        "caption": "The Space Needle in Seattle",
+        "width": 3000,
+        "height": 3153,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20221023-004339139/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20221023-004339139/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20221023-004339139/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20221023_004339139.jpg 3000w",
+          "src": "assets/unsplash-photos/PXL_20221023_004339139.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg",
+        "caption": "Snoqualmie Falls, Washington",
+        "width": 2268,
+        "height": 3745,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20240922-014702847-long-exposure-01-cover/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg 2268w",
+          "src": "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg",
+        "caption": "Coal Creek, Washington",
+        "width": 5337,
+        "height": 3559,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-wcjeeebjeh4-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg 5337w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg",
+        "caption": "Coal Creek, Washington",
+        "width": 3651,
+        "height": 4624,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-nn6gnzllfem-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg 3651w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg",
+        "caption": "",
+        "width": 2330,
+        "height": 2882,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20220731-064619756-night-2/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg 2330w",
+          "src": "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20240418_010033230~2.jpg",
+        "caption": "",
+        "width": 3072,
+        "height": 3072,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20240418-010033230-2/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20240418-010033230-2/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20240418-010033230-2/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20240418_010033230~2.jpg 3072w",
+          "src": "assets/unsplash-photos/PXL_20240418_010033230~2.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20250514_231324573.jpg",
+        "caption": "",
+        "width": 3019,
+        "height": 2142,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20250514-231324573/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20250514-231324573/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20250514-231324573/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20250514_231324573.jpg 3019w",
+          "src": "assets/unsplash-photos/PXL_20250514_231324573.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg",
+        "caption": "",
+        "width": 3110,
+        "height": 1749,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-wzmvytjxhm0-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg 3110w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20250514_231425261~2.jpg",
+        "caption": "Hudson Bay",
+        "width": 3052,
+        "height": 3052,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20250514-231425261-2/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20250514-231425261-2/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20250514-231425261-2/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20250514_231425261~2.jpg 3052w",
+          "src": "assets/unsplash-photos/PXL_20250514_231425261~2.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/PXL_20240101_221804405.jpg",
+        "caption": "Drumheller Fountain at the UW",
+        "width": 4032,
+        "height": 2268,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-400.avif 400w, assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-800.avif 800w, assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-400.webp 400w, assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-800.webp 800w, assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-400.jpg 400w, assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-800.jpg 800w, assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/pxl-20240101-221804405/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/pxl-20240101-221804405/medium-1200.webp 1200w, assets/gallery-derivatives/photography/pxl-20240101-221804405/medium-1920.webp 1920w, assets/unsplash-photos/PXL_20240101_221804405.jpg 4032w",
+          "src": "assets/unsplash-photos/PXL_20240101_221804405.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",
+        "caption": "",
+        "width": 3748,
+        "height": 3051,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-8l18q92wx8g-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg 3748w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg",
+        "caption": "",
+        "width": 3648,
+        "height": 2052,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-t632emad9e8-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg 3648w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg"
+        }
+      },
+      {
+        "file": "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg",
+        "caption": "",
+        "width": 6000,
+        "height": 4000,
+        "thumb": {
+          "avifSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-400.avif 400w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-800.avif 800w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-1200.avif 1200w",
+          "webpSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-400.webp 400w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-800.webp 800w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-1200.webp 1200w",
+          "fallbackSrcset": "assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-400.jpg 400w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-800.jpg 800w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-1200.jpg 1200w",
+          "fallbackSrc": "assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/thumb-800.jpg"
+        },
+        "full": {
+          "srcset": "assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/medium-1200.webp 1200w, assets/gallery-derivatives/photography/srivatsan-balaji-vvpqi98ft60-unsplash/medium-1920.webp 1920w, assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg 6000w",
+          "src": "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg"
+        }
+      }
+    ]
+  }
+}
