@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  pre-render: scripts/restore_source_assets.py
   resources:
     - cv/
     - assets/
