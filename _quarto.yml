@@ -59,7 +59,7 @@ format:
       text: |
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="https://instant.page/5.2.0" type="module"></script>
+        <script src="assets/vendor/instant-page/5.2.0/instantpage.js" type="module"></script>
     grid:
       body-width: 1200px
       sidebar-width: 0px
