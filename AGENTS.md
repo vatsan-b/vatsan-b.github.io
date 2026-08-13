@@ -61,9 +61,8 @@ because GitHub Pages serves `docs/`.
 - `connect.qmd` exists as a source file but is deliberately excluded from
   `_quarto.yml`'s render list (only the six navbar pages render). Its stale
   `docs/connect.html` output was removed and will not return on a clean render.
-- Quarto 1.9.37 is installed locally at `~/.local/opt/quarto-1.9.37` (symlinked as
-  `quarto` on `PATH` via `~/.local/bin`), matching the version recorded in the
-  committed HTML.
+- Quarto 1.10.18 is installed locally as `quarto` on `PATH`. Rendered output is
+  committed, so review generated-library changes when the renderer version changes.
 
 ## Git
 
