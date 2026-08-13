@@ -1,8 +1,15 @@
 /.quarto/
 **/*.quarto_ipynb
 quarto-linux-amd64.deb
-/projects/
-/photos/
-/logos/
-/srivatsanb-photo.jpg
-maintenance.html
+
+# Backup copies of the render output — never commit these
+*.bak/
+docs.bak/
+
+# Local artifacts that should never be staged
+.hermes/
+__pycache__/
+
+# Generated Quarto SCSS compile error dump
+_quarto_internal_scss_error.scss
+

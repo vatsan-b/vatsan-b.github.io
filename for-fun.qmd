@@ -1,0 +1,41 @@
+---
+title: "Life Outside Work"
+toc: true
+toc-location: right
+toc-title: "On this page"
+format:
+  html:
+    grid:
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 200px
+---
+
+Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA - [VATSIM](https://www.vatsim.net){target="_blank"}'s United States division.
+
+<!-- ── Self-hosted gallery dependencies (MIT, exact pinned versions) ── -->
+<link rel="stylesheet" href="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.css">
+<link rel="stylesheet" href="assets/vendor/photoswipe/5.4.4/photoswipe.css">
+<link rel="stylesheet" href="assets/gallery/gallery.css">
+
+<style>
+/* hide the native TOC "On this page" label */
+#toc-title { display: none; }
+</style>
+
+## Flight Simulation
+
+I am a virtual Seattle ARTCC controller on VATSIM, and I enjoy being a part of such a wonderful community! Controlling virtual air traffic is a fun and challenging hobby which keeps me on my toes. I also fly (virtually).
+
+<div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-row-height="170" data-row-height-md="150" data-row-height-sm="120" style="max-width: 1200px;"></div>
+
+## Photography
+
+I mostly shoot landscapes and cityscapes. A selection is below; more lives on my [Unsplash](https://unsplash.com/@srivatsan){target="_blank"} profile.
+
+<div id="photo-gallery" class="js-gallery" data-gallery="photography" data-row-height="240" data-row-height-md="200" data-row-height-sm="150"></div>
+
+<script src="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.min.js"></script>
+<script src="assets/vendor/photoswipe/5.4.4/photoswipe.umd.min.js"></script>
+<script src="assets/vendor/photoswipe/5.4.4/photoswipe-lightbox.umd.min.js"></script>
+<script src="assets/gallery/gallery.js"></script>

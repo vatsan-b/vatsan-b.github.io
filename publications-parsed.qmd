@@ -1,0 +1,45 @@
+## 2026
+
+**Torque Responsive Metamaterials Enable High Payload Soft Robot Arms**\
+Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.\
+[Accepted • IROS 2026]{style="color: gray;"}\
+[[arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}]{style="color: gray;"}
+
+**Comparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp**\
+Pfeiffer, M. A., Whittaker, F., Puente, K., Balaji, S., Davidson, J. R., Wilson, C. G.\
+[Accepted • IEEE SMC 2026]{style="color: gray;"}
+
+**Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**\
+Good, I., Balaji, S., Miske, J. N., Lipton, J. I.\
+*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 686–693*\
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522819){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}]{style="color: gray;"}
+
+**A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**\
+VanAtter, C., Balaji, S., Davidson, J. R.\
+*2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 932–937*\
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}]{style="color: gray;"}
+
+
+## 2025
+
+**Flexible Barometric Tactile Sensors for Robotic Grasping Applications**\
+Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.\
+*2025 IEEE SENSORS • Pages 1–4*\
+[[IEEE Xplore](https://doi.org/10.1109/SENSORS59705.2025.11330401){target="_blank"}]{style="color: gray;"}
+
+
+## 2024
+
+**Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer**\
+Good, I., Balaji, S., Lipton, J. I.\
+*2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) • Pages 235–242*\
+[[IEEE Xplore](https://doi.org/10.1109/RoboSoft60065.2024.10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}]{style="color: gray;"}
+
+
+## 2022
+
+**Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology**\
+Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\
+*Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium*\
+[[PDF](https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content){target="_blank"}]{style="color: gray;"}
+

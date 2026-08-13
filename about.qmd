@@ -1,0 +1,351 @@
+---
+title: ""
+pagetitle: "About"
+---
+
+::: {.text-center style="margin-top: 60px;"}
+
+![](assets/images/srivatsanb-photo.jpg){width=180px .profile-photo}
+
+[**Srivatsan Balaji**]{.hero-name}
+
+[Research Contributor\
+Nimble Surgical]{.affiliation}
+
+[Interests: Soft and Materials Robotics]{.italic-text}
+
+<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;"><i class="fa-solid fa-file" style="font-size: 1.0em;"></i>&nbsp; [View CV]{.affiliation}</a>
+
+:::
+
+::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
+
+I am currently a Research Contributor at Nimble Surgical, working on the development of computational methods for simulating auxetic metamaterials. Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
+
+Outside of work, I am a virtual pilot and hobbyist photographer.
+
+## Skills
+
+```{=html}
+<div class="flow-track">
+
+  <div class="flow-node flow-node--split">
+    <div class="flow-node__label">Design</div>
+    <div class="flow-node__sub">SolidWorks, Autodesk Fusion 360 &mdash; Design and development of soft robotic systems &amp; end effectors</div>
+  </div>
+
+  <svg class="flow-conn" data-dir="out" aria-hidden="true"></svg>
+
+  <div class="flow-branch">
+    <div class="flow-node">
+      <div class="flow-node__label">Fabrication</div>
+      <div class="flow-node__sub">Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting</div>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node__label">Materials</div>
+      <div class="flow-node__sub">Mechanical analysis &amp; characterization</div>
+    </div>
+    <div class="flow-node">
+      <div class="flow-node__label">Computation</div>
+      <div class="flow-node__sub">Python, MATLAB &mdash; Data processing, analysis, and feedback</div>
+    </div>
+  </div>
+
+  <svg class="flow-conn" data-dir="in" aria-hidden="true"></svg>
+
+  <div class="flow-node flow-node--merge">
+    <div class="flow-node__label">Advanced Hardware</div>
+    <div class="flow-node__sub">Integrated hardware for underwater robotic systems</div>
+  </div>
+
+</div>
+```
+
+```{=html}
+<div class="focus-grid" aria-label="Research focus areas">
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-high-payload">
+    <span class="focus-card__title">High-Payload Soft Robots</span>
+    <span class="focus-card__detail" id="focus-high-payload">Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load; I use torsion-resistant structures to preserve flexibility while carrying useful payloads.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
+    <span class="focus-card__title">Underwater Robotics</span>
+    <span class="focus-card__detail" id="focus-underwater">Underwater manipulation loses reliable visual feedback in turbulent, low-visibility conditions; I integrate flexible tactile sensing to help assess grasp stability.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-agricultural">
+    <span class="focus-card__title">Agricultural Robotics</span>
+    <span class="focus-card__detail" id="focus-agricultural">Soft fruit picking is a narrow force-control problem—too much bruises fruit and too little lets it slip; I build sensorized grippers that generate useful grasp data.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
+    <span class="focus-card__title">Medical Robotics</span>
+    <span class="focus-card__detail" id="focus-medical">For contact-sensitive manipulation, compliant hardware must stay safe without becoming mechanically vague; I design soft robotic structures that retain controlled motion and useful force.</span>
+  </button>
+</div>
+```
+
+<style>
+/* ── How I Work: diverge (Design) → three tracks → converge (Advanced Hardware) ── */
+.flow-track {
+  --accent: #FDD26E;
+  --node-border: var(--border, #444);
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.6fr 1.3fr 0.6fr 1.3fr;
+  align-items: stretch;          /* connectors span the full row height */
+  gap: 0;
+  margin: 18px 0 8px;
+}
+
+.flow-node {
+  padding: 1.1rem;
+  border: 1px solid var(--node-border);
+  border-left: 2px solid var(--accent);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.flow-node--split,
+.flow-node--merge { align-self: center; }
+
+.flow-node__label { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; }
+.flow-node__sub   { font-size: 0.85rem; opacity: 0.78; text-align: left; }
+
+/* equal-height rows: this is what makes the middle connector truly horizontal,
+   since the centre node's midpoint then coincides with the column's centre */
+.flow-branch {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 1.2rem;
+}
+
+.flow-conn {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;                    /* revealed once the paths are measured */
+  transition: opacity 0.3s ease;
+}
+.flow-conn.is-ready { opacity: 1; }
+.flow-conn path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.4;
+  opacity: 0.55;
+  vector-effect: non-scaling-stroke;
+}
+/* the draw-on animation is applied per path in JS, since each one needs its
+   own length and stagger delay */
+.flow-conn path.is-drawing {
+  transition: stroke-dashoffset 0.9s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+/* ── Focus Areas ── */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 18px 0 8px;
+}
+.focus-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 110px;
+  padding: 1rem;
+  border: 1px solid var(--border, #444);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  color: inherit;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+.focus-card__detail {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  padding: 0.8rem;
+  border: 1px solid rgba(253, 210, 110, 0.55);
+  border-radius: 8px;
+  background: #1c1c1c;
+  color: inherit;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.focus-card:hover,
+.focus-card:focus-visible,
+.focus-card.is-expanded {
+  z-index: 3;
+  transform: translateY(-3px);
+  border-color: #FDD26E;
+  background: rgba(253, 210, 110, 0.06);
+}
+.focus-card:hover .focus-card__detail,
+.focus-card:focus-visible .focus-card__detail,
+.focus-card.is-expanded .focus-card__detail {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive: stack the flow, halve the grid ── */
+@media (max-width: 760px) {
+  .flow-track { grid-template-columns: 1fr; gap: 1rem; }
+  .flow-conn  { display: none; }
+  .flow-node--split::after,
+  .flow-branch::after {
+    content: "\2193";
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #FDD26E;
+    opacity: 0.6;
+  }
+  .focus-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-conn  { transition: none; }
+  .focus-card,
+  .focus-card__detail { transition: none; }
+  .focus-card:hover { transform: none; }
+}
+</style>
+
+<script>
+(function () {
+  // Each .flow-conn is drawn from the measured positions of the single node on
+  // one side and every .flow-node in the .flow-branch on the other, so adding
+  // or removing a track needs no coordinate edits here.
+  const SVGNS = "http://www.w3.org/2000/svg";
+  const conns = document.querySelectorAll(".flow-conn");
+  if (!conns.length) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let played = reduced;            // once true, paths render fully drawn
+
+  function drawOne(svg) {
+    const out    = svg.dataset.dir === "out";      // out: one → many, in: many → one
+    const branch = out ? svg.nextElementSibling : svg.previousElementSibling;
+    const single = out ? svg.previousElementSibling : svg.nextElementSibling;
+    if (!branch || !single) return;
+
+    const box = svg.getBoundingClientRect();
+    if (!box.width || !box.height) return;         // hidden on mobile — nothing to draw
+
+    const singleBox = single.getBoundingClientRect();
+    const y0   = singleBox.top + singleBox.height / 2 - box.top;
+    const midX = box.width / 2;
+
+    svg.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
+
+    const frag = document.createDocumentFragment();
+    branch.querySelectorAll(":scope > .flow-node").forEach(node => {
+      const r  = node.getBoundingClientRect();
+      const y1 = r.top + r.height / 2 - box.top;
+      const [a, b] = out ? [y0, y1] : [y1, y0];    // start and end heights
+
+      // within a pixel of level, draw a true straight line — a Bézier between
+      // near-equal endpoints still renders a visible sag
+      const d = Math.abs(a - b) < 1
+        ? `M0,${a} L${box.width},${a}`
+        : `M0,${a} C${midX},${a} ${midX},${b} ${box.width},${b}`;
+
+      const path = document.createElementNS(SVGNS, "path");
+      path.setAttribute("d", d);
+      frag.appendChild(path);
+    });
+
+    svg.replaceChildren(frag);
+    svg.classList.add("is-ready");
+
+    // Hide each path along its own length so it can be "drawn" left to right.
+    // getTotalLength needs the path in the document, hence the second pass.
+    if (!played) {
+      svg.querySelectorAll("path").forEach(p => {
+        const len = p.getTotalLength();
+        p.style.strokeDasharray  = len;
+        p.style.strokeDashoffset = len;
+      });
+    }
+  }
+
+  // Reveal: paths run from x=0 to x=width, so easing the dash offset to zero
+  // draws them in the direction of flow. Staggered per connector and per track.
+  function play() {
+    conns.forEach((svg, ci) => {
+      svg.querySelectorAll("path").forEach((p, pi) => {
+        p.classList.add("is-drawing");
+        p.style.transitionDelay = `${ci * 0.35 + pi * 0.12}s`;
+        p.style.strokeDashoffset = 0;
+      });
+    });
+    played = true;
+  }
+
+  let queued = false;
+  function draw() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {                  // measure after layout settles
+      queued = false;
+      conns.forEach(drawOne);
+    });
+  }
+
+  draw();
+  // Start after two frames: the first commits the dash-hidden paths and the
+  // second gives the stroke-dashoffset transition a reliable starting point.
+  // This keeps connector visibility independent of scroll restoration timing.
+  if (!played) requestAnimationFrame(() => requestAnimationFrame(play));
+  window.addEventListener("load", draw);           // re-measure once webfonts land
+
+  // ResizeObserver catches column reflow, zoom and font swaps that a resize
+  // listener alone would miss.
+  const track = document.querySelector(".flow-track");
+  if ("ResizeObserver" in window && track) {
+    new ResizeObserver(draw).observe(track);
+  } else {
+    window.addEventListener("resize", draw);
+  }
+
+})();
+</script>
+
+<script>
+(function () {
+  const cards = Array.from(document.querySelectorAll(".focus-card"));
+  if (!cards.length) return;
+
+  function closeAll(except) {
+    cards.forEach(card => {
+      if (card === except) return;
+      card.classList.remove("is-expanded");
+      card.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  cards.forEach(card => card.addEventListener("click", () => {
+    const expand = !card.classList.contains("is-expanded");
+    closeAll(card);
+    card.classList.toggle("is-expanded", expand);
+    card.setAttribute("aria-expanded", String(expand));
+  }));
+
+  document.addEventListener("pointerdown", event => {
+    if (!event.target.closest(".focus-card")) closeAll();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeAll();
+  });
+})();
+</script>
+
+:::

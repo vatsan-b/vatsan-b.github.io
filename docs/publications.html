@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,17 +36,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./gripper.png" rel="icon" type="image/png">
+<link href="./assets/images/robot.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f1671680f02530606520b3c68aec4ade.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9ce215629ef71eb0416b7a9c9d561dda.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,8 +82,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="assets/vendor/instant-page/5.2.0/instantpage.js" type="module"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -103,9 +106,9 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -118,15 +121,31 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./mentoring.html"> 
-<span class="menu-text">Mentoring</span></a>
+<span class="menu-text">Mentorship</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./life-outside-research.html"> 
-<span class="menu-text">Life Outside Work</span></a>
+    <a class="nav-link" href="./for-fun.html"> 
+<span class="menu-text">For Fun</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./connect.html"> 
-<span class="menu-text">Connect</span></a>
+    <a class="nav-link" href="mailto:sri.vatsan0307@gmail.com"> 
+<span class="menu-text"><i class="fa-solid fa-envelope"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://linkedin.com/in/vatsan-balaji" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-linkedin"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=cg4uo2cAAAAJ&amp;hl=en" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-google-scholar"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/vatsan-b" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-github"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://unsplash.com/@srivatsan" target="_blank"> 
+<span class="menu-text"><i class="fa-brands fa-unsplash"></i></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -162,50 +181,95 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 </header>
 
 
-<div style="max-width: 1200px; margin: 40px auto;">
-<ol type="1">
-<li><p><strong>Torque Responsive Metamaterials Enable High Payload Soft Robot Arms</strong><br>
+<!-- ---
+title: "Publications"
+---
+
+::: {style="max-width: 1200px; margin: 40px auto;"}
+
+1. **Torque Responsive Metamaterials Enable High Payload Soft Robot Arms**\
+   Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.\
+   [Under Review • IROS 2026]{style="color: gray;"}\
+   [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
+
+2. **Comparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp**\
+   Michael A. Pfeiffer, Freya Whittaker, Karina Puente, Srivatsan Balaji, Joseph R. Davidson, and Cristina G. Wilson\
+   [Under Review • IEEE SMC 2026]{style="color: gray;"}
+
+3. **Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers**\
+   Good, I.\*, Balaji, S.\*, Lipton, J. I. • \**Co-first Authors*\
+   *2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)*\
+   [[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522819){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}]{style="color: gray;"}
+
+4. **A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting**\
+   VanAtter, C., Balaji, S., Davidson, J. R.\
+   *2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)*\
+   [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}
+
+5. **Flexible Barometric Tactile Sensors for Robotic Grasping Applications**\
+   Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.\
+   *2025 IEEE SENSORS • Pages 1–4*\
+   [IEEE Xplore](https://doi.org/10.1109/SENSORS59705.2025.11330401){target="_blank"}
+
+6. **Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer**\
+   Good, I., Balaji, S., Lipton, J. I.\
+   *2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) • Pages 235–242*\
+   [[IEEE Xplore](https://doi.org/10.1109/RoboSoft60065.2024.10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}]{style="color: gray;"}
+
+7. **Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology**\
+   Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\
+   *Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium*\
+   [PDF](https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content){target="_blank"}
+
+::: -->
+<section id="section" class="level2">
+<h2 data-anchor-id="section">2026</h2>
+<p><strong>Torque Responsive Metamaterials Enable High Payload Soft Robot Arms</strong><br>
 Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.<br>
-<span style="color: gray;">Under Review • IROS 2026</span><br>
-<a href="https://arxiv.org/abs/2501.09819" target="_blank">arXiv preprint</a></p></li>
-<li><p><strong>Comparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp</strong><br>
-Michael A. Pfeiffer, Freya Whittaker, Karina Puente, Srivatsan Balaji, Joseph R. Davidson, and Cristina G. Wilson<br>
-<span style="color: gray;">Under Review • IEEE SMC 2026</span></p></li>
-<li><p><strong>Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers</strong><br>
-Good, I.*, Balaji, S.*, Lipton, J. I. • *<em>Co-first Authors</em><br>
-<em>2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)</em><br>
-<span style="color: gray;"><a href="https://ieeexplore.ieee.org/abstract/document/11522819" target="_blank">IEEE Xplore</a> • <a href="https://arxiv.org/abs/2412.07976" target="_blank">arXiv preprint</a></span></p></li>
-<li><p><strong>A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting</strong><br>
+<span style="color: gray;">Accepted • IROS 2026</span><br>
+<span style="color: gray;"><a href="https://arxiv.org/abs/2501.09819" target="_blank">arXiv preprint</a></span></p>
+<p><strong>Comparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp</strong><br>
+Pfeiffer, M. A., Whittaker, F., Puente, K., Balaji, S., Davidson, J. R., Wilson, C. G.<br>
+<span style="color: gray;">Accepted • IEEE SMC 2026</span></p>
+<p><strong>Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers</strong><br>
+Good, I., Balaji, S., Miske, J. N., Lipton, J. I.<br>
+<em>2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 686–693</em><br>
+<span style="color: gray;"><a href="https://ieeexplore.ieee.org/abstract/document/11522819" target="_blank">IEEE Xplore</a> • <a href="https://arxiv.org/abs/2412.07976" target="_blank">arXiv preprint</a></span></p>
+<p><strong>A Sensorized Blackberry Proxy for Learning Soft Fruit Harvesting</strong><br>
 VanAtter, C., Balaji, S., Davidson, J. R.<br>
-<em>2026 IEEE 9th International Conference on Soft Robotics (RoboSoft)</em><br>
-<a href="https://ieeexplore.ieee.org/abstract/document/11522859" target="_blank">IEEE Xplore</a></p></li>
-<li><p><strong>Flexible Barometric Tactile Sensors for Robotic Grasping Applications</strong><br>
+<em>2026 IEEE 9th International Conference on Soft Robotics (RoboSoft) • Pages 932–937</em><br>
+<span style="color: gray;"><a href="https://ieeexplore.ieee.org/abstract/document/11522859" target="_blank">IEEE Xplore</a></span></p>
+</section>
+<section id="section-1" class="level2">
+<h2 data-anchor-id="section-1">2025</h2>
+<p><strong>Flexible Barometric Tactile Sensors for Robotic Grasping Applications</strong><br>
 Shaevitz, A., Balaji, S., Johnston, M. L., Davidson, J. R.<br>
 <em>2025 IEEE SENSORS • Pages 1–4</em><br>
-<a href="https://doi.org/10.1109/SENSORS59705.2025.11330401" target="_blank">IEEE Xplore</a></p></li>
-<li><p><strong>Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer</strong><br>
+<span style="color: gray;"><a href="https://doi.org/10.1109/SENSORS59705.2025.11330401" target="_blank">IEEE Xplore</a></span></p>
+</section>
+<section id="section-2" class="level2">
+<h2 data-anchor-id="section-2">2024</h2>
+<p><strong>Enhancing the Performance of Pneu-Net Actuators Using a Torsion Resistant Strain Limiting Layer</strong><br>
 Good, I., Balaji, S., Lipton, J. I.<br>
 <em>2024 IEEE 7th International Conference on Soft Robotics (RoboSoft) • Pages 235–242</em><br>
-<span style="color: gray;"><a href="https://doi.org/10.1109/RoboSoft60065.2024.10521982" target="_blank">IEEE Xplore</a> • <a href="https://arxiv.org/abs/2311.02454" target="_blank">arXiv preprint</a></span></p></li>
-<li><p><strong>Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology</strong><br>
+<span style="color: gray;"><a href="https://doi.org/10.1109/RoboSoft60065.2024.10521982" target="_blank">IEEE Xplore</a> • <a href="https://arxiv.org/abs/2311.02454" target="_blank">arXiv preprint</a></span></p>
+</section>
+<section id="section-3" class="level2">
+<h2 data-anchor-id="section-3">2022</h2>
+<p><strong>Fabrication of Liquid-Filled Voronoi Foams for Impact Absorption Using Material Jetting Technology</strong><br>
 Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.<br>
 <em>Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium</em><br>
-<a href="https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content" target="_blank">PDF</a></p></li>
-</ol>
-</div>
+<span style="color: gray;"><a href="https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content" target="_blank">PDF</a></span></p>
+<style>
+main p { text-align: justify; }
+</style>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
