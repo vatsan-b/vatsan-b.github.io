@@ -322,7 +322,7 @@ main.content,
 ::: {.text-center}
 ### Hi, I'm Srivatsan!
 
-### This is the place where I share stuff about my research, interests, and life in general.
+### I design adaptive robotic hardware that helps robots work reliably in the messy real world.
 :::
 
 ::: {style="text-align: justify; margin-top: 30px;"}
