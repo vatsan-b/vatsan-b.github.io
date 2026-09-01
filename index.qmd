@@ -331,5 +331,5 @@ My goal is to enhance the capabilities of robots by building hardware that overc
 To achieve this, I use principles of mechanical design, materials, and digital fabrication to overcome the limitations of traditional manufacturing.
 :::
 
-:::
 
+:::

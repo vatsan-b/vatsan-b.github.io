@@ -28,7 +28,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 :::
 
 ::: {style="text-align: center; margin: 25px auto;"}
-![Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.](assets/images/bravo-gripper.png){width=70%}
+![Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.](assets/images/bravo-gripper.png){width=90%}
 :::
 
 ---
@@ -49,7 +49,11 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 :::
 
 ::: {style="margin: 30px auto; text-align: center;"}
-<video src="assets/videos/hsa-gripper-ycb.mp4" width="70%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
+```{=html}
+<div style="width: 90%; aspect-ratio: 2.3 / 1.0; margin: 0 auto; overflow: hidden; border-radius: 5px;">
+  <video src="assets/videos/hsa-gripper-ycb.mp4" autoplay loop muted playsinline style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 48%;"></video>
+</div>
+```
 <p class="figure-caption" style="margin-top: 10px;">HSA gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</p>
 :::
 
@@ -69,7 +73,11 @@ This work was supported by the Murdock Charitable Trust and the Office of Naval 
 :::
 
 ::: {style="margin: 30px auto; text-align: center;"}
-<video src="assets/videos/HSA-Arm-Lifting.mp4" width="70%" autoplay loop muted playsinline style="display: block; margin: 0 auto; border-radius: 4px;"></video>
+```{=html}
+<div style="width: 90%; aspect-ratio: 2.15 / 1.0; margin: 0 auto; overflow: hidden; border-radius: 5px;">
+  <video src="assets/videos/HSA-Arm-Lifting.mp4" autoplay loop muted playsinline style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 53%;"></video>
+</div>
+```
 <p class="figure-caption" style="margin-top: 10px;">Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight.</p>
 :::
 
@@ -93,7 +101,7 @@ This work was supported by the National Science Foundation (NSF).
 :::
 
 ::: {style="text-align: center; margin: 25px auto;"}
-![Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.](assets/images/parallel-jaw-lowres.png){width=80%}
+![Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.](assets/images/parallel-jaw-lowres.png){width=90%}
 :::
 
 ---
@@ -112,7 +120,9 @@ Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/10521982){target="_blan
 This work was supported by the NSF, the Murdock Charitable Trust and the Office of Naval Research (ONR).
 :::
 
-![TR-SLL allows Pneu-Net actuators to lift payloads as large as 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.png){fig-align="center" width=50%}
+::: {.text-center}
+![TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.png){fig-align="center" width=60%}
+:::
 
 
 <style>

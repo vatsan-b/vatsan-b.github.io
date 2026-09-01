@@ -1,16 +1,16 @@
 {
   "galleries": {
     "flight-sim": [
-      { "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png", "caption": "From the scope: ASDE-X, an advanced airport surface surveillance system." },
-      { "file": "assets/flight-sim/kpdx-tower-cab.png", "caption": "Tower Control Cabin" },
+      { "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png", "caption": "From the scope: ASDE-X - Airport Surface Detection Equipment." },
+      { "file": "assets/flight-sim/kpdx-tower-cab.png", "caption": "Satellite image from the tower control cabin" },
       { "file": "assets/flight-sim/Screenshot 2026-01-17 161641.png", "caption": "Mt. Rainier seen during a flight from Seattle to Los Angeles" },
-      { "file": "assets/flight-sim/737max8.png", "caption": "United Airlines Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)" },
-      { "file": "assets/flight-sim/a350-night.png", "caption": "Delta Airlines Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)" },
-      { "file": "assets/flight-sim/swa-737max.png", "caption": "Southwest Airlines Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)" }
+      { "file": "assets/flight-sim/737max8.png", "caption": "Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)" },
+      { "file": "assets/flight-sim/a350-night.png", "caption": "Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)" },
+      { "file": "assets/flight-sim/swa-737max.png", "caption": "Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)" }
     ],
     "photography": [
       { "file": "assets/unsplash-photos/PXL_20220323_021751755.jpg", "caption": "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
-      { "file": "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg", "caption": "" },
+      { "file": "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg", "caption": "Somewhere over northern Washington" },
       { "file": "assets/unsplash-photos/IMG_1405.jpg", "caption": "Coal Creek, Washington" },
       { "file": "assets/unsplash-photos/PXL_20211226_185354224.jpg", "caption": "The Quad at the University of Washington" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-Hv76ddFqKH4-unsplash.jpg", "caption": "Golden Gardens Park, Washington" },
@@ -18,13 +18,13 @@
       { "file": "assets/unsplash-photos/PXL_20240922_014702847.LONG_EXPOSURE-01.COVER.jpg", "caption": "Snoqualmie Falls, Washington" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg", "caption": "Coal Creek, Washington" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg", "caption": "Coal Creek, Washington" },
-      { "file": "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg", "caption": "" },
+      { "file": "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg", "caption": "Sammamish night sky" },
       { "file": "assets/unsplash-photos/PXL_20240418_010033230~2.jpg", "caption": "" },
-      { "file": "assets/unsplash-photos/PXL_20250514_231324573.jpg", "caption": "" },
+      { "file": "assets/unsplash-photos/PXL_20250514_231324573.jpg", "caption": "Hudson Bay" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg", "caption": "" },
       { "file": "assets/unsplash-photos/PXL_20250514_231425261~2.jpg", "caption": "Hudson Bay" },
       { "file": "assets/unsplash-photos/PXL_20240101_221804405.jpg", "caption": "Drumheller Fountain at the UW" },
-      { "file": "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg", "caption": "" },
+      { "file": "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg", "caption": "Golden Gardens Park, Washington" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg", "caption": "" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg", "caption": "" }
     ]

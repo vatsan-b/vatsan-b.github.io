@@ -1,9 +1,8 @@
 # vatsan-b.github.io — Personal Website
 
-Personal academic site for Srivatsan Balaji. Static site built with **Quarto**.
+Personal academic site for Srivatsan. Static site built with **Quarto**.
 
-- **v1** — live at <https://vatsan-b.github.io>, served from `main`.
-- **v2** — in progress on the `sandbox` branch. Different build from v1; not yet merged.
+- **Current site** — live at <https://vatsan-b.github.io>, served from `main`.
 
 ## Build layout — read this before deleting anything
 
@@ -16,9 +15,9 @@ duplicate files that also exist at the repo root. **That duplication is correct 
 behaviour, not cruft.** Deleting `docs/` or its contents takes the live site down.
 
 Genuine cruft — `docs.bak/` and any nested variant — was removed in commit `accbefb`
-and is now covered by `.gitignore` (`*.bak/`, `docs.bak/`).
+and remains covered by the `*.bak/` ignore rule.
 
-## Pages (v2 / sandbox)
+## Pages
 
 | Source | Page |
 |---|---|
@@ -66,7 +65,7 @@ because GitHub Pages serves `docs/`.
 
 ## Git
 
-- Work happens on `sandbox`. `main` holds v1 and is currently at `ebd10e5c`.
+- Active work and deployment use `main`; the local `sandbox` branch is retained only as historical work.
 - Never force-push. Never push to `main` without explicit instruction.
 - Old blobs from the removed `docs.bak/` trees still sit in history, so `.git` is ~72 MB
   despite the working tree being ~146 MB. Shrinking it needs `git filter-repo` and a

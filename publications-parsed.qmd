@@ -42,4 +42,3 @@ Good, I., Balaji, S., Lipton, J. I.\
 Brown-Moore, T. K., Balaji, S., Williams, T., Lipton, J. I.\
 *Solid Freeform Fabrication 2022: Proceedings of the 33rd Annual International Solid Freeform Fabrication Symposium*\
 [[PDF](https://repositories.lib.utexas.edu/server/api/core/bitstreams/052f20d0-ea8f-4a86-9d24-69b31bd937aa/content){target="_blank"}]{style="color: gray;"}
-

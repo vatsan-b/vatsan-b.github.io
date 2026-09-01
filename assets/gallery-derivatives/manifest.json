@@ -3,7 +3,7 @@
     "flight-sim": [
       {
         "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png",
-        "caption": "From the scope: ASDE-X, an advanced airport surface surveillance system.",
+        "caption": "From the scope: ASDE-X - Airport Surface Detection Equipment.",
         "width": 876,
         "height": 488,
         "thumb": {
@@ -19,7 +19,7 @@
       },
       {
         "file": "assets/flight-sim/kpdx-tower-cab.png",
-        "caption": "Tower Control Cabin",
+        "caption": "Satellite image from the tower control cabin",
         "width": 1018,
         "height": 913,
         "thumb": {
@@ -51,7 +51,7 @@
       },
       {
         "file": "assets/flight-sim/737max8.png",
-        "caption": "United Airlines Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)",
+        "caption": "Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)",
         "width": 1843,
         "height": 1080,
         "thumb": {
@@ -67,7 +67,7 @@
       },
       {
         "file": "assets/flight-sim/a350-night.png",
-        "caption": "Delta Airlines Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)",
+        "caption": "Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)",
         "width": 1920,
         "height": 1080,
         "thumb": {
@@ -83,7 +83,7 @@
       },
       {
         "file": "assets/flight-sim/swa-737max.png",
-        "caption": "Southwest Airlines Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)",
+        "caption": "Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)",
         "width": 1920,
         "height": 1080,
         "thumb": {
@@ -117,7 +117,7 @@
       },
       {
         "file": "assets/unsplash-photos/PXL_20260206_010853931.RAW-01.COVER.jpg",
-        "caption": "",
+        "caption": "Somewhere over northern Washington",
         "width": 4080,
         "height": 3072,
         "thumb": {
@@ -245,7 +245,7 @@
       },
       {
         "file": "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg",
-        "caption": "",
+        "caption": "Sammamish night sky",
         "width": 2330,
         "height": 2882,
         "thumb": {
@@ -277,7 +277,7 @@
       },
       {
         "file": "assets/unsplash-photos/PXL_20250514_231324573.jpg",
-        "caption": "",
+        "caption": "Hudson Bay",
         "width": 3019,
         "height": 2142,
         "thumb": {
@@ -341,7 +341,7 @@
       },
       {
         "file": "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg",
-        "caption": "",
+        "caption": "Golden Gardens Park, Washington",
         "width": 3748,
         "height": 3051,
         "thumb": {

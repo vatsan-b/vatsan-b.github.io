@@ -1,15 +1,11 @@
 /.quarto/
+/tests/
+
 **/*.quarto_ipynb
-quarto-linux-amd64.deb
 
 # Backup copies of the render output — never commit these
 *.bak/
-docs.bak/
 
 # Local artifacts that should never be staged
-.hermes/
+.venv/
 __pycache__/
-
-# Generated Quarto SCSS compile error dump
-_quarto_internal_scss_error.scss
-
