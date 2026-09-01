@@ -168,16 +168,34 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 <div class="text-center" style="margin-top: 60px;">
 <p><img src="assets/images/srivatsanb-photo.jpg" class="profile-photo img-fluid" width="180"></p>
 <p><span class="hero-name"><strong>Srivatsan Balaji</strong></span></p>
-<p><span class="affiliation">Research Contributor<br>
+<p><span class="affiliation">Research Collaborator/Contributor<br>
 Nimble Surgical</span></p>
 <p><span class="italic-text">Interests: Soft and Materials Robotics</span></p>
 <p><a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;"><i class="fa-solid fa-file" style="font-size: 1.0em;"></i>&nbsp; <span class="affiliation">View CV</span></a></p>
 </div>
 <div style="max-width: 1100px; margin: 50px auto; text-align: justify;">
-<p>I am currently a Research Contributor at Nimble Surgical, working on the development of computational methods for simulating auxetic metamaterials. Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.</p>
+<p>I am currently a Research Contributor at Nimble Surgical, working on developing metamaterial-based advanced guide catheters. Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University. I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.</p>
 <p>Outside of work, I am a virtual pilot and hobbyist photographer.</p>
-<section id="skills" class="level2">
-<h2 data-anchor-id="skills">Skills</h2>
+<section id="my-work" class="level2">
+<h2 data-anchor-id="my-work">My Work</h2>
+<div class="focus-grid" aria-label="Research focus areas">
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
+    <span class="focus-card__title">Advanced Guide Catheters</span>
+    <span class="focus-card__detail" id="focus-medical">I am developing tools to accelerate the design process of HSA-based transforming catheter tips.</span>
+  </button>
+    <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
+    <span class="focus-card__title">Underwater Manipulation</span>
+    <span class="focus-card__detail" id="focus-underwater">Operators loses reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-agricultural">
+    <span class="focus-card__title">Agricultural Robots</span>
+    <span class="focus-card__detail" id="focus-agricultural">Soft fruit picking is a narrow force-control problem: too much damages the fruit, and too little lets it slip. I built sensorized grippers that generate useful grasp data to teach robots.</span>
+  </button>
+  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-high-payload">
+    <span class="focus-card__title">High-Payload Soft Robots</span>
+    <span class="focus-card__detail" id="focus-high-payload">Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load. I used torsion-resistant structures to preserve compliance while carrying useful payloads.</span>
+  </button>
+</div>
 <div class="flow-track">
 
   <div class="flow-node flow-node--split">
@@ -210,24 +228,6 @@ Nimble Surgical</span></p>
   </div>
 
 </div>
-<div class="focus-grid" aria-label="Research focus areas">
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-high-payload">
-    <span class="focus-card__title">High-Payload Soft Robots</span>
-    <span class="focus-card__detail" id="focus-high-payload">Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load; I use torsion-resistant structures to preserve flexibility while carrying useful payloads.</span>
-  </button>
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
-    <span class="focus-card__title">Underwater Robotics</span>
-    <span class="focus-card__detail" id="focus-underwater">Underwater manipulation loses reliable visual feedback in turbulent, low-visibility conditions; I integrate flexible tactile sensing to help assess grasp stability.</span>
-  </button>
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-agricultural">
-    <span class="focus-card__title">Agricultural Robotics</span>
-    <span class="focus-card__detail" id="focus-agricultural">Soft fruit picking is a narrow force-control problem—too much bruises fruit and too little lets it slip; I build sensorized grippers that generate useful grasp data.</span>
-  </button>
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
-    <span class="focus-card__title">Medical Robotics</span>
-    <span class="focus-card__detail" id="focus-medical">For contact-sensitive manipulation, compliant hardware must stay safe without becoming mechanically vague; I design soft robotic structures that retain controlled motion and useful force.</span>
-  </button>
-</div>
 <style>
 /* ── How I Work: diverge (Design) → three tracks → converge (Advanced Hardware) ── */
 .flow-track {
@@ -238,7 +238,8 @@ Nimble Surgical</span></p>
   grid-template-columns: 1.2fr 0.6fr 1.3fr 0.6fr 1.3fr;
   align-items: stretch;          /* connectors span the full row height */
   gap: 0;
-  margin: 18px 0 8px;
+  /* Reserve room for a focus-card description so it does not cover the diagram. */
+  margin: 150px 0 8px;
 }
 
 .flow-node {
@@ -283,17 +284,20 @@ Nimble Surgical</span></p>
   transition: stroke-dashoffset 0.9s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
+
+
 /* ── Focus Areas ── */
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  margin: 18px 0 8px;
+  margin: 48px 0 8px;
 }
 .focus-card {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   min-height: 110px;
   padding: 1rem;
   border: 1px solid var(--border, #444);
@@ -303,7 +307,7 @@ Nimble Surgical</span></p>
   font: inherit;
   font-size: 0.95rem;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
@@ -314,7 +318,7 @@ Nimble Surgical</span></p>
   left: 0;
   right: 0;
   padding: 0.8rem;
-  border: 1px solid rgba(253, 210, 110, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   background: #1c1c1c;
   color: inherit;
@@ -331,8 +335,8 @@ Nimble Surgical</span></p>
 .focus-card.is-expanded {
   z-index: 3;
   transform: translateY(-3px);
-  border-color: #FDD26E;
-  background: rgba(253, 210, 110, 0.06);
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.04);
 }
 .focus-card:hover .focus-card__detail,
 .focus-card:focus-visible .focus-card__detail,

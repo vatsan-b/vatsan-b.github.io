@@ -60,14 +60,14 @@
     "href": "about.html",
     "title": "Srivatsan Balaji",
     "section": "",
-    "text": "Srivatsan Balaji\nResearch Contributor\nNimble Surgical\nInterests: Soft and Materials Robotics\n  View CV"
+    "text": "Srivatsan Balaji\nResearch Collaborator/Contributor\nNimble Surgical\nInterests: Soft and Materials Robotics\n  View CV"
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
     "title": "Srivatsan Balaji",
     "section": "Skills",
-    "text": "Skills\n\n\n  \n    Design\n    SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems & end effectors\n  \n\n  \n\n  \n    \n      Fabrication\n      Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting\n    \n    \n      Materials\n      Mechanical analysis & characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n\n  \n\n  \n    Advanced Hardware\n    Integrated hardware for underwater robotic systems\n  \n\n\n\n  \n    High-Payload Soft Robots\n    Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load; I use torsion-resistant structures to preserve flexibility while carrying useful payloads.\n  \n  \n    Underwater Robotics\n    Underwater manipulation loses reliable visual feedback in turbulent, low-visibility conditions; I integrate flexible tactile sensing to help assess grasp stability.\n  \n  \n    Agricultural Robotics\n    Soft fruit picking is a narrow force-control problem—too much bruises fruit and too little lets it slip; I build sensorized grippers that generate useful grasp data.\n  \n  \n    Medical Robotics\n    For contact-sensitive manipulation, compliant hardware must stay safe without becoming mechanically vague; I design soft robotic structures that retain controlled motion and useful force."
+    "text": "Skills\n\n\n  \n    Design\n    SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems & end effectors\n  \n\n  \n\n  \n    \n      Fabrication\n      Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting\n    \n    \n      Materials\n      Mechanical analysis & characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n\n  \n\n  \n    Advanced Hardware\n    Integrated hardware for underwater robotic systems"
   },
   {
     "objectID": "index.html",
@@ -89,5 +89,26 @@
     "title": "Mentorship",
     "section": "",
     "text": "I love to teach! I have had the opportunity to mentor high school interns and undergraduate students in mechanical design, CAD, 3D printing / digital fabrication, and soft robotics. This included hands-on training on the Prusa, Carbon M1, and Stratasys J750 3D printers, Instron material testing system, as well as design for additive manufacturing and Python programming.\n\nMentees\n\nNatalie Paskett\n\nBachelor of Applied Science, Engineering, Oregon State University • Winter 2025\n\nYusef (Joe) Torky\n\nHigh School Intern, Transformative Robotics Lab, University of Washington • Summer 2022\n\nNathan Zhang\n\nHigh School Intern, Transformative Robotics Lab, University of Washington • Summer 2022"
+  },
+  {
+    "objectID": "about.html#what-i-do",
+    "href": "about.html#what-i-do",
+    "title": "Srivatsan Balaji",
+    "section": "What I do",
+    "text": "What I do\n\n  \n    High-Payload Soft Robots\n    Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load. I used torsion-resistant structures to preserve flexibility while carrying useful payloads.\n  \n  \n    Underwater Manipulation\n    Operators loses reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.\n  \n  \n    Agriculture Robots\n    Soft fruit picking is a narrow force-control problem: too much bruises fruit and too little lets it slip. I built sensorized grippers that generate useful grasp data.\n  \n  \n    Advanced Guide Catheters\n    Add description.\n  \n\n\n\n  \n    Design\n    SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems & end effectors\n  \n\n  \n\n  \n    \n      Fabrication\n      Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting\n    \n    \n      Materials\n      Mechanical analysis & characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n\n  \n\n  \n    Advanced Hardware\n    Integrated hardware for underwater robotic systems"
+  },
+  {
+    "objectID": "about.html#y-work",
+    "href": "about.html#y-work",
+    "title": "Srivatsan Balaji",
+    "section": "y Work",
+    "text": "y Work\n\n  \n    High-Payload Soft Robots\n    Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load. I used torsion-resistant structures to preserve flexibility while carrying useful payloads.\n  \n  \n    Underwater Manipulation\n    Operators loses reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.\n  \n  \n    Agriculture Robots\n    Soft fruit picking is a narrow force-control problem: too much bruises fruit and too little lets it slip. I built sensorized grippers that generate useful grasp data.\n  \n  \n    Advanced Guide Catheters\n    Add description.\n  \n\n\n\n  \n    Design\n    SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems & end effectors\n  \n\n  \n\n  \n    \n      Fabrication\n      Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting\n    \n    \n      Materials\n      Mechanical analysis & characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n\n  \n\n  \n    Advanced Hardware\n    Integrated hardware for underwater robotic systems"
+  },
+  {
+    "objectID": "about.html#my-work",
+    "href": "about.html#my-work",
+    "title": "Srivatsan Balaji",
+    "section": "My Work",
+    "text": "My Work\n\n  \n    Advanced Guide Catheters\n    I am developing tools to accelerate the design process of HSA-based transforming catheter tips.\n  \n    \n    Underwater Manipulation\n    Operators loses reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.\n  \n  \n    Agricultural Robots\n    Soft fruit picking is a narrow force-control problem: too much damages the fruit, and too little lets it slip. I built sensorized grippers that generate useful grasp data to teach robots.\n  \n  \n    High-Payload Soft Robots\n    Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load. I used torsion-resistant structures to preserve compliance while carrying useful payloads.\n  \n\n\n\n  \n    Design\n    SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems & end effectors\n  \n\n  \n\n  \n    \n      Fabrication\n      Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting\n    \n    \n      Materials\n      Mechanical analysis & characterization\n    \n    \n      Computation\n      Python, MATLAB — Data processing, analysis, and feedback\n    \n  \n\n  \n\n  \n    Advanced Hardware\n    Integrated hardware for underwater robotic systems"
   }
 ]

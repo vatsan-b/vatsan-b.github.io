@@ -13,12 +13,12 @@
   --font-nav:      "Source Sans 3", sans-serif;
 
   /* Background gradient */
-  --grad-c1:    18, 3, 3;
-  --grad-c2:    22, 22, 22;
+  --grad-c1:    10, 10, 10;
+  --grad-c2:    13, 23, 35;
   --grad-angle: 160deg;
 
   /* Navbar */
-  --nav-alpha: 0.85;
+  --nav-alpha: 0.80;
   --nav-blur:  10px;
 
   /* Palette */
