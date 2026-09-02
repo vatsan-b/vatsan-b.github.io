@@ -17,9 +17,9 @@ format:
 Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea
 manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a
-prototype with a modified Bravo end effector and integrated flexible sensor, that can be mounted to existing gripper profiles.
+prototype with a modified Bravo end effector and integrated flexible sensor that can be mounted over existing end effector curvatures.
 We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally,
-I developed a [PyVista](https://pyvista.org/){target="_blank"}-based 3D visualizer that provides real-time finger position feedback, utilizing a time-of-flight sensor.
+I developed a [PyVista](https://pyvista.org/){target="_blank"}-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
@@ -63,8 +63,8 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 
 Expanding the work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
 and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
-payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, perform
-tasks such as pipe inspection and underwater docking due to its compliance.
+payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, and can perform
+tasks such as pipe inspection and underwater docking with high degree of compliance.
 
 Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
 
@@ -78,20 +78,20 @@ This work was supported by the Murdock Charitable Trust and the Office of Naval 
   <video src="assets/videos/HSA-Arm-Lifting.mp4" autoplay loop muted playsinline style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 53%;"></video>
 </div>
 ```
-<p class="figure-caption" style="margin-top: 10px;">Left: HSA arm lifting a 600 g YCB mustard bottle and Right: Arm lifting a 2.3 kg payload vertically while supporting its own weight.</p>
+<p class="figure-caption" style="margin-top: 10px;">Left: HSA arm lifting a 600 g YCB mustard bottle while supporting its own weight, and Right: The arm lifting a 2.3 kg payload vertically.</p>
 :::
 
 ---
 
-### Parallel-Jaw Gripper for Learning Soft Fruit Picking {toc-text="Learning Soft Fruit Picking"}
+### Parallel-Jaw Gripper for Learning Soft Fruit Harvesting {toc-text="Learning Soft Fruit Picking"}
 
 Harvesting soft fruits like blackberries requires precise grasp control — too much force damages the fruit, too little causes
 it to slip. To study this, I built a sensorized parallel-jaw gripper integrated with tactile sensors, designed to work with
-a blackberry proxy that simulates real fruit properties. This mechanically-operated gripper allows human-controlled data
+a blackberry proxy that is designed to simulate real fruit properties and variations. This low-cost, mechanically-operated gripper allows human-controlled data
 collection, replicating soft fruit grasping conditions to train robots on detecting berry maturity and applying the correct
 grasp pressure. Unlike conventional parallel-jaw grippers that rely on two independent motors and linear rails, this
-design uses a mirrored [Scott-Russell linkage](https://en.wikipedia.org/wiki/Scott_Russell_linkage){target="_blank"} driven by a single linear actuator, reducing mechanical complexity and cost.
-The mechanism used here lays the foundation to build a low-cost automated environment for training, though this remains
+design uses a mirrored [Scott-Russell linkage](https://en.wikipedia.org/wiki/Scott_Russell_linkage){target="_blank"} driven by a single linear actuator.
+The mechanism used here lays the foundation to build an economical automated environment for training, though this remains
 an open direction for future work.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522859){target="_blank"}
@@ -109,7 +109,7 @@ This work was supported by the National Science Foundation (NSF).
 ### Enhancing Pneumatic Network Actuators (Pneu-Net) using Additively-Manufactured Torsion-Resistant Strain Limiting Layers {toc-text="Enhanced Pneu-Net Actuators"}
 
 This work introduced 3D-printed torsion-resistant strain limiting layers, which were later integrated into HSA grippers
-(read above). Pneu-Nets are the primary form of soft robotic grippers, but a key limitation to their wider adoption is
+(read above). Pneu-Nets are the primary form of soft grippers, but a key limitation to their wider adoption is
 their inability to grasp significant payloads due to objects slipping out of grasps. They're primarily made up of silicone elastomers
 and lack a rigid skeleton to counteract twisting forces. We did overcome this limitation by introducing a torsionally-rigid strain limiting layer (TR-SLL). TR-SLL reduced out-of-plane deformations
 by up to 97% compared to a benchmark Pneu-Net actuator from the [Soft Robotics Toolkit](https://softroboticstoolkit.com/actuators){target="_blank"}.

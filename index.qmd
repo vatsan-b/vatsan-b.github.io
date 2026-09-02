@@ -317,18 +317,15 @@ main.content,
 })();
 </script>
 
-::: {.message style="max-width: 1000px; margin: 60px auto 0; line-height: 1.6;"}
+::: {.message style="max-width: 1100px; margin: 60px auto 0; line-height: 1.6;"}
 
 ::: {.text-center}
-### Hi, I'm Srivatsan!
 
-### I design adaptive robotic hardware that helps robots work reliably in the messy real world.
+#### Designing adaptive robotic hardware that help robots work reliably in the messy real world.
 :::
 
 ::: {style="text-align: justify; margin-top: 30px;"}
-My goal is to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors, I built physical systems that can naturally handle the chaos of the real world. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
-
-To achieve this, I use principles of mechanical design, materials, and digital fabrication to overcome the limitations of traditional manufacturing.
+My goal is to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
 :::
 
 

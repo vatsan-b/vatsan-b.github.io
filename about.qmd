@@ -20,9 +20,9 @@ Nimble Surgical]{.affiliation}
 
 ::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
 
-I am currently a Research Contributor at Nimble Surgical, working on developing metamaterial-based advanced guide catheters.
+I am currently a Research Contributor at Nimble Surgical, working to develop metamaterial-based transforming catheters.
 Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
-I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, and materials.
+I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, materials, and computation to some extent.
 
 Outside of work, I am a virtual pilot and hobbyist photographer.
 
@@ -65,12 +65,12 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
       <div class="flow-node__sub">Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting</div>
     </div>
     <div class="flow-node">
-      <div class="flow-node__label">Materials</div>
-      <div class="flow-node__sub">Mechanical analysis &amp; characterization</div>
+      <div class="flow-node__label">Materials and Analysis</div>
+      <div class="flow-node__sub">Mechanical characterization</div>
     </div>
     <div class="flow-node">
       <div class="flow-node__label">Computation</div>
-      <div class="flow-node__sub">Python, MATLAB &mdash; Data processing, analysis, and feedback</div>
+      <div class="flow-node__sub">Python, MATLAB &mdash; Data processing, analysis, feedback, and simulation</div>
     </div>
   </div>
 
@@ -78,7 +78,7 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
 
   <div class="flow-node flow-node--merge">
     <div class="flow-node__label">Advanced Hardware</div>
-    <div class="flow-node__sub">Integrated hardware for underwater robotic systems</div>
+    <div class="flow-node__sub">Functional hardware - soft gripper, robot arm, and end effectors</div>
   </div>
 
 </div>
