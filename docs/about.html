@@ -198,6 +198,8 @@ Nimble Surgical</span></p>
     <div class="flow-node__sub">SolidWorks, Autodesk Fusion 360 — Design and development of soft robotic systems &amp; end effectors</div>
   </div>
 
+  <span class="flow-mobile-arrow" aria-hidden="true">↓</span>
+
   <svg class="flow-conn" data-dir="out" aria-hidden="true"></svg>
 
   <div class="flow-branch">
@@ -214,6 +216,8 @@ Nimble Surgical</span></p>
       <div class="flow-node__sub">Python, MATLAB — Data processing, analysis, and feedback</div>
     </div>
   </div>
+
+  <span class="flow-mobile-arrow" aria-hidden="true">↓</span>
 
   <svg class="flow-conn" data-dir="in" aria-hidden="true"></svg>
 
@@ -277,6 +281,10 @@ Nimble Surgical</span></p>
    own length and stagger delay */
 .flow-conn path.is-drawing {
   transition: stroke-dashoffset 0.9s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+.flow-mobile-arrow {
+  display: none;
 }
 
 
@@ -344,14 +352,15 @@ Nimble Surgical</span></p>
 @media (max-width: 760px) {
   .flow-track { grid-template-columns: 1fr; gap: 1rem; }
   .flow-conn  { display: none; }
-  .flow-node--split::after,
-  .flow-branch::after {
-    content: "\2193";
-    display: block;
-    margin-top: 1rem;
-    text-align: center;
+  .flow-mobile-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2rem;
     color: #FDD26E;
     opacity: 0.6;
+    font-size: 1.35rem;
+    line-height: 1;
   }
   .focus-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -375,10 +384,18 @@ Nimble Surgical</span></p>
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let played = reduced;            // once true, paths render fully drawn
 
+  function flowSibling(element, direction) {
+    let sibling = element[direction];
+    while (sibling && sibling.classList.contains("flow-mobile-arrow")) {
+      sibling = sibling[direction];
+    }
+    return sibling;
+  }
+
   function drawOne(svg) {
     const out    = svg.dataset.dir === "out";      // out: one → many, in: many → one
-    const branch = out ? svg.nextElementSibling : svg.previousElementSibling;
-    const single = out ? svg.previousElementSibling : svg.nextElementSibling;
+    const branch = out ? flowSibling(svg, "nextElementSibling") : flowSibling(svg, "previousElementSibling");
+    const single = out ? flowSibling(svg, "previousElementSibling") : flowSibling(svg, "nextElementSibling");
     if (!branch || !single) return;
 
     const box = svg.getBoundingClientRect();
