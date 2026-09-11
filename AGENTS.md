@@ -21,7 +21,7 @@ and remains covered by the `*.bak/` ignore rule.
 
 | Source | Page |
 |---|---|
-| `index.qmd` | Landing + about. Three.js WebGL hero (wave-grid of deforming unit cells, shader tuned via a `CFG` block; auxetic/torsion theme mirrors the research). Respects `prefers-reduced-motion`. |
+| `index.qmd` | Landing + about. Locally hosted MIT-licensed tsParticles Slim constellation; edit the `SETTINGS` block for speed, colours, counts, and links. Mobile budget, 30 fps cap, reduced-motion static frame. |
 | `research.qmd` | Five project write-ups, each with figure or video, funding note, and IEEE/arXiv links. |
 | `publications.qmd` | See generation note below. |
 | `mentoring.qmd` | Mentee list. |

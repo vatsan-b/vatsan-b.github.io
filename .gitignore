@@ -1,11 +1,32 @@
 /.quarto/
-/tests/
 
 **/*.quarto_ipynb
 
 # Backup copies of the render output — never commit these
 *.bak/
 
-# Local artifacts that should never be staged
+# Local development artifacts (tests themselves should remain versionable)
 .venv/
 __pycache__/
+*.py[cod]
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local secrets; keep sanitized examples versionable
+.env
+.env.*
+!.env.example
+!.env.sample
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+credentials.json
+service-account*.json
+.secrets/
