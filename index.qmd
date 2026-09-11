@@ -164,8 +164,8 @@ main.content,
 #### Designing adaptive robotic hardware that help robots work reliably in the messy real world.
 :::
 
-::: {style="text-align: justify; margin-top: 30px;"}
-My goal is to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
+::: {style="text-align: center; margin-top: 50px;"}
+I aim to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
 :::
 
 ```{=html}
