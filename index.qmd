@@ -6,7 +6,7 @@ title: ""
 <div id="constellation-bg" aria-hidden="true"></div>
 
 <style>
-html { background: #05070e; }
+html { background: #130d18; }
 body,
 header#quarto-header,
 #quarto-header .navbar,
@@ -28,6 +28,58 @@ main.content,
 #quarto-header .navbar {
   box-shadow: 0 1px 0 rgba(255,255,255,0.06);
 }
+.homepage-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 5rem;
+}
+.homepage-card {
+  flex: 0 1 calc((100% - 2.5rem) / 3);
+  min-width: 0;
+  max-width: 360px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(253, 210, 110, 0.18);
+  border-radius: 0.85rem;
+  background: rgba(19, 13, 24, 0.52);
+  color: #fff;
+  isolation: isolate;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+.homepage-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #130d18;
+  opacity: 0.80;
+  transition: transform 300ms ease, opacity 200ms ease, filter 200ms ease;
+}
+.homepage-card:hover,
+.homepage-card:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(253, 210, 110, 0.56);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.30);
+}
+.homepage-card:hover img,
+.homepage-card:focus-visible img {
+  transform: scale(1.045);
+  opacity: 0.94;
+  filter: saturate(1.08);
+}
+@media (max-width: 760px) {
+  .homepage-work { margin-top: 3rem; gap: 0.6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .homepage-card,
+  .homepage-card img { transition: none; }
+  .homepage-card:hover,
+  .homepage-card:focus-visible,
+  .homepage-card:hover img,
+  .homepage-card:focus-visible img { transform: none; }
+}
 </style>
 
 <script src="assets/vendor/tsparticles/3.9.1/tsparticles.slim.bundle.min.js"></script>
@@ -36,11 +88,11 @@ main.content,
   // HOMEPAGE ANIMATION SETTINGS — edit these values, then run quarto render.
   // Counts are fixed budgets, not multiplied by screen area or pixel density.
   const SETTINGS = {
-    speed: 0.18,                          // lower = slower drift
+    speed: 0.20,                          // lower = slower drift
     colors: ['#FDD26E', '#FDD26E', '#87D7F2'],
     particleCount: 75,                    // desktop; keep below 100
     mobileParticleCount: 35,              // screens up to 760 CSS pixels wide
-    particleSize: { min: 0.8, max: 1.8 },
+    particleSize: { min: 1.0, max: 1.8 },
     particleOpacity: { min: 0.25, max: 0.65 },
     linkColor: '#FDD26E',
     linkDistance: 150,                    // CSS pixels; larger = more connections
@@ -115,6 +167,29 @@ main.content,
 ::: {style="text-align: justify; margin-top: 30px;"}
 My goal is to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. By integrating compliant mechanisms, designing torsion-resistant metamaterials, and embedding flexible tactile sensors. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
 :::
+
+```{=html}
+<div class="homepage-work" aria-label="Research areas">
+  <a class="homepage-card" href="research.html" aria-label="Explore soft robotics research">
+    <picture>
+      <source type="image/webp" srcset="assets/homepage/hsa-arm-pull-900.webp">
+      <img src="assets/homepage/hsa-arm-pull.png" alt="Hydraulic soft actuator test rig">
+    </picture>
+  </a>
+  <a class="homepage-card" href="research.html" aria-label="Explore underwater robotics research">
+    <picture>
+      <source type="image/webp" srcset="assets/homepage/underwater-test-900.webp">
+      <img src="assets/homepage/underwater-test.png" alt="Underwater robotic system testing">
+    </picture>
+  </a>
+  <a class="homepage-card" href="research.html" aria-label="Explore tactile sensing research">
+    <picture>
+      <source type="image/webp" srcset="assets/homepage/hsagripper-windex-900.webp">
+      <img src="assets/homepage/hsagripper-windex.png" alt="Soft robotic gripper prototype">
+    </picture>
+  </a>
+</div>
+```
 
 
 :::

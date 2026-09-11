@@ -17,7 +17,7 @@ format:
 Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea
 manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a
-prototype with a modified Bravo end effector and integrated flexible sensor that can be mounted over existing end effector curvatures.
+prototype, which is an adaptation of [Reach Bravo 7](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"}'s end effector to integrate flexible sensor.
 We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally,
 I developed a [PyVista](https://pyvista.org/){target="_blank"}-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.
 
@@ -28,7 +28,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 :::
 
 ::: {style="text-align: center; margin: 25px auto;"}
-![Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.](assets/images/bravo-gripper.png){width=90%}
+![Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.](assets/images/bravo-gripper.png){fig-alt="Tactile sensors mounted on a Bravo end effector alongside a CAD rendering and prototype assembly" width=90%}
 :::
 
 ---
@@ -101,12 +101,12 @@ This work was supported by the National Science Foundation (NSF).
 :::
 
 ::: {style="text-align: center; margin: 25px auto;"}
-![Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.](assets/images/parallel-jaw-lowres.png){width=90%}
+![Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.](assets/images/parallel-jaw-lowres.png){fig-alt="Parallel-jaw gripper assembly and mirrored Scott-Russell linkage for actuation" width=90%}
 :::
 
 ---
 
-### Enhancing Pneumatic Network Actuators (Pneu-Net) using Additively-Manufactured Torsion-Resistant Strain Limiting Layers {toc-text="Enhanced Pneu-Net Actuators"}
+### Enhanced Pneumatic Network Actuators (Pneu-Net) {toc-text="Enhanced Pneu-Net Actuators"}
 
 This work introduced 3D-printed torsion-resistant strain limiting layers, which were later integrated into HSA grippers
 (read above). Pneu-Nets are the primary form of soft grippers, but a key limitation to their wider adoption is
@@ -121,7 +121,7 @@ This work was supported by the NSF, the Murdock Charitable Trust and the Office 
 :::
 
 ::: {.text-center}
-![TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.png){fig-align="center" width=60%}
+![TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.png){fig-alt="Torsion-resistant strain limiting layer helping a pneumatic network actuator lift a payload" fig-align="center" width=60%}
 :::
 
 

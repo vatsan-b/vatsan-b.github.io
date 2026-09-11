@@ -3,7 +3,7 @@
     "flight-sim": [
       {
         "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png",
-        "caption": "From the scope: ASDE-X - Airport Surface Detection Equipment.",
+        "caption": "",
         "width": 876,
         "height": 488,
         "thumb": {
@@ -19,7 +19,7 @@
       },
       {
         "file": "assets/flight-sim/kpdx-tower-cab.png",
-        "caption": "Satellite image from the tower control cabin",
+        "caption": "",
         "width": 1018,
         "height": 913,
         "thumb": {
@@ -35,7 +35,7 @@
       },
       {
         "file": "assets/flight-sim/Screenshot 2026-01-17 161641.png",
-        "caption": "Mt. Rainier seen during a flight from Seattle to Los Angeles",
+        "caption": "",
         "width": 1920,
         "height": 1080,
         "thumb": {
@@ -51,7 +51,7 @@
       },
       {
         "file": "assets/flight-sim/737max8.png",
-        "caption": "Boeing 737 Max 8 from Seattle (KSEA) to San Francisco (KSFO)",
+        "caption": "",
         "width": 1843,
         "height": 1080,
         "thumb": {
@@ -67,7 +67,7 @@
       },
       {
         "file": "assets/flight-sim/a350-night.png",
-        "caption": "Airbus A350-900 - Late evening flight from Detroit (KDTW) to Atlanta (KATL)",
+        "caption": "",
         "width": 1920,
         "height": 1080,
         "thumb": {
@@ -83,7 +83,7 @@
       },
       {
         "file": "assets/flight-sim/swa-737max.png",
-        "caption": "Boeing 737 Max 8 - Dallas Love Field (KDAL) to Washington National Airport (KDCA)",
+        "caption": "",
         "width": 1920,
         "height": 1080,
         "thumb": {

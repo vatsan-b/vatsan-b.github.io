@@ -5,11 +5,11 @@ pagetitle: "About"
 
 ::: {.text-center style="margin-top: 60px;"}
 
-![](assets/images/srivatsanb-photo.jpg){width=180px .profile-photo}
+<img src="assets/images/srivatsanb-photo.jpg" alt="Portrait of Srivatsan Balaji" width="180" class="profile-photo">
 
 [**Srivatsan Balaji**]{.hero-name}
 
-[Research Collaborator/Contributor\
+[Research & Development Intern/Contributor\
 Nimble Surgical]{.affiliation}
 
 [Interests: Soft and Materials Robotics]{.italic-text}
@@ -20,7 +20,7 @@ Nimble Surgical]{.affiliation}
 
 ::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
 
-I am currently a Research Contributor at Nimble Surgical, working to develop metamaterial-based transforming catheters.
+I am developing metamaterial-based tip-transforming catheters at Nimble Surgical.
 Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
 I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, materials, and computation to some extent.
 
@@ -32,7 +32,7 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
 <div class="focus-grid" aria-label="Research focus areas">
   <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
     <span class="focus-card__title">Advanced Guide Catheters</span>
-    <span class="focus-card__detail" id="focus-medical">I am developing tools to accelerate the design process of HSA-based transforming catheter tips.</span>
+    <span class="focus-card__detail" id="focus-medical">Developing tools to accelerate the design process of HSA-based transforming catheter tips.</span>
   </button>
     <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
     <span class="focus-card__title">Underwater Manipulation</span>

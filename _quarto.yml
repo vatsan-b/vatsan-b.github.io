@@ -4,6 +4,7 @@ project:
   resources:
     - cv/
     - assets/
+    - scripts/gallery-content.json
   preview:
     browser: false  # Requires manual browser activation
   render:

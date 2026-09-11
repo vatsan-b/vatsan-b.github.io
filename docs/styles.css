@@ -13,8 +13,8 @@
   --font-nav:      "Source Sans 3", sans-serif;
 
   /* Background gradient */
-  --grad-c1:    10, 10, 10;
-  --grad-c2:    13, 23, 35;
+  --grad-c1:    18, 10, 26;
+  --grad-c2:    36, 27, 47;
   --grad-angle: 160deg;
 
   /* Navbar */
@@ -62,14 +62,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .italic-text {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: 400;
   font-style: italic;
   font-family: var(--font-display) !important;
 }
 
 .affiliation {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-weight: 400;
   font-style: normal;
   font-family: var(--font-headings) !important;

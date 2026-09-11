@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Research – Srivatsan Balaji</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,14 +39,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="./assets/images/robot.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1a6ac3e139fe3735f5160b245c90406b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-adc2475157a9b8023004918a9e3c6cf2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -161,7 +166,7 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
   <li><a href="#torsion-resistant-handed-shearing-auxetics-hsa-based-soft-gripper" id="toc-torsion-resistant-handed-shearing-auxetics-hsa-based-soft-gripper" class="nav-link" data-scroll-target="#torsion-resistant-handed-shearing-auxetics-hsa-based-soft-gripper">Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper</a></li>
   <li><a href="#handed-shearing-auxetics-hsa-based-soft-robot-arm" id="toc-handed-shearing-auxetics-hsa-based-soft-robot-arm" class="nav-link" data-scroll-target="#handed-shearing-auxetics-hsa-based-soft-robot-arm">Handed-Shearing Auxetics (HSA)-based Soft Robot Arm</a></li>
   <li><a href="#parallel-jaw-gripper-for-learning-soft-fruit-harvesting" id="toc-parallel-jaw-gripper-for-learning-soft-fruit-harvesting" class="nav-link" data-scroll-target="#parallel-jaw-gripper-for-learning-soft-fruit-harvesting">Parallel-Jaw Gripper for Learning Soft Fruit Harvesting</a></li>
-  <li><a href="#enhancing-pneumatic-network-actuators-pneu-net-using-additively-manufactured-torsion-resistant-strain-limiting-layers" id="toc-enhancing-pneumatic-network-actuators-pneu-net-using-additively-manufactured-torsion-resistant-strain-limiting-layers" class="nav-link" data-scroll-target="#enhancing-pneumatic-network-actuators-pneu-net-using-additively-manufactured-torsion-resistant-strain-limiting-layers">Enhancing Pneumatic Network Actuators (Pneu-Net) using Additively-Manufactured Torsion-Resistant Strain Limiting Layers</a></li>
+  <li><a href="#enhanced-pneumatic-network-actuators-pneu-net" id="toc-enhanced-pneumatic-network-actuators-pneu-net" class="nav-link" data-scroll-target="#enhanced-pneumatic-network-actuators-pneu-net">Enhanced Pneumatic Network Actuators (Pneu-Net)</a></li>
   </ul>
 </nav>
     </div>
@@ -189,7 +194,7 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 
 <section id="flexible-sensor-integrated-end-effector-for-underwater-manipulation" class="level3" data-toc-text="Underwater Manipulation">
 <h3 data-toc-text="Underwater Manipulation" data-anchor-id="flexible-sensor-integrated-end-effector-for-underwater-manipulation">Flexible Sensor-Integrated End Effector for Underwater Manipulation</h3>
-<p>Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a prototype with a modified Bravo end effector and integrated flexible sensor that can be mounted over existing end effector curvatures. We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally, I developed a <a href="https://pyvista.org/" target="_blank">PyVista</a>-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.</p>
+<p>Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a prototype, which is an adaptation of <a href="https://reachrobotics.com/products/reach-bravo/reach-bravo-7" target="_blank">Reach Bravo 7</a>’s end effector to integrate flexible sensor. We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally, I developed a <a href="https://pyvista.org/" target="_blank">PyVista</a>-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.</p>
 <p>Read: <a href="https://ieeexplore.ieee.org/document/11330401" target="_blank">IEEE Xplore</a></p>
 <div class="funding">
 <p>This work was supported by the Office of Naval Research (ONR), U.S. Department of Defense.</p>
@@ -197,7 +202,7 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 <div style="text-align: center; margin: 25px auto;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/images/bravo-gripper.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<p><img src="assets/images/bravo-gripper.png" class="img-fluid figure-img" style="width:90.0%" alt="Tactile sensors mounted on a Bravo end effector alongside a CAD rendering and prototype assembly"></p>
 <figcaption>Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.</figcaption>
 </figure>
 </div>
@@ -248,15 +253,15 @@ Left: HSA arm lifting a 600 g YCB mustard bottle while supporting its own weight
 <div style="text-align: center; margin: 25px auto;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/images/parallel-jaw-lowres.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<p><img src="assets/images/parallel-jaw-lowres.png" class="img-fluid figure-img" style="width:90.0%" alt="Parallel-jaw gripper assembly and mirrored Scott-Russell linkage for actuation"></p>
 <figcaption>Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.</figcaption>
 </figure>
 </div>
 </div>
 <hr>
 </section>
-<section id="enhancing-pneumatic-network-actuators-pneu-net-using-additively-manufactured-torsion-resistant-strain-limiting-layers" class="level3" data-toc-text="Enhanced Pneu-Net Actuators">
-<h3 data-toc-text="Enhanced Pneu-Net Actuators" data-anchor-id="enhancing-pneumatic-network-actuators-pneu-net-using-additively-manufactured-torsion-resistant-strain-limiting-layers">Enhancing Pneumatic Network Actuators (Pneu-Net) using Additively-Manufactured Torsion-Resistant Strain Limiting Layers</h3>
+<section id="enhanced-pneumatic-network-actuators-pneu-net" class="level3" data-toc-text="Enhanced Pneu-Net Actuators">
+<h3 data-toc-text="Enhanced Pneu-Net Actuators" data-anchor-id="enhanced-pneumatic-network-actuators-pneu-net">Enhanced Pneumatic Network Actuators (Pneu-Net)</h3>
 <p>This work introduced 3D-printed torsion-resistant strain limiting layers, which were later integrated into HSA grippers (read above). Pneu-Nets are the primary form of soft grippers, but a key limitation to their wider adoption is their inability to grasp significant payloads due to objects slipping out of grasps. They’re primarily made up of silicone elastomers and lack a rigid skeleton to counteract twisting forces. We did overcome this limitation by introducing a torsionally-rigid strain limiting layer (TR-SLL). TR-SLL reduced out-of-plane deformations by up to 97% compared to a benchmark Pneu-Net actuator from the <a href="https://softroboticstoolkit.com/actuators" target="_blank">Soft Robotics Toolkit</a>.</p>
 <p>Read: <a href="https://ieeexplore.ieee.org/document/10521982" target="_blank">IEEE Xplore</a> • <a href="https://arxiv.org/abs/2311.02454" target="_blank">arXiv preprint</a></p>
 <div class="funding">
@@ -265,7 +270,7 @@ Left: HSA arm lifting a 600 g YCB mustard bottle while supporting its own weight
 <div class="text-center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/images/TR-SLL_Lift_Hero.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="assets/images/TR-SLL_Lift_Hero.png" class="img-fluid figure-img" style="width:60.0%" alt="Torsion-resistant strain limiting layer helping a pneumatic network actuator lift a payload"></p>
 <figcaption>TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator’s in-plane performance.</figcaption>
 </figure>
 </div>
