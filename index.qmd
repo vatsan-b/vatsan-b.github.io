@@ -88,10 +88,10 @@ main.content,
   // HOMEPAGE ANIMATION SETTINGS — edit these values, then run quarto render.
   // Counts are fixed budgets, not multiplied by screen area or pixel density.
   const SETTINGS = {
-    speed: 0.20,                          // lower = slower drift
+    speed: 0.50,                          // lower = slower drift
     colors: ['#FDD26E', '#FDD26E', '#87D7F2'],
-    particleCount: 75,                    // desktop; keep below 100
-    mobileParticleCount: 35,              // screens up to 760 CSS pixels wide
+    particleCount: 100,                    // desktop; keep below 100
+    mobileParticleCount: 40,              // screens up to 760 CSS pixels wide
     particleSize: { min: 1.0, max: 1.8 },
     particleOpacity: { min: 0.25, max: 0.65 },
     linkColor: '#FDD26E',
@@ -165,7 +165,7 @@ main.content,
 :::
 
 ::: {style="text-align: center; margin-top: 50px;"}
-I aim to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. When the hardware is smart, adaptive, and structurally resilient, the software boundary expands.
+I aim to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. When the hardware is smart, adaptive, and structurally resilient, software boundary expands.
 :::
 
 ```{=html}

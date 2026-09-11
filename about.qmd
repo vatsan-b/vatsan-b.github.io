@@ -32,7 +32,7 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
 <div class="focus-grid" aria-label="Research focus areas">
   <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
     <span class="focus-card__title">Advanced Guide Catheters</span>
-    <span class="focus-card__detail" id="focus-medical">Developing tools to accelerate the design process of HSA-based transforming catheter tips.</span>
+    <span class="focus-card__detail" id="focus-medical">Developing tools to accelerate design of HSA-based anchoring guide catheters.</span>
   </button>
     <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
     <span class="focus-card__title">Underwater Manipulation</span>
