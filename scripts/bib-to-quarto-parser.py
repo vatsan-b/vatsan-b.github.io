@@ -179,7 +179,7 @@ def author_line(entry):
 
     line = ", ".join(names)
     if cofirst:
-        line += r" • \**Co-first Authors*"
+        line += " • *Co-first Authors*"
     return line
 
 
@@ -210,7 +210,10 @@ def links_line(entry):
 
 
 def render_entry(entry):
-    lines = [f'**{escape_markdown(entry["title"])}**', author_line(entry)]
+    lines = [
+        escape_markdown(entry["title"]),
+        f'[{author_line(entry)}]{{.publication-authors}}',
+    ]
     v = venue_line(entry)
     if v:
         lines.append(v)

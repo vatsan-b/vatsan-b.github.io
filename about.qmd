@@ -36,7 +36,7 @@ Outside of work, I am a virtual pilot and hobbyist photographer.
   </button>
     <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
     <span class="focus-card__title">Underwater Manipulation</span>
-    <span class="focus-card__detail" id="focus-underwater">Operators loses reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.</span>
+    <span class="focus-card__detail" id="focus-underwater">Operators lose reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.</span>
   </button>
   <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-agricultural">
     <span class="focus-card__title">Agricultural Robots</span>

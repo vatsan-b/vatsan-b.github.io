@@ -161,11 +161,14 @@ main.content,
 
 ::: {.text-center}
 
-#### Designing adaptive robotic hardware that help robots work reliably in the messy real world.
+#### Building adaptive robotic hardware that help robots work reliably in the messy real world. {style="font-size: 1.5rem;"}
 :::
 
-::: {style="text-align: center; margin-top: 50px;"}
-I aim to enhance the capabilities of robots by building hardware that overcomes existing physical limitations. When the hardware is smart, adaptive, and structurally resilient, software boundary expands.
+::: {style="text-align: justify; margin-top: 30px; font-size: 1.20rem; line-height: 1.5;"}
+I aim to build hardware that lets robots do more than their current physical limits allow.
+My work includes improving soft pneumatic network actuators, designing and characterizing
+metamaterial-based soft grippers, and integrating flexible electronics and developing platforms for underwater grasping and robotic harvesting.
+I’m interested in hardware that can adapt, survive real-world chaos, and give the software more room to work.
 :::
 
 ```{=html}
