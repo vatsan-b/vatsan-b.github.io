@@ -6,7 +6,7 @@ title: ""
 <div id="constellation-bg" aria-hidden="true"></div>
 
 <style>
-html { background: #130d18; }
+html { background: #000000; }
 body,
 header#quarto-header,
 #quarto-header .navbar,
@@ -92,11 +92,11 @@ main.content,
     colors: ['#FDD26E', '#FDD26E', '#87D7F2'],
     particleCount: 100,                    // desktop; keep below 100
     mobileParticleCount: 40,              // screens up to 760 CSS pixels wide
-    particleSize: { min: 1.0, max: 1.8 },
-    particleOpacity: { min: 0.25, max: 0.65 },
+    particleSize: { min: 1.0, max: 2.0 },
+    particleOpacity: { min: 0.30, max: 0.60 },
     linkColor: '#FDD26E',
-    linkDistance: 150,                    // CSS pixels; larger = more connections
-    linkOpacity: 0.18,
+    linkDistance: 200,                    // CSS pixels; larger = more connections
+    linkOpacity: 0.20,
     fps: 30                              // 20–30 is enough for a background
   };
 

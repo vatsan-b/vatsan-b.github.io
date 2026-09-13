@@ -14,7 +14,7 @@ Nimble Surgical]{.affiliation}
 
 [Interests: Soft and Materials Robotics]{.italic-text}
 
-<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;"><i class="fa-solid fa-file" style="font-size: 1.0em;"></i>&nbsp; [View CV]{.affiliation}</a>
+<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;" style="font-weight: 700;"><i class="fa-solid fa-file" style="font-size: 1.0em;"></i>&nbsp; [View CV]{.bold}</a>
 
 :::
 

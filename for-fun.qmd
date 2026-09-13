@@ -1,5 +1,5 @@
 ---
-title: "Life Outside Work"
+title: ""
 toc: true
 toc-location: right
 toc-title: "On this page"
@@ -11,7 +11,7 @@ format:
       margin-width: 200px
 ---
 
-Outside of work, I am a hobbyist photographer, virtual pilot and an S1-rated air traffic controller with VATUSA - [VATSIM](https://www.vatsim.net){target="_blank"}'s United States division.
+Outside of work, I am a hobbyist photographer, virtual pilot and a VATSIM air traffic controller.
 
 <!-- ── Self-hosted gallery dependencies (MIT, exact pinned versions) ── -->
 <link rel="stylesheet" href="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.css">

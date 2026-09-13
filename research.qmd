@@ -17,7 +17,7 @@ format:
 Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea
 manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a
-prototype, which is an adaptation of [Reach Bravo 7](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"}'s end effector to integrate flexible sensor.
+prototype, which is an adaptation of [Reach Bravo's](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"} end effector to integrate flexible sensor.
 We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally,
 I developed a [PyVista](https://pyvista.org/){target="_blank"}-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.
 
