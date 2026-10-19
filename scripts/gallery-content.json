@@ -1,12 +1,12 @@
 {
   "galleries": {
     "flight-sim": [
-      { "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png", "caption": "" },
-      { "file": "assets/flight-sim/kpdx-tower-cab.png", "caption": "" },
-      { "file": "assets/flight-sim/Screenshot 2026-01-17 161641.png", "caption": "" },
-      { "file": "assets/flight-sim/737max8.png", "caption": "" },
-      { "file": "assets/flight-sim/a350-night.png", "caption": "" },
-      { "file": "assets/flight-sim/swa-737max.png", "caption": "" }
+      { "file": "assets/flight-sim/Screenshot 2026-07-13 043136.png", "caption": "Top-down ATC radar view of an airport with parallel runways, with ASA427 (737 MAX 8) and DAL3342 (A319) tagged" },
+      { "file": "assets/flight-sim/kpdx-tower-cab.png", "caption": "Tower view of the KPDX terminal apron, with UAL1656 (777-200ER) and ASA20 (737-800) tagged" },
+      { "file": "assets/flight-sim/Screenshot 2026-01-17 161641.png", "caption": "Stars-and-stripes winglet over a sunlit, snow-covered peak at cruise" },
+      { "file": "assets/flight-sim/737max8.png", "caption": "737 MAX 8 flight deck at twilight cruise, with a thin orange horizon over dark clouds" },
+      { "file": "assets/flight-sim/a350-night.png", "caption": "A350 flight deck at night, with city lights below" },
+      { "file": "assets/flight-sim/swa-737max.png", "caption": "Southwest 737 MAX seen from below against a clear blue sky, with twin contrails" }
     ],
     "photography": [
       { "file": "assets/unsplash-photos/PXL_20220323_021751755.jpg", "caption": "Sunset panoramic view of downtown Seattle with Mt. Rainier in the background" },
@@ -19,14 +19,14 @@
       { "file": "assets/unsplash-photos/srivatsan-balaji-WCjeeeBJEH4-unsplash.jpg", "caption": "Coal Creek, Washington" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-NN6gNzLlfEM-unsplash.jpg", "caption": "Coal Creek, Washington" },
       { "file": "assets/unsplash-photos/PXL_20220731_064619756.NIGHT~2.jpg", "caption": "Sammamish night sky" },
-      { "file": "assets/unsplash-photos/PXL_20240418_010033230~2.jpg", "caption": "" },
+      { "file": "assets/unsplash-photos/PXL_20240418_010033230~2.jpg", "caption": "A half moon in a clear blue sky, framed by bare branches" },
       { "file": "assets/unsplash-photos/PXL_20250514_231324573.jpg", "caption": "Hudson Bay" },
-      { "file": "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg", "caption": "" },
+      { "file": "assets/unsplash-photos/srivatsan-balaji-wZMVYtJXHm0-unsplash.jpg", "caption": "A white daisy with a blue center, in sunlight among dark green leaves" },
       { "file": "assets/unsplash-photos/PXL_20250514_231425261~2.jpg", "caption": "Hudson Bay" },
       { "file": "assets/unsplash-photos/PXL_20240101_221804405.jpg", "caption": "Drumheller Fountain at the UW" },
       { "file": "assets/unsplash-photos/srivatsan-balaji-8L18q92WX8g-unsplash.jpg", "caption": "Golden Gardens Park, Washington" },
-      { "file": "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg", "caption": "" },
-      { "file": "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg", "caption": "" }
+      { "file": "assets/unsplash-photos/srivatsan-balaji-T632eMad9E8-unsplash.jpg", "caption": "A rock outcrop with a clump of grass rising from still, pink-tinted water at dusk" },
+      { "file": "assets/unsplash-photos/srivatsan-balaji-vvpqI98fT60-unsplash.jpg", "caption": "A brown butterfly with white streaks resting on a green stem" }
     ]
   }
 }

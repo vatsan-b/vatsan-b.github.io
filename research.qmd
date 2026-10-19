@@ -3,21 +3,14 @@ title: "Research"
 toc: true
 toc-location: right
 toc-title: ""
-format:
-  html:
-    grid:
-      sidebar-width: 200px
-      body-width: 1200px
-      margin-width: 200px
 ---
-
 
 ### Flexible Sensor-Integrated End Effector for Underwater Manipulation {toc-text="Underwater Manipulation"}
 
 Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
 insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea
 manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a
-prototype, which is an adaptation of [Reach Bravo's](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"} end effector to integrate flexible sensor.
+prototype, which is an adaptation of [Reach Bravo's](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"} end effector to integrate flexible sensors.
 We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally,
 I developed a [PyVista](https://pyvista.org/){target="_blank"}-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.
 
@@ -28,7 +21,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 :::
 
 ::: {style="text-align: center; margin: 25px auto;"}
-![Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.](assets/images/bravo-gripper.png){fig-alt="Tactile sensors mounted on a Bravo end effector alongside a CAD rendering and prototype assembly" width=90%}
+![Left: Tactile sensors mounted to a modified 3D-printed version of a Bravo end effector, with a CAD rendering (bottom right). Right: Assembly of the prototype.](assets/images/bravo-gripper.webp){fig-alt="Tactile sensors mounted on a Bravo end effector alongside a CAD rendering and prototype assembly" width=90% loading="lazy"}
 :::
 
 ---
@@ -36,7 +29,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 ### Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper {toc-text="Soft Gripper"}
 
 Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant
-strain limiting layer (TR-SLL) and integrated it to [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"} (HSA)
+strain limiting layer (TR-SLL) and integrated it into [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"} (HSA)
 to fabricate a soft gripper. I utilized FEA simulations to conduct a parametric design study and determine the optimal TR-SLL design configuration.
 The TR-SLL minimizes out-of-plane bending while preserving the gripper's in-plane compliance and flexibility.
 The resulting TR-SLL-integrated HSA gripper lifted a payload of over 1 kg (pinch grasp), and 5 kg when loaded through the TR-SLL element.
@@ -51,7 +44,7 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 ::: {style="margin: 30px auto; text-align: center;"}
 ```{=html}
 <div style="width: 90%; aspect-ratio: 2.3 / 1.0; margin: 0 auto; overflow: hidden; border-radius: 5px;">
-  <video src="assets/videos/hsa-gripper-ycb.mp4" autoplay loop muted playsinline style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 48%;"></video>
+  <video src="assets/videos/hsa-gripper-ycb.mp4" poster="assets/videos/hsa-gripper-ycb-poster.webp" data-autoplay loop muted playsinline preload="metadata" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 48%;"></video>
 </div>
 ```
 <p class="figure-caption" style="margin-top: 10px;">HSA gripper lifting objects from the YCB object dataset to benchmark robot grasping and manipulation. The gripper achieved a success rate of 86% when tested with 43 objects.</p>
@@ -59,12 +52,12 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 
 ---
 
-### Handed-Shearing Auxetics (HSA)-based Soft Robot Arm {toc-text="Soft Auxetic Arm"}
+### Handed Shearing Auxetics (HSA)-based Soft Robot Arm {toc-text="Soft Auxetic Arm"}
 
 Expanding the work on HSA grippers, we designed and built a soft robot arm with auxetics and bending, extending,
-and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require hanging configuration to lift heavy
-payloads unlike previously developed soft robot arms. They can be mounted horizontally or vertically to lift payloads, and can perform
-tasks such as pipe inspection and underwater docking with high degree of compliance.
+and torsionally-rigid shafts (a different kind of metamaterial). This arm does not require a hanging configuration to lift heavy
+payloads unlike previously developed soft robot arms. It can be mounted horizontally or vertically to lift payloads, and can perform
+tasks such as pipe inspection and underwater docking with a high degree of compliance.
 
 Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
 
@@ -75,7 +68,7 @@ This work was supported by the Murdock Charitable Trust and the Office of Naval 
 ::: {style="margin: 30px auto; text-align: center;"}
 ```{=html}
 <div style="width: 90%; aspect-ratio: 2.15 / 1.0; margin: 0 auto; overflow: hidden; border-radius: 5px;">
-  <video src="assets/videos/HSA-Arm-Lifting.mp4" autoplay loop muted playsinline style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 53%;"></video>
+  <video src="assets/videos/HSA-Arm-Lifting.mp4" poster="assets/videos/HSA-Arm-Lifting-poster.webp" data-autoplay loop muted playsinline preload="metadata" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 53%;"></video>
 </div>
 ```
 <p class="figure-caption" style="margin-top: 10px;">Left: HSA arm lifting a 600 g YCB mustard bottle while supporting its own weight, and Right: The arm lifting a 2.3 kg payload vertically.</p>
@@ -101,7 +94,7 @@ This work was supported by the National Science Foundation (NSF).
 :::
 
 ::: {style="text-align: center; margin: 25px auto;"}
-![Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.](assets/images/parallel-jaw-lowres.png){fig-alt="Parallel-jaw gripper assembly and mirrored Scott-Russell linkage for actuation" width=90%}
+![Left: Parallel-jaw gripper assembly. Right: Overview of mirrored Scott-Russell linkage used for gripper actuation.](assets/images/parallel-jaw-lowres.webp){fig-alt="Parallel-jaw gripper assembly and mirrored Scott-Russell linkage for actuation" width=90% loading="lazy"}
 :::
 
 ---
@@ -111,26 +104,24 @@ This work was supported by the National Science Foundation (NSF).
 This work introduced 3D-printed torsion-resistant strain limiting layers, which were later integrated into HSA grippers
 (read above). Pneu-Nets are the primary form of soft grippers, but a key limitation to their wider adoption is
 their inability to grasp significant payloads due to objects slipping out of grasps. They're primarily made up of silicone elastomers
-and lack a rigid skeleton to counteract twisting forces. We did overcome this limitation by introducing a torsionally-rigid strain limiting layer (TR-SLL). TR-SLL reduced out-of-plane deformations
+and lack a rigid skeleton to counteract twisting forces. We overcame this limitation by introducing a torsionally-rigid strain limiting layer (TR-SLL). TR-SLL reduced out-of-plane deformations
 by up to 97% compared to a benchmark Pneu-Net actuator from the [Soft Robotics Toolkit](https://softroboticstoolkit.com/actuators){target="_blank"}.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}
 
 ::: funding
-This work was supported by the NSF, the Murdock Charitable Trust and the Office of Naval Research (ONR).
+This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).
 :::
 
 ::: {.text-center}
-![TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.png){fig-alt="Torsion-resistant strain limiting layer helping a pneumatic network actuator lift a payload" fig-align="center" width=60%}
+![TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.webp){fig-alt="Torsion-resistant strain limiting layer helping a pneumatic network actuator lift a payload" fig-align="center" width=60% loading="lazy"}
 :::
 
-
 <style>
-/* Justify on the container (like the old wrapper div) so the centered
-   figure/video divs override it by normal inheritance. Do NOT target
-   `main p` — Quarto wraps figure images in <p>, which would pull
-   images and captions to the left. */
-main { text-align: justify; }
+/* Justify on <main> (not a wrapper div): a div around the headings stops
+   Quarto building the right-hand TOC. Centred figure/video divs override this by
+   inheritance. Do NOT target `main p`, which drags figure images left. */
+main { text-align: justify; hyphens: auto; }
 </style>
 
 <script>
@@ -139,26 +130,36 @@ main { text-align: justify; }
 // depending on version. This rewrites TOC links from whichever is present.
 // Edit the toc-text strings in the headings above to customize sidebar labels.
 (function () {
-  function applyShortTocTitles() {
-    document.querySelectorAll(
-      '#TOC a[href^="#"], nav[role="doc-toc"] a[href^="#"]'
-    ).forEach(function (link) {
-      var id = decodeURIComponent(link.getAttribute("href").slice(1));
-      var target = document.getElementById(id);
-      if (!target) return;
-      var el = (target.hasAttribute("data-toc-text") || target.hasAttribute("toc-text"))
-        ? target
-        : target.querySelector("[data-toc-text], [toc-text]");
-      if (!el) return;
-      var short = el.getAttribute("data-toc-text") || el.getAttribute("toc-text");
-      if (short) link.textContent = short;
+  document.querySelectorAll(
+    '#TOC a[href^="#"], nav[role="doc-toc"] a[href^="#"]'
+  ).forEach(function (link) {
+    var id = decodeURIComponent(link.getAttribute("href").slice(1));
+    var target = document.getElementById(id);
+    if (!target) return;
+    var el = (target.hasAttribute("data-toc-text") || target.hasAttribute("toc-text"))
+      ? target
+      : target.querySelector("[data-toc-text], [toc-text]");
+    if (!el) return;
+    var short = el.getAttribute("data-toc-text") || el.getAttribute("toc-text");
+    if (short) link.textContent = short;
+  });
+})();
+
+// Loop-videos play only while on screen and only if motion is allowed;
+// with reduced motion they stay on their poster frame.
+(function () {
+  var videos = document.querySelectorAll("video[data-autoplay]");
+  if (!videos.length || !("IntersectionObserver" in window)) return;
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting && !reduced.matches) e.target.play().catch(function () {});
+      else e.target.pause();
     });
-  }
-  applyShortTocTitles();
-  document.addEventListener("DOMContentLoaded", applyShortTocTitles);
-  window.addEventListener("load", applyShortTocTitles);
+  }, { threshold: 0.25 });
+  videos.forEach(function (v) { io.observe(v); });
+  reduced.addEventListener("change", function () {
+    if (reduced.matches) videos.forEach(function (v) { v.pause(); });
+  });
 })();
 </script>
-
-
-

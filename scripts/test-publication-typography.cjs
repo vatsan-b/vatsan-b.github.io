@@ -12,6 +12,6 @@ test('publication titles are regular while venues use italic emphasis', () => {
   const output = fs.readFileSync(path.join(root, 'publications-parsed.qmd'), 'utf8');
   assert.match(output, /Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers\\\n/);
   assert.doesNotMatch(output, /\*Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers\*/);
-  assert.match(output, /Good, I\.\\\*, Balaji, S\.\\\*, Miske, J\. N\., Lipton, J\. I\. • \*Co-first Authors\*/);
-  assert.match(output, /\[Good, I\.\\\*, Balaji, S\.\\\*, Miske, J\. N\., Lipton, J\. I\. • \*Co-first Authors\*\]\{\.publication-authors\}/);
+  assert.match(output, /Good, I\.\\\*, Balaji, S\.\\\*, Miske, J\. N\., Lipton, J\. I\. • \[\\\*Co-first Authors\]\{\.cofirst-note\}/);
+  assert.match(output, /\[Good, I\.\\\*, Balaji, S\.\\\*, Miske, J\. N\., Lipton, J\. I\. • \[\\\*Co-first Authors\]\{\.cofirst-note\}\]\{\.publication-authors\}/);
 });

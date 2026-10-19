@@ -25,7 +25,7 @@ and remains covered by the `*.bak/` ignore rule.
 | `research.qmd` | Five project write-ups, each with figure or video, funding note, and IEEE/arXiv links. |
 | `publications.qmd` | See generation note below. |
 | `mentoring.qmd` | Mentee list. |
-| `for-fun.qmd` | Flight-sim and photography galleries (flickr-justified-gallery + lightGallery). |
+| `for-fun.qmd` | Flight-sim and photography galleries (flickr-justified-gallery + PhotoSwipe). |
 
 ## Publications are generated — do not hand-edit
 
@@ -36,11 +36,22 @@ directly to the parsed `.qmd` are overwritten on the next run.
 ## Assets
 
 Source assets in `assets/images/`, `assets/videos/`, `assets/unsplash-photos/`,
-`assets/logos/`, and `assets/gallery-derivatives/` are versioned so a fresh clone
+`assets/homepage/`, and `assets/gallery-derivatives/` are versioned so a fresh clone
 can fully `quarto render`. The rendered `docs/assets/` copies remain versioned
 because GitHub Pages serves `docs/`.
 
-`assets/flight-sim/` **is** tracked. `assets/compress-photo.py` is source code, also tracked.
+`assets/flight-sim/` **is** tracked. `resources: assets/` publishes everything under
+`assets/`, so keep unreferenced originals out of it: they live in `sources/unused-assets/`
+(logos, spare photos and screenshots), which is not published. `scripts/compress-photo.py`
+is a helper, not site code.
+
+Figures are WebP, hero fallbacks are 900 px JPEG, and the two research videos are
+muted, audio-free H.264 with WebP posters. They play only while on screen and never
+with `prefers-reduced-motion` (script at the bottom of `research.qmd`).
+
+Gallery captions: edit `scripts/gallery-content.json`, then run
+`python3 scripts/generate-gallery-derivatives.py --captions-only` (no Pillow needed).
+A full rebuild needs Pillow (`scripts/requirements.txt`).
 
 ## Conventions
 
@@ -51,7 +62,12 @@ because GitHub Pages serves `docs/`.
   `{toc-text="..."}` on each heading, rewritten client-side by a script at the bottom of
   `research.qmd`.
 - External links carry `target="_blank"`.
-- Dark theme throughout; accent colour `#FDD26E`.
+- Dark theme throughout; accent colour `#FDD26E` (`--accent` in `styles.css`).
+- Body copy justification uses the shared `.justify` class (hyphenated), not per-page styles.
+- Navbar icons are inline SVG (Font Awesome Free 6.7.2, CC BY 4.0; licence in
+  `assets/vendor/fontawesome-icons/`). There is no Font Awesome CDN or Quarto extension.
+- Fonts: one preconnected Google Fonts `<link>` in `_quarto.yml` (Newsreader + Source Serif 4).
+- Tests: `node --test scripts/*.cjs` and `python3 scripts/verify-site.py` (also run in CI).
 
 ## Open items
 
@@ -67,6 +83,6 @@ because GitHub Pages serves `docs/`.
 
 - Active work and deployment use `main`; the local `sandbox` branch is retained only as historical work.
 - Never force-push. Never push to `main` without explicit instruction.
-- Old blobs from the removed `docs.bak/` trees still sit in history, so `.git` is ~72 MB
-  despite the working tree being ~146 MB. Shrinking it needs `git filter-repo` and a
+- Old blobs from the removed `docs.bak/` trees still sit in history, so `.git` is ~110 MB
+  despite the working tree being smaller. Shrinking it needs `git filter-repo` and a
   force-push — destructive, rewrites every SHA. Do not do this unprompted.

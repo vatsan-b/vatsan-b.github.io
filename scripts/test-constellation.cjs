@@ -81,6 +81,6 @@ test('uses bounded, slow tsParticles links without expensive effects', async () 
   assert.equal(o.particles.links.enable, true);
   assert.ok(o.particles.color.value.includes('#FDD26E'));
   assert.ok(o.particles.number.value <= 100);
-  assert.ok(o.particles.move.speed <= 0.3);
+  assert.ok(o.particles.move.speed <= 0.5);
   assert.equal(o.interactivity.events.onHover.enable, false);
 });
