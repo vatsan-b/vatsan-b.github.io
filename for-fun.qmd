@@ -6,8 +6,6 @@ toc-location: right
 toc-title: "On this page"
 ---
 
-Outside of work, I am a hobbyist photographer, virtual pilot, and a VATUSA air traffic controller.
-
 <!-- ── Self-hosted gallery dependencies (MIT, exact pinned versions) ── -->
 <link rel="stylesheet" href="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.css">
 <link rel="stylesheet" href="assets/vendor/photoswipe/5.4.4/photoswipe.css">
@@ -20,7 +18,7 @@ Outside of work, I am a hobbyist photographer, virtual pilot, and a VATUSA air t
 
 ## Flight Simulation
 
-I am a virtual Seattle ARTCC controller, and a part of a wonderful community of virtual pilots and controllers on VATSIM. Air traffic controlling is a fun and challenging hobby that keeps me on my toes. I also fly (virtually).
+I am a virtual Seattle ARTCC controller, and a part of a wonderful community of virtual pilots and controllers on the [VATSIM](https://www.vatusa.net/){target="_blank"} network. Air traffic controlling is a fun and challenging hobby that keeps me on my toes, and I also fly (virtually).
 
 <div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-captions="off" data-row-height="170" data-row-height-md="150" data-row-height-sm="120" style="max-width: 1200px;"></div>
 
