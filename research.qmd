@@ -26,7 +26,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 
 ---
 
-### Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper {toc-text="Soft Gripper"}
+### Handed Shearing Auxetics (HSA) Enabling High Grip Strength for Soft Grippers {toc-text="Soft Gripper"}
 
 Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structures limits real-world adoption. We developed a torsionally-rigid
 strain limiting layer and integrated it into [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"} (HSA)
@@ -78,7 +78,7 @@ This work was supported by the Murdock Charitable Trust and the Office of Naval 
 
 ---
 
-### Parallel-Jaw Gripper for Learning Soft Fruit Harvesting {toc-text="Learning Soft Fruit Picking"}
+### Sensing-Capable Parallel Jaw Gripper for Learning Soft Fruit Harvesting {toc-text="Learning Soft Fruit Picking"}
 
 Harvesting soft fruits like blackberries requires precise grasp control — too much force damages the fruit, too little causes
 it to slip. To study this, I built a sensorized parallel-jaw gripper integrated with tactile sensors, designed to work with
