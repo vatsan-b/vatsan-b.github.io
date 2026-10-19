@@ -1,17 +1,9 @@
-/* ── Fonts ─────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200..900;1,200..900&display=swap');
-
-@import url("https://use.typekit.net/btj4xog.css"); /* Adobe Fonts: Source Serif 4 */
-
-
 :root {
   --main-font:     "Newsreader", serif;
-  --font-headings: "Source Serif 4", serif;
-  --font-display:  "Source Serif 4", serif;
+  --font-headings: "Newsreader", serif;
+  --font-display:  "Newsreader", serif;
   --font-nav:      "Newsreader", serif;
+  --font-toc:      "Source Sans 3", system-ui, sans-serif;
 
   /* Background gradient */
   --grad-c1:    0, 0, 0;
@@ -23,7 +15,7 @@
   --nav-blur:  0px;
 
   /* Palette */
-  --accent:        #bfac7e;
+  --accent:        #FDD26E;
   --search-accent: #FDD26E;
   --text-dark:     #eeeeee;
   --text-caption:  #bbbbbb;
@@ -66,23 +58,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.0rem;
   font-weight: 400;
   font-style: italic;
-  font-family: var(--font-display) !important;
+  font-family: var(--main-font) !important;
 }
 
 .affiliation {
-  font-size: 1.0rem;
+  font-size: 1.15rem;
   font-weight: 400;
   font-style: normal;
-  font-family: var(--font-headings) !important;
-}
-
-.message {
-  animation: fadeIn 1.5s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  font-family: var(--main-font) !important;
 }
 
 /* give the last section room to reach the top consistently */
@@ -91,6 +74,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Links with no underline */
 a {
   text-decoration: none;
+}
+
+/* ── Inline SVG icons (Font Awesome Free 6.7.2, CC BY 4.0) ── */
+.nav-icon {
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
 }
 
 /* ── Navbar ─────────────────────────────────────────────── */
@@ -111,7 +101,7 @@ a {
 }
 
 .navbar-brand {
-  font-family: var(--font-display);
+  font-family: var(--main-font);
   font-weight: 700;
   font-style: normal;
   font-size: 1.55rem;
@@ -126,7 +116,7 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
   font-style: normal;
-  font-family: var(--font-display) !important;
+  font-family: var(--main-font) !important;
 }
 
 /* ── Layout ─────────────────────────────────────────────── */
@@ -135,7 +125,7 @@ a {
   margin: 0 auto !important;
   padding: 0 2rem !important;
   /* will-change: opacity, transform; */
-  animation: pageFade 0.3s ease-out both;
+  animation: pageFade 0.3s ease-out backwards;
 }
 
 .page-columns, .quarto-container, .container {
@@ -169,7 +159,28 @@ p em, figcaption em {
 }
 
 .publication-authors {
-  font-weight: 200;
+  font-weight: 300;
+}
+
+.cofirst-note {
+  color: var(--text-caption);
+  font-style: italic;
+}
+
+/* Venue line: same skewed style as .funding */
+.publication-venue {
+  transform: skewX(-8deg);
+  display: inline-block;
+}
+
+.justify {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ── Table of contents ──────────────────────────────────── */
+#TOC, #TOC a, #toc-title, nav[role="doc-toc"] a {
+  font-family: var(--font-toc) !important;
 }
 
 /* ── Captions ───────────────────────────────────────────── */
