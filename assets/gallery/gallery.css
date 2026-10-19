@@ -16,11 +16,11 @@
 .js-gallery .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 5px;
   display: block;
   transform: translateZ(0); /* keeps the border-radius mask intact under WebKit zoom */
   cursor: zoom-in;
-  background: #1a1a1a;
+  background: var(--gallery-bg, #1a1a1a);
 }
 
 .js-gallery .gallery-item img {

@@ -59,7 +59,9 @@ website:
 
 format:
   html:
-    theme: [darkly, custom-dark.scss]
+    theme:
+      dark: [darkly, custom-dark.scss]
+      light: [default, custom-light.scss]
     css: styles.css
     anchor-sections: false
     code-copy: false
@@ -77,7 +79,3 @@ format:
 
 
 
-# Theme selector
-# theme:
-#   light: [flatly, custom-light.scss]
-#   dark: [darkly, custom-dark.scss]

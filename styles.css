@@ -18,6 +18,34 @@
   --search-accent: #FDD26E;
   --text-dark:     #eeeeee;
   --text-caption:  #bbbbbb;
+
+  /* Surfaces that differ between themes */
+  --glow:          255, 150, 40;
+  --nav-line:      rgba(255, 255, 255, 0.06);
+  --frame-shadow:  rgba(0, 0, 0, 0.55);
+  --panel-bg:      #1a1a1a;
+  --panel-input:   #242424;
+  --panel-border:  #333333;
+  --placeholder:   #666666;
+  --gallery-bg:    #1a1a1a;
+}
+
+/* Light theme: Quarto puts .quarto-light on <body> when the visitor switches. */
+:root:has(body.quarto-light) {
+  --grad-c1:       250, 249, 245;
+  --grad-c2:       250, 249, 245;
+  --accent:        #D73F09;
+  --search-accent: #D73F09;
+  --text-dark:     #262624;
+  --text-caption:  #5c5c56;
+  --glow:          215, 63, 9;
+  --nav-line:      rgba(0, 0, 0, 0.08);
+  --frame-shadow:  rgba(0, 0, 0, 0.25);
+  --panel-bg:      #ffffff;
+  --panel-input:   #f0eee8;
+  --panel-border:  #d9d6cc;
+  --placeholder:   #8a877c;
+  --gallery-bg:    #e9e6dd;
 }
 
 /* ── Base ───────────────────────────────────────────────── */
@@ -95,6 +123,27 @@ a {
   font-family: var(--font-nav);
   font-weight: 400;
   font-style: normal;  
+}
+
+/* Bootstrap lightens the active navbar colour; keep the exact accent in light mode. */
+body.quarto-light .navbar-nav .nav-link.active,
+body.quarto-light .navbar-nav .nav-link.active:hover { color: var(--accent) !important; }
+
+/* Theme toggle: larger, and placed beside the site title on wide screens. */
+.navbar .quarto-navbar-tools { display: flex; align-items: center; }
+.quarto-color-scheme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.quarto-color-scheme-toggle .bi { display: flex; }
+.quarto-color-scheme-toggle .bi::before {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-size: 1.8rem 1.8rem;
+}
+@media (min-width: 992px) {
+  .navbar .quarto-navbar-tools { order: 19; margin-left: 0; margin-right: 0.5rem; }
 }
 
 .navbar-brand {
@@ -217,18 +266,18 @@ figcaption, .caption, .figure-caption, .img-caption {
 }
 
 .aa-DetachedContainer {
-  background: #1a1a1a !important;
+  background: var(--panel-bg) !important;
 }
 
 .aa-Form,
 .aa-Input {
-  background: #242424 !important;
-  border-color: #333333 !important;
+  background: var(--panel-input) !important;
+  border-color: var(--panel-border) !important;
   color: var(--text-dark) !important;
 }
 
 .aa-Input::placeholder {
-  color: #666666 !important;
+  color: var(--placeholder) !important;
 }
 
 .aa-ClearButton {
@@ -236,8 +285,8 @@ figcaption, .caption, .figure-caption, .img-caption {
 }
 
 .aa-Panel {
-  background: #1a1a1a !important;
-  border-color: #333333 !important;
+  background: var(--panel-bg) !important;
+  border-color: var(--panel-border) !important;
 }
 
 .aa-Item {
@@ -245,13 +294,13 @@ figcaption, .caption, .figure-caption, .img-caption {
 }
 
 .aa-Item[aria-selected="true"] {
-  background: #242424 !important;
+  background: var(--panel-input) !important;
 }
 
 .aa-DetachedCancelButton {
   color: var(--accent) !important;
   background: transparent !important;
-  border-color: #333333 !important;
+  border-color: var(--panel-border) !important;
 }
 
 /* ── Motion ─────────────────────────────────────────────── */
