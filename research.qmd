@@ -28,7 +28,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 
 ### Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper {toc-text="Soft Gripper"}
 
-Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structures limits real-world adoption. We developed a torsionally-rigid
+Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structures limits real-world adoption. We developed a torsionally rigid
 strain limiting layer and integrated it into [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"} (HSA)
 to fabricate a soft gripper. I utilized finite element analysis to conduct a parametric design study and determine the optimal TR-SLL configuration.
 This structure minimizes out-of-plane bending while preserving the gripper's in-plane compliance and flexibility.
@@ -55,10 +55,10 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 
 ---
 
-### Electrically-Driven Soft Arms based on Mechanical Metamaterials {toc-text="Soft Auxetic Arm"}
+### Electrically Driven Soft Arms based on Mechanical Metamaterials {toc-text="Soft Auxetic Arm"}
 
-Expanding the work on HSA grippers, we designed and built an electrically-driven soft robot arm with auxetic metamaterials, including bendable, extendable,
-and torsionally-rigid flex shafts. This arm does not require a hanging configuration to lift significant payloads. It can be mounted horizontally or vertically, and can perform
+Expanding the work on HSA grippers, we designed and built an electrically driven soft robot arm with auxetic metamaterials, including bendable, extendable,
+and torsionally rigid flex shafts. This arm does not require a hanging configuration to lift significant payloads. It can be mounted horizontally or vertically, and can perform
 tasks such as pipe inspection and underwater docking with a high degree of compliance. The HSA arm lifted a 600 g mustard bottle while supporting its own weight, and up to 2.3 kg vertically.
 
 Read: [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank"}
@@ -82,7 +82,7 @@ This work was supported by the Murdock Charitable Trust and the Office of Naval 
 
 Harvesting soft fruits like blackberries requires precise grasp control — too much force damages the fruit, too little causes
 it to slip. To study this, I built a sensorized parallel-jaw gripper integrated with tactile sensors, designed to work with
-a blackberry proxy that is designed to simulate real fruit properties and variations. This low-cost, mechanically-operated gripper allows human-controlled data
+a blackberry proxy that is designed to simulate real fruit properties and variations. This low-cost, mechanically operated gripper allows human-controlled data
 collection, replicating soft fruit grasping conditions to train robots on detecting berry maturity and applying the correct
 grasp pressure. Unlike conventional parallel-jaw grippers that rely on two independent motors and linear rails, this
 design uses a mirrored [Scott-Russell linkage](https://en.wikipedia.org/wiki/Scott_Russell_linkage){target="_blank"} driven by a single linear actuator.
@@ -106,7 +106,7 @@ This work was supported by the National Science Foundation (NSF).
 This work introduced 3D-printed torsion-resistant strain limiting layers, which were then integrated into HSA grippers
 (read above). Despite being the primary form of soft grippers, a key limitation to their wider adoption is
 their inability to grasp significant payloads due to objects slipping out of grasps. They're primarily made up of silicone elastomers
-and lack a rigid skeleton to counteract twisting forces. We overcame this limitation by introducing a torsionally-rigid strain limiting layer. TR-SLL reduced out-of-plane deformations
+and lack a rigid skeleton to counteract twisting forces. We overcame this limitation by introducing a torsionally rigid strain limiting layer. TR-SLL reduced out-of-plane deformations
 by up to 97% compared to a benchmark Pneu-Net actuator from the [Soft Robotics Toolkit](https://softroboticstoolkit.com/actuators){target="_blank"}.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/10521982){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2311.02454){target="_blank"}

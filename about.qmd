@@ -20,13 +20,13 @@ Nimble Surgical]{.affiliation}
 
 ::: {.justify style="margin: 50px 0;"}
 
-I am contributing to develop metamaterial-based tip-transforming catheters at Nimble Surgical.
-Previously, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
-I developed hardware for integrating flexible sensors for augmenting human-supervised underwater grasping. Prior to this, I built and characterized electrically-driven soft grippers and robot arm,
+I am contributing to the development of metamaterial-based tip-transforming catheters at Nimble Surgical.
+Previously, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of the Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
+I developed hardware for integrating flexible sensors for augmenting human-supervised underwater grasping. Prior to this, I built and characterized electrically-driven soft grippers and a robot arm,
 and improved the performance of Pneu-Net actuators.
 
 My work sits at the intersection of mechanical engineering, robotics, materials, and computation to some extent.
-I design the system, fabricate it, characterize, then feed what I learned back into the design.
+I design the system, fabricate it, characterize it, then feed what I learned back into the design.
 
 Outside of work, I am a virtual pilot and hobbyist photographer.
 
