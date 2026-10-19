@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srivatsan Balaji</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0a0a0a;
+      font-family: Georgia, serif;
+      overflow: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+    }
+
+    .message {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #f0f0f0;
+      padding: 2rem;
+    }
+
+    .message h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .message p {
+      font-size: 1rem;
+      color: #aaa;
+      letter-spacing: 0.03em;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div class="message">
+    <h1>Currently under maintenance.</h1>
+    <p>Please check back soon.</p>
+  </div>
+  <script>
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let W, H, particles, raf = 0;
+
+    function init() {
+      const dpr = window.devicePixelRatio || 1;
+      W = window.innerWidth;
+      H = window.innerHeight;
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      // ~80 dots on a 1440x900 screen, fewer on small ones
+      const count = Math.min(120, Math.max(25, Math.round(W * H / 16200)));
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 1.5 + 0.5,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: (Math.random() - 0.5) * 0.4,
+        alpha: Math.random() * 0.5 + 0.2,
+      }));
+      if (reduced.matches) draw();
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      for (const p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(200, 200, 200, ${p.alpha})`;
+        ctx.fill();
+
+        if (reduced.matches) continue;
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > W) p.dx *= -1;
+        if (p.y < 0 || p.y > H) p.dy *= -1;
+      }
+      raf = reduced.matches ? 0 : requestAnimationFrame(draw);
+    }
+
+    function start() {
+      if (!raf && !document.hidden && !reduced.matches) raf = requestAnimationFrame(draw);
+    }
+    function stop() { cancelAnimationFrame(raf); raf = 0; }
+
+    window.addEventListener('resize', init);
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+    reduced.addEventListener('change', () => { stop(); init(); start(); });
+    init();
+    start();
+  </script>
+</body>
+</html>
