@@ -1,0 +1,3 @@
+# Only needed to rebuild gallery derivatives (generate-gallery-derivatives.py).
+# Built-in AVIF encoding needs Pillow 11.3 or newer.
+Pillow>=11.3

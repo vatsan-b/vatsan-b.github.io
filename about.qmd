@@ -3,7 +3,7 @@ title: ""
 pagetitle: "About"
 ---
 
-::: {.text-center style="margin-top: 60px;"}
+::: {.text-center style="margin-top: 20px;"}
 
 <img src="assets/images/srivatsanb-photo.jpg" alt="Portrait of Srivatsan Balaji" width="180" class="profile-photo">
 
@@ -14,364 +14,350 @@ Nimble Surgical]{.affiliation}
 
 [Interests: Soft and Materials Robotics]{.italic-text}
 
-<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none;" style="font-weight: 700;"><i class="fa-solid fa-file" style="font-size: 1.0em;"></i>&nbsp; [View CV]{.bold}</a>
+<a href="cv/CV_SrivatsanBalaji.pdf" target="_blank" style="text-decoration: none; font-weight: 700;"><svg class="nav-icon" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 288c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128z"/></svg>&nbsp; [View CV]{.bold}</a>
 
 :::
 
-::: {style="max-width: 1100px; margin: 50px auto; text-align: justify;"}
+::: {.justify style="margin: 50px 0;"}
 
-I am developing metamaterial-based tip-transforming catheters at Nimble Surgical.
-Prior to this, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
-I developed hardware for integrating flexible electronics to underwater robots. My work sits at the intersection of mechanical design, robotics, materials, and computation to some extent.
+I am contributing to develop metamaterial-based tip-transforming catheters at Nimble Surgical.
+Previously, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
+I developed hardware for integrating flexible sensors for augmenting human-supervised underwater grasping. Prior to this, I built and characterized soft grippers and robot arm,
+and 
+
+My work sits at the intersection of mechanical engineering, robotics, materials, and computation to some extent.
+I design the system, fabricate it, characterize, then feed what I learned back into the design.
 
 Outside of work, I am a virtual pilot and hobbyist photographer.
 
-## My Work
+Read more about my work on the [research](research.html) page.
 
 ```{=html}
-<div class="focus-grid" aria-label="Research focus areas">
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-medical">
-    <span class="focus-card__title">Advanced Guide Catheters</span>
-    <span class="focus-card__detail" id="focus-medical">Developing tools to accelerate design of HSA-based anchoring guide catheters.</span>
-  </button>
-    <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-underwater">
-    <span class="focus-card__title">Underwater Manipulation</span>
-    <span class="focus-card__detail" id="focus-underwater">Operators lose reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.</span>
-  </button>
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-agricultural">
-    <span class="focus-card__title">Agricultural Robots</span>
-    <span class="focus-card__detail" id="focus-agricultural">Soft fruit picking is a narrow force-control problem: too much damages the fruit, and too little lets it slip. I built sensorized grippers that generate useful grasp data to teach robots.</span>
-  </button>
-  <button class="focus-card" type="button" aria-expanded="false" aria-describedby="focus-high-payload">
-    <span class="focus-card__title">High-Payload Soft Robots</span>
-    <span class="focus-card__detail" id="focus-high-payload">Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load. I used torsion-resistant structures to preserve compliance while carrying useful payloads.</span>
-  </button>
-</div>
-```
+<!-- flow chart disabled for now
+<section class="work" aria-label="How I work">
+  <p class="work__intro">One loop does most of my work. I design the system, fabricate it, characterize the material and system, then feed what I learned back into the design.</p>
 
-```{=html}
-<div class="flow-track">
 
-  <div class="flow-node flow-node--split">
-    <div class="flow-node__label">Design</div>
-    <div class="flow-node__sub">SolidWorks, Autodesk Fusion 360 &mdash; Design and development of soft robotic systems &amp; end effectors</div>
+  <div class="work__loop">
+    <ol class="work__stages">
+      <li class="work__stage">
+        <span class="work__num">01</span>
+        <b class="work__stage-title">Design</b>
+        <span class="work__stage-main">SolidWorks, Autodesk Fusion 360</span>
+        <span class="work__stage-sub">Design and development of soft robotic systems and end effectors</span>
+      </li>
+      <li class="work__stage">
+        <span class="work__num">02</span>
+        <b class="work__stage-title">Fabricate</b>
+        <span class="work__stage-main">Fused deposition modeling, stereolithography, material jetting, silicone casting</span>
+      </li>
+      <li class="work__stage">
+        <span class="work__num">03</span>
+        <b class="work__stage-title">Characterize</b>
+        <span class="work__stage-main">Mechanical analysis and characterization</span>
+        <span class="work__stage-sub">Of the materials and of the finished systems</span>
+      </li>
+      <li class="work__stage">
+        <span class="work__num">04</span>
+        <b class="work__stage-title">Compute</b>
+        <span class="work__stage-main">Python, MATLAB, SOFA Framework</span>
+        <span class="work__stage-sub">Simulation, data processing, analysis, and feedback</span>
+      </li>
+    </ol>
+    <div class="work__feedback"><span class="work__label">results feed the next design</span></div>
   </div>
 
-  <span class="flow-mobile-arrow" aria-hidden="true">&darr;</span>
+  <div class="work__link"><span class="work__label">produces</span></div>
 
-  <svg class="flow-conn" data-dir="out" aria-hidden="true"></svg>
-
-  <div class="flow-branch">
-    <div class="flow-node">
-      <div class="flow-node__label">Fabrication</div>
-      <div class="flow-node__sub">Fused Deposition Modeling, Stereolithography, Material jetting, Silicone casting</div>
-    </div>
-    <div class="flow-node">
-      <div class="flow-node__label">Materials and Analysis</div>
-      <div class="flow-node__sub">Mechanical characterization</div>
-    </div>
-    <div class="flow-node">
-      <div class="flow-node__label">Computation</div>
-      <div class="flow-node__sub">Python, MATLAB &mdash; Data processing, analysis, feedback, and simulation</div>
-    </div>
+  <div class="work__hardware">
+    <b class="work__hardware-title">Functional hardware</b>
+    <span class="work__stage-main">Soft grippers, robot arms, end effectors, and devices</span>
   </div>
 
-  <span class="flow-mobile-arrow" aria-hidden="true">&darr;</span>
+  <div class="work__link work__link--fan"><span class="work__label">applied to</span></div>
 
-  <svg class="flow-conn" data-dir="in" aria-hidden="true"></svg>
-
-  <div class="flow-node flow-node--merge">
-    <div class="flow-node__label">Advanced Hardware</div>
-    <div class="flow-node__sub">Functional hardware - soft gripper, robot arm, and end effectors</div>
-  </div>
-
-</div>
+  <ul class="work__cards" aria-label="Research focus areas">
+    <li class="work__card">
+      <b class="work__card-title">High-Payload Soft Robots</b>
+      <span class="work__card-detail">Soft robots are safe and adaptable, but their compliant bodies can twist or buckle under load. I used torsion-resistant structures to preserve compliance while carrying useful payloads.</span>
+    </li>
+    <li class="work__card">
+      <b class="work__card-title">Underwater Manipulation</b>
+      <span class="work__card-detail">Operators lose reliable visual feedback in turbulent, low-visibility conditions at depth. I integrated flexible tactile sensors onto existing hardware to help assess grasp stability.</span>
+    </li>
+    <li class="work__card">
+      <b class="work__card-title">Agricultural Robots</b>
+      <span class="work__card-detail">Soft fruit picking is a narrow force-control problem: too much damages the fruit, and too little lets it slip. I built sensorized grippers that generate useful grasp data to teach robots.</span>
+    </li>
+    <li class="work__card">
+      <b class="work__card-title">Advanced Guide Catheters</b>
+      <span class="work__card-detail">Developing tools to accelerate the design of HSA-based anchoring guide catheters.</span>
+    </li>
+  </ul>
+</section>
+-->
 ```
 
 <style>
-/* ── How I Work: diverge (Design) → three tracks → converge (Advanced Hardware) ── */
-.flow-track {
-  --accent: #FDD26E;
-  --node-border: var(--border, #444);
-
-  display: grid;
-  grid-template-columns: 1.2fr 0.6fr 1.3fr 0.6fr 1.3fr;
-  align-items: stretch;          /* connectors span the full row height */
-  gap: 0;
-  /* Reserve room for a focus-card description so it does not cover the diagram. */
-  margin: 150px 0 8px;
+/* ── Work: design → fabricate → characterize → compute loop ── */
+.work {
+  --gold: #d9b95a;
+  --line: #a08a4a;
+  --gap: clamp(32px, 4vw, 56px);
+  --card-gap: clamp(14px, 1.8vw, 24px);
+  --pad: clamp(14px, 1.8vw, 24px);
+  --node-bg: #080808;
+  --node-border: #262626;
+  margin: 48px 0 8px;
+  text-align: left;
+  color: #e4e1d8;
+}
+/* Same text width as the Research page (989px), centered since About has no TOC. */
+main.content { max-width: 989px; margin-inline: auto; }
+.work__intro {
+  max-width: none;
+  margin: 0 0 2rem;
+  color: inherit;
+}
+.work__label {
+  font-size: 0.95rem;
+  line-height: 1.35;
+  font-style: italic;
+  color: #b9a671;
 }
 
-.flow-node {
-  padding: 1.1rem;
-  border: 1px solid var(--node-border);
-  border-left: 2px solid var(--accent);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.02);
+/* loop panel */
+.work__loop {
+  padding: clamp(16px, 2.2vw, 32px) clamp(16px, 2.2vw, 32px) 0;
+  background: #050505;
+  border: 1px solid #26231a;
+  border-radius: 20px;
 }
-.flow-node--split,
-.flow-node--merge { align-self: center; }
-
-.flow-node__label { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.35rem; }
-.flow-node__sub   { font-size: 0.85rem; opacity: 0.78; text-align: left; }
-
-/* equal-height rows: this is what makes the middle connector truly horizontal,
-   since the centre node's midpoint then coincides with the column's centre */
-.flow-branch {
-  display: grid;
-  grid-auto-rows: 1fr;
-  gap: 1.2rem;
-}
-
-.flow-conn {
-  width: 100%;
-  height: 100%;
-  display: block;
-  opacity: 0;                    /* revealed once the paths are measured */
-  transition: opacity 0.3s ease;
-}
-.flow-conn.is-ready { opacity: 1; }
-.flow-conn path {
-  fill: none;
-  stroke: var(--accent);
-  stroke-width: 1.4;
-  opacity: 0.55;
-  vector-effect: non-scaling-stroke;
-}
-/* the draw-on animation is applied per path in JS, since each one needs its
-   own length and stagger delay */
-.flow-conn path.is-drawing {
-  transition: stroke-dashoffset 0.9s cubic-bezier(0.33, 0, 0.2, 1);
-}
-
-.flow-mobile-arrow {
-  display: none;
-}
-
-
-
-/* ── Focus Areas ── */
-.focus-grid {
+.work__stages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  margin: 48px 0 8px;
+  column-gap: var(--gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.focus-card {
-  position: relative;
+.work__stage,
+.work__hardware,
+.work__card {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 110px;
-  padding: 1rem;
-  border: 1px solid var(--border, #444);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.02);
-  color: inherit;
-  font: inherit;
-  font-size: 0.95rem;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: var(--pad);
+  background: var(--node-bg);
+  border: 1px solid var(--node-border);
+  border-radius: 12px;
+}
+.work__stage {
+  position: relative;
+  min-height: 248px;
+  border-left: 2px solid var(--gold);
+}
+.work__num {
+  font-size: 0.875rem;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+}
+.work__stage-title {
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  line-height: 1.5;
   font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+  color: #f5f3ee;
 }
-.focus-card__detail {
+.work__stage-main { font-size: 1rem; line-height: 1.5; color: #e4e1d8; }
+.work__stage-sub  { font-size: 0.94rem; line-height: 1.45; color: #b8b5aa; }
+
+/* arrow between stages */
+.work__stage:not(:last-child)::before {
+  content: "";
   position: absolute;
-  z-index: 2;
-  top: calc(100% + 8px);
-  left: 0;
-  right: 0;
-  padding: 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
-  background: #1c1c1c;
-  color: inherit;
-  font-size: 0.82rem;
-  font-weight: 400;
+  top: 50%;
+  left: calc(100% + 1px);
+  width: calc(var(--gap) - 6px);
+  height: 2px;
+  margin-top: -1px;
+  background: var(--line);
+}
+.work__stage:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + var(--gap) - 8px);
+  margin-top: -4px;
+  border: 4px solid transparent;
+  border-left: 8px solid var(--line);
+  border-right: 0;
+}
+
+/* feedback loop: from the centre of Compute back to the centre of Design */
+.work__feedback {
+  position: relative;
+  height: 48px;
+  margin: 0 calc((100% - 3 * var(--gap)) / 8) 56px;
+  border: 2px solid var(--line);
+  border-top: 0;
+}
+.work__feedback::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -5px;
+  border: 4px solid transparent;
+  border-bottom: 8px solid var(--line);
+  border-top: 0;
+}
+.work__feedback .work__label {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* vertical connectors */
+.work__link {
+  position: relative;
+  width: 2px;
+  height: 64px;
+  margin: 0 auto;
+  background: var(--line);
+}
+.work__link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -4px;
+  border: 4px solid transparent;
+  border-top: 8px solid var(--line);
+  border-bottom: 0;
+}
+.work__link .work__label {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+.work__link--fan { height: 48px; }
+.work__link--fan::after { display: none; }
+
+.work__hardware {
+  max-width: 560px;
+  margin: 0 auto;
+  justify-content: center;
+  min-height: 112px;
+  background: #0b0a06;
+  border-color: var(--line);
+}
+.work__hardware-title {
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  line-height: 1.4;
+  font-weight: 600;
+  color: #f5f3ee;
+}
+
+/* focus cards, fed by a fan-out of arrows */
+.work__cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--card-gap);
+  margin: 48px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.work__cards::before {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: calc((100% - 3 * var(--card-gap)) / 8);
+  right: calc((100% - 3 * var(--card-gap)) / 8);
+  height: 2px;
+  margin-top: -1px;
+  background: var(--line);
+}
+.work__card {
+  position: relative;
+  gap: 0.2rem;
+}
+.work__card::before {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  width: 2px;
+  height: 47px;
+  margin-left: -1px;
+  background: var(--line);
+}
+.work__card::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  margin-left: -4px;
+  border: 4px solid transparent;
+  border-top: 8px solid var(--line);
+  border-bottom: 0;
+}
+.work__card-title {
+  font-size: clamp(1.1rem, 1.6vw, 1.375rem);
   line-height: 1.45;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-5px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-weight: 600;
+  color: #f5f3ee;
 }
-.focus-card:hover,
-.focus-card:focus-visible,
-.focus-card.is-expanded {
-  z-index: 3;
-  transform: translateY(-3px);
-  border-color: transparent;
-  background: rgba(255, 255, 255, 0.04);
-}
-.focus-card:hover .focus-card__detail,
-.focus-card:focus-visible .focus-card__detail,
-.focus-card.is-expanded .focus-card__detail {
-  opacity: 1;
-  transform: translateY(0);
+.work__card-detail {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #b8b5aa;
 }
 
-/* ── Responsive: stack the flow, halve the grid ── */
-@media (max-width: 760px) {
-  .flow-track { grid-template-columns: 1fr; gap: 1rem; }
-  .flow-conn  { display: none; }
-  .flow-mobile-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 2rem;
-    color: #FDD26E;
-    opacity: 0.6;
-    font-size: 1.35rem;
-    line-height: 1;
+/* ── Responsive: stack vertically with simple down arrows ── */
+@media (max-width: 900px) {
+  .work { --gap: 40px; }
+  .work__loop { padding-bottom: clamp(16px, 2.2vw, 32px); }
+  .work__stages { grid-template-columns: 1fr; }
+  .work__stage { min-height: 0; }
+  .work__stage:not(:last-child)::before {
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: calc(var(--gap) - 6px);
+    margin: 1px 0 0 -1px;
   }
-  .focus-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .flow-conn  { transition: none; }
-  .focus-card,
-  .focus-card__detail { transition: none; }
-  .focus-card:hover { transform: none; }
+  .work__stage:not(:last-child)::after {
+    top: calc(100% + var(--gap) - 8px);
+    left: 50%;
+    margin: 0 0 0 -4px;
+    border: 4px solid transparent;
+    border-top: 8px solid var(--line);
+    border-bottom: 0;
+  }
+  .work__feedback {
+    height: auto;
+    margin: 20px 0 0;
+    border: 0;
+    text-align: center;
+  }
+  .work__feedback::before { display: none; }
+  .work__feedback .work__label {
+    position: static;
+    display: block;
+    transform: none;
+    white-space: normal;
+  }
+  .work__link { height: 48px; }
+  .work__link--fan { height: 48px; }
+  .work__link--fan::after { display: block; }
+  .work__cards { grid-template-columns: 1fr; margin-top: 16px; }
+  .work__cards::before,
+  .work__card::before,
+  .work__card::after { display: none; }
 }
 </style>
-
-
-<script>
-(function () {
-  // Each .flow-conn is drawn from the measured positions of the single node on
-  // one side and every .flow-node in the .flow-branch on the other, so adding
-  // or removing a track needs no coordinate edits here.
-  const SVGNS = "http://www.w3.org/2000/svg";
-  const conns = document.querySelectorAll(".flow-conn");
-  if (!conns.length) return;
-
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let played = reduced;            // once true, paths render fully drawn
-
-  function flowSibling(element, direction) {
-    let sibling = element[direction];
-    while (sibling && sibling.classList.contains("flow-mobile-arrow")) {
-      sibling = sibling[direction];
-    }
-    return sibling;
-  }
-
-  function drawOne(svg) {
-    const out    = svg.dataset.dir === "out";      // out: one → many, in: many → one
-    const branch = out ? flowSibling(svg, "nextElementSibling") : flowSibling(svg, "previousElementSibling");
-    const single = out ? flowSibling(svg, "previousElementSibling") : flowSibling(svg, "nextElementSibling");
-    if (!branch || !single) return;
-
-    const box = svg.getBoundingClientRect();
-    if (!box.width || !box.height) return;         // hidden on mobile — nothing to draw
-
-    const singleBox = single.getBoundingClientRect();
-    const y0   = singleBox.top + singleBox.height / 2 - box.top;
-    const midX = box.width / 2;
-
-    svg.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
-
-    const frag = document.createDocumentFragment();
-    branch.querySelectorAll(":scope > .flow-node").forEach(node => {
-      const r  = node.getBoundingClientRect();
-      const y1 = r.top + r.height / 2 - box.top;
-      const [a, b] = out ? [y0, y1] : [y1, y0];    // start and end heights
-
-      // within a pixel of level, draw a true straight line — a Bézier between
-      // near-equal endpoints still renders a visible sag
-      const d = Math.abs(a - b) < 1
-        ? `M0,${a} L${box.width},${a}`
-        : `M0,${a} C${midX},${a} ${midX},${b} ${box.width},${b}`;
-
-      const path = document.createElementNS(SVGNS, "path");
-      path.setAttribute("d", d);
-      frag.appendChild(path);
-    });
-
-    svg.replaceChildren(frag);
-    svg.classList.add("is-ready");
-
-    // Hide each path along its own length so it can be "drawn" left to right.
-    // getTotalLength needs the path in the document, hence the second pass.
-    if (!played) {
-      svg.querySelectorAll("path").forEach(p => {
-        const len = p.getTotalLength();
-        p.style.strokeDasharray  = len;
-        p.style.strokeDashoffset = len;
-      });
-    }
-  }
-
-  // Reveal: paths run from x=0 to x=width, so easing the dash offset to zero
-  // draws them in the direction of flow. Staggered per connector and per track.
-  function play() {
-    conns.forEach((svg, ci) => {
-      svg.querySelectorAll("path").forEach((p, pi) => {
-        p.classList.add("is-drawing");
-        p.style.transitionDelay = `${ci * 0.35 + pi * 0.12}s`;
-        p.style.strokeDashoffset = 0;
-      });
-    });
-    played = true;
-  }
-
-  let queued = false;
-  function draw() {
-    if (queued) return;
-    queued = true;
-    requestAnimationFrame(() => {                  // measure after layout settles
-      queued = false;
-      conns.forEach(drawOne);
-    });
-  }
-
-  draw();
-  // Start after two frames: the first commits the dash-hidden paths and the
-  // second gives the stroke-dashoffset transition a reliable starting point.
-  // This keeps connector visibility independent of scroll restoration timing.
-  if (!played) requestAnimationFrame(() => requestAnimationFrame(play));
-  window.addEventListener("load", draw);           // re-measure once webfonts land
-
-  // ResizeObserver catches column reflow, zoom and font swaps that a resize
-  // listener alone would miss.
-  const track = document.querySelector(".flow-track");
-  if ("ResizeObserver" in window && track) {
-    new ResizeObserver(draw).observe(track);
-  } else {
-    window.addEventListener("resize", draw);
-  }
-
-})();
-</script>
-
-<script>
-(function () {
-  const cards = Array.from(document.querySelectorAll(".focus-card"));
-  if (!cards.length) return;
-
-  function closeAll(except) {
-    cards.forEach(card => {
-      if (card === except) return;
-      card.classList.remove("is-expanded");
-      card.setAttribute("aria-expanded", "false");
-    });
-  }
-
-  cards.forEach(card => card.addEventListener("click", () => {
-    const expand = !card.classList.contains("is-expanded");
-    closeAll(card);
-    card.classList.toggle("is-expanded", expand);
-    card.setAttribute("aria-expanded", String(expand));
-  }));
-
-  document.addEventListener("pointerdown", event => {
-    if (!event.target.closest(".focus-card")) closeAll();
-  });
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape") closeAll();
-  });
-})();
-</script>
-
-
 
 :::

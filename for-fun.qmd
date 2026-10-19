@@ -1,17 +1,12 @@
 ---
 title: ""
+pagetitle: "Leisure"
 toc: true
 toc-location: right
 toc-title: "On this page"
-format:
-  html:
-    grid:
-      sidebar-width: 200px
-      body-width: 1200px
-      margin-width: 200px
 ---
 
-Outside of work, I am a hobbyist photographer, virtual pilot and a VATSIM air traffic controller.
+Outside of work, I am a hobbyist photographer, virtual pilot, and a VATUSA air traffic controller.
 
 <!-- ── Self-hosted gallery dependencies (MIT, exact pinned versions) ── -->
 <link rel="stylesheet" href="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.css">
@@ -25,9 +20,9 @@ Outside of work, I am a hobbyist photographer, virtual pilot and a VATSIM air tr
 
 ## Flight Simulation
 
-I am a virtual Seattle ARTCC controller on VATSIM, and I enjoy being a part of such a wonderful community! Controlling virtual air traffic is a fun and challenging hobby that keeps me on my toes. I also fly (virtually).
+I am a virtual Seattle ARTCC controller, and a part of a wonderful community of virtual pilots and controllers on VATSIM. Air traffic controlling is a fun and challenging hobby that keeps me on my toes. I also fly (virtually).
 
-<div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-row-height="170" data-row-height-md="150" data-row-height-sm="120" style="max-width: 1200px;"></div>
+<div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-captions="off" data-row-height="170" data-row-height-md="150" data-row-height-sm="120" style="max-width: 1200px;"></div>
 
 ## Photography
 

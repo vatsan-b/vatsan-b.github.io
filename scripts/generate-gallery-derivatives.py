@@ -11,10 +11,12 @@ for each listed image, uses Pillow to emit:
 
 Output is deterministic: same inputs (source bytes + gallery-content.json)
 always produce byte-identical derivatives and manifest, so it's safe to
-re-run. Output lives under assets/gallery-derivatives/, which is generated
-and gitignored -- not committed.
+re-run. Output lives under assets/gallery-derivatives/ and is committed.
 
-Usage: python3 scripts/generate-gallery-derivatives.py
+Usage:
+  python3 scripts/generate-gallery-derivatives.py                  # full rebuild (needs Pillow)
+  python3 scripts/generate-gallery-derivatives.py --captions-only  # copy captions into the existing
+                                                                   # manifest; no Pillow, no images
 """
 
 import json
@@ -22,7 +24,7 @@ import re
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageOps
+Image = ImageOps = None  # imported lazily so --captions-only needs no Pillow
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONTENT_PATH = REPO_ROOT / "scripts" / "gallery-content.json"
@@ -100,7 +102,7 @@ def build_item(gallery_key, entry):
         save_deterministic(variant, jpg_path, "JPEG", quality=FALLBACK_JPEG_QUALITY, optimize=True)
         thumb_fallback.append((w, relpath(jpg_path)))
 
-        # thumbnail() never upscales; once a candidate matches the source
+        # resized() never upscales; once a candidate matches the source
         # width there's no point emitting narrower duplicates beyond it.
         if w >= orig_w:
             break
@@ -135,8 +137,27 @@ def build_item(gallery_key, entry):
     }
 
 
+def captions_only(content):
+    manifest = json.loads(MANIFEST_PATH.read_text())
+    changed = 0
+    for key, items in manifest["galleries"].items():
+        wanted = {e["file"]: e.get("caption", "") for e in content["galleries"].get(key, [])}
+        for item in items:
+            cap = wanted.get(item["file"], item.get("caption", ""))
+            if item.get("caption", "") != cap:
+                item["caption"] = cap
+                changed += 1
+    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, sort_keys=False) + "\n")
+    print(f"manifest captions updated ({changed} changed)")
+
+
 def main():
+    global Image, ImageOps
     content = json.loads(CONTENT_PATH.read_text())
+    if "--captions-only" in sys.argv[1:]:
+        captions_only(content)
+        return
+    from PIL import Image, ImageOps
     manifest = {"galleries": {}}
 
     for gallery_key, entries in content["galleries"].items():

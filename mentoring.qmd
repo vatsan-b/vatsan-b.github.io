@@ -1,14 +1,8 @@
 ---
 title: "Mentorship"
-format:
-  html:
-    grid:
-      sidebar-width: 200px
-      body-width: 1200px
-      margin-width: 200px
 ---
 
-::: {style="max-width: 1200px; margin: 40px auto; text-align: justify;"}
+::: {.justify style="margin: 60px 0 40px;"}
 
 I love to teach! I have had the opportunity to mentor high school interns and undergraduate students in mechanical design,
 CAD, 3D printing / digital fabrication, and other fundamental concepts in soft robotics. This included hands-on training on the Prusa, Carbon M1, and

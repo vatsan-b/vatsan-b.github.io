@@ -12,7 +12,7 @@ test('about portrait has meaningful alternative text', () => {
 
 test('research figures have descriptive alternative text', () => {
   const research = fs.readFileSync(path.join(root, 'docs/research.html'), 'utf8');
-  for (const src of ['bravo-gripper.png', 'parallel-jaw-lowres.png', 'TR-SLL_Lift_Hero.png']) {
+  for (const src of ['bravo-gripper.webp', 'parallel-jaw-lowres.webp', 'TR-SLL_Lift_Hero.webp']) {
     assert.match(research, new RegExp(`<img[^>]+src="assets/images/${src.replace('.', '\\.') }"[^>]+alt="[^"]+"`));
   }
 });

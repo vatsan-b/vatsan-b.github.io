@@ -1,5 +1,10 @@
 /.quarto/
 
+# Local scratch space (see AGENTS.md)
+/temp/
+*:Zone.Identifier
+*.Zone.Identifier
+
 **/*.quarto_ipynb
 
 # Backup copies of the render output — never commit these

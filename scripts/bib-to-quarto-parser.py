@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate publications-parsed.qmd from publications.bib, grouped by year (newest first).
+"""Generate publications-parsed.qmd from publications.bib, as a flat list, newest year first.
 
 No third-party dependencies — uses only the Python standard library.
 """
@@ -40,10 +40,11 @@ def escape_markdown(text):
     code spans) once it lands in the generated .qmd file.
     """
     text = text.replace("\\", "\\\\")
+    text = text.replace("{", "").replace("}", "")  # BibTeX case-protection braces, not content
     text = text.replace("&", "&amp;")
     text = text.replace("<", "&lt;")
     text = text.replace(">", "&gt;")
-    for ch in "[]*_`":
+    for ch in "[]*_`$@":
         text = text.replace(ch, "\\" + ch)
     return text
 
@@ -87,6 +88,7 @@ def parse_bib(text):
         brace = text.find("{", at)
         if brace == -1:
             break
+        entry_type = text[at + 1:brace].strip().lower()
 
         # walk to the matching close brace for the whole entry
         depth, j = 0, brace
@@ -147,7 +149,7 @@ def parse_bib(text):
             if name:
                 entry[name] = re.sub(r"\s+", " ", value).strip()
 
-        if entry:
+        if entry and entry_type not in ("string", "comment", "preamble"):
             entries.append(entry)
     return entries
 
@@ -160,7 +162,11 @@ def fmt_author(raw):
     else:
         parts = raw.split()
         last, first = parts[-1], " ".join(parts[:-1])
-    initials = " ".join(tok[0] + "." for tok in first.replace(".", " ").split() if tok)
+    # hyphenated given names keep both initials: "Jean-Paul" -> "J.-P."
+    initials = " ".join(
+        "-".join(part[0] + "." for part in tok.split("-") if part)
+        for tok in first.replace(".", " ").split() if tok
+    )
     return f"{last}, {initials}".rstrip(", ").strip()
 
 
@@ -179,7 +185,7 @@ def author_line(entry):
 
     line = ", ".join(names)
     if cofirst:
-        line += " • *Co-first Authors*"
+        line += r" • [\*Co-first Authors]{.cofirst-note}"
     return line
 
 
@@ -193,7 +199,7 @@ def venue_line(entry):
         pages = entry["pages"].replace("--", "–").replace("-", "–")
         venue += f" • Pages {pages}"
     venue = escape_markdown(venue)
-    return f"*{venue}*" if venue else ""
+    return f"[{venue}]{{.publication-venue}}" if venue else ""
 
 
 def links_line(entry):
@@ -229,14 +235,17 @@ def main():
         entries = parse_bib(f.read())
 
     # newest year first; stable, so within-year order follows the .bib file
+    for e in entries:
+        missing = [f for f in ("title", "author", "year") if not e.get(f)]
+        if missing:
+            sys.exit(f'error: entry "{e.get("title", "<untitled>")}" is missing: {", ".join(missing)}')
+        if not e["year"].isdigit():
+            sys.exit(f'error: entry "{e["title"]}" has a non-numeric year: {e["year"]!r}')
+
     entries.sort(key=lambda e: int(e["year"]), reverse=True)
 
     out = []
-    current_year = None
     for e in entries:
-        if e["year"] != current_year:
-            current_year = e["year"]
-            out.append(f"\n## {current_year}\n")
         try:
             out.append(render_entry(e) + "\n")
         except ValueError as exc:

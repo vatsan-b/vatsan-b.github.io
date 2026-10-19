@@ -50,17 +50,24 @@
   <canvas id="c"></canvas>
   <div class="message">
     <h1>Currently under maintenance.</h1>
-    <p>Thanks for your patience — please check back soon.</p>
+    <p>Please check back soon.</p>
   </div>
   <script>
     const canvas = document.getElementById('c');
     const ctx = canvas.getContext('2d');
-    let W, H, particles;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let W, H, particles, raf = 0;
 
     function init() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-      particles = Array.from({ length: 80 }, () => ({
+      const dpr = window.devicePixelRatio || 1;
+      W = window.innerWidth;
+      H = window.innerHeight;
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      // ~80 dots on a 1440x900 screen, fewer on small ones
+      const count = Math.min(120, Math.max(25, Math.round(W * H / 16200)));
+      particles = Array.from({ length: count }, () => ({
         x: Math.random() * W,
         y: Math.random() * H,
         r: Math.random() * 1.5 + 0.5,
@@ -68,6 +75,7 @@
         dy: (Math.random() - 0.5) * 0.4,
         alpha: Math.random() * 0.5 + 0.2,
       }));
+      if (reduced.matches) draw();
     }
 
     function draw() {
@@ -78,17 +86,25 @@
         ctx.fillStyle = `rgba(200, 200, 200, ${p.alpha})`;
         ctx.fill();
 
+        if (reduced.matches) continue;
         p.x += p.dx;
         p.y += p.dy;
         if (p.x < 0 || p.x > W) p.dx *= -1;
         if (p.y < 0 || p.y > H) p.dy *= -1;
       }
-      requestAnimationFrame(draw);
+      raf = reduced.matches ? 0 : requestAnimationFrame(draw);
     }
 
+    function start() {
+      if (!raf && !document.hidden && !reduced.matches) raf = requestAnimationFrame(draw);
+    }
+    function stop() { cancelAnimationFrame(raf); raf = 0; }
+
     window.addEventListener('resize', init);
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+    reduced.addEventListener('change', () => { stop(); init(); start(); });
     init();
-    draw();
+    start();
   </script>
 </body>
 </html>
