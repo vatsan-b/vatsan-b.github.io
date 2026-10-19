@@ -7,12 +7,12 @@ toc-title: ""
 
 ### Flexible Sensor-Integrated End Effector for Underwater Manipulation {toc-text="Underwater Manipulation"}
 
-Underwater manipulation is challenging due to low visibility and turbulent conditions, where mere visual feedback is
-insufficient to assess grasp stability. Tactile sensors address this by providing real-time pressure data during subsea
+Underwater manipulation is challenging due to low visibility and turbulent conditions at depth, and mere visual feedback is
+insufficient to assess grasp stability. Tactile sensors provide real-time contact pressure across the finger during subsea
 manipulation, and can also be used to train slip detection classifiers to assist ROV operators. I built a
-prototype, which is an adaptation of [Reach Bravo's](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"} end effector to integrate flexible sensors.
-We also developed a data collection procedure to perform slip characterization, simulating conditions that occur during underwater grasping. Additionally,
-I developed a [PyVista](https://pyvista.org/){target="_blank"}-based visualizer that provides finger position feedback, receiving real-time input from a cheap time-of-flight sensor.
+prototype based on [Reach Bravo's](https://reachrobotics.com/products/reach-bravo/reach-bravo-7){target="_blank"} end effector to integrate flexible tactile sensors.
+We also developed a data collection procedure to perform slip characterization, simulating grasp conditions that occur during underwater grasping. Additionally,
+I programmed a [PyVista](https://pyvista.org/){target="_blank"}-based visualizer that provides feedback on finger position, tracking its real-time state using a time-of-flight sensor.
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank"}
 
@@ -28,7 +28,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 
 ### Torsion-Resistant Handed Shearing Auxetics (HSA)-based Soft Gripper {toc-text="Soft Gripper"}
 
-Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structure limits real-world adoption. We designed a torsion-resistant
+Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structures limits real-world adoption. We designed a torsion-resistant
 strain limiting layer (TR-SLL) and integrated it into [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"} (HSA)
 to fabricate a soft gripper. I utilized FEA simulations to conduct a parametric design study and determine the optimal TR-SLL design configuration.
 The TR-SLL minimizes out-of-plane bending while preserving the gripper's in-plane compliance and flexibility.
@@ -117,11 +117,14 @@ This work was supported by the National Science Foundation (NSF), the Murdock Ch
 ![TR-SLL allows Pneu-Nets to lift up to 5 kg through skeletal loading, resisting out-of-plane twists while maintaining the actuator's in-plane performance.](assets/images/TR-SLL_Lift_Hero.webp){fig-alt="Torsion-resistant strain limiting layer helping a pneumatic network actuator lift a payload" fig-align="center" width=60% loading="lazy"}
 :::
 
+<p class="next-page"><a href="publications.html">Publications <span aria-hidden="true">→</span></a></p>
+
 <style>
 /* Justify on <main> (not a wrapper div): a div around the headings stops
    Quarto building the right-hand TOC. Centred figure/video divs override this by
    inheritance. Do NOT target `main p`, which drags figure images left. */
-main { text-align: justify; hyphens: auto; }
+main { text-align: justify; hyphens: manual; }
+.next-page { text-align: right; margin-top: 3rem; font-size: 1.1rem; }
 </style>
 
 <script>

@@ -3,7 +3,7 @@ title: ""
 pagetitle: "About"
 ---
 
-::: {.text-center style="margin-top: 60px;"}
+::: {.text-center style="margin-top: 20px;"}
 
 <img src="assets/images/srivatsanb-photo.jpg" alt="Portrait of Srivatsan Balaji" width="180" class="profile-photo">
 
@@ -20,14 +20,17 @@ Nimble Surgical]{.affiliation}
 
 ::: {.justify style="margin: 50px 0;"}
 
-I am developing metamaterial-based tip-transforming catheters at Nimble Surgical.
+I am contributing to develop metamaterial-based tip-transforming catheters at Nimble Surgical.
 Previously, I was a Faculty Research Assistant in the Intelligent Machines and Materials Lab, part of Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
-I developed hardware for integrating flexible electronics into underwater robots. My work sits at the intersection of mechanical design, robotics, materials, and computation to some extent.
-I design the system, fabricate it, characterize the material and system, then feed what I learned back into the design.
+I developed hardware for integrating flexible sensors for augmenting human-supervised underwater grasping. Prior to this, I built and characterized soft grippers and robot arm,
+and 
+
+My work sits at the intersection of mechanical engineering, robotics, materials, and computation to some extent.
+I design the system, fabricate it, characterize, then feed what I learned back into the design.
 
 Outside of work, I am a virtual pilot and hobbyist photographer.
 
-Read more about my work on the [Research page](research.html).
+Read more about my work on the [research](research.html) page.
 
 ```{=html}
 <!-- flow chart disabled for now
@@ -109,6 +112,8 @@ Read more about my work on the [Research page](research.html).
   text-align: left;
   color: #e4e1d8;
 }
+/* Same text width as the Research page (989px), centered since About has no TOC. */
+main.content { max-width: 989px; margin-inline: auto; }
 .work__intro {
   max-width: none;
   margin: 0 0 2rem;

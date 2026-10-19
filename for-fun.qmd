@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Leisure"
 toc: true
 toc-location: right
 toc-title: "On this page"
