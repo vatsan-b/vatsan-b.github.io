@@ -5,6 +5,26 @@ toc-location: right
 toc-title: ""
 ---
 
+### Tip-transforming Guide Catheters based on Auxetic Metamaterials {toc-text="Tip-transforming Catheters"}
+
+Coronary intervention requires physicians to thread a catheter through blood vessels to reopen the artery. Complex cases 
+increase the risk of damaging the artery wall since forces pushing those devices past a blockage can drive the catheter out of position. 
+HSAs proved to be effective in robotics due to their ability to expand radially when twisted. It helps
+design catheters that can expand and anchor inside arteries to provide additional support and increased safety during the procedure. I am studying how the HSA's kinematics
+and geometry affect its performance and mechanical properties, especially for millimeter-scale medical devices. This will help us build optimal designs for effective endo- and neurovascular therapies. 
+
+Read more -- [Metamaterials meet Medicine](https://www.me.washington.edu/news/article/2025-12-15/metamaterials-meet-medicine){target="_blank"}.
+
+::: funding
+This work is supported by the National Institutes of Health (NIH), the Washington Research Foundation (WRF), and the National Science Foundation.
+:::
+
+::: {style="text-align: center; margin: 25px auto;"}
+![Guide catheter with an expanded HSA.](assets/images/nimble-catheter.jpg){fig-alt="Guide catheter with an expanded HSA." width=70% loading="lazy"}
+:::
+
+---
+
 ### Flexible Sensor-Integrated End Effector for Underwater Manipulation {toc-text="Underwater Manipulation"}
 
 Underwater manipulation is challenging due to low visibility and turbulent conditions at depth, and mere visual feedback is
@@ -26,7 +46,7 @@ This work was supported by the Office of Naval Research (ONR), U.S. Department o
 
 ---
 
-### Handed Shearing Auxetics (HSA) Enabling High Grip Strength for Soft Grippers {toc-text="Soft Gripper"}
+### Handed Shearing Auxetics (HSA) and High Grip Strength Soft Grippers {toc-text="Soft Gripper"}
 
 Soft robots are ideal for delicate manipulation and safe human-robot interaction, but their lack of rigid structures limits real-world adoption. We developed a torsionally-rigid
 strain limiting layer and integrated it into [handed shearing auxetics](https://www.science.org/doi/10.1126/science.aar4586){target="_blank"} (HSA)
@@ -41,7 +61,7 @@ The gripper achieved a success rate of 86% when tested with 43 [YCB](https://iee
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11522819){target="_blank"} • [arXiv preprint](https://arxiv.org/abs/2412.07976){target="_blank"}
 
 ::: funding
-This work was supported by the National Science Foundation (NSF), the Murdock Charitable Trust, and the Office of Naval Research (ONR).
+This work was supported by the National Science Foundation, the Murdock Charitable Trust, and the Office of Naval Research (ONR).
 :::
 
 ::: {style="margin: 30px auto; text-align: center;"}

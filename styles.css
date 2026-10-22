@@ -5,8 +5,8 @@
   --font-toc:      "Source Sans 3", system-ui, sans-serif;
 
   /* Background gradient */
-  --grad-c1:    0, 0, 0;
-  --grad-c2:    0, 0, 0;
+  --grad-c1:    31, 31, 35;
+  --grad-c2:    31, 31, 35;
   --grad-angle: 160deg;
 
   /* Navbar */
@@ -167,7 +167,7 @@ body.quarto-light .navbar-nav .nav-link.active:hover { color: var(--accent) !imp
 
 /* ── Layout ─────────────────────────────────────────────── */
 #quarto-content {
-  max-width: 1400px !important;
+  max-width: 1300px !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
   animation: pageFade 0.3s ease-out backwards;
