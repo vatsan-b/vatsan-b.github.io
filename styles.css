@@ -32,8 +32,8 @@
 
 /* Light theme: Quarto puts .quarto-light on <body> when the visitor switches. */
 :root:has(body.quarto-light) {
-  --grad-c1:       250, 249, 245;
-  --grad-c2:       250, 249, 245;
+  --grad-c1:       240, 238, 230;
+  --grad-c2:       240, 238, 230;
   --accent:        #D73F09;
   --search-accent: #D73F09;
   --text-dark:     #262624;
