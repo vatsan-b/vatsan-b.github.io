@@ -63,6 +63,7 @@ format:
       dark: [darkly, custom-dark.scss]
       light: [default, custom-light.scss]
     css: styles.css
+    respect-user-color-scheme: true
     anchor-sections: false
     code-copy: false
     include-in-header:

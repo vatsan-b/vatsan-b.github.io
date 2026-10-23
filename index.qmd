@@ -9,7 +9,6 @@ title: ""
 html { background: rgb(var(--grad-c2)); }
 body,
 header#quarto-header,
-#quarto-header .navbar,
 #quarto-content,
 #quarto-document-content,
 .quarto-container,
