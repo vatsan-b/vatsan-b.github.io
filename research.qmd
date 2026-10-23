@@ -7,10 +7,11 @@ toc-title: ""
 
 ### Tip-transforming Guide Catheters based on Auxetic Metamaterials {toc-text="Tip-transforming Catheters"}
 
-Coronary intervention requires physicians to thread a catheter through blood vessels to reopen the artery. During this procedure,
-catheters can slip out of position and potentially cause injury or bleeding. HSAs proved to be effective in robotics due to their ability to expand radially when twisted,
-and their scale-independent behavior helps design catheters that can expand and anchor inside arteries to provide additional support during the procedure. I am studying how the HSA's kinematics
-and geometry affect its performance and mechanical properties, especially for millimeter-scale medical devices. This will help us build optimal designs for safe and effective endo- and neurovascular therapies. 
+Coronary intervention requires physicians to thread a catheter through blood vessels to reopen the artery. In complex cases, forces
+required to push devices past a blockage can drive catheters out of position and potentially cause damage to the artery wall or bleeding. HSAs proved to be effective in robotics due to their ability to expand radially when twisted,
+and their scale-independent behavior helps design catheters that can expand and anchor inside arteries to provide stable support during surgeries. I am studying how the HSA's kinematics
+and geometry affect its performance and mechanical properties, especially for millimeter-scale medical devices. This will help us build optimal designs for safe and effective endo- and neurovascular therapies.
+In the future, this can provide controlled and autonomous anchoring.
 
 Read more -- [Metamaterials meet Medicine](https://www.me.washington.edu/news/article/2025-12-15/metamaterials-meet-medicine){target="_blank"}.
 
