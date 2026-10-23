@@ -49,28 +49,28 @@ html, body { overflow-x: clip; }
 .home-hero__text p { font-size: 1.25rem; line-height: 1.5; margin: 0; text-align: left; }
 .home-hero__text p + p { margin-top: 1rem; }
 .home-stage { position: relative; isolation: isolate; justify-self: end; width: min(100%, 420px); }
-/* Soft glow: wide radial falloff plus faint noise so the 8-bit gradient does not band. */
+/* Soft glow: Gaussian falloff (finely stepped, reaching exactly 0 at the edge) plus faint noise as dither so the 8-bit gradient does not band. */
 .home-stage::before, .home-stage::after {
   content: "";
   position: absolute;
-  inset: -45%;
+  inset: -20%;
   z-index: -1;
   pointer-events: none;
 }
 .home-stage::before {
-  background: radial-gradient(closest-side, rgba(var(--glow),0.20) 25%, rgba(var(--glow),0.13) 30%, rgba(var(--glow),0.06) 58%, rgba(var(--glow),0.02) 80%, rgba(var(--glow),0) 100%);
+  background: radial-gradient(closest-side, rgba(var(--glow),0.4500) 0%, rgba(var(--glow),0.4496) 2%, rgba(var(--glow),0.4482) 4%, rgba(var(--glow),0.4460) 6%, rgba(var(--glow),0.4429) 8%, rgba(var(--glow),0.4390) 10%, rgba(var(--glow),0.4342) 12%, rgba(var(--glow),0.4286) 14%, rgba(var(--glow),0.4223) 16%, rgba(var(--glow),0.4152) 18%, rgba(var(--glow),0.4074) 20%, rgba(var(--glow),0.3989) 22%, rgba(var(--glow),0.3898) 24%, rgba(var(--glow),0.3801) 26%, rgba(var(--glow),0.3698) 28%, rgba(var(--glow),0.3591) 30%, rgba(var(--glow),0.3479) 32%, rgba(var(--glow),0.3364) 34%, rgba(var(--glow),0.3245) 36%, rgba(var(--glow),0.3123) 38%, rgba(var(--glow),0.2998) 40%, rgba(var(--glow),0.2872) 42%, rgba(var(--glow),0.2745) 44%, rgba(var(--glow),0.2616) 46%, rgba(var(--glow),0.2488) 48%, rgba(var(--glow),0.2359) 50%, rgba(var(--glow),0.2231) 52%, rgba(var(--glow),0.2104) 54%, rgba(var(--glow),0.1978) 56%, rgba(var(--glow),0.1854) 58%, rgba(var(--glow),0.1731) 60%, rgba(var(--glow),0.1612) 62%, rgba(var(--glow),0.1494) 64%, rgba(var(--glow),0.1380) 66%, rgba(var(--glow),0.1269) 68%, rgba(var(--glow),0.1161) 70%, rgba(var(--glow),0.1057) 72%, rgba(var(--glow),0.0956) 74%, rgba(var(--glow),0.0859) 76%, rgba(var(--glow),0.0766) 78%, rgba(var(--glow),0.0677) 80%, rgba(var(--glow),0.0592) 82%, rgba(var(--glow),0.0511) 84%, rgba(var(--glow),0.0434) 86%, rgba(var(--glow),0.0360) 88%, rgba(var(--glow),0.0291) 90%, rgba(var(--glow),0.0225) 92%, rgba(var(--glow),0.0164) 94%, rgba(var(--glow),0.0106) 96%, rgba(var(--glow),0.0051) 98%, rgba(var(--glow),0.0000) 100%);
 }
 .home-stage::after {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.6  0 0 0 0 0.15  0 0 0 0.9 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
   opacity: 0.05;
   mix-blend-mode: plus-lighter;
-  -webkit-mask-image: radial-gradient(closest-side, #000 0%, transparent 100%);
-  mask-image: radial-gradient(closest-side, #000 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(closest-side, #000 60%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 60%, transparent 100%);
 }
 /* Light theme: plus-lighter only works on dark, and the glow needs more strength to show on cream. */
 body.quarto-light .home-stage::after { mix-blend-mode: normal; opacity: 0.04; }
 body.quarto-light .home-stage::before {
-  background: radial-gradient(closest-side, rgba(var(--glow),0.34) 25%, rgba(var(--glow),0.22) 30%, rgba(var(--glow),0.10) 58%, rgba(var(--glow),0.03) 80%, rgba(var(--glow),0) 100%);
+  background: radial-gradient(closest-side, rgba(var(--glow),0.9000) 0%, rgba(var(--glow),0.8991) 2%, rgba(var(--glow),0.8964) 4%, rgba(var(--glow),0.8920) 6%, rgba(var(--glow),0.8858) 8%, rgba(var(--glow),0.8780) 10%, rgba(var(--glow),0.8684) 12%, rgba(var(--glow),0.8573) 14%, rgba(var(--glow),0.8446) 16%, rgba(var(--glow),0.8304) 18%, rgba(var(--glow),0.8147) 20%, rgba(var(--glow),0.7978) 22%, rgba(var(--glow),0.7795) 24%, rgba(var(--glow),0.7601) 26%, rgba(var(--glow),0.7397) 28%, rgba(var(--glow),0.7182) 30%, rgba(var(--glow),0.6958) 32%, rgba(var(--glow),0.6727) 34%, rgba(var(--glow),0.6489) 36%, rgba(var(--glow),0.6245) 38%, rgba(var(--glow),0.5997) 40%, rgba(var(--glow),0.5745) 42%, rgba(var(--glow),0.5490) 44%, rgba(var(--glow),0.5233) 46%, rgba(var(--glow),0.4975) 48%, rgba(var(--glow),0.4718) 50%, rgba(var(--glow),0.4462) 52%, rgba(var(--glow),0.4207) 54%, rgba(var(--glow),0.3956) 56%, rgba(var(--glow),0.3707) 58%, rgba(var(--glow),0.3463) 60%, rgba(var(--glow),0.3223) 62%, rgba(var(--glow),0.2989) 64%, rgba(var(--glow),0.2760) 66%, rgba(var(--glow),0.2538) 68%, rgba(var(--glow),0.2323) 70%, rgba(var(--glow),0.2114) 72%, rgba(var(--glow),0.1913) 74%, rgba(var(--glow),0.1719) 76%, rgba(var(--glow),0.1533) 78%, rgba(var(--glow),0.1355) 80%, rgba(var(--glow),0.1184) 82%, rgba(var(--glow),0.1022) 84%, rgba(var(--glow),0.0867) 86%, rgba(var(--glow),0.0721) 88%, rgba(var(--glow),0.0582) 90%, rgba(var(--glow),0.0451) 92%, rgba(var(--glow),0.0327) 94%, rgba(var(--glow),0.0211) 96%, rgba(var(--glow),0.0102) 98%, rgba(var(--glow),0.0000) 100%);
 }
 .home-frame {
   position: relative;
