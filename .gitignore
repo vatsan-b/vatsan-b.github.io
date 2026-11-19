@@ -1,37 +1,28 @@
+# Quarto's render cache (rebuilt on every render). docs/ is NOT ignored:
+# it is the published site and must be committed.
 /.quarto/
+**/*.quarto_ipynb
 
-# Local scratch space (see AGENTS.md)
+# Local scratch space and backup copies of the render output
 /temp/
+*.bak/
+
+# Windows download markers created when copying files from Windows into WSL
 *:Zone.Identifier
 *.Zone.Identifier
 
-**/*.quarto_ipynb
-
-# Backup copies of the render output — never commit these
-*.bak/
-
-# Local development artifacts (tests themselves should remain versionable)
-.venv/
+# Python and editor leftovers
 __pycache__/
 *.py[cod]
-node_modules/
+.venv/
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 *.log
 
-# Local secrets; keep sanitized examples versionable
+# Secrets must never be committed
 .env
 .env.*
-!.env.example
-!.env.sample
 *.key
 *.pem
-*.p12
-*.pfx
-id_rsa
-id_ed25519
-credentials.json
-service-account*.json
-.secrets/

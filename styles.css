@@ -1,27 +1,70 @@
+/* Site-wide styles. Rules used by one page only live in a <style> block in
+   that page's .qmd file. Colours are variables: :root holds the dark theme
+   (the default) and :root:has(body.quarto-light) overrides them for light. */
+
+/* ── Fonts ──────────────────────────────────────────────────
+   Self-hosted copies of the exact Google Fonts files (latin subset; SIL OFL,
+   licences in assets/fonts/). Newsreader is variable: optical size 6–72 and
+   weight 200–800. The roman file is preloaded in _quarto.yml. Characters
+   outside unicode-range (for example →) use the fallback font, as before. */
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("assets/fonts/newsreader-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Source Sans 3 (table of contents only): one variable file serves both
+   weights, declared twice exactly as Google Fonts does. */
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/source-sans-3-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/source-sans-3-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ── Variables ──────────────────────────────────────────── */
 :root {
-  --main-font:     "Newsreader", serif;
-  --font-headings: "Newsreader", serif;
-  --font-nav:      "Newsreader", serif;
-  --font-toc:      "Source Sans 3", system-ui, sans-serif;
+  /* Fonts. The theme SCSS files make Newsreader the font for everything;
+     only the table of contents uses Source Sans 3. */
+  --main-font: "Newsreader", serif;
+  --font-toc:  "Source Sans 3", system-ui, sans-serif;
 
-  /* Background gradient */
-  --grad-c1:    31, 31, 35;
-  --grad-c2:    31, 31, 35;
-  --grad-angle: 160deg;
+  /* Motion: every animation and transition uses these. */
+  --motion-fast: 0.3s;   /* page fade-in */
+  --motion-base: 0.4s;
+  --motion-slow: 0.6s;
+  --ease:        ease;
+  --ease-out:    ease-out;
 
-  /* Navbar */
-  --nav-alpha: 1.0;
-  --nav-blur:  0px;
-
-  /* Palette */
+  /* Palette (dark theme) */
+  --page-bg:       31, 31, 35;   /* r, g, b: page and navbar background */
   --accent:        #FDD26E;
-  --search-accent: #FDD26E;
   --text-dark:     #eeeeee;
   --text-caption:  #bbbbbb;
 
   /* Surfaces that differ between themes */
-  --glow:          255, 150, 40;
-  --nav-line:      rgba(255, 255, 255, 0.06);
+  --glow:          255, 150, 40; /* r, g, b of the home-page glow */
+  --glow-peak:     0.45;         /* home-page glow strength at its centre (0–1) */
   --frame-shadow:  rgba(0, 0, 0, 0.55);
   --panel-bg:      #1a1a1a;
   --panel-input:   #242424;
@@ -32,14 +75,12 @@
 
 /* Light theme: Quarto puts .quarto-light on <body> when the visitor switches. */
 :root:has(body.quarto-light) {
-  --grad-c1:       240, 238, 230;
-  --grad-c2:       240, 238, 230;
+  --page-bg:       240, 238, 230;
   --accent:        #D73F09;
-  --search-accent: #D73F09;
   --text-dark:     #262624;
   --text-caption:  #5c5c56;
   --glow:          215, 63, 9;
-  --nav-line:      rgba(0, 0, 0, 0.08);
+  --glow-peak:     0.90;
   --frame-shadow:  rgba(0, 0, 0, 0.25);
   --panel-bg:      #ffffff;
   --panel-input:   #f0eee8;
@@ -51,52 +92,24 @@
 /* ── Base ───────────────────────────────────────────────── */
 html {
   min-height: 100%;
-  overflow-y: scroll;
+  background-color: rgb(var(--page-bg));
   scroll-behavior: smooth;
-  background-color: rgb(var(--grad-c2));
+  /* The scrollbar is hidden site-wide. overflow-y: scroll keeps every page
+     the same width in browsers that ignore scrollbar-width. */
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(var(--grad-angle), rgb(var(--grad-c1)) 50%, rgb(var(--grad-c2)) 90%);
-  background-color: rgb(var(--grad-c2));
-  background-attachment: fixed;
-  font-family: var(--main-font) !important;
-}
-
-/* Mobile browsers may paint a fixed body background only over the initial
-   viewport. Let the page background scroll with the document instead. */
-@media (max-width: 760px) {
-  body { background-attachment: scroll; }
-}
-
-p, li, td, figcaption {
-  font-family: var(--main-font) !important;
+  background: rgb(var(--page-bg));
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-headings) !important;
   font-variant-ligatures: none;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 100px; /* keeps headings clear of the fixed navbar after a jump */
 }
 
-.italic-text {
-  font-size: 1.0rem;
-  font-weight: 400;
-  font-style: italic;
-  font-family: var(--main-font) !important;
-}
-
-.affiliation {
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  font-family: var(--main-font) !important;
-}
-
-html { scrollbar-width: none; }
-
-/* Links with no underline */
 a {
   text-decoration: none;
 }
@@ -109,20 +122,17 @@ a {
 }
 
 /* ── Navbar ─────────────────────────────────────────────── */
+/* Opaque on every page, the home page included. */
 .navbar {
-  background: rgba(var(--grad-c1), var(--nav-alpha)) !important;
-  backdrop-filter: blur(var(--nav-blur));
-  -webkit-backdrop-filter: blur(var(--nav-blur));
+  background: rgb(var(--page-bg)) !important;
   box-shadow: none !important;
   border-bottom: none !important;
-  view-transition-name: site-navbar;
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.25rem; /* adjust to taste */
-  font-family: var(--font-nav);
+  font-size: 1.25rem;
   font-weight: 400;
-  font-style: normal;  
+  font-style: normal;
 }
 
 /* Bootstrap lightens the active navbar colour; keep the exact accent in light mode. */
@@ -147,60 +157,59 @@ body.quarto-light .navbar-nav .nav-link.active:hover { color: var(--accent) !imp
 }
 
 .navbar-brand {
-  font-family: var(--main-font);
   font-weight: 500;
   font-style: normal;
   font-size: 1.55rem;
 }
 
-/* ── Hero ───────────────────────────────────────────────── */
+/* ── About page header ──────────────────────────────────── */
 .profile-photo {
   border-radius: 50%;
+  height: auto; /* the width attribute sets the size; keep the photo's shape */
 }
 
 .hero-name {
   font-size: 1.8rem;
   font-weight: 300;
   font-style: normal;
-  font-family: var(--main-font) !important;
+}
+
+.affiliation {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.italic-text {
+  font-size: 1.0rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* ── Layout ─────────────────────────────────────────────── */
+/* Page width. The grid in _quarto.yml sets the columns inside it. */
 #quarto-content {
   max-width: 1300px !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
-  animation: pageFade 0.3s ease-out backwards;
+  animation: pageFade var(--motion-fast) var(--ease-out) backwards;
 }
 
-.page-columns, .quarto-container, .container {
-  max-width: 1400px !important;
+/* ── Text ───────────────────────────────────────────────── */
+.justify {
+  text-align: justify;
+  hyphens: manual;
 }
 
-.column-body {
-  max-width: 100% !important;
+/* Funding notes and publication venues are skewed rather than italic,
+   which is easier to read at small sizes. */
+.funding,
+.publication-venue {
+  display: inline-block;
+  transform: skewX(-8deg);
 }
-
-/* ── Tabset ─────────────────────────────────────────────── */
-.panel-tabset .tab-content,
-.panel-tabset > .nav-tabs,
-.tab-content {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* ── Components ─────────────────────────────────────────── */
 .funding {
   font-size: 0.90rem;
-  transform: skewX(-8deg);
-  display: inline-block;
-}
-
-p em, figcaption em {
-  display: inline;
-  font-style: italic;
-  font-weight: 400;
-  transform: none;
 }
 
 .publication-authors {
@@ -212,15 +221,18 @@ p em, figcaption em {
   font-style: italic;
 }
 
-/* Venue line: same skewed style as .funding */
-.publication-venue {
-  transform: skewX(-8deg);
-  display: inline-block;
+figcaption, .figure-caption {
+  color: var(--text-caption) !important;
+  font-size: 1.00rem;
 }
 
-.justify {
-  text-align: justify;
-  hyphens: manual;
+/* ── Media ──────────────────────────────────────────────── */
+/* Loop videos that fill a fixed-shape frame (home page and Research). */
+.cover-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ── Table of contents ──────────────────────────────────── */
@@ -228,41 +240,15 @@ p em, figcaption em {
   font-family: var(--font-toc) !important;
 }
 
-/* ── Captions ───────────────────────────────────────────── */
-figcaption, .caption, .figure-caption, .img-caption {
-  color: var(--text-caption) !important;
-  font-size: 1.00rem;
-}
-
-/* ── Connect Page ───────────────────────────────────────── */
-.connect-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  border: 1.5px solid #444444;
-  border-radius: 10px;
-  font-size: 2.0rem;
-  color: inherit;
-  text-decoration: none;
-  transition: border-color 0.5s, color 0.5s;
-}
-
-.connect-box:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
 /* ── Search ─────────────────────────────────────────────── */
 .aa-DetachedSearchButton,
 .quarto-search-button {
-  color: var(--search-accent) !important;
+  color: var(--accent) !important;
 }
 
 .aa-SubmitIcon svg,
 .aa-SubmitIcon {
-  fill: var(--search-accent) !important;
+  fill: var(--accent) !important;
 }
 
 .aa-DetachedContainer {
@@ -304,18 +290,14 @@ figcaption, .caption, .figure-caption, .img-caption {
 }
 
 /* ── Motion ─────────────────────────────────────────────── */
-
-@view-transition {
-  navigation: none;
-}
-
+/* One short fade when a page opens. Cross-page view transitions stay off
+   (the browser default), so there is no @view-transition rule. */
 @keyframes pageFade {
   from { opacity: 0.5; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  @view-transition { navigation: none; }
   #quarto-content { animation: none; }
   html { scroll-behavior: auto; }
 }

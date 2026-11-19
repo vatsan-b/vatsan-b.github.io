@@ -1,11 +1,16 @@
+# Site configuration. `quarto render` builds the pages listed under render:
+# into docs/, which GitHub Pages serves from the main branch.
+
 project:
   type: website
   output-dir: docs
+  # Copied into the site as-is, so everything under these folders is public.
   resources:
     - cv/
     - assets/
   preview:
-    browser: false  # Requires manual browser activation
+    browser: false  # `quarto preview` prints the link instead of opening a browser
+  # Only these pages are built, in navbar order.
   render:
     - index.qmd
     - about.qmd
@@ -16,7 +21,7 @@ project:
 
 website:
   title: "Srivatsan Balaji"
-  favicon: assets/images/robot.png
+  favicon: assets/images/favicon.png
   google-analytics: "G-ZZG5RG98PM"
   navbar:
     right:
@@ -30,6 +35,9 @@ website:
         text: Mentorship
       - href: for-fun.qmd
         text: Leisure
+      # Icon links: inline SVGs from Font Awesome Free 6.7.2 (CC BY 4.0, licence in
+      # assets/vendor/fontawesome-icons/). Email opens Gmail's compose window,
+      # because a mailto: link does nothing without a mail app.
       - href: https://mail.google.com/mail/?view=cm&fs=1&to=sri.vatsan0307@gmail.com
         aria-label: Email
         target: _blank
@@ -56,27 +64,30 @@ website:
         target: _blank
         rel: noopener
 
-
 format:
   html:
+    # Dark is listed first, so it is the default; the navbar toggle switches.
     theme:
       dark: [darkly, custom-dark.scss]
       light: [default, custom-light.scss]
     css: styles.css
-    respect-user-color-scheme: true
+    respect-user-color-scheme: true  # first visit follows the visitor's system setting
     anchor-sections: false
     code-copy: false
+    # Added to every page's <head>:
+    #  - preload the main font file (fonts are self-hosted, see styles.css),
+    #  - instant.page: starts loading a page when its link is hovered,
+    #  - no-save.js: discourages right-click saving of images and video,
+    #  - autoplay-video.js: plays [data-autoplay] loop videos while on screen.
     include-in-header:
       text: |
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:wght@400;600&display=swap">
+        <link rel="preload" href="assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
         <script src="assets/vendor/instant-page/5.2.0/instantpage.js" type="module"></script>
         <script src="assets/js/no-save.js" defer></script>
+        <script src="assets/js/autoplay-video.js" defer></script>
+    # Page columns for every page (styles.css caps the whole page at 1300px).
     grid:
       sidebar-width: 200px
       body-width: 1200px
       margin-width: 200px
-
-
 

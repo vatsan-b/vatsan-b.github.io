@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./assets/images/robot.png" rel="icon" type="image/png">
+<link href="./assets/images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,8 +46,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b8558092631a316a213183e4c092d9d6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e807f3a86af90d1b996029b0269d3bf6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-cd86e2d4ab8bd788586da5a18d21a481.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5d04c9b77db5c3527bfb964855dcd3d5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,14 +84,19 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Source+Sans+3:wght@400;600&amp;display=swap">
+<link rel="preload" href="assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin="">
 <script src="assets/vendor/instant-page/5.2.0/instantpage.js" type="module"></script>
 <script src="assets/js/no-save.js" defer=""></script>
+<script src="assets/js/autoplay-video.js" defer=""></script>
+<link rel="preload" href="assets/gallery-derivatives/manifest.json" as="fetch" crossorigin="">
+<script src="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.min.js" defer=""></script>
+<script src="assets/vendor/photoswipe/5.4.4/photoswipe-lightbox.umd.min.js" defer=""></script>
+<script src="assets/gallery/gallery.js" type="module"></script>
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/vendor/photoswipe/5.4.4/photoswipe.css">
+<link rel="stylesheet" href="assets/gallery/gallery.css">
 </head>
 
 <body class="nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -334,7 +339,6 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#flight-simulation" id="toc-flight-simulation" class="nav-link active" data-scroll-target="#flight-simulation">Flight Simulation</a></li>
@@ -349,29 +353,19 @@ gtag('config', 'G-ZZG5RG98PM', { 'anonymize_ip': true});
 
 
 
-<!-- ── Self-hosted gallery dependencies (MIT, exact pinned versions) ── -->
-<p><link rel="stylesheet" href="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.css"> <link rel="stylesheet" href="assets/vendor/photoswipe/5.4.4/photoswipe.css"> <link rel="stylesheet" href="assets/gallery/gallery.css"></p>
-<style>
-/* hide the native TOC "On this page" label */
-#toc-title { display: none; }
-</style>
 <section id="flight-simulation" class="level2">
 <h2 data-anchor-id="flight-simulation">Flight Simulation</h2>
-<p>I am a virtual Seattle ARTCC controller, and a part of a wonderful community of virtual pilots and controllers on the <a href="https://www.vatusa.net/" target="_blank">VATSIM</a> network. Air traffic controlling is a fun and challenging hobby that keeps me on my toes, and I also fly (virtually).</p>
-<div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-captions="off" data-row-height="170" data-row-height-md="150" data-row-height-sm="120" style="max-width: 1200px;">
+<p>I am a virtual Seattle ARTCC controller, and a part of a wonderful community of virtual pilots and controllers on the <a href="https://www.vatusa.net/" target="_blank" rel="noopener">VATSIM</a> network. Air traffic controlling is a fun and challenging hobby that keeps me on my toes, and I also fly (virtually).</p>
+<div id="av-gallery" class="js-gallery" data-gallery="flight-sim" data-captions="off" data-row-height="170" data-row-height-md="150" data-row-height-sm="120">
 
 </div>
 </section>
 <section id="photography" class="level2">
 <h2 data-anchor-id="photography">Photography</h2>
-<p>I mostly shoot landscapes and cityscapes. A selection is below; more lives on my <a href="https://unsplash.com/@srivatsan" target="_blank">Unsplash</a> profile.</p>
+<p>I mostly shoot landscapes and cityscapes. A selection is below; more lives on my <a href="https://unsplash.com/@srivatsan" target="_blank" rel="noopener">Unsplash</a> profile.</p>
 <div id="photo-gallery" class="js-gallery" data-gallery="photography" data-row-height="240" data-row-height-md="200" data-row-height-sm="150">
 
 </div>
-<script src="assets/vendor/flickr-justified-gallery/2.2.0/fjGallery.min.js"></script>
-<script src="assets/vendor/photoswipe/5.4.4/photoswipe.umd.min.js"></script>
-<script src="assets/vendor/photoswipe/5.4.4/photoswipe-lightbox.umd.min.js"></script>
-<script src="assets/gallery/gallery.js"></script>
 
 
 </section>

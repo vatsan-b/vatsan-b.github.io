@@ -1,0 +1,104 @@
+<!--
+  Homepage particle background (tsParticles 3.9.1), switched off.
+  How to restore: see README.md in this folder.
+
+  1. Markup: put this line near the top of index.qmd, after the front matter.
+-->
+<div id="constellation-bg" aria-hidden="true"></div>
+
+<!-- 2. CSS: add to the <style> block in index.qmd. -->
+<style>
+#constellation-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+</style>
+
+<!-- 3. Script: add to index.qmd inside a ```{=html} fence.
+        The library lives in tsparticles/ next to this file; move it back to
+        assets/vendor/tsparticles/ first. -->
+<script defer src="assets/vendor/tsparticles/3.9.1/tsparticles.slim.bundle.min.js"></script>
+<script>
+(function () {
+  // HOMEPAGE ANIMATION SETTINGS — edit these values, then run quarto render.
+  // Counts are fixed budgets, not multiplied by screen area or pixel density.
+  const SETTINGS = {
+    speed: 0.50,                          // lower = slower drift
+    colors: ['#FDD26E', '#FDD26E', '#87D7F2'],
+    particleCount: 100,                    // desktop; max 100
+    mobileParticleCount: 40,              // screens up to 760 CSS pixels wide
+    particleSize: { min: 1.0, max: 2.0 },
+    particleOpacity: { min: 0.30, max: 0.60 },
+    linkColor: '#FDD26E',
+    linkDistance: 200,                    // CSS pixels; larger = more connections
+    linkOpacity: 0.20,
+    fps: 30                              // 20–30 is enough for a background
+  };
+
+  async function init() {
+  const host = document.getElementById('constellation-bg');
+  if (!host) return;
+  // Escape Quarto's content column so the background covers the viewport.
+  document.body.appendChild(host);
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  try {
+    await loadSlim(tsParticles);
+    const optionsForMotion = () => ({
+        autoPlay: !motion.matches,
+        fpsLimit: SETTINGS.fps,
+        detectRetina: false,
+        fullScreen: { enable: false },
+        pauseOnBlur: true,
+        pauseOnOutsideViewport: false,
+        interactivity: {
+          events: { onHover: { enable: false }, onClick: { enable: false } }
+        },
+        particles: {
+          number: {
+            value: SETTINGS.particleCount,
+            density: { enable: false }
+          },
+          color: { value: SETTINGS.colors },
+          shape: { type: 'circle' },
+          size: { value: SETTINGS.particleSize },
+          opacity: { value: SETTINGS.particleOpacity },
+          links: {
+            enable: true, color: SETTINGS.linkColor,
+            distance: SETTINGS.linkDistance, opacity: SETTINGS.linkOpacity, width: 0.7
+          },
+          move: { enable: !motion.matches, speed: SETTINGS.speed, outModes: { default: 'bounce' } }
+        },
+        responsive: [{
+          maxWidth: 760,
+          options: { particles: { number: { value: SETTINGS.mobileParticleCount } } }
+        }]
+    });
+    const field = await tsParticles.load({ id: 'constellation-bg', options: optionsForMotion() });
+    if (!field) return;
+    if (motion.matches) field.draw(true);
+    let pending = Promise.resolve();
+    motion.addEventListener('change', () => {
+      field.pause();
+      // v3 refresh rebuilds from source options; reset replaces that source.
+      pending = pending.then(async () => {
+        await field.reset(optionsForMotion());
+        if (motion.matches) { field.pause(); field.draw(true); }
+      });
+      return pending;
+    });
+  } catch (error) {
+    // The base CSS background remains usable if canvas or the library fails.
+    console.warn('Constellation unavailable; using static background.', error);
+  }
+  }
+
+  // The deferred tsParticles bundle runs before DOMContentLoaded fires.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+    return;
+  }
+  return init();
+})();
+</script>

@@ -1,16 +1,14 @@
-// /*-- scss:defaults --*/
-// $font-family-sans-serif: "Computer Modern Serif", serif;
-// $headings-font-family: "Computer Modern Serif", serif;
-
 /*-- scss:defaults --*/
-// $font-family-sans-serif: "Source Sans Pro", sans-serif;
-// $headings-font-family: "Source Sans Pro", sans-serif;
+// Dark theme (the default), layered on Bootswatch "darkly".
+// Colours used outside Bootstrap are CSS variables in styles.css.
 
-/*-- scss:defaults --*/
+// Newsreader everywhere; --main-font is defined in styles.css.
 $font-family-sans-serif: var(--main-font);
-$font-size-base: 19.00px;
+$headings-font-family: var(--main-font);
+$font-size-base: 19px;
 
-$headings-font-family: var(--font-headings) !important;
+// darkly would @import its Lato web font from Google; the site never uses it.
+$web-font-path: false;
 
 $navbar-bg: transparent;
 $navbar-fg: #ffffff;
@@ -18,5 +16,3 @@ $navbar-active-color: #FDD26E;
 $navbar-hover-color: #e8e3d3;
 $link-color: #FDD26E;
 $body-color: #ededed;
-// $body-bg: #0a0a0a;
-$navbar-fg: #ffffff;

@@ -1,15 +1,20 @@
 /*-- scss:defaults --*/
+// Light theme, layered on Bootstrap's default theme.
+// Colours used outside Bootstrap are CSS variables in styles.css.
+
+// Newsreader everywhere; --main-font is defined in styles.css.
 $font-family-sans-serif: var(--main-font);
-$font-size-base: 19.00px;
+$headings-font-family: var(--main-font);
+$font-size-base: 19px;
 
-$headings-font-family: var(--font-headings) !important;
-
-// Off-white page, off-black text, OSU orange accent
+// Off-white page, off-black text, OSU orange accent.
+// The page itself is painted by --page-bg in styles.css; $body-bg only shows
+// where Bootstrap uses its own background variable.
 $body-bg: #faf9f5;
 $body-color: #262624;
 $link-color: #D73F09;
 
-// Same navbar height as the dark theme, otherwise the page jumps 17px when switching
+// Same navbar height as the dark theme, otherwise the page jumps 17px when switching.
 $navbar-padding-y: 1rem;
 $navbar-bg: transparent;
 $navbar-fg: #262624;

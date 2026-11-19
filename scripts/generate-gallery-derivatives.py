@@ -1,177 +1,199 @@
 #!/usr/bin/env python3
-"""Generate justified-grid thumbnail and PhotoSwipe medium-resolution derivatives
-for the for-fun.qmd galleries, plus the manifest gallery.js reads at runtime.
+"""Build the Leisure page (for-fun.qmd) gallery images and their manifest.
 
-Reads scripts/gallery-content.json (source file + caption, hand-curated) and,
-for each listed image, uses Pillow to emit:
-  - preview (thumbnail) candidates in AVIF, WebP, and a JPEG fallback, at a
-    fixed set of widths, for the justified-grid <picture> srcset.
-  - medium candidates in WebP at a fixed set of widths, for PhotoSwipe's
-    data-pswp-srcset. The untouched original is always the largest candidate.
+Reads scripts/gallery-content.json (hand-edited: source file and caption per
+image, in display order) and writes, per image, into
+assets/gallery-derivatives/<gallery>/<slug>/:
+  thumb-<w>.avif, thumb-<w>.webp   grid thumbnails (400/800/1200 px wide)
+  medium-<w>.webp                  lightbox sizes (1200/1920 px wide)
+  full-<w>.webp                    largest lightbox size, long edge <= 2560 px
+plus assets/gallery-derivatives/manifest.json, which gallery.js reads. The
+manifest stores only what cannot be worked out from the file-name pattern
+above; gallery.js builds the URLs. It does not name the source files, so the
+published site never shows the original file names or the sources/ folder.
 
-Output is deterministic: same inputs (source bytes + gallery-content.json)
-always produce byte-identical derivatives and manifest, so it's safe to
-re-run. Output lives under assets/gallery-derivatives/ and is committed.
+The originals stay in sources/gallery-originals/, which is not published,
+because some carry GPS or camera-serial metadata. Derivatives carry none.
+
+Existing files are kept as they are, so a normal run only encodes new images
+(use --force after replacing a source image under the same name). Files that
+the manifest no longer lists are deleted.
 
 Usage:
-  python3 scripts/generate-gallery-derivatives.py                  # full rebuild (needs Pillow)
-  python3 scripts/generate-gallery-derivatives.py --captions-only  # copy captions into the existing
-                                                                   # manifest; no Pillow, no images
+  python3 scripts/generate-gallery-derivatives.py                  # build what is missing (needs Pillow)
+  python3 scripts/generate-gallery-derivatives.py --force          # re-encode everything
+  python3 scripts/generate-gallery-derivatives.py --captions-only  # copy captions into the manifest
+                                                                   # (no Pillow, no image work)
 """
 
+import argparse
 import json
 import re
 import sys
 from pathlib import Path
 
-Image = ImageOps = None  # imported lazily so --captions-only needs no Pillow
-
 REPO_ROOT = Path(__file__).resolve().parent.parent
-CONTENT_PATH = REPO_ROOT / "scripts" / "gallery-content.json"
-OUTPUT_DIR = REPO_ROOT / "assets" / "gallery-derivatives"
-MANIFEST_PATH = OUTPUT_DIR / "manifest.json"
+CONTENT_PATH = REPO_ROOT / "scripts" / "gallery-content.json"  # hand-edited input
+OUTPUT_DIR = REPO_ROOT / "assets" / "gallery-derivatives"      # published output
+MANIFEST_PATH = OUTPUT_DIR / "manifest.json"                   # read by gallery.js
 
-THUMB_WIDTHS = (400, 800, 1200)
-MEDIUM_WIDTHS = (1200, 1920)
+THUMB_WIDTHS = (400, 800, 1200)   # grid thumbnail widths (never wider than the source)
+MEDIUM_WIDTHS = (1200, 1920)      # lightbox widths (only those narrower than the full size)
+FULL_MAX_EDGE = 2560              # long edge cap of the largest published size
 
-WEBP_QUALITY = 82
-WEBP_METHOD = 6
-AVIF_QUALITY = 60
-AVIF_SPEED = 6
-FALLBACK_JPEG_QUALITY = 78
-
-_SLUG_RE = re.compile(r"[^a-z0-9]+")
+# Encoder settings. Changing them only affects files written from now on;
+# run with --force to re-encode the existing ones.
+AVIF = {"quality": 60, "speed": 6}
+WEBP = {"quality": 82, "method": 6}
+FULL_WEBP = {"quality": 85, "method": 6}
 
 
 def slugify(stem):
-    slug = _SLUG_RE.sub("-", stem.lower()).strip("-")
-    return slug or "image"
+    """Folder name for an image: lower case, runs of other characters become '-'."""
+    return re.sub(r"[^a-z0-9]+", "-", stem.lower()).strip("-") or "image"
 
 
-def load_source_image(path):
-    img = Image.open(path)
-    img = ImageOps.exif_transpose(img)  # bake in orientation before dropping EXIF
-    if img.mode != "RGB":
-        img = img.convert("RGB")
-    return img
+def fail(message):
+    sys.exit(f"error: {message}")
 
 
-def resized(img, width):
-    if width >= img.width:
-        return img
-    height = round(img.height * (width / img.width))
-    return img.resize((width, height), Image.LANCZOS)
+def read_json(path):
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-def save_deterministic(img, path, fmt, **kwargs):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(path, fmt, **kwargs)
-
-
-def relpath(path):
-    return path.relative_to(REPO_ROOT).as_posix()
-
-
-def build_item(gallery_key, entry):
-    src_rel = entry["file"]
-    src_path = REPO_ROOT / src_rel
-    if not src_path.is_file():
-        print(f"warning: skipping missing source {src_rel}", file=sys.stderr)
-        return None
-
-    slug = slugify(Path(src_rel).stem)
-    out_dir = OUTPUT_DIR / gallery_key / slug
-
-    img = load_source_image(src_path)
-    orig_w, orig_h = img.width, img.height
-
-    thumb_avif, thumb_webp, thumb_fallback = [], [], []
-    for width in THUMB_WIDTHS:
-        variant = resized(img, width)
-        w = variant.width
-
-        avif_path = out_dir / f"thumb-{w}.avif"
-        save_deterministic(variant, avif_path, "AVIF", quality=AVIF_QUALITY, speed=AVIF_SPEED)
-        thumb_avif.append((w, relpath(avif_path)))
-
-        webp_path = out_dir / f"thumb-{w}.webp"
-        save_deterministic(variant, webp_path, "WEBP", quality=WEBP_QUALITY, method=WEBP_METHOD)
-        thumb_webp.append((w, relpath(webp_path)))
-
-        jpg_path = out_dir / f"thumb-{w}.jpg"
-        save_deterministic(variant, jpg_path, "JPEG", quality=FALLBACK_JPEG_QUALITY, optimize=True)
-        thumb_fallback.append((w, relpath(jpg_path)))
-
-        # resized() never upscales; once a candidate matches the source
-        # width there's no point emitting narrower duplicates beyond it.
-        if w >= orig_w:
-            break
-
-    medium = []
-    for width in MEDIUM_WIDTHS:
-        if width >= orig_w:
-            continue
-        variant = resized(img, width)
-        webp_path = out_dir / f"medium-{variant.width}.webp"
-        save_deterministic(variant, webp_path, "WEBP", quality=WEBP_QUALITY, method=WEBP_METHOD)
-        medium.append((variant.width, relpath(webp_path)))
-
-    full_srcset_parts = [f"{url} {w}w" for w, url in medium]
-    full_srcset_parts.append(f"{relpath(src_path)} {orig_w}w")
-
-    return {
-        "file": relpath(src_path),
-        "caption": entry.get("caption", ""),
-        "width": orig_w,
-        "height": orig_h,
-        "thumb": {
-            "avifSrcset": ", ".join(f"{url} {w}w" for w, url in thumb_avif),
-            "webpSrcset": ", ".join(f"{url} {w}w" for w, url in thumb_webp),
-            "fallbackSrcset": ", ".join(f"{url} {w}w" for w, url in thumb_fallback),
-            "fallbackSrc": thumb_fallback[len(thumb_fallback) // 2][1],
-        },
-        "full": {
-            "srcset": ", ".join(full_srcset_parts),
-            "src": relpath(src_path),
-        },
-    }
+def write_manifest(manifest):
+    """One image per line: small, readable diffs. LF endings even on Windows."""
+    lines = ["{", '  "galleries": {']
+    galleries = list(manifest["galleries"].items())
+    for g, (key, items) in enumerate(galleries):
+        lines.append(f"    {json.dumps(key)}: [")
+        for i, item in enumerate(items):
+            comma = "," if i < len(items) - 1 else ""
+            lines.append(f"      {json.dumps(item)}{comma}")
+        lines.append("    ]" + ("," if g < len(galleries) - 1 else ""))
+    lines += ["  }", "}", ""]
+    MANIFEST_PATH.write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
 def captions_only(content):
-    manifest = json.loads(MANIFEST_PATH.read_text())
+    """Copy edited captions from gallery-content.json into the existing manifest.
+
+    Entries are matched in order; each one's folder name (slug) must still match
+    its file name, otherwise images were added, removed or reordered and a full
+    run is needed."""
+    manifest = read_json(MANIFEST_PATH)
     changed = 0
     for key, items in manifest["galleries"].items():
-        wanted = {e["file"]: e.get("caption", "") for e in content["galleries"].get(key, [])}
-        for item in items:
-            cap = wanted.get(item["file"], item.get("caption", ""))
-            if item.get("caption", "") != cap:
-                item["caption"] = cap
+        entries = content["galleries"].get(key, [])
+        slugs = [slugify(Path(e["file"]).stem) for e in entries]
+        if slugs != [item["slug"] for item in items]:
+            fail(f"'{key}' images were added, removed or reordered; run without --captions-only")
+        for entry, item in zip(entries, items):
+            caption = entry.get("caption", "")
+            if item["caption"] != caption:
+                item["caption"] = caption
                 changed += 1
-    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, sort_keys=False) + "\n")
+    write_manifest(manifest)
     print(f"manifest captions updated ({changed} changed)")
 
 
+def build_image(gallery, slug, entry, force):
+    """Write the missing derivatives for one image; return its manifest entry
+    and the set of files it owns."""
+    from PIL import Image, ImageOps  # imported here so --captions-only needs no Pillow
+
+    source = REPO_ROOT / entry["file"]
+    if not source.is_file():
+        fail(f"source image not found: {entry['file']}")
+    folder = OUTPUT_DIR / gallery / slug
+
+    img = ImageOps.exif_transpose(Image.open(source))  # apply rotation before metadata is dropped
+    img = img.convert("RGB")
+
+    # Largest published size: the source scaled down to FULL_MAX_EDGE, never up.
+    scale = min(1, FULL_MAX_EDGE / max(img.size))
+    full_w, full_h = round(img.width * scale), round(img.height * scale)
+
+    # A thumbnail is never wider than the source; stop at the first one that reaches it.
+    thumbs = []
+    for w in THUMB_WIDTHS:
+        thumbs.append(min(w, img.width))
+        if w >= img.width:
+            break
+    mediums = [w for w in MEDIUM_WIDTHS if w < full_w]
+
+    def size_for(width):
+        return (width, round(img.height * (width / img.width)))
+
+    # (file name, pixel size, Pillow format, encoder options)
+    outputs = [(f"full-{full_w}.webp", (full_w, full_h), "WEBP", FULL_WEBP)]
+    for w in thumbs:
+        outputs.append((f"thumb-{w}.avif", size_for(w), "AVIF", AVIF))
+        outputs.append((f"thumb-{w}.webp", size_for(w), "WEBP", WEBP))
+    outputs += [(f"medium-{w}.webp", size_for(w), "WEBP", WEBP) for w in mediums]
+
+    folder.mkdir(parents=True, exist_ok=True)
+    for name, size, fmt, options in outputs:
+        path = folder / name
+        if path.exists() and not force:
+            continue
+        Image.init()  # registers every format this Pillow can write
+        if fmt not in Image.SAVE:
+            fail(f"this Pillow cannot write {fmt}, needed for {path.name}; see scripts/requirements.txt")
+        variant = img if size == img.size else img.resize(size, Image.LANCZOS)
+        variant.save(path, fmt, **options)  # no exif/xmp passed, so none is written
+
+    item = {
+        "caption": entry.get("caption", ""),
+        "slug": slug,
+        "width": full_w,        # size of full-<width>.webp
+        "height": full_h,
+        "thumbs": thumbs,
+        "mediums": mediums,
+    }
+    return item, {folder / name for name, *_ in outputs}
+
+
+def remove_unlisted(keep):
+    """Delete derivative files and folders that the manifest no longer lists."""
+    keep = keep | {MANIFEST_PATH}
+    for path in sorted(OUTPUT_DIR.rglob("*"), reverse=True):  # children before parents
+        if path.is_file() and path not in keep:
+            print(f"removed {path.relative_to(REPO_ROOT).as_posix()}")
+            path.unlink()
+        elif path.is_dir() and not any(path.iterdir()):
+            path.rmdir()
+
+
 def main():
-    global Image, ImageOps
-    content = json.loads(CONTENT_PATH.read_text())
-    if "--captions-only" in sys.argv[1:]:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    parser.add_argument("--force", action="store_true", help="re-encode files that already exist")
+    parser.add_argument("--captions-only", action="store_true",
+                        help="only copy captions into the existing manifest (no Pillow needed)")
+    args = parser.parse_args()
+
+    content = read_json(CONTENT_PATH)
+    if args.captions_only:
         captions_only(content)
         return
-    from PIL import Image, ImageOps
-    manifest = {"galleries": {}}
 
-    for gallery_key, entries in content["galleries"].items():
+    manifest = {"galleries": {}}
+    keep = set()
+    for gallery, entries in content["galleries"].items():
         items = []
         for entry in entries:
-            item = build_item(gallery_key, entry)
-            if item is not None:
-                items.append(item)
-        manifest["galleries"][gallery_key] = items
-        print(f"{gallery_key}: {len(items)} image(s) processed")
+            slug = slugify(Path(entry["file"]).stem)
+            if any(other["slug"] == slug for other in items):
+                fail(f"two images in '{gallery}' share the folder name '{slug}'; rename one source file")
+            item, files = build_image(gallery, slug, entry, args.force)
+            items.append(item)
+            keep |= files
+        manifest["galleries"][gallery] = items
+        print(f"{gallery}: {len(items)} image(s)")
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, sort_keys=False) + "\n")
-    print(f"manifest written to {relpath(MANIFEST_PATH)}")
+    write_manifest(manifest)
+    remove_unlisted(keep)
+    print(f"manifest written to {MANIFEST_PATH.relative_to(REPO_ROOT).as_posix()}")
 
 
 if __name__ == "__main__":

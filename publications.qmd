@@ -2,6 +2,8 @@
 title: "Publications"
 ---
 
+*For the full list of publications, visit my [google scholar](https://scholar.google.com/citations?user=cg4uo2cAAAAJ&hl=en){target="_blank" rel="noopener"} page.*
+
 ::: {.justify}
 {{< include publications-parsed.qmd >}}
 :::

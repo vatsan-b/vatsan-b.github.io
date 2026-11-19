@@ -1,109 +1,168 @@
-# vatsan-b.github.io — Personal Website
+# vatsan-b.github.io: personal website
 
-Personal academic site for Srivatsan. Static site built with **Quarto** (1.10.18 installed locally as `quarto` on `PATH`).
+Personal academic site for Srivatsan, live at <https://vatsan-b.github.io>. Static site
+built with Quarto 1.10.18.
 
-- **Current site** — live at <https://vatsan-b.github.io>, served from `main`.
+## Environment
 
-## Build layout — read this before deleting anything
+- The repo lives in WSL at `/home/srivatsan/vatsan-b.github.io` (distro `Ubuntu2404`, which
+  runs Ubuntu 26.04). Remote: `https://github.com/vatsan-b/vatsan-b.github.io.git`.
+- Quarto is `/usr/local/bin/quarto`, Python is 3.14, `gh` is installed. Node is not needed
+  for the site any more.
+- WSL's Python has no Pillow. Only the gallery generator needs it (see Galleries).
 
-Sources live at the repo root as `.qmd` files. `quarto render` compiles them into
-`docs/`, and **GitHub Pages serves the site from `docs/`**. Both the sources and the
-rendered output are committed.
+## Build and deploy
 
-This means `docs/assets/`, `docs/site_libs/` and `docs/*.html` duplicate files that
-also exist at the repo root. **That duplication is correct Quarto behaviour, not
-cruft.** Deleting `docs/` or its contents takes the live site down. Rendered output is
-committed, so review generated-library changes when the renderer version changes.
-
-Genuine cruft — `docs.bak/` and any nested variant — was removed in commit `da8c3e6`
-and remains covered by the `*.bak/` ignore rule. `temp/` and `.quarto/` are gitignored
-(`.gitignore`) scratch space; keep probe files in `temp/` and delete them when done.
+- Pages are `.qmd` files at the repo root. `quarto render` builds them into `docs/`.
+  GitHub Pages serves `docs/` from `main` (classic "deploy from a branch", no deploy
+  workflow), so a push is the deploy. Pages caches files for 10 minutes.
+- `docs/` is committed and duplicates `assets/` and `cv/`. That is normal Quarto output,
+  not cruft: deleting it takes the site down. Never edit `docs/` by hand.
+- A theme or SCSS edit renames the Bootstrap CSS in `docs/site_libs/` by hash; commit both
+  the deleted and the new file.
+- `.quarto/`, `temp/`, `*.bak/`, `__pycache__/`, `*:Zone.Identifier` are gitignored. Keep
+  probe files in `temp/` and delete them when done.
 
 ## Pages
 
-`_quarto.yml` renders exactly six pages, in navbar order.
+`_quarto.yml` renders exactly these six, in navbar order:
 
 | Source | Page |
 |---|---|
-| `index.qmd` | Home. Two-column hero: headline and intro text on the left, a muted looping Formlabs SLA timelapse (`assets/videos/formlabs-sla-hsa.mp4`) with a soft radial glow on the right. The video plays only while on screen and never under `prefers-reduced-motion`. The headline is a styled `div role="heading"`, not an `<h1>`, because Quarto lifts an `<h1>` out of raw HTML into the page title. The tsParticles background and the three research cards are kept **commented out** in the file (the particle library, its test and licence are still in the repo) so they can be revived. |
-| `about.qmd` | Portrait, affiliation, CV link, bio. The "One loop does most of my work" block (intro sentence, stages, return line, application cards) is kept inside an HTML comment, so nothing from it shows; its CSS stays in the page `<style>`. Text column is 989px wide and centred via a page-level `main.content` rule, matching Research. No TOC. |
-| `research.qmd` | Five project write-ups, each with figure or video, funding note and IEEE/arXiv links. Right-hand TOC with short labels from `{toc-text="..."}`, rewritten client-side by a script at the bottom. Loop videos autoplay on screen only. Ends with a "Publications →" link. |
-| `publications.qmd` | Flat list, newest first, no year headings or TOC. See generation note below. |
-| `mentoring.qmd` | Mentee list. |
-| `for-fun.qmd` | "Leisure" (set by `pagetitle`, since the visible title is empty): flight-sim and photography galleries (flickr-justified-gallery + PhotoSwipe). Flight Simulation has `data-captions="off"`. |
+| `index.qmd` | Home. Headline and intro on the left, a muted loop video (`assets/videos/formlabs-sla-hsa.mp4`) on the right with a soft glow behind it (`.home-stage::before`, a 2%-step Gaussian gradient) and faint noise (`::after`) against banding. The page canvas is transparent; the navbar stays opaque. The headline is a `div role="heading"`, because Quarto lifts a raw `<h1>` into the title block. |
+| `about.qmd` | Portrait, affiliation, CV link, bio. `main.content` is 989px wide and centred (the Research text width, since About has no TOC). |
+| `research.qmd` | Six projects with figure or video, funding note and links. Right-hand TOC with short labels from `{toc-text="..."}`, applied by the script at the bottom. Ends with a "Publications →" link. |
+| `publications.qmd` | Includes the generated `publications-parsed.qmd` (see Scripts). Flat list, newest first. |
+| `mentoring.qmd` | "Mentorship": intro and mentee list (names use `.mentee-name`, weight 500). |
+| `for-fun.qmd` | "Leisure" (`pagetitle`; the visible title is empty): flight-sim and photography galleries, right-hand TOC. |
 
-`connect.qmd` and `custom-light.scss` exist but are not rendered or loaded. They are kept
-on purpose in case they come back.
+## Styles
 
-## Publications are generated — do not hand-edit
+- Themes: `theme: {dark: [darkly, custom-dark.scss], light: [default, custom-light.scss]}`.
+  Dark is listed first, so it is the default; `respect-user-color-scheme: true` follows the
+  visitor's system setting on a first visit, and the navbar toggle (saved in localStorage)
+  overrides it. Quarto puts `quarto-dark` or `quarto-light` on `<body>`.
+- `styles.css` holds every shared rule. Colours are variables at its top: `:root` is dark,
+  `:root:has(body.quarto-light)` overrides for light. Main ones: `--page-bg` (r, g, b of page
+  and navbar: dark `31, 31, 35`, light `240, 238, 230`), `--accent` (`#FDD26E` / `#D73F09`),
+  `--text-dark`, `--text-caption`, `--glow` and `--glow-peak` (home glow colour and strength),
+  `--frame-shadow`, the search panel colours and `--gallery-bg`. Add colours as variables
+  there, never as hex in a page, or they will not switch with the theme.
+- The accent also lives in the SCSS (`$link-color`, `$navbar-active-color`), so a recolour
+  touches `styles.css` and both SCSS files. `custom-dark.scss` sets `$web-font-path: false`
+  so darkly does not import Lato from Google. `custom-light.scss` sets
+  `$navbar-padding-y: 1rem` so the navbar height matches dark.
+- Motion variables in `styles.css`: `--motion-fast` 0.3s (page fade), `--motion-base` 0.4s,
+  `--motion-slow` 0.6s, `--ease`, `--ease-out`. Every transition and animation uses them,
+  including `assets/gallery/gallery.css`. `prefers-reduced-motion` turns off the page fade and
+  smooth scrolling.
+- Shared classes: `.cover-video` (video filling its frame), `.media-figure` and
+  `.video-figure` (centred figure blocks), `.video-frame` and `.ratio-*` (Research, defined in
+  its `<style>`), `.justify`, `.funding` and `.publication-venue` (skewed, not italic).
+- Width is global: `grid` in `_quarto.yml` (sidebar 200, body 1200, margin 200) plus
+  `#quarto-content { max-width: 1300px }`. Do not add per-page grids.
+- The scrollbar is hidden site-wide (`html { scrollbar-width: none }`).
 
-`publications-parsed.qmd` is produced from `publications.bib` by
-`scripts/bib-to-quarto-parser.py`. Edit the `.bib` and re-run the script; edits made
-directly to the parsed `.qmd` are overwritten on the next run. Venue lines use
-`.publication-venue`; the "Co-first Authors" note has a grey leading `*`.
+## Fonts
 
-## Assets
+Self-hosted in `assets/fonts/` (exact Google Fonts latin files, SIL OFL licences beside
+them), declared with `@font-face` at the top of `styles.css`. Newsreader (variable, roman and
+italic) is used everywhere; Source Sans 3 only in the TOC (`--font-toc`). The roman
+Newsreader file is preloaded from `_quarto.yml`. No request goes to Google Fonts.
 
-Source assets in `assets/images/`, `assets/videos/`, `assets/unsplash-photos/`,
-`assets/homepage/`, `assets/flight-sim/` and `assets/gallery-derivatives/` are versioned
-so a fresh clone can fully `quarto render`. The rendered `docs/assets/` copies remain
-versioned because GitHub Pages serves `docs/`.
+## Galleries
 
-`resources: assets/` publishes everything under `assets/`, so keep unreferenced
-originals out of it: they live in `sources/unused-assets/`, which is not published.
-`scripts/compress-photo.py` is a helper, not site code.
+- `scripts/gallery-content.json` is the hand-edited input: source file (under
+  `sources/gallery-originals/`) and caption per image, in display order, per gallery
+  (`flight-sim`, `photography`).
+- `scripts/generate-gallery-derivatives.py` writes, per image, into
+  `assets/gallery-derivatives/<gallery>/<slug>/`: `thumb-<w>.avif` and `.webp` (400/800/1200,
+  never wider than the source), `medium-<w>.webp` (1200/1920, only below the full size) and
+  `full-<w>.webp` (long edge at most 2560). All carry no metadata. It also writes
+  `manifest.json`, one image per line: `{caption, slug, width, height, thumbs, mediums}`.
+  The manifest names no source file, so original file names and `sources/` stay unpublished.
+  Flags: none = build what is missing (needs Pillow with AVIF), `--force` = re-encode all,
+  `--captions-only` = copy captions into the manifest, matched by order and slug (no Pillow).
+  Files the manifest no longer lists are deleted.
+- The Windows Python has Pillow without AVIF: it can rerun the generator when no new AVIF
+  is needed. A new image needs a Pillow with AVIF; ask before installing one.
+- `for-fun.qmd` loads the gallery CSS through its `css:` front matter and, through
+  `include-in-header`, preloads the manifest and loads fjGallery, the PhotoSwipe lightbox and
+  `assets/gallery/gallery.js` (an ES module). `gallery.js` fetches the manifest once, builds
+  the tile URLs from the file-name pattern, lays tiles out with fjGallery and wires PhotoSwipe.
+  The PhotoSwipe core is imported only on the first click. Tile links carry `data-no-instant`
+  so instant.page does not prefetch full images on hover. Options are `data-*` attributes on
+  the container: `data-row-height`, `-md`, `-sm`, and `data-captions="off"` (flight-sim).
 
-Figures are WebP, card fallbacks are 900 px JPEG, and all videos are muted, audio-free
-H.264 with WebP posters.
+## Site-wide includes
 
-Gallery captions: edit `scripts/gallery-content.json`, then run
-`python3 scripts/generate-gallery-derivatives.py --captions-only` (no Pillow needed;
-the caption test fails until you do). A full rebuild needs Pillow
-(`scripts/requirements.txt`). `assets/gallery/gallery.js` honours `data-captions="off"`
-on a gallery container and nudges Quarto's TOC scroll-spy after layout.
+`_quarto.yml` adds to every page: the font preload, instant.page
+(`assets/vendor/instant-page/5.2.0/`, prefetches a page when its link is hovered),
+`assets/js/no-save.js` and `assets/js/autoplay-video.js`. Google Analytics is set with
+`google-analytics` and stays. `favicon.png` is in `assets/images/`.
+
+- `autoplay-video.js` plays `video[data-autoplay]` while a quarter of it is on screen and
+  pauses it otherwise; under `prefers-reduced-motion` the poster stays.
+- `no-save.js` blocks the right-click menu and dragging on images and video. Photography
+  allows both; Flight Simulation allows the menu but blocks drag. It only deters casual saving.
+- Third-party code is vendored under `assets/vendor/<name>/<version>/` with its licence.
+  Navbar icons are inline SVG from Font Awesome Free 6.7.2 (licence in
+  `assets/vendor/fontawesome-icons/`).
+
+## Scripts and checks
+
+- `python3 scripts/check-site.py` is the only check (standard library, 12 checks: local
+  links and fragments, srcset spaces, alt text, `rel="noopener"`, comments and stray fences,
+  duplicate ids, media sizes, gallery manifest and captions, publications up to date, `docs/`
+  copy of `assets/` and `cv/`, image metadata, unpublished paths). Run it after
+  `quarto render`; it exits 1 on any failure. `check-site.py OTHER_COPY` checks another copy.
+- `python3 scripts/bib-to-quarto-parser.py` rebuilds `publications-parsed.qmd` from
+  `publications.bib`. Never hand-edit the parsed file.
+- CI (`.github/workflows/checks.yml`) runs only `check-site.py` (Python 3.14, read-only
+  permissions) on pushes to `main` and pull requests. It does not render or deploy.
+
+## Kept but not published
+
+`resources:` publishes everything under `assets/` and `cv/`, so nothing private or unused
+may sit there.
+
+- `sources/gallery-originals/`: gallery originals. Some carry GPS or camera serials; never
+  move them back under `assets/`.
+- `sources/disabled-features/`: switched-off features (home particles with tsParticles, home
+  research cards and their images, the About "work loop" block, the `connect.qmd` page). Its
+  `README.md` says how to restore each.
+- `sources/unused-assets/`: images not used on any page.
 
 ## Conventions
 
-- Dark theme throughout; accent colour OSU `#FDD26E` (`--accent` in `styles.css`,
-  `$link-color` and `$navbar-active-color` in `custom-dark.scss`). Navbar hover is `#e8e3d3`.
-- One font family: Newsreader for everything (body, headings, navbar), loaded by one
-  preconnected Google Fonts `<link>` in `_quarto.yml`. Source Sans 3 is used only for the
-  TOC (`--font-toc`).
-- Page width is global: `grid` in `_quarto.yml` (sidebar 200px, margin 200px, body 1200px).
-  Do not add per-page grid blocks. The one exception is About, whose `main.content`
-  gets the Research text width (989px) because it has no TOC column.
-- Body copy justification uses the shared `.justify` class, or on Research a `main` rule.
-  Do not target `main p` — Quarto wraps figure images in `<p>` and it drags images left.
-  Do not wrap Research headings in a div: it stops Quarto building the TOC.
-- `.funding` and `.publication-venue` are deliberately skewed (`skewX(-8deg)`), not italic.
-- External links carry `target="_blank"` and `rel="noopener"`. The navbar Email icon opens
-  a Gmail compose URL (no `mailto:`, which does nothing without a mail app).
-- `assets/js/no-save.js` (loaded in the header) cancels right-click and drag on images and
-  video as a casual-save deterrent. Photography is exempt entirely; Flight Simulation keeps
-  the browser menu but blocks drag. It is a deterrent, not protection.
-- Navbar icons are inline SVG (Font Awesome Free 6.7.2, CC BY 4.0; licence in
-  `assets/vendor/fontawesome-icons/`). There is no Font Awesome CDN or Quarto extension.
-- Scrollbar is hidden site-wide (`html { scrollbar-width: none }` in `styles.css`).
-- Tests: `node --test scripts/*.cjs` and `python3 scripts/verify-site.py` (also run in CI via
-  `.github/workflows/checks.yml`).
+- Content lives in the `.qmd` files. Shared CSS goes in `styles.css`; CSS and JS for one
+  page go in a `<style>` or `<script>` block in that page.
+- No new inline styles. The ones left are deliberate and tuned by hand: the top-margin
+  wrappers on About and Mentorship, the CV link, the per-video `aspect-ratio` and
+  `object-position` on Research, and the grey link lines the parser writes.
+- To switch a feature off, move it to `sources/disabled-features/` with restore notes;
+  do not leave commented-out code in pages. Moves are reversible (`git mv`).
+- Research text is justified by a `main` rule. Do not target `main p` (Quarto wraps figure
+  images in `<p>`) and do not wrap the headings in a div (it breaks the TOC).
+- External links carry `target="_blank"` and `rel="noopener"`. The navbar Email icon opens a
+  Gmail compose URL, since `mailto:` does nothing without a mail app.
 
-## Open items
+## Known open items
 
-- `maintenance.html` at the repo root is a self-contained "under maintenance" page with a
-  canvas dot background (Georgia, no dependencies). The orphan `maintenance` branch holds only
-  `docs/index.html` and `docs/404.html` copies of it, so pointing Pages at that branch and
-  `/docs` takes the whole site to that page. Keep the branch copies identical to
-  `maintenance.html` (re-copy after editing it). Restore by pointing Pages back to `main` and `/docs`.
-- The search icon can briefly vanish on page switches in Brave (Quarto builds it client-side).
-  Unfixed.
+- The grey publication link lines fail contrast; changing them is the owner's visual call.
+- `.git` is about 116 MB because old blobs (removed `docs.bak/`, originals) stay in history.
+  Only a history rewrite and force-push would shrink it; that is the owner's decision.
+- Breakpoints 860px (home hero) and 992px (navbar and gallery) are left as they are.
+- `$body-bg` in `custom-light.scss` is the older `#faf9f5`; `--page-bg` covers the page,
+  but anything using Bootstrap's own background variable shows it.
+- The search icon can briefly vanish on page switches in Brave (Quarto builds it in JS).
+- `maintenance.html` is a standalone "under maintenance" page. The orphan `maintenance`
+  branch holds copies of it as `docs/index.html` and `docs/404.html`; pointing Pages at that
+  branch shows it site-wide. Keep the copies identical when editing it.
 
 ## Git
 
-- Branches: `main` is what Pages serves. `maintenance` is an orphan branch, used only by
-  pointing Pages at it during downtime. Work happens on short-lived feature branches and
-  lands on `main` through a pull request. There is no permanent sandbox branch; make one
-  from `main` when needed.
-- Never force-push. Never push to `main` without explicit instruction.
-- Old blobs from the removed `docs.bak/` trees still sit in history, so `.git` is ~115 MB
-  despite the working tree being smaller. Shrinking it needs `git filter-repo` and a
-  force-push — destructive, rewrites every SHA. Do not do this unprompted.
+- `main` is what Pages serves; `maintenance` is the orphan branch above. Small changes go
+  straight to `main`; branches and pull requests only when Sri asks.
+- Never commit, push or force-push without his explicit go. Use `git mv` / `git rm` for
+  tracked files.
