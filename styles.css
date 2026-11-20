@@ -50,14 +50,14 @@
   --font-toc:  "Source Sans 3", system-ui, sans-serif;
 
   /* Motion: every animation and transition uses these. */
-  --motion-fast: 0.3s;   /* page fade-in */
-  --motion-base: 0.4s;
-  --motion-slow: 0.6s;
+  --motion-fast: 0.5s;   /* page fade-in */
+  --motion-base: 0.5s;
+  --motion-slow: 0.5s;
   --ease:        ease;
   --ease-out:    ease-out;
 
   /* Palette (dark theme) */
-  --page-bg:       31, 31, 35;   /* r, g, b: page and navbar background */
+  --page-bg:       28, 28, 28;   /* r, g, b: page and navbar background */
   --accent:        #FDD26E;
   --text-dark:     #eeeeee;
   --text-caption:  #bbbbbb;
@@ -157,7 +157,7 @@ body.quarto-light .navbar-nav .nav-link.active:hover { color: var(--accent) !imp
 }
 
 .navbar-brand {
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-size: 1.55rem;
 }
@@ -300,4 +300,41 @@ figcaption, .figure-caption {
 @media (prefers-reduced-motion: reduce) {
   #quarto-content { animation: none; }
   html { scroll-behavior: auto; }
+}
+
+/* ── Mobile ─────────────────────────────────────────────── */
+/* Phone and tablet overrides. Desktop is untouched: every rule here sits
+   inside a max-width media query. */
+@media (max-width: 767.98px) {
+  /* Wider text: drop the desktop side padding; Quarto's own 1.5em
+     grid gutter still keeps text off the screen edges. */
+  #quarto-content { padding: 0 !important; }
+}
+
+/* Hamburger menu drops down over the page instead of pushing it down.
+   The navbar collapses below 992px (navbar-expand-lg), so this uses that
+   breakpoint rather than the phone one above. */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 0.75rem 0.75rem;
+    background: rgb(var(--page-bg));
+    border-bottom: 1px solid var(--panel-border);
+  }
+
+  /* While the menu is open, the hamburger icon turns into an X. Same stroke
+     colours as Bootstrap's hamburger ($navbar-fg in custom-*.scss). */
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
+  }
+  body.quarto-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23262624' stroke-linecap='round' stroke-width='2' d='M7 7l16 16M23 7L7 23'/%3e%3c/svg%3e");
+  }
+
+  /* Page links stay one per line; the icon links share a single row below. */
+  .navbar-collapse .navbar-nav { flex-flow: row wrap; column-gap: 1.25rem; }
+  .navbar-collapse .navbar-nav .nav-item:not(:has(.nav-icon)) { flex-basis: 100%; }
 }

@@ -93,7 +93,7 @@ body.quarto-light .home-stage::after { mix-blend-mode: normal; opacity: 0.04; }
 }
 @media (max-width: 860px) {
   .home-hero { grid-template-columns: 1fr; gap: 36px; }
-  .home-stage { width: min(100%, 320px); }
+  .home-stage { width: min(100%, 320px); justify-self: center; }
 }
 </style>
 
