@@ -29,9 +29,9 @@ This work is supported by the National Institutes of Health (NIH) and the Washin
 
 Underwater manipulation is a challenging task due to low visibility and strong currents at depth, and mere visual feedback is
 insufficient to assess grasp stability. Tactile sensing can complement vision and support human-supervised subsea
-manipulation tasks. To demonstrate the use of flexible barometric tactile sensors on curved geometries, I developed an end-effector prototype which allowed building a training platform for gathering a large amount of data for supporting vision-based perception. 
+manipulation tasks. To demonstrate the use of flexible barometric tactile sensors on curved geometries, I developed an end-effector prototype which allowed building a training platform for gathering a large amount of data for tactile sensing. 
 I co-developed a data collection procedure to characterize slip in the system that mimics the condition occuring during underwater grasping. This can also be used to train slip detection classifiers which will allow robots to detect slip.
-Additionally, I developed tools that provide feedback on finger position to enhance user confidence, in addition to provide tactile information. 
+Additionally, I developed tools that provided feedback on finger position, in addition to providing tactile information. 
 
 Read: [IEEE Xplore](https://ieeexplore.ieee.org/document/11330401){target="_blank" rel="noopener"}
 
