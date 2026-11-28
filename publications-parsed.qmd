@@ -1,11 +1,10 @@
 Torque Responsive Metamaterials Enable High Payload Soft Robot Arms\
 [Good, I., Balaji, S., Oh, D., Thomas, S., Lipton, J. I.]{.publication-authors}\
-[Accepted • IROS 2026]{style="color: gray;"}\
-[[arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank" rel="noopener"}]{style="color: gray;"}
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11776386){target="_blank" rel="noopener"} • [arXiv preprint](https://arxiv.org/abs/2501.09819){target="_blank" rel="noopener"}]{style="color: gray;"}
 
 Comparing Tactile Visualizations in a Visually-Constrained Environment to Support Human-Supervised Robot Grasp\
 [Pfeiffer, M. A., Whittaker, F., Puente, K., Balaji, S., Davidson, J. R., Wilson, C. G.]{.publication-authors}\
-[Accepted • IEEE SMC 2026]{style="color: gray;"}
+[[IEEE Xplore](https://ieeexplore.ieee.org/document/11788207){target="_blank" rel="noopener"}]{style="color: gray;"}
 
 Torsion Resistant Strain Limiting Layers Enable High Grip Strength of Electrically-Driven Handed Shearing Auxetic Grippers\
 [Good, I.\*, Balaji, S.\*, Miske, J. N., Lipton, J. I. • [\*Co-first Authors]{.cofirst-note}]{.publication-authors}\

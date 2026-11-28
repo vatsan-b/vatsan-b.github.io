@@ -57,7 +57,7 @@
   --ease-out:    ease-out;
 
   /* Palette (dark theme) */
-  --page-bg:       28, 28, 28;   /* r, g, b: page and navbar background */
+  --page-bg:       18, 19, 20;   /* r, g, b: page and navbar background */
   --accent:        #FDD26E;
   --text-dark:     #eeeeee;
   --text-caption:  #bbbbbb;
